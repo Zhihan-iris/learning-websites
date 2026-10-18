@@ -1,4 +1,4 @@
-import { STORAGE_KEY, emptyProgress, loadProgress, startSession, submitAnswer, advance } from './core.js';
+import { STORAGE_KEY, emptyProgress, loadProgress, startSession, submitAnswer, advance } from './core.js?v=2';
 
 const $ = selector => document.querySelector(selector);
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -171,7 +171,7 @@ function action(name) {
 }
 async function init() {
   try {
-    const responses = await Promise.all(['vocabulary.json', 'additional-books.json'].map(file => fetch(`./data/${file}`)));
+    const responses = await Promise.all(['vocabulary.json', 'additional-books.json'].map(file => fetch(`./data/${file}?v=2`)));
     if (responses.some(r => !r.ok)) throw new Error('词库加载失败');
     const [base, extra] = await Promise.all(responses.map(r => r.json()));
     data = { books: extra.books, scenes: [...base.scenes.map(s => ({...s, book: 'scenes'})), ...extra.scenes], words: [...base.words.map(w => ({...w, book: 'scenes'})), ...extra.words] };

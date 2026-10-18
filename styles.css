@@ -13,3 +13,8 @@ h1{color:#f3ebdb}h1 span{color:#d5b475}.primary{background:linear-gradient(120de
 @media(max-width:1150px){.book-card{padding:14px 12px}.book-title{font-size:15px;gap:7px}.book-title>span{font-size:18px}.book-shelf{gap:9px}}
 @media(max-width:850px){.book-shelf{grid-template-columns:repeat(2,minmax(0,1fr))}.book-title{margin:10px 0 12px;font-size:17px}.book-top{font-size:8px}.book-card{padding:14px}}
 @media(max-width:600px){.sidebar{background:#16171c}.book-shelf{gap:10px}.library-heading span:last-child{font-size:7px;letter-spacing:1px}.book-card{padding:13px 14px}.book-title{font-size:17px;margin:11px 0}.book-description{font-size:11px}.library-section{margin-bottom:20px}.page-heading{margin-bottom:22px}.answer-word{font-size:25px}.word-table th:first-child{width:36%}.word-table th:last-child{width:43px}.word-table .paraphrase strong{font-size:12px}.word-table .word-meta{line-height:1.8}.scene-chip{font-size:9px}.stat-label{font-size:10px}.book-top{font-size:8px}.book-bottom{font-size:11px}.learning-path span{line-height:1.7}.source-detail{line-height:1.8}}
+
+/* Personal identity */
+.brand{font-size:28px;letter-spacing:1px;gap:10px}.brand-mark{font:26px Georgia,serif;flex-shrink:0}.brand small{font-size:7px;letter-spacing:1.4px}.brand>span:last-child{white-space:nowrap}
+@media(max-width:850px){.brand{font-size:24px;gap:8px}.brand small{font-size:6px;letter-spacing:.8px}.brand-mark{font-size:23px}}
+@media(max-width:600px){.brand{font-size:25px;gap:10px}.brand small{font-size:7px;letter-spacing:1px}.brand-mark{font-size:22px}}
