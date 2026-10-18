@@ -1,9 +1,11 @@
-import { STORAGE_KEY, emptyProgress, loadProgress, startSession, submitAnswer, advance } from './core.js?v=2';
+import { STORAGE_KEY, emptyProgress, loadProgress, startSession, submitAnswer, advance, checkSynonymAnswers } from './core.js?v=3';
+import { buildSynonymGroups, migrateSynonymProgress } from './synonyms.js?v=3';
 
 const $ = selector => document.querySelector(selector);
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 let data, progress, byId, view = 'practice', showAllMistakes = false, pageLimit = 60;
 let speechToken = 0, currentSpeech, speechTimeout;
+let synonymGroups = [];
 const waveform = label => `<button class="wave-icon" type="button" data-action="play" aria-label="${label}">${'<span aria-hidden="true"></span>'.repeat(7)}</button>`;
 const repetitions = count => `<div class="repair-count" aria-label="已正确默写 ${count} 遍，共 5 遍">${Array.from({ length: 5 }, (_, i) => `<span class="${i < count ? 'done' : ''}">${i < count ? '✓' : i + 1}</span>`).join('')}</div>`;
 const currentWord = () => byId.get(progress.session?.ids[progress.session.index]);
@@ -16,6 +18,7 @@ const bookWords = () => data.words.filter(w => w.book === progress.settings.book
 const bookScenes = () => data.scenes.filter(s => s.book === progress.settings.book);
 const sourceLabel = w => `${bookName(w.book)} · ${w.group} · PDF 第 ${w.sourcePages.join('、')} 页`;
 function answerDetails(w) {
+  if (w.kind === 'synonym-group') return synonymStudyList(w);
   return `${w.ipa ? `<div class="ipa" lang="en">${escape(w.ipa)}</div>` : ''}${w.counterpart ? `<div class="paraphrase"><span>题目表达</span><strong lang="en">${escape(w.counterpart)}</strong><span>对应原文表达（结合题目语境）</span><strong lang="en">${escape(w.original)}</strong></div>` : ''}`;
 }
 function renderBooks() {
@@ -38,7 +41,14 @@ function stopSpeech() {
   if ('speechSynthesis' in window) speechSynthesis.cancel();
   $('.wave-icon')?.classList.remove('speaking'); currentSpeech = null;
 }
-function speak(entry = currentWord()) {
+function speak(entry) {
+  if (entry === undefined) {
+    entry = currentWord();
+    if (entry?.kind === 'synonym-group') {
+      const phase = progress.session?.phase;
+      entry = ['question', 'repairing'].includes(phase) ? entry.cue : `${entry.cue}. ${entry.speechText}`;
+    }
+  }
   if (!entry) return;
   const word = typeof entry === 'string' ? entry : (entry.speechText || entry.word);
   stopSpeech();
@@ -87,11 +97,26 @@ function renderScenes() {
   for (const selector of ['#session-scene', '#session-size', '#shuffle']) $(selector).disabled = !!active();
   $('#settings-note').textContent = active() ? '本组进度已保存。完成或结束本组后，可调整练习范围。' : '完成一组，再向前一步。';
 }
-function focusAnswer() { requestAnimationFrame(() => { if (view === 'practice') $('#answer')?.focus({ preventScroll: true }); }); }
+function focusAnswer() { if (view === 'practice') $('#answer')?.focus({ preventScroll: true }); }
 function answerForm(repair = false) {
   const w = currentWord();
   const isNumber = w.book === 'numbers';
   return `<form id="answer-form" autocomplete="off"><label class="input-label" for="answer">${repair ? `第 ${progress.session.repeats + 1} / 5 遍 · 根据发音和释义默写` : (isNumber ? '写下你听到的数字、字母或信息' : '写下你听到的单词或短语')}</label><div class="input-wrap"><input id="answer" class="answer-input" type="text" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="none" inputmode="${w.kind === 'phone' ? 'tel' : 'text'}" enterkeyhint="done" placeholder="${isNumber ? '在这里输入听到的信息…' : '在这里输入英文…'}" aria-describedby="input-error" maxlength="200"></div><p id="input-error" class="inline-error" role="status"></p><div class="submit-row"><button type="button" data-action="play" class="text-button">↻ 再听一次</button><button type="submit" class="primary">检查拼写 <kbd>Enter ↵</kbd></button></div></form>`;
+}
+function synonymStudyList(w) {
+  return `<div class="synonym-study-list">${w.answers.map((a,i)=>`<div class="synonym-study-item"><div class="synonym-term"><strong lang="en">${escape(a.word)}</strong><button type="button" class="row-audio" data-pronounce="${escape(a.speechText)}" aria-label="朗读 ${escape(a.word)}">♪</button></div><p>${escape(a.meaning)}</p><small>${a.contexts.map(c=>`${escape(c.group)} · ${escape(c.meaning)} · PDF 第 ${c.sourcePages.join('、')} 页`).join('<br>')}</small></div>`).join('')}</div>`;
+}
+function synonymForm(w, repair = false) {
+  return `<form id="answer-form" novalidate class="synonym-form"><p class="synonym-input-note">写出学习页中的 ${w.answers.length} 个对应表达，每格一个，顺序不限。</p>${w.answers.map((_,i)=>`<label for="${i ? 'answer-'+i : 'answer'}">对应表达 ${i+1}</label><input id="${i ? 'answer-'+i : 'answer'}" name="synonymAnswer" type="text" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="none" maxlength="200" placeholder="${repair ? '再次默写对应表达…' : '回想刚刚学过的表达…'}" aria-describedby="input-error">`).join('')}<p id="input-error" class="inline-error" role="status"></p><div class="submit-row"><button type="button" data-action="play" class="text-button">↻ 朗读题目表达</button><button type="submit" class="primary">检查整组 <kbd>Enter ↵</kbd></button></div></form>`;
+}
+function renderSynonymExercise(w, s, source, exit) {
+  const cue = `<div class="synonym-cue"><span>题目表达</span><strong lang="en">${escape(w.cue)}</strong><button type="button" class="text-button" data-pronounce="${escape(w.cue)}" aria-label="朗读题目表达">♪ 听题目发音</button></div>`;
+  const notice = '<p class="synonym-context-note">以下是资料原题语境中的对应表达，不表示在任何语境下都能互换。</p>';
+  if (s.phase === 'study') return `<div class="group-note">LEARN THE CONNECTION · 先学习这一组</div><h2>先建立联系，再默写。</h2>${cue}${synonymStudyList(w)}${notice}<button class="primary wide" data-action="advance">我记住了，隐藏答案开始默写 <kbd>Enter ↵</kbd></button>${source}${exit}`;
+  if (s.phase === 'question' || s.phase === 'repairing') return `<div class="group-note">${s.phase === 'repairing' ? '每组全部写对，计入一次巩固' : 'RECALL THE CONNECTION · 回想对应表达'}</div><h2>它有哪些对应表达？</h2>${cue}${s.phase === 'repairing' ? repetitions(s.repeats) : ''}${synonymForm(w,s.phase === 'repairing')}<p class="keyboard-note">重播只读题目，不揭晓答案。${s.phase === 'repairing' ? '整组每写对一遍，会再读一遍答案。' : ''}</p>${exit}`;
+  const error=['mistake','repair-error'].includes(s.phase), repaired=s.phase==='repaired';
+  const checked=error?checkSynonymAnswers(s.lastAnswer || progress.mistakes[w.id]?.lastAnswer || '',w):null;
+  return `<div class="feedback-tag ${error?'error':''}">${error?(s.phase==='mistake'?'有错漏 · 已加入错题本':'还有错漏 · 本次不计数'):(repaired?'✓ 已完成 5 遍整组默写':'✓ 整组正确，听一遍加深记忆')}</div>${cue}${checked?`<div class="synonym-check"><p>已正确回忆 ${checked.matched.length} / ${w.answers.length} 个表达</p>${checked.missing.length?`<p>还需记住：<strong lang="en">${checked.missing.map(a=>escape(a.word)).join('；')}</strong></p>`:''}${checked.unexpected.length?`<p>未匹配到本组 / 重复填写：${checked.unexpected.map(escape).join('；')}</p>`:''}</div>`:''}${synonymStudyList(w)}${notice}<button class="text-button" data-pronounce="${escape(w.speechText)}">♪ 再读一遍对应表达</button>${error||repaired?repetitions(s.repeats):''}<button class="primary wide" data-action="advance">${error?'隐藏答案，'+(s.phase==='mistake'?'整组默写 5 遍':'继续默写'):(s.index+1===s.ids.length?'查看本组结果':'学习下一组')} <kbd>Enter ↵</kbd></button>${source}${exit}`;
 }
 function renderExercise() {
   const s = progress.session;
@@ -100,7 +125,7 @@ function renderExercise() {
     const count = Math.min(filteredWords().length, progress.settings.size || Infinity);
     $('#current-scene').textContent = `${currentBook().name} · ${sceneName(progress.settings.scene)}`;
     $('#question-count').textContent = '准备开始'; $('#progress-fill').style.width = '0%';
-    area.innerHTML = `<div class="group-note">把注意力，交给耳朵</div>${waveform('开始练习并播放第一个单词')}<h2>听见，然后写下来。</h2><p class="prompt">${escape(currentBook().description)}<br>答对揭晓答案与释义，答错再练 5 遍。</p><div class="idle-meta"><span>◷ ${count} 道练习</span><span>◈ ${sceneName(progress.settings.scene)}</span></div><button class="primary wide" data-action="start">开始今日练习 <kbd>Enter ↵</kbd></button><p class="keyboard-note">戴好耳机，给记忆一点专注的时间。</p>`;
+    area.innerHTML = `<div class="group-note">把注意力，交给耳朵</div>${waveform('开始练习并播放第一个单词')}<h2>${progress.settings.book === 'synonyms' ? '先学一组，再回想它们。' : '听见，然后写下来。'}</h2><p class="prompt">${escape(currentBook().description)}<br>${progress.settings.book === 'synonyms' ? '隐藏对应表达后逐项默写，整组写对才通过。' : '答对再听一遍，答错默写 5 遍；每写对一遍都会朗读。'}</p><div class="idle-meta"><span>◷ ${count} 道练习</span><span>◈ ${sceneName(progress.settings.scene)}</span></div><button class="primary wide" data-action="start">开始今日练习 <kbd>Enter ↵</kbd></button><p class="keyboard-note">戴好耳机，给记忆一点专注的时间。</p>`;
     return;
   }
   const w = currentWord();
@@ -109,6 +134,9 @@ function renderExercise() {
   $('#progress-fill').style.width = `${(s.phase === 'complete' ? 1 : s.index / s.ids.length) * 100}%`;
   const source = `<div class="source-detail">${escape(sourceLabel(w))}</div>`;
   const exit = `<button class="text-button" data-action="end">结束本组</button>`;
+  if (w.kind === 'synonym-group' && s.phase !== 'complete') {
+    area.innerHTML = renderSynonymExercise(w, s, source, exit); return;
+  }
   if (s.phase === 'complete') {
     area.innerHTML = `<div class="complete-icon">✧</div><h2>又前进了一小步。</h2><p class="prompt">本组 ${s.ids.length} 道练习已完成。每一次练习，都算数。</p><div class="session-summary"><div><strong>${s.correct}</strong><span>首次拼写正确</span></div><div><strong>${s.wrong}</strong><span>已完成 5 遍巩固</span></div></div><button class="primary wide" data-action="new">再练一组 <kbd>Enter ↵</kbd></button><div style="margin-top:15px"><button class="text-button" data-action="mistakes">看看我的错题本 →</button><button class="text-button" data-action="choose">重新选择场景</button></div>`;
   } else if (s.phase === 'question') {
@@ -157,9 +185,9 @@ function begin(ids, review = false) {
     if (progress.settings.shuffle) for (let i = words.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [words[i], words[j]] = [words[j], words[i]]; }
     ids = words.slice(0, progress.settings.size || words.length).map(w => w.id);
   }
-  startSession(progress, ids, review); refresh(); setView('practice'); speak(); focusAnswer();
+  startSession(progress, ids, review, byId.get(ids[0])); refresh(); setView('practice'); speak(); focusAnswer();
 }
-function next() { if (!advance(progress)) return; stopSpeech(); refresh(); if (['question', 'repairing'].includes(progress.session.phase)) speak(); focusAnswer(); }
+function next() { if (!advance(progress, byId.get(progress.session?.ids[progress.session.index+1]))) return; stopSpeech(); refresh(); if (['study', 'question', 'repairing'].includes(progress.session.phase)) speak(); focusAnswer(); }
 function action(name) {
   if (name === 'start' || name === 'new') begin();
   if (name === 'play') progress.session ? speak() : begin();
@@ -175,11 +203,19 @@ async function init() {
     if (responses.some(r => !r.ok)) throw new Error('词库加载失败');
     const [base, extra] = await Promise.all(responses.map(r => r.json()));
     data = { books: extra.books, scenes: [...base.scenes.map(s => ({...s, book: 'scenes'})), ...extra.scenes], words: [...base.words.map(w => ({...w, book: 'scenes'})), ...extra.words] };
+    synonymGroups = buildSynonymGroups(data.words);
+    data.rawWords = data.words;
+    data.words = [...data.words.filter(w => w.book !== 'synonyms'), ...synonymGroups];
+    data.books.find(b => b.id === 'synonyms').description = '先学题目表达及其对应表达，再隐藏答案，整组默写。';
     byId = new Map(data.words.map(w => [w.id, w]));
   } catch {
     $('#exercise').innerHTML = '<div class="empty-state"><h2>词库暂时未能加载</h2><p>请检查网络后刷新。若是本地运行，请通过 HTTP 服务打开网站。</p><button class="primary" onclick="location.reload()">重新加载</button></div>'; return;
   }
-  try { progress = loadProgress(localStorage.getItem(STORAGE_KEY), data.words); }
+  try {
+    progress = loadProgress(localStorage.getItem(STORAGE_KEY), [...data.rawWords, ...synonymGroups]);
+    if (migrateSynonymProgress(progress, synonymGroups)) warning('同义替换已升级为分组记忆。历史答题与错题记录已保留，当前练习从学习页继续。');
+    save();
+  }
   catch { progress = emptyProgress(); warning('未能读取原来的学习记录。已开始新的练习；如果浏览器禁止存储，记录将无法持久保存。'); }
   renderStats(); renderBooks(); renderScenes(); renderExercise(); focusAnswer();
   if (!('speechSynthesis' in window)) $('#audio-status').textContent = '当前浏览器不支持发音，请使用支持语音的 Chrome、Edge 或 Safari。';
@@ -190,13 +226,20 @@ async function init() {
     if (b.dataset.action) action(b.dataset.action);
     if (b.dataset.scene) { progress.settings.scene = b.dataset.scene; save(); renderScenes(); if (view === 'vocabulary') renderVocabulary(); else { setView('practice'); renderExercise(); } }
     if (b.dataset.speak) speak(byId.get(b.dataset.speak));
+    if (b.dataset.pronounce) speak(b.dataset.pronounce);
     if (b.dataset.review) begin([b.dataset.review], true);
   });
   $('#exercise').addEventListener('submit', event => {
     event.preventDefault();
-    const answer = $('#answer').value;
-    if (!answer.trim()) { $('#input-error').textContent = '先写下你的答案，再按回车。'; return; }
-    submitAnswer(progress, currentWord(), answer); stopSpeech(); refresh(); focusAnswer();
+    const w = currentWord();
+    const answer = w.kind === 'synonym-group' ? [...event.target.querySelectorAll('[name=synonymAnswer]')].map(el => el.value) : $('#answer').value;
+    if (!(Array.isArray(answer) ? answer.some(a => a.trim()) : answer.trim())) { $('#input-error').textContent = '先写下你的答案，再按回车。'; return; }
+    const beforeRepeats = progress.session.repeats;
+    progress.session.lastAnswer = Array.isArray(answer) ? answer.join('；') : answer;
+    const result = submitAnswer(progress, w, answer);
+    stopSpeech(); refresh();
+    if (result === 'correct' || progress.session.repeats > beforeRepeats) speak(w.speechText || w.word);
+    focusAnswer();
   });
   document.addEventListener('keydown', event => {
     if (event.isComposing || event.repeat) return;

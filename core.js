@@ -5,7 +5,7 @@ export function normalize(text) {
     .replace(/[’‘]/g, "'").replace(/[‐‑–—]/g, '-').replace(/\s+/g, ' ');
 }
 
-// Spelling variants only. Synonyms are separate listening prompts.
+// Spelling variants only; paraphrase-group matching checks the taught expressions separately.
 const variants = [
   ['check', 'cheque'], ['student adviser', 'student advisor'],
   ['neighbour', 'neighbor'], ['neighbourhood', 'neighborhood'],
@@ -44,7 +44,18 @@ function canonicalAnswer(answer, kind) {
   if (kind === 'synonym') return value.replace(/[.,;:!?]/g, '').replace(/\s+/g, ' ').trim();
   return value;
 }
+export function checkSynonymAnswers(answer, entry) {
+  const inputs = Array.isArray(answer) ? answer : String(answer).split(/\n|[;；]/);
+  const used = new Set(), unexpected = [];
+  for (const raw of inputs) {
+    if (!normalize(raw)) continue;
+    const index = entry.answers.findIndex((a, i) => !used.has(i) && isCorrect(raw, { ...a, kind: 'synonym' }));
+    if (index < 0) unexpected.push(String(raw)); else used.add(index);
+  }
+  return { ok: used.size === entry.answers.length && !unexpected.length, matched: [...used], missing: entry.answers.filter((_, i) => !used.has(i)), unexpected };
+}
 export function isCorrect(answer, entry) {
+  if (entry?.kind === 'synonym-group') return checkSynonymAnswers(answer, entry).ok;
   const item = typeof entry === 'string' ? { word: entry } : entry;
   const a = canonicalAnswer(answer, item.kind);
   if (a === null) return false;
@@ -85,19 +96,19 @@ export function loadProgress(raw, words) {
   if (session && Array.isArray(session.ids) && session.ids.length && session.ids.every(id => ids.has(id)) &&
       number(session.index) && session.index < session.ids.length && number(session.repeats) && session.repeats <= 5 &&
       number(session.correct) && number(session.wrong) &&
-      ['question', 'correct', 'mistake', 'repairing', 'repair-error', 'repaired', 'complete'].includes(session.phase)) {
+      ['study', 'question', 'correct', 'mistake', 'repairing', 'repair-error', 'repaired', 'complete'].includes(session.phase)) {
     fresh.session = { ids: session.ids, index: session.index, repeats: session.repeats, phase: session.phase,
-      correct: session.correct, wrong: session.wrong, review: session.review === true };
+      correct: session.correct, wrong: session.wrong, review: session.review === true, lastAnswer: typeof session.lastAnswer === 'string' ? session.lastAnswer.slice(0,2000) : '' };
   }
   return fresh;
 }
-export function startSession(progress, ids, review = false) {
+export function startSession(progress, ids, review = false, firstEntry = null) {
   if (!ids.length) return;
-  progress.session = { ids: [...ids], index: 0, repeats: 0, phase: 'question', correct: 0, wrong: 0, review };
+  progress.session = { ids: [...ids], index: 0, repeats: 0, phase: firstEntry?.kind === 'synonym-group' ? 'study' : 'question', correct: 0, wrong: 0, review };
 }
 export function submitAnswer(progress, word, answer) {
   const s = progress.session;
-  if (!s || !['question', 'repairing'].includes(s.phase) || !normalize(answer)) return 'ignored';
+  if (!s || !['question', 'repairing'].includes(s.phase) || !(Array.isArray(answer) ? answer.some(a => normalize(a)) : normalize(answer))) return 'ignored';
   const ok = isCorrect(answer, word);
   if (s.phase === 'repairing') {
     if (!ok) { s.phase = 'repair-error'; return 'repair-error'; }
@@ -117,16 +128,17 @@ export function submitAnswer(progress, word, answer) {
     s.wrong++; s.phase = 'mistake'; s.repeats = 0;
     progress.mastered = progress.mastered.filter(id => id !== word.id);
     const old = progress.mistakes[word.id];
-    progress.mistakes[word.id] = { count: (old?.count || 0) + 1, lastAnswer: answer, resolved: false };
+    progress.mistakes[word.id] = { count: (old?.count || 0) + 1, lastAnswer: Array.isArray(answer) ? answer.join('；') : answer, resolved: false };
   }
   return s.phase;
 }
-export function advance(progress) {
+export function advance(progress, nextEntry = null) {
   const s = progress.session;
   if (!s) return false;
+  if (s.phase === 'study') { s.phase = 'question'; return true; }
   if (['mistake', 'repair-error'].includes(s.phase)) { s.phase = 'repairing'; return true; }
   if (!['correct', 'repaired'].includes(s.phase)) return false;
   if (s.index + 1 === s.ids.length) s.phase = 'complete';
-  else { s.index++; s.repeats = 0; s.phase = 'question'; }
+  else { s.index++; s.repeats = 0; s.phase = nextEntry?.kind === 'synonym-group' ? 'study' : 'question'; }
   return true;
 }

@@ -93,3 +93,44 @@ test('existing v1 progress survives adding books; per-book choices persist',()=>
  restored.settings.book='numbers';restored.settings.scene='num-phone1';const again=loadProgress(JSON.stringify(restored),all);assert.equal(again.settings.book,'numbers');assert.equal(again.settings.scene,'num-phone1');
  const repair=extra.words.find(w=>w.kind==='phone');startSession(restored,[repair.id]);submitAnswer(restored,repair,'wrong');advance(restored);for(let i=0;i<5;i++)submitAnswer(restored,repair,repair.word);assert.equal(restored.session.phase,'repaired');
 });
+
+const {buildSynonymGroups,migrateSynonymProgress}=await import('../synonyms.js');
+const {checkSynonymAnswers}=await import('../core.js');
+const groups=buildSynonymGroups(extra.words);
+const multi=groups.find(g=>g.cue==='entertainment'&&g.scene==='syn-20');
+test('synonym grouping preserves all source rows and context; exact duplicates merge',()=>{
+ assert.equal(groups.flatMap(g=>g.memberIds).length,917);
+ assert.equal(new Set(groups.map(g=>g.id)).size,groups.length);
+ assert.deepEqual(multi.answers.map(a=>a.word),['a show','songs and short plays']);
+ for(const g of groups){assert.ok(g.cue);assert.ok(g.answers.length);assert.ok(g.answers.every(a=>a.contexts.length));}
+});
+test('group recall is order independent and requires every distinct expression',()=>{
+ assert.equal(isCorrect(['songs and short plays','A SHOW'],multi),true);
+ assert.equal(isCorrect(['a show','a show'],multi),false);
+ assert.equal(isCorrect(['a show',''],multi),false);
+ assert.equal(isCorrect(['entertainment','songs and short plays'],multi),false);
+ assert.equal(checkSynonymAnswers(['a show','typo'],multi).missing[0].word,'songs and short plays');
+});
+test('synonym groups have a persisted study step and five complete-group repairs',()=>{
+ const p=emptyProgress();startSession(p,[multi.id,groups[0].id],false,multi);
+ assert.equal(p.session.phase,'study');assert.equal(submitAnswer(p,multi,['a show','songs and short plays']),'ignored');
+ advance(p);submitAnswer(p,multi,['a show','typo']);assert.equal(p.session.phase,'mistake');advance(p);
+ const answer=multi.answers.map(a=>a.word);
+ for(let i=0;i<2;i++)submitAnswer(p,multi,answer);
+ const restored=loadProgress(JSON.stringify(p),groups);assert.equal(restored.session.repeats,2);
+ submitAnswer(restored,multi,['a show','a show']);assert.equal(restored.session.repeats,2);assert.equal(restored.session.phase,'repair-error');advance(restored);
+ for(let i=0;i<3;i++)submitAnswer(restored,multi,answer);
+ assert.equal(restored.session.phase,'repaired');assert.equal(restored.mistakes[multi.id].resolved,true);
+ advance(restored,groups[0]);assert.equal(restored.session.phase,'study');assert.equal(restored.session.index,1);
+ assert.equal(loadProgress(JSON.stringify(restored),groups).session.phase,'study');
+});
+test('legacy synonym records migrate without losing totals or unresolved mistakes',()=>{
+ const p=emptyProgress();p.attempts=8;p.correct=5;p.mastered=[...multi.memberIds];
+ multi.memberIds.forEach((id,i)=>p.mistakes[id]={count:i+1,lastAnswer:'old typo',resolved:i===0});
+ startSession(p,[multi.memberIds[0]],true);p.session.phase='repairing';p.session.repeats=3;
+ assert.equal(migrateSynonymProgress(p,groups),true);
+ assert.equal(p.attempts,8);assert.equal(p.correct,5);assert.ok(p.mastered.includes(multi.id));
+ assert.equal(p.mistakes[multi.id].count,3);assert.equal(p.mistakes[multi.id].resolved,false);
+ assert.equal(p.session.phase,'study');assert.equal(p.session.ids[0],multi.id);
+ const snapshot=JSON.stringify(p);assert.equal(migrateSynonymProgress(p,groups),false);assert.equal(JSON.stringify(p),snapshot);
+});
