@@ -1,0 +1,9762 @@
+{
+  "source": "雅思听力场景词汇.pdf",
+  "sourceRows": 903,
+  "scenes": [
+    {
+      "id": "rent",
+      "name": "租房住宿",
+      "english": "House & home",
+      "icon": "⌂"
+    },
+    {
+      "id": "travel",
+      "name": "旅行出行",
+      "english": "Travel & leisure",
+      "icon": "↗"
+    },
+    {
+      "id": "membership",
+      "name": "会员与运动",
+      "english": "Clubs & sports",
+      "icon": "◎"
+    },
+    {
+      "id": "car",
+      "name": "汽车",
+      "english": "On the road",
+      "icon": "◇"
+    },
+    {
+      "id": "bank",
+      "name": "银行业务",
+      "english": "Everyday banking",
+      "icon": "▤"
+    },
+    {
+      "id": "course",
+      "name": "课程与校园",
+      "english": "Campus life",
+      "icon": "▥"
+    },
+    {
+      "id": "assignment",
+      "name": "作业与研究",
+      "english": "Study & research",
+      "icon": "✎"
+    },
+    {
+      "id": "library",
+      "name": "图书馆",
+      "english": "At the library",
+      "icon": "▧"
+    },
+    {
+      "id": "facilities",
+      "name": "大学设施",
+      "english": "College facilities",
+      "icon": "⊞"
+    },
+    {
+      "id": "economics",
+      "name": "经济",
+      "english": "Economics",
+      "icon": "↗"
+    },
+    {
+      "id": "biology",
+      "name": "生物",
+      "english": "Biology",
+      "icon": "❋"
+    },
+    {
+      "id": "agriculture",
+      "name": "农业",
+      "english": "Agriculture",
+      "icon": "♧"
+    },
+    {
+      "id": "environment",
+      "name": "环境",
+      "english": "Environment",
+      "icon": "◉"
+    },
+    {
+      "id": "geography",
+      "name": "地理",
+      "english": "Geography",
+      "icon": "◈"
+    },
+    {
+      "id": "chemistry",
+      "name": "化学",
+      "english": "Chemistry",
+      "icon": "⌬"
+    }
+  ],
+  "words": [
+    {
+      "id": "505b3a27e038",
+      "word": "landlord",
+      "meaning": "房东",
+      "scene": "rent",
+      "group": "人物",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ab92e5a9b9e3",
+      "word": "landlady",
+      "meaning": "女房东",
+      "scene": "rent",
+      "group": "人物",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "02e16ccfc96e",
+      "word": "guest",
+      "meaning": "客人",
+      "scene": "rent",
+      "group": "人物",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "e3f6eda74537",
+      "word": "tenant",
+      "meaning": "房客",
+      "scene": "rent",
+      "group": "人物",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "5116b8f09197",
+      "word": "neighbour",
+      "meaning": "邻居",
+      "scene": "rent",
+      "group": "人物",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "76f334820eca",
+      "word": "agent",
+      "meaning": "代理人；中介",
+      "scene": "rent",
+      "group": "人物",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "aa61f326b205",
+      "word": "agency",
+      "meaning": "中介机构",
+      "scene": "rent",
+      "group": "人物",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "36fba4657c0b",
+      "word": "student adviser",
+      "meaning": "学生顾问",
+      "scene": "rent",
+      "group": "人物",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "26bc323fbed5",
+      "word": "student advisor",
+      "meaning": "学生顾问",
+      "scene": "rent",
+      "group": "人物",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "49e0f7ceb57c",
+      "word": "host family",
+      "meaning": "接待家庭",
+      "scene": "rent",
+      "group": "人物",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2413d7e0d0d6",
+      "word": "coordinator",
+      "meaning": "协调者",
+      "scene": "rent",
+      "group": "人物",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "92ff23857df2",
+      "word": "rental price",
+      "meaning": "租金",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "fc8520b1be6b",
+      "word": "rent",
+      "meaning": "租金",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "990838ed4d0a",
+      "word": "insurance",
+      "meaning": "保险",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "731428d7d05d",
+      "word": "deposit",
+      "meaning": "押金",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "660db4e81d44",
+      "word": "contract",
+      "meaning": "合同,合约",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "d6259314e51e",
+      "word": "utility bills",
+      "meaning": "水电费",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "81de6eb08df2",
+      "word": "pay for contract",
+      "meaning": "为合约付款",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "026460077570",
+      "word": "pay for lease",
+      "meaning": "为合约付款",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "67d60f185dbe",
+      "word": "water bill",
+      "meaning": "水费账单",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "1bba5eca86af",
+      "word": "gas bill",
+      "meaning": "燃气费账单",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "5488130c5c6b",
+      "word": "electricity bill",
+      "meaning": "电费账单",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ddcc87ef14dd",
+      "word": "phone bill",
+      "meaning": "电话费账单",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "911f4605c48c",
+      "word": "on a weekly basis",
+      "meaning": "每周",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "889242726dfc",
+      "word": "on a monthly basis",
+      "meaning": "每月",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "102d93d5a819",
+      "word": "on a quarterly basis",
+      "meaning": "每季度",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "cbf9d68e1140",
+      "word": "refundable",
+      "meaning": "可退回的",
+      "scene": "rent",
+      "group": "费用",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "a5dc8afacc33",
+      "word": "downtown",
+      "meaning": "市中心",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "711c6003bd14",
+      "word": "city centre",
+      "meaning": "市中心",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "45963c66c128",
+      "word": "east",
+      "meaning": "东",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "e3016ccc7801",
+      "word": "urban",
+      "meaning": "城市",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "102f296cb0d3",
+      "word": "west",
+      "meaning": "西",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "3c5e5dd68fae",
+      "word": "countryside",
+      "meaning": "乡村",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "6c11d5e4f6a5",
+      "word": "northern",
+      "meaning": "北边的",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "303f6d647968",
+      "word": "suburbs",
+      "meaning": "郊区",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "b71dd9e5388e",
+      "word": "outskirts",
+      "meaning": "郊区",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "3129af7e6257",
+      "word": "southern",
+      "meaning": "南边的",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "f111fd0ed0b0",
+      "word": "rural area",
+      "meaning": "郊县",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "efbf0fd3bfdd",
+      "word": "eastern",
+      "meaning": "东边的",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "81a21063d465",
+      "word": "road",
+      "meaning": "街道",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "15aa8054afb9",
+      "word": "street",
+      "meaning": "街道",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "098afd8ee095",
+      "word": "avenue",
+      "meaning": "街道",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "e6a2a73516f2",
+      "word": "western",
+      "meaning": "西边的",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "ee1838baf5f1",
+      "word": "community",
+      "meaning": "社区",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "7593cea24424",
+      "word": "northwest",
+      "meaning": "西北",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "7f80970ddddd",
+      "word": "neighbourhood",
+      "meaning": "邻舍",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "37fe198d7f18",
+      "word": "southwest",
+      "meaning": "西南",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "40813153a053",
+      "word": "north",
+      "meaning": "北",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "545d96d3e123",
+      "word": "northeast",
+      "meaning": "东北",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "99cfe33f31d9",
+      "word": "south",
+      "meaning": "南",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "3dc5aea9cda0",
+      "word": "southeast",
+      "meaning": "东南",
+      "scene": "rent",
+      "group": "位置",
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2a751485425c",
+      "word": "property",
+      "meaning": "房产",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "ba3da2f24f2b",
+      "word": "homestay",
+      "meaning": "寄宿家庭",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "e3324111df91",
+      "word": "guest house",
+      "meaning": "招待所",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "6dbbf34a2ce4",
+      "word": "flat",
+      "meaning": "公寓",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "6814f0c47aba",
+      "word": "apartment",
+      "meaning": "公寓",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "57c3adcfe9d8",
+      "word": "studio apartment",
+      "meaning": "单身公寓",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "4fca15db4f7f",
+      "word": "en-suite",
+      "meaning": "个人单间(带独立厕所不带厨房)",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "6663b3ff273c",
+      "word": "single room",
+      "meaning": "单人间",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "1af2d9f18e7a",
+      "word": "dormitory",
+      "meaning": "宿舍",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "81251c7bef65",
+      "word": "twin room",
+      "meaning": "双人间(两个床)",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "5c3450dbfe84",
+      "word": "halls of residence",
+      "meaning": "公寓楼",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "60f2ad124c69",
+      "word": "triple room",
+      "meaning": "三人间",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "c1e4e1b9985e",
+      "word": "cottage",
+      "meaning": "小屋",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "7750f1f926b5",
+      "word": "on-campus accommodation",
+      "meaning": "校内宿舍",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "c72169314cb2",
+      "word": "villa",
+      "meaning": "郊区别墅",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "19305d2904aa",
+      "word": "off-campus accommodation",
+      "meaning": "校外宿舍",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "1572ee637238",
+      "word": "house",
+      "meaning": "独栋楼",
+      "scene": "rent",
+      "group": "住宿",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "aad03d1c05f8",
+      "word": "refreshments",
+      "meaning": "点心",
+      "scene": "rent",
+      "group": "饮食",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "d0c834db86d4",
+      "word": "snack",
+      "meaning": "点心",
+      "scene": "rent",
+      "group": "饮食",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "62768df5d9eb",
+      "word": "vegetarian",
+      "meaning": "素食主义者",
+      "scene": "rent",
+      "group": "饮食",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "97b7de27a788",
+      "word": "special food requirement",
+      "meaning": "对于食物特殊要求",
+      "scene": "rent",
+      "group": "饮食",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "6a3daf88d35c",
+      "word": "dietary requirement",
+      "meaning": "对于食物特殊要求",
+      "scene": "rent",
+      "group": "饮食",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "382f789d8840",
+      "word": "seafood",
+      "meaning": "海鲜",
+      "scene": "rent",
+      "group": "饮食",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2468900aceb4",
+      "word": "red meat",
+      "meaning": "牛羊肉",
+      "scene": "rent",
+      "group": "饮食",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "fa774b824183",
+      "word": "food allergies",
+      "meaning": "对...食物过敏",
+      "scene": "rent",
+      "group": "饮食",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "bd6bad7ab10a",
+      "word": "be allergic to",
+      "meaning": "对...食物过敏",
+      "scene": "rent",
+      "group": "饮食",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2e4a321c8202",
+      "word": "living room",
+      "meaning": "客厅",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "a0bfd919d356",
+      "word": "garage",
+      "meaning": "车库",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "11cc1b38e6bf",
+      "word": "dining room",
+      "meaning": "饭厅",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "c8872cf2cee9",
+      "word": "car park",
+      "meaning": "停车场",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "777b4b6fad59",
+      "word": "kitchen",
+      "meaning": "厨房",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "74cc84390634",
+      "word": "lift",
+      "meaning": "电梯",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "9291e6e32c97",
+      "word": "kitchen-diner",
+      "meaning": "有就餐区的大厨房",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "e05520d65242",
+      "word": "fire gate",
+      "meaning": "紧急出口",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "f8867cae7f8e",
+      "word": "fire exit",
+      "meaning": "紧急出口",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "cd50e490396f",
+      "word": "bathroom",
+      "meaning": "卫生间",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "c50b4abb74e8",
+      "word": "toilet",
+      "meaning": "厕所",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "9200174fd6d4",
+      "word": "garden",
+      "meaning": "花园",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "494f1902c1c4",
+      "word": "foyer",
+      "meaning": "门厅",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "6696b10bb1c8",
+      "word": "yard",
+      "meaning": "庭院",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "64552112fca9",
+      "word": "corridor",
+      "meaning": "走廊",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "31b47cc7d410",
+      "word": "cloakroom",
+      "meaning": "衣帽间",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "da1ff52f8f0c",
+      "word": "laundry room",
+      "meaning": "洗衣房",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "4008e43aa76b",
+      "word": "study",
+      "meaning": "书房",
+      "scene": "rent",
+      "group": "区域",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "7d58a90223f0",
+      "word": "well-furnished",
+      "meaning": "家具齐全的",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "3d3b938f7a29",
+      "word": "half-furnished",
+      "meaning": "部分配备家具的",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "c5ba0bff3185",
+      "word": "unfurnished",
+      "meaning": "未配备家具的",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "5093c30c2e70",
+      "word": "bookshelf",
+      "meaning": "书架",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "68935946872f",
+      "word": "cupboard",
+      "meaning": "橱柜",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "37d2a467b77a",
+      "word": "air conditioner",
+      "meaning": "空调",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2eeb11c3c88b",
+      "word": "air conditioning",
+      "meaning": "空调",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "c7659dd18d5c",
+      "word": "wardrobe",
+      "meaning": "衣柜",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "87f031056bb8",
+      "word": "heating",
+      "meaning": "取暖",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "82e0e3ac5763",
+      "word": "closed-circuit TV",
+      "meaning": "闭路电视/监控系统",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "747994f73c7e",
+      "word": "video surveillance",
+      "meaning": "闭路电视/监控系统",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "15b3ed650822",
+      "word": "furnace",
+      "meaning": "火炉",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "f7d1406ad8eb",
+      "word": "couch",
+      "meaning": "沙发",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "37735ddbdd5f",
+      "word": "sofa",
+      "meaning": "沙发",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "0824799f11c5",
+      "word": "oven",
+      "meaning": "烤炉",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "a8137dad9af6",
+      "word": "curtain",
+      "meaning": "窗帘",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "316c9367ecb3",
+      "word": "washing machine",
+      "meaning": "洗衣机",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "25eb7d4b2486",
+      "word": "fridge",
+      "meaning": "冰箱",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "533e5226302b",
+      "word": "vacuum cleaner",
+      "meaning": "吸尘机",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "1d81893deb50",
+      "word": "cooker",
+      "meaning": "厨具",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "26eab0e21c9b",
+      "word": "basin",
+      "meaning": "盆",
+      "scene": "rent",
+      "group": "家具",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "a717a56a0eb6",
+      "word": "travel agency",
+      "meaning": "旅行社",
+      "scene": "travel",
+      "group": "旅游安排",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "83cbfcd7b747",
+      "word": "book",
+      "meaning": "预定",
+      "scene": "travel",
+      "group": "旅游安排",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "f53a49373556",
+      "word": "booking",
+      "meaning": "预定",
+      "scene": "travel",
+      "group": "旅游安排",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "9a8f9984b28b",
+      "word": "tour guide",
+      "meaning": "导游",
+      "scene": "travel",
+      "group": "旅游安排",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "35d5202d6bef",
+      "word": "recreation",
+      "meaning": "娱乐",
+      "scene": "travel",
+      "group": "旅游安排",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "bd3c32c32d3c",
+      "word": "entertainment",
+      "meaning": "娱乐",
+      "scene": "travel",
+      "group": "旅游安排",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2354352e80c4",
+      "word": "leisure",
+      "meaning": "娱乐",
+      "scene": "travel",
+      "group": "旅游安排",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "4db07c1a6813",
+      "word": "guided tours",
+      "meaning": "带导游的旅行",
+      "scene": "travel",
+      "group": "旅游安排",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "c6d78f87c75a",
+      "word": "backpacker",
+      "meaning": "背包客",
+      "scene": "travel",
+      "group": "旅游安排",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "38dd36e54070",
+      "word": "reserve",
+      "meaning": "预定",
+      "scene": "travel",
+      "group": "旅游安排",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "70e958bda4b3",
+      "word": "reservation",
+      "meaning": "预定",
+      "scene": "travel",
+      "group": "旅游安排",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "243c817ff7c0",
+      "word": "highlight",
+      "meaning": "热点",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "c7b5a3035e33",
+      "word": "theme park",
+      "meaning": "主题公园",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2487a62e9fdc",
+      "word": "rainforest",
+      "meaning": "雨林",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "8ff5ff84b7da",
+      "word": "organic farm",
+      "meaning": "有机农场",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "c4c745fbb88b",
+      "word": "swamp",
+      "meaning": "沼泽",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2c9360e6b101",
+      "word": "marsh",
+      "meaning": "沼泽",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "b812552acaf9",
+      "word": "aquarium",
+      "meaning": "水族馆",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "8818c2bdcc1e",
+      "word": "wetland",
+      "meaning": "湿地",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "34464ce64ce5",
+      "word": "undersea worlds",
+      "meaning": "海底世界",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "3df843de24fd",
+      "word": "desert",
+      "meaning": "沙漠",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "0a5cf08ff994",
+      "word": "amusement park",
+      "meaning": "游乐园",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "713cb74bc958",
+      "word": "grassland",
+      "meaning": "草原",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "5467503dbea6",
+      "word": "orchard",
+      "meaning": "果园",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "6e60d0cbc021",
+      "word": "bush",
+      "meaning": "灌木丛",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "4bf12b70b894",
+      "word": "beach",
+      "meaning": "沙滩、海滨",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "b24179c95014",
+      "word": "coast",
+      "meaning": "沙滩、海滨",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "238ec715f7ff",
+      "word": "shore",
+      "meaning": "沙滩、海滨",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2387add73e70",
+      "word": "waterfall",
+      "meaning": "瀑布",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "bc8eb0d1cd49",
+      "word": "hot spring",
+      "meaning": "温泉",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "733026036c6a",
+      "word": "viewpoint",
+      "meaning": "观景点,制高点",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "07544754ec21",
+      "word": "water mill",
+      "meaning": "水磨坊",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "024ce0e41362",
+      "word": "viewing shelter",
+      "meaning": "观景棚",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "9457d792e84b",
+      "word": "dock",
+      "meaning": "港口",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "728e9aaa3497",
+      "word": "historic interest",
+      "meaning": "历史遗迹",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "be98911e92dc",
+      "word": "historical interest",
+      "meaning": "历史遗迹",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "d6633695c7ea",
+      "word": "dam",
+      "meaning": "水坝",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "acaa520a05d7",
+      "word": "castle",
+      "meaning": "城堡",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "5907610d2cdf",
+      "word": "footbridge",
+      "meaning": "人行小桥",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "1070b668faf0",
+      "word": "Great Barrier Reef",
+      "meaning": "大堡礁",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "4b2219ed11fe",
+      "word": "cathedral",
+      "meaning": "大教堂",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "0f9865257962",
+      "word": "Stonehenge",
+      "meaning": "巨石阵",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "706178082b34",
+      "word": "botanical garden",
+      "meaning": "植物园",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "450813393703",
+      "word": "Sydney Opera House",
+      "meaning": "悉尼歌剧院",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "f7ce6553596e",
+      "word": "art gallery",
+      "meaning": "画廊",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "8af82e3b0874",
+      "word": "Tower of London",
+      "meaning": "伦敦塔",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "bc39c0c8872d",
+      "word": "museum",
+      "meaning": "博物馆",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "a76648cf65a2",
+      "word": "ancient temple",
+      "meaning": "古寺",
+      "scene": "travel",
+      "group": "旅游景点",
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "6d74bf3d28c8",
+      "word": "musical instrument",
+      "meaning": "乐器",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "6f55920b61ae",
+      "word": "flute",
+      "meaning": "笛子",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "a13842d916a7",
+      "word": "keyboard",
+      "meaning": "键盘",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "980f1b7fa890",
+      "word": "drum",
+      "meaning": "鼓",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2222082d3aaa",
+      "word": "piano",
+      "meaning": "钢琴",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "fef464714d5d",
+      "word": "pop",
+      "meaning": "流行音乐",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "0298d6c9fa9c",
+      "word": "pianist",
+      "meaning": "钢琴家",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "7efd50271c57",
+      "word": "jazz",
+      "meaning": "爵士乐",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "912d471d221f",
+      "word": "string instrument",
+      "meaning": "弦乐器",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "18f635b3102e",
+      "word": "folk",
+      "meaning": "民谣",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "40dcab135ebf",
+      "word": "violin",
+      "meaning": "小提琴",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "b5bcd9d6bf55",
+      "word": "easy listening",
+      "meaning": "轻音乐",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "b395310308d0",
+      "word": "violinist",
+      "meaning": "小提琴家",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "c6671dc391ab",
+      "word": "classical",
+      "meaning": "古典音乐",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "c0d1796c8e57",
+      "word": "cello",
+      "meaning": "大提琴",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "a99da138ca60",
+      "word": "live music",
+      "meaning": "现场音乐",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2c71c8108df3",
+      "word": "cellist",
+      "meaning": "大提琴家",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "3b28c7b4cfe9",
+      "word": "disco",
+      "meaning": "跳舞厅",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "97ec61a6fd3c",
+      "word": "guitar",
+      "meaning": "吉他",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "184e5c477dec",
+      "word": "pub",
+      "meaning": "酒吧",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "d067370d7627",
+      "word": "guitarist",
+      "meaning": "吉他手",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "9b99207984c1",
+      "word": "clubhouse",
+      "meaning": "会所",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "7979d82ff5bc",
+      "word": "concert hall",
+      "meaning": "音乐厅",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "dc8777af3913",
+      "word": "Studio Theatre",
+      "meaning": "演播剧场",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "eca2e1cf35c6",
+      "word": "opera house",
+      "meaning": "歌剧院",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "0613fc5623d7",
+      "word": "theatre",
+      "meaning": "剧院",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "968e1e638913",
+      "word": "karaoke bars",
+      "meaning": "卡拉OK",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "7913b91db845",
+      "word": "theatrical events",
+      "meaning": "戏剧",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "d9d81b8ab22b",
+      "word": "concert",
+      "meaning": "音乐会",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "ca61ba5232a6",
+      "word": "exhibition",
+      "meaning": "展览",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "0a8f11ee9afd",
+      "word": "cinema",
+      "meaning": "电影院",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "f037fc45f5a9",
+      "word": "department stores",
+      "meaning": "百货商场",
+      "scene": "travel",
+      "group": "娱乐",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "3bd26cfc247d",
+      "word": "rock climbing",
+      "meaning": "攀岩",
+      "scene": "travel",
+      "group": "活动",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "f0e4350e38c6",
+      "word": "cliff walks",
+      "meaning": "沿悬崖步行",
+      "scene": "travel",
+      "group": "活动",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "3bdcb082179d",
+      "word": "bushwalk",
+      "meaning": "林中漫步",
+      "scene": "travel",
+      "group": "活动",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "17cabab3a3f7",
+      "word": "workshop",
+      "meaning": "工作间",
+      "scene": "travel",
+      "group": "活动",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "0ded32146a65",
+      "word": "hiking",
+      "meaning": "徒步旅行",
+      "scene": "travel",
+      "group": "活动",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "f2d2734bcbfd",
+      "word": "trekking",
+      "meaning": "跋涉",
+      "scene": "travel",
+      "group": "活动",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "1f4cd5c06fcd",
+      "word": "excursion",
+      "meaning": "远足",
+      "scene": "travel",
+      "group": "活动",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "5981d41eb570",
+      "word": "camping",
+      "meaning": "野营",
+      "scene": "travel",
+      "group": "活动",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "0eb27b66b16a",
+      "word": "horse riding",
+      "meaning": "骑马",
+      "scene": "travel",
+      "group": "活动",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "31f5d391f5c3",
+      "word": "campsite",
+      "meaning": "营地",
+      "scene": "travel",
+      "group": "活动",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "866de2331880",
+      "word": "cycling",
+      "meaning": "骑自行车",
+      "scene": "travel",
+      "group": "活动",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "d7eb1a80871a",
+      "word": "vehicle",
+      "meaning": "车辆",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2d8d03d70fb6",
+      "word": "helicopter",
+      "meaning": "直升⻜机",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "6761de4329dd",
+      "word": "railway station",
+      "meaning": "火车站",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "818496d79d4b",
+      "word": "shuttle bus",
+      "meaning": "班车",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "1b7136937a71",
+      "word": "Central Station",
+      "meaning": "中央车站",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "8ca4a67d30d1",
+      "word": "cab",
+      "meaning": "计程车",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "09af1ec2a588",
+      "word": "taxi",
+      "meaning": "计程车",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "eeac35789cc1",
+      "word": "airport",
+      "meaning": "机场",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "4c6b98853a85",
+      "word": "four-wheel drive",
+      "meaning": "四轮驱动",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "a7e5921ebdcc",
+      "word": "river cruise",
+      "meaning": "游艇游览",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "257db7c30aa6",
+      "word": "coach",
+      "meaning": "长途客车",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "4951764b4d93",
+      "word": "jeep",
+      "meaning": "吉普车",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "51cf5da022f0",
+      "word": "minibus",
+      "meaning": "中巴",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2ebd93c96799",
+      "word": "boat trips",
+      "meaning": "游船",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "454402323bc0",
+      "word": "underground",
+      "meaning": "地铁",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "0ddbf0498519",
+      "word": "subway",
+      "meaning": "地铁",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "793193c454ab",
+      "word": "tube",
+      "meaning": "地铁",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "c5de07b284c5",
+      "word": "metro",
+      "meaning": "地铁",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "036b4b2c20d2",
+      "word": "ferry",
+      "meaning": "渡船",
+      "scene": "travel",
+      "group": "交通",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "f5c664d1a7d0",
+      "word": "sports club",
+      "meaning": "健身俱乐部",
+      "scene": "membership",
+      "group": "分区",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "42f73265d3cb",
+      "word": "dance studio",
+      "meaning": "舞蹈教室",
+      "scene": "membership",
+      "group": "分区",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "be11fda1a3b9",
+      "word": "fitness centre",
+      "meaning": "健身俱乐部",
+      "scene": "membership",
+      "group": "分区",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "72a9ca3ee607",
+      "word": "swimming pool",
+      "meaning": "游泳池",
+      "scene": "membership",
+      "group": "分区",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "9c0359e5173e",
+      "word": "gym",
+      "meaning": "健身房",
+      "scene": "membership",
+      "group": "分区",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "1306af6273fe",
+      "word": "salad bar",
+      "meaning": "沙拉吧",
+      "scene": "membership",
+      "group": "分区",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "9485880d80d5",
+      "word": "reception",
+      "meaning": "前台",
+      "scene": "membership",
+      "group": "分区",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "905903869c47",
+      "word": "indoor stadium",
+      "meaning": "室内体育馆",
+      "scene": "membership",
+      "group": "分区",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "ada3f4a79b4f",
+      "word": "locker room",
+      "meaning": "更衣室",
+      "scene": "membership",
+      "group": "分区",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "b4cf6a598cc6",
+      "word": "tennis court",
+      "meaning": "网球场",
+      "scene": "membership",
+      "group": "分区",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "d5313f7a929c",
+      "word": "squash court",
+      "meaning": "壁球场",
+      "scene": "membership",
+      "group": "分区",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "a08db05fed69",
+      "word": "keep-fit studio",
+      "meaning": "健身室",
+      "scene": "membership",
+      "group": "分区",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "e849275ea4a9",
+      "word": "receptionist",
+      "meaning": "前台接待人员",
+      "scene": "membership",
+      "group": "员工",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "a3d3f9e7a4ce",
+      "word": "dietician",
+      "meaning": "饮食专家",
+      "scene": "membership",
+      "group": "员工",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "206875fe4535",
+      "word": "coach",
+      "meaning": "教练",
+      "scene": "membership",
+      "group": "员工",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "17b475ce029a",
+      "word": "trainer",
+      "meaning": "教练",
+      "scene": "membership",
+      "group": "员工",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "03e0b67e9249",
+      "word": "internal member",
+      "meaning": "内部人员",
+      "scene": "membership",
+      "group": "员工",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "ae6af929d476",
+      "word": "instructor",
+      "meaning": "指导教练",
+      "scene": "membership",
+      "group": "员工",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "c7ac35fe1ca1",
+      "word": "external member",
+      "meaning": "外部人员",
+      "scene": "membership",
+      "group": "员工",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "28d1e28969b4",
+      "word": "application form",
+      "meaning": "申请表",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "240bb74dabd6",
+      "word": "bank statement",
+      "meaning": "银行对账单",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "321e9bed0361",
+      "word": "reference number",
+      "meaning": "档案号",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "5c92739f9110",
+      "word": "utility bills",
+      "meaning": "水电费账单",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "e636fe8a6a0b",
+      "word": "passport photo",
+      "meaning": "护照照片",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "186943371a15",
+      "word": "reference letter from employer",
+      "meaning": "雇主证明信",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "3d0c12ab605e",
+      "word": "documents for ID",
+      "meaning": "身份证明",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "ff473eb37b29",
+      "word": "ID card",
+      "meaning": "身份证明",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "7552dab00dac",
+      "word": "joining fee",
+      "meaning": "入会费",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "1af63f6ad550",
+      "word": "driver's license",
+      "meaning": "驾照",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "f26515b192e9",
+      "word": "annual fee",
+      "meaning": "年费",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "b35e61cd926a",
+      "word": "passport",
+      "meaning": "护照",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "c53669a82d64",
+      "word": "student card",
+      "meaning": "学生证",
+      "scene": "membership",
+      "group": "注册",
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "c65d88a3e86c",
+      "word": "soccer",
+      "meaning": "足球",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "9090c137a780",
+      "word": "football",
+      "meaning": "足球",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "f1bbaa3830e8",
+      "word": "squash",
+      "meaning": "壁球",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "e31c7661cdbc",
+      "word": "beach volleyball",
+      "meaning": "沙滩排球",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "409d31f556a6",
+      "word": "boxing",
+      "meaning": "拳击",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "a9a940d9ef44",
+      "word": "basketball",
+      "meaning": "篮球",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "5f2bf1201584",
+      "word": "kick-boxing",
+      "meaning": "搏击",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "f3c2b6b55939",
+      "word": "baseball",
+      "meaning": "棒球",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "09d8e1048d55",
+      "word": "judo",
+      "meaning": "柔道",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "45c012e1c1a3",
+      "word": "hockey",
+      "meaning": "曲棍球",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "0fb4d0b8673d",
+      "word": "yoga",
+      "meaning": "瑜伽",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "85b6c8b6ee76",
+      "word": "handball",
+      "meaning": "手球",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "d41359cc86d7",
+      "word": "jogging",
+      "meaning": "慢跑",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "5f21e6ce6e70",
+      "word": "golf",
+      "meaning": "高尔夫",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "dff3198eaa21",
+      "word": "aerobics",
+      "meaning": "有氧运动",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "71120a532b1b",
+      "word": "badminton",
+      "meaning": "羽毛球",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "d3cef4d079a2",
+      "word": "stretch class",
+      "meaning": "拉伸训练课程",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "ef4c5b7285c4",
+      "word": "table tennis",
+      "meaning": "乒乓球",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "7c2d6da7df75",
+      "word": "ballet",
+      "meaning": "芭蕾",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "dfb45c96b2e5",
+      "word": "tennis",
+      "meaning": "网球",
+      "scene": "membership",
+      "group": "运动",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "8ea9965ebf4d",
+      "word": "model",
+      "meaning": "型号",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "f9468d34d145",
+      "word": "manufacturer",
+      "meaning": "厂商",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "91264d555650",
+      "word": "gear change",
+      "meaning": "变速器",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "e69c609c5c90",
+      "word": "engine size",
+      "meaning": "排量",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "665a6b127337",
+      "word": "manual",
+      "meaning": "手动挡",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "84e1c483e35d",
+      "word": "frame",
+      "meaning": "车架",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "5122ede5fae0",
+      "word": "automatic",
+      "meaning": "自动挡",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "6dae2c07165d",
+      "word": "front wheel",
+      "meaning": "前轮",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "f8c7236c1e62",
+      "word": "rear wheel",
+      "meaning": "后轮",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "72a13a87a3c3",
+      "word": "top speed",
+      "meaning": "最高速",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "821ac867efe9",
+      "word": "steering wheel",
+      "meaning": "方向盘",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "c94747104f41",
+      "word": "mileage",
+      "meaning": "里程数",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "9756e0442456",
+      "word": "car bumper",
+      "meaning": "保险杠",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "cd50f51cdb43",
+      "word": "instrument panel",
+      "meaning": "仪表盘",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "cbc160d62715",
+      "word": "insurance company",
+      "meaning": "保险公司",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "41f518c26c61",
+      "word": "part exchange",
+      "meaning": "部分抵换",
+      "scene": "car",
+      "group": "汽车",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "167ff2e8589c",
+      "word": "cash",
+      "meaning": "现金",
+      "scene": "bank",
+      "group": "支付方式",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "8c1ce9cf6fc5",
+      "word": "credit card",
+      "meaning": "信用卡 (VISA, MASTER, American Express)",
+      "scene": "bank",
+      "group": "支付方式",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "b2456f86de22",
+      "word": "check",
+      "meaning": "支票",
+      "scene": "bank",
+      "group": "支付方式",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "a1c9a7e931fc",
+      "word": "cheque",
+      "meaning": "支票",
+      "scene": "bank",
+      "group": "支付方式",
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "311d577d59f2",
+      "word": "deposit",
+      "meaning": "存款",
+      "scene": "bank",
+      "group": "开户业务",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "9b8c0fcf8541",
+      "word": "interest rate",
+      "meaning": "利率",
+      "scene": "bank",
+      "group": "开户业务",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "53f857ef72b0",
+      "word": "withdraw",
+      "meaning": "取款",
+      "scene": "bank",
+      "group": "开户业务",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "f9e6d0483333",
+      "word": "withdrawal",
+      "meaning": "取款",
+      "scene": "bank",
+      "group": "开户业务",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "dd9e2af47b02",
+      "word": "teller",
+      "meaning": "(银行)出纳员",
+      "scene": "bank",
+      "group": "开户业务",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "d867f6b0f52a",
+      "word": "overdraft",
+      "meaning": "透支",
+      "scene": "bank",
+      "group": "开户业务",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "a37a552f9878",
+      "word": "overdraw",
+      "meaning": "透支",
+      "scene": "bank",
+      "group": "开户业务",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "a7a0478fb810",
+      "word": "transfer",
+      "meaning": "转账",
+      "scene": "bank",
+      "group": "开户业务",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2e0f2cb3a4a6",
+      "word": "balance",
+      "meaning": "余额",
+      "scene": "bank",
+      "group": "开户业务",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "a9097cd3efe9",
+      "word": "loan",
+      "meaning": "贷款",
+      "scene": "bank",
+      "group": "开户业务",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "0571ecfd279f",
+      "word": "interest",
+      "meaning": "利息",
+      "scene": "bank",
+      "group": "开户业务",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "e1edb7849f50",
+      "word": "current account",
+      "meaning": "活期账户",
+      "scene": "bank",
+      "group": "开户",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "80859727d7bb",
+      "word": "opening sum",
+      "meaning": "开户额",
+      "scene": "bank",
+      "group": "开户",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "a2b4c502e437",
+      "word": "deposit account",
+      "meaning": "定期账户",
+      "scene": "bank",
+      "group": "开户",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "0c566850bc08",
+      "word": "identity security",
+      "meaning": "身份认证",
+      "scene": "bank",
+      "group": "开户",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "09e9f220575f",
+      "word": "joint account",
+      "meaning": "联合账户",
+      "scene": "bank",
+      "group": "开户",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "89df4697beb9",
+      "word": "bank statement",
+      "meaning": "银行对账单",
+      "scene": "bank",
+      "group": "开户",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "1541911ab653",
+      "word": "instant account",
+      "meaning": "速成账户",
+      "scene": "bank",
+      "group": "开户",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "af90d0af306e",
+      "word": "select account",
+      "meaning": "高级账户",
+      "scene": "bank",
+      "group": "开户",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "4c8ed684e263",
+      "word": "foreign currency",
+      "meaning": "外汇",
+      "scene": "bank",
+      "group": "货币",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "3a34df30f945",
+      "word": "dollar",
+      "meaning": "美元；元",
+      "scene": "bank",
+      "group": "货币",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "91042794f991",
+      "word": "exchange rate",
+      "meaning": "汇率",
+      "scene": "bank",
+      "group": "货币",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "b5ddf5c38e67",
+      "word": "euro",
+      "meaning": "欧元",
+      "scene": "bank",
+      "group": "货币",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "13f571e3275b",
+      "word": "pound",
+      "meaning": "英镑",
+      "scene": "bank",
+      "group": "货币",
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "64a754db4696",
+      "word": "primary school",
+      "meaning": "小学",
+      "scene": "course",
+      "group": "教育",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "32de717f9d21",
+      "word": "Bachelor",
+      "meaning": "学士",
+      "scene": "course",
+      "group": "教育",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "aad2abc57489",
+      "word": "secondary school",
+      "meaning": "初中",
+      "scene": "course",
+      "group": "教育",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "69c5c7134547",
+      "word": "Master",
+      "meaning": "硕士",
+      "scene": "course",
+      "group": "教育",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "a8d6de1cbd09",
+      "word": "undergraduate",
+      "meaning": "本科",
+      "scene": "course",
+      "group": "教育",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "a1fb81e4ff86",
+      "word": "Doctor",
+      "meaning": "博士",
+      "scene": "course",
+      "group": "教育",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "02a09a05a442",
+      "word": "postgraduate",
+      "meaning": "研究生",
+      "scene": "course",
+      "group": "教育",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "48d2df23ebbb",
+      "word": "tutor",
+      "meaning": "导师",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "5c9e2e6eb8ba",
+      "word": "director",
+      "meaning": "主任",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "bacb8e3d8309",
+      "word": "lecturer",
+      "meaning": "讲师",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "0f0dc4367ced",
+      "word": "staff",
+      "meaning": "员工",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "546fe3650efe",
+      "word": "professor",
+      "meaning": "教授",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "a3007d8f103a",
+      "word": "Teaching Assistant",
+      "meaning": "助教",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "bb31a5cc2262",
+      "word": "associate professor",
+      "meaning": "副教授",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "8d517b221df0",
+      "word": "mentor",
+      "meaning": "导师",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "95553fae0129",
+      "word": "convener",
+      "meaning": "召集人",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "274fad4f1019",
+      "word": "student adviser",
+      "meaning": "学生顾问",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2fa769b2c94c",
+      "word": "counselor",
+      "meaning": "顾问",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "b331a27347cd",
+      "word": "course convener",
+      "meaning": "课程组织者",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "951352821721",
+      "word": "principal",
+      "meaning": "校长",
+      "scene": "course",
+      "group": "师资",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "4ab4d1b674f9",
+      "word": "mature students",
+      "meaning": "成人学生",
+      "scene": "course",
+      "group": "学生",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "0e28d5e172b0",
+      "word": "adult students",
+      "meaning": "成人学生",
+      "scene": "course",
+      "group": "学生",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "140fbe89f326",
+      "word": "senior student",
+      "meaning": "大四学生",
+      "scene": "course",
+      "group": "学生",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "9da93a7e71df",
+      "word": "overseas students",
+      "meaning": "国际学生",
+      "scene": "course",
+      "group": "学生",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "1be1ca860110",
+      "word": "international students",
+      "meaning": "国际学生",
+      "scene": "course",
+      "group": "学生",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "559693aaae86",
+      "word": "graduate",
+      "meaning": "大学毕业生",
+      "scene": "course",
+      "group": "学生",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "7976bd7ff790",
+      "word": "freshman",
+      "meaning": "大一学生",
+      "scene": "course",
+      "group": "学生",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "7e6fca296c98",
+      "word": "sophomore",
+      "meaning": "大二学生",
+      "scene": "course",
+      "group": "学生",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "01d4a3f3fe2d",
+      "word": "postgraduate student",
+      "meaning": "研究生",
+      "scene": "course",
+      "group": "学生",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "11a68676da26",
+      "word": "junior student",
+      "meaning": "大三学生",
+      "scene": "course",
+      "group": "学生",
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "a2aec2ea5583",
+      "word": "enroll",
+      "meaning": "报名参加",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "0798ad643f34",
+      "word": "modular course",
+      "meaning": "模块课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "dd06d2a780d8",
+      "word": "session",
+      "meaning": "(一节)课",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "0efd69585234",
+      "word": "training session",
+      "meaning": "培训课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "d8a02ab9fdec",
+      "word": "lecture",
+      "meaning": "讲座",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "88091cd2d5d7",
+      "word": "refresher course",
+      "meaning": "补习课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "cc2c7d9ee8bf",
+      "word": "seminar",
+      "meaning": "研讨会",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "36462ad5617a",
+      "word": "intensive course",
+      "meaning": "强化课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "86d208ee9b6d",
+      "word": "tutorial",
+      "meaning": "辅导课",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "34e79d17e973",
+      "word": "studies",
+      "meaning": "研究",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "c94ad7095b59",
+      "word": "group discussion",
+      "meaning": "小组讨论",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "b54f9673e06e",
+      "word": "semester",
+      "meaning": "学期",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "0efafd23d1dc",
+      "word": "term",
+      "meaning": "学期",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "d2c996a62b3d",
+      "word": "workshop",
+      "meaning": "讨论会",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "9d306c5be53b",
+      "word": "course outline",
+      "meaning": "课程大纲",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "28daded283cd",
+      "word": "diploma course",
+      "meaning": "文凭课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "3cd24c1065ae",
+      "word": "handout",
+      "meaning": "讲义",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "56e6c48f92a9",
+      "word": "handouts",
+      "meaning": "讲义",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "dff6f11e29db",
+      "word": "orientation week",
+      "meaning": "学习指导周 (开学第一周)",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "bfaf76764c56",
+      "word": "part-time course",
+      "meaning": "业余制课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "cd871e0a45e6",
+      "word": "curriculum",
+      "meaning": "课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "81dba7163a40",
+      "word": "foundation course",
+      "meaning": "基础课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "971dce470992",
+      "word": "basic course",
+      "meaning": "基础课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "cd319da8f02b",
+      "word": "elementary course",
+      "meaning": "基础课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "3d5e86f118ce",
+      "word": "primary course",
+      "meaning": "基础课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "b37de4c42a82",
+      "word": "extracurricular",
+      "meaning": "课外课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "aeb0dd120e32",
+      "word": "compulsory course",
+      "meaning": "必修课",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "25ae92e5f2e6",
+      "word": "secondary course",
+      "meaning": "中级课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "801a9c083674",
+      "word": "intermediate course",
+      "meaning": "中级课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "3ed5bf7b8989",
+      "word": "optional course",
+      "meaning": "选修课",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "bb0630d9b6df",
+      "word": "advanced course",
+      "meaning": "高级课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "1349880831a9",
+      "word": "specialized course",
+      "meaning": "专业课",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "12964168c883",
+      "word": "night class",
+      "meaning": "晚课",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "045de68ac3db",
+      "word": "general course",
+      "meaning": "通识课",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "b03097fb0f83",
+      "word": "weekend class",
+      "meaning": "双休日班",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "398fdb31463d",
+      "word": "core programme",
+      "meaning": "核心课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "a6a06a562eb0",
+      "word": "module",
+      "meaning": "课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "0941d45ad34f",
+      "word": "full-time course",
+      "meaning": "全日制课程",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "d0894e987dd2",
+      "word": "duration",
+      "meaning": "持续时间",
+      "scene": "course",
+      "group": "课程安排",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "3a03c6e41e9d",
+      "word": "Marketing",
+      "meaning": "市场",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "654d0b0670e6",
+      "word": "Linguistics",
+      "meaning": "语言学",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "0c43b348c7b5",
+      "word": "Politics",
+      "meaning": "政治",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "971fff9e8ab9",
+      "word": "Psychology",
+      "meaning": "心理学",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "a9a0e52484fd",
+      "word": "Sociology",
+      "meaning": "社会学",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "b01bc7581317",
+      "word": "Philosophy",
+      "meaning": "哲学",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "74a679c27d4e",
+      "word": "Statistics",
+      "meaning": "统计学",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10,
+        11
+      ]
+    },
+    {
+      "id": "5834a4ae98cc",
+      "word": "Anthropology",
+      "meaning": "人类学",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "e183b84d3adb",
+      "word": "Social Science",
+      "meaning": "社会科学",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "3c3356511a0d",
+      "word": "Archaeology",
+      "meaning": "考古学",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "fbc3774b2c1b",
+      "word": "Topography",
+      "meaning": "地形学",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "89f9dd16c265",
+      "word": "Education",
+      "meaning": "教育",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "633455724e34",
+      "word": "History",
+      "meaning": "历史",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "b8395d132251",
+      "word": "Geography",
+      "meaning": "地理",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "50c2885da24f",
+      "word": "Accounting",
+      "meaning": "会计",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "5d64fca2db4c",
+      "word": "Journalism",
+      "meaning": "新闻学",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "4d3e00f18b53",
+      "word": "Law",
+      "meaning": "法律",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "af097c3fbe35",
+      "word": "Literature",
+      "meaning": "文学",
+      "scene": "course",
+      "group": "文科学科",
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "ea50330d73aa",
+      "word": "Biology",
+      "meaning": "生物",
+      "scene": "course",
+      "group": "理科学科",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "750506636df4",
+      "word": "Computer Science",
+      "meaning": "计算机科学",
+      "scene": "course",
+      "group": "理科学科",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "ecce4df0213f",
+      "word": "Biophysics",
+      "meaning": "生物物理学",
+      "scene": "course",
+      "group": "理科学科",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "2635e28e8458",
+      "word": "Architecture",
+      "meaning": "建筑学",
+      "scene": "course",
+      "group": "理科学科",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "8232a39f7bec",
+      "word": "Cartography",
+      "meaning": "绘图法",
+      "scene": "course",
+      "group": "理科学科",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "540ccffa3e43",
+      "word": "Engineering",
+      "meaning": "工程学",
+      "scene": "course",
+      "group": "理科学科",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "97b815ccf294",
+      "word": "Economics",
+      "meaning": "经济学",
+      "scene": "course",
+      "group": "理科学科",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "4685232be249",
+      "word": "Finance",
+      "meaning": "金融",
+      "scene": "course",
+      "group": "理科学科",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "57f967d11527",
+      "word": "Chemistry",
+      "meaning": "化学",
+      "scene": "course",
+      "group": "理科学科",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "9dcd3d1b3a5f",
+      "word": "Mathematics",
+      "meaning": "数学",
+      "scene": "course",
+      "group": "理科学科",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "1cbdd8072e45",
+      "word": "Advanced English Studies",
+      "meaning": "高级英语研究",
+      "scene": "course",
+      "group": "英语课程",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "c031b3aeaa4d",
+      "word": "Gender Studies",
+      "meaning": "性别研究",
+      "scene": "course",
+      "group": "英语课程",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "6c560f78d635",
+      "word": "General English",
+      "meaning": "普通英语",
+      "scene": "course",
+      "group": "英语课程",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "cf9e9e87b38a",
+      "word": "Second Language Acquisition",
+      "meaning": "第二语言习得",
+      "scene": "course",
+      "group": "英语课程",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "c9071ffd8c2b",
+      "word": "Academic English",
+      "meaning": "学术英语",
+      "scene": "course",
+      "group": "英语课程",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "abca815d557f",
+      "word": "China",
+      "meaning": "中国",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "a29259600189",
+      "word": "Spain",
+      "meaning": "西班牙",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "3e831831c459",
+      "word": "America",
+      "meaning": "美国",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "aa716dc930ec",
+      "word": "France",
+      "meaning": "法国",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "1ae8d7ec6e1d",
+      "word": "Australia",
+      "meaning": "澳大利亚",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "27453f3fd048",
+      "word": "New Zealand",
+      "meaning": "新西兰",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "02daf6251546",
+      "word": "Japan",
+      "meaning": "日本",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "595c7d368d10",
+      "word": "the Netherlands",
+      "meaning": "荷兰",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "9a549cca1549",
+      "word": "Korea",
+      "meaning": "韩国",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "889057e019b8",
+      "word": "Sweden",
+      "meaning": "瑞典",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "5ffa94c3b874",
+      "word": "Portugal",
+      "meaning": "葡萄牙",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "c63ff5ec1645",
+      "word": "Switzerland",
+      "meaning": "瑞士",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "b9ecb9e649a5",
+      "word": "Iceland",
+      "meaning": "冰岛",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "fa2670939d2e",
+      "word": "Greece",
+      "meaning": "希腊",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "ab5a45ea7b96",
+      "word": "Egypt",
+      "meaning": "埃及",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "d5f80918a128",
+      "word": "Finland",
+      "meaning": "芬兰",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "b914c3e2a165",
+      "word": "Queensland",
+      "meaning": "昆士兰(澳大利亚州名)",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "55cca0ed2cc8",
+      "word": "Alaska",
+      "meaning": "阿拉斯加",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "51d6db2be540",
+      "word": "Washington",
+      "meaning": "华盛顿",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "b5a02b14f738",
+      "word": "Sydney",
+      "meaning": "悉尼",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "89ed0a22d8a4",
+      "word": "York",
+      "meaning": "约克",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "df53eac62954",
+      "word": "New South Wales",
+      "meaning": "新南威尔士州",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "fb2302da0cae",
+      "word": "Berlin",
+      "meaning": "柏林",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "6bb87ebc5f90",
+      "word": "Athens",
+      "meaning": "雅典",
+      "scene": "course",
+      "group": "国家与地区",
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "387b2faa02a9",
+      "word": "Portuguese",
+      "meaning": "葡萄牙语",
+      "scene": "course",
+      "group": "语言",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "dca1eb11113c",
+      "word": "Polish",
+      "meaning": "波兰语",
+      "scene": "course",
+      "group": "语言",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "44d96bc19c0f",
+      "word": "Spanish",
+      "meaning": "西班牙语",
+      "scene": "course",
+      "group": "语言",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "6aec7c7b693c",
+      "word": "Scottish",
+      "meaning": "苏格兰语",
+      "scene": "course",
+      "group": "语言",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "6de5339c11fb",
+      "word": "French",
+      "meaning": "法语",
+      "scene": "course",
+      "group": "语言",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "0142138d7722",
+      "word": "Swedish",
+      "meaning": "瑞典语",
+      "scene": "course",
+      "group": "语言",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "0f63b2ab00ef",
+      "word": "Greek",
+      "meaning": "希腊语言",
+      "scene": "course",
+      "group": "语言",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "4cbb2e85cfd8",
+      "word": "assignment",
+      "meaning": "作业",
+      "scene": "assignment",
+      "group": "作业",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "b1d6377a241f",
+      "word": "dissertation",
+      "meaning": "学位论文",
+      "scene": "assignment",
+      "group": "作业",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "fe8033e7020e",
+      "word": "essay",
+      "meaning": "论文",
+      "scene": "assignment",
+      "group": "作业",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "4c5b2e90c45b",
+      "word": "experiment",
+      "meaning": "实验",
+      "scene": "assignment",
+      "group": "作业",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "172eba6b6092",
+      "word": "report",
+      "meaning": "报告",
+      "scene": "assignment",
+      "group": "作业",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "f5c2cd193825",
+      "word": "written work",
+      "meaning": "书面作业",
+      "scene": "assignment",
+      "group": "作业",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "351d08877d44",
+      "word": "case study",
+      "meaning": "案例分析",
+      "scene": "assignment",
+      "group": "作业",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "712e88ce5d9c",
+      "word": "journal",
+      "meaning": "杂志",
+      "scene": "assignment",
+      "group": "作业",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "87f0cafe8281",
+      "word": "project",
+      "meaning": "项目",
+      "scene": "assignment",
+      "group": "作业",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "e76bfa00f39a",
+      "word": "paper",
+      "meaning": "论文",
+      "scene": "assignment",
+      "group": "作业",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "ce0cc5819876",
+      "word": "presentation",
+      "meaning": "演示,报告",
+      "scene": "assignment",
+      "group": "作业",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "e3b795a84e4a",
+      "word": "research",
+      "meaning": "研究",
+      "scene": "assignment",
+      "group": "作业",
+      "sourcePages": [
+        12,
+        13
+      ]
+    },
+    {
+      "id": "9eab66edc543",
+      "word": "deadline",
+      "meaning": "最后期限",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "05cb7133ea8c",
+      "word": "subheadings",
+      "meaning": "副标题",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "5f7745e02831",
+      "word": "extension",
+      "meaning": "延期",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "001625ba2a8e",
+      "word": "formatting",
+      "meaning": "格式",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "a3ea814821d8",
+      "word": "submit",
+      "meaning": "上交",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "6287a9f5e1be",
+      "word": "hand in",
+      "meaning": "上交",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "9b1f183327ed",
+      "word": "numbering",
+      "meaning": "编码",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "7dc757ef72bc",
+      "word": "length",
+      "meaning": "篇幅/字数限制",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "0dd822a13b9f",
+      "word": "word limit",
+      "meaning": "篇幅/字数限制",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "058d67a23dbd",
+      "word": "page numbers",
+      "meaning": "页码",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "031742916af6",
+      "word": "outline",
+      "meaning": "大纲",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "92c05e5119c5",
+      "word": "headers",
+      "meaning": "页眉",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "966d8fb7e5d2",
+      "word": "title",
+      "meaning": "标题",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "f9983f98775b",
+      "word": "footers",
+      "meaning": "页脚",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "f0e651dde3b3",
+      "word": "chapter",
+      "meaning": "章,节",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "6c91f520f206",
+      "word": "section",
+      "meaning": "章,节",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "370124397b77",
+      "word": "bullet points",
+      "meaning": "要点列举",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "c1f2043e2303",
+      "word": "bibliography",
+      "meaning": "参考书目",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "cce7d8e3ef05",
+      "word": "draft",
+      "meaning": "初稿",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "f1d7e5952b80",
+      "word": "literature review",
+      "meaning": "文献综述",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "502d8de0618c",
+      "word": "typos",
+      "meaning": "拼写错误",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "0a22b5b7b210",
+      "word": "reference",
+      "meaning": "参考书目",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "1f26dde7d8d6",
+      "word": "layout",
+      "meaning": "排版",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "5e5e239f57e6",
+      "word": "author",
+      "meaning": "作者",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "6866a0005c68",
+      "word": "contents page",
+      "meaning": "目录",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "b931616fae47",
+      "word": "publisher",
+      "meaning": "出版者",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "df79af6617e9",
+      "word": "year of publication",
+      "meaning": "出版年代",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "f44165163d96",
+      "word": "heading",
+      "meaning": "标题",
+      "scene": "assignment",
+      "group": "要求",
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "07edef0920f0",
+      "word": "study",
+      "meaning": "研究",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "478712146f18",
+      "word": "questionnaire",
+      "meaning": "问卷调查",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "58063fab0c3e",
+      "word": "branch",
+      "meaning": "分支",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "9bed55104570",
+      "word": "response rate",
+      "meaning": "回复率",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "8cf005c453cf",
+      "word": "identify",
+      "meaning": "鉴定,验明",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "82b86c103684",
+      "word": "interview",
+      "meaning": "采访",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "f2901c506251",
+      "word": "telephone interview",
+      "meaning": "电话采访",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "6528ec441199",
+      "word": "investigation",
+      "meaning": "调查",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "f9b401c32ba5",
+      "word": "face-to-face interview",
+      "meaning": "面对面的采访",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "c4b8fbde55bb",
+      "word": "survey",
+      "meaning": "调查",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "296e24fed4c3",
+      "word": "taped interview",
+      "meaning": "录音采访",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "bce05d558081",
+      "word": "data",
+      "meaning": "数据",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "db0606c92b08",
+      "word": "statistics",
+      "meaning": "数据",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "86c5ed6596da",
+      "word": "figure",
+      "meaning": "数据",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "fd253b79ebfd",
+      "word": "observation",
+      "meaning": "观察",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "f0a6872d637e",
+      "word": "main method",
+      "meaning": "主要方式",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "3e229c6b9062",
+      "word": "field research",
+      "meaning": "实地调查研究",
+      "scene": "assignment",
+      "group": "方法论",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "fd9b99781f73",
+      "word": "review",
+      "meaning": "批改",
+      "scene": "assignment",
+      "group": "评估",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "22a759d8499b",
+      "word": "feedback",
+      "meaning": "反馈",
+      "scene": "assignment",
+      "group": "评估",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "8470e8973693",
+      "word": "evaluation",
+      "meaning": "评估",
+      "scene": "assignment",
+      "group": "评估",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "6374b92618af",
+      "word": "oral test",
+      "meaning": "口试",
+      "scene": "assignment",
+      "group": "评估",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "d1160f3d97bf",
+      "word": "written test",
+      "meaning": "笔试",
+      "scene": "assignment",
+      "group": "评估",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "8dbc0cb77019",
+      "word": "marking criteria",
+      "meaning": "评分标准",
+      "scene": "assignment",
+      "group": "评估",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "8659ecad8305",
+      "word": "placement test",
+      "meaning": "分级考试",
+      "scene": "assignment",
+      "group": "评估",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "8ebf46fa1f4d",
+      "word": "examination",
+      "meaning": "考试",
+      "scene": "assignment",
+      "group": "评估",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "ce8faec223d0",
+      "word": "test",
+      "meaning": "考试",
+      "scene": "assignment",
+      "group": "评估",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "7fcd27341fa4",
+      "word": "mark",
+      "meaning": "成绩",
+      "scene": "assignment",
+      "group": "评估",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "a646ce1af31b",
+      "word": "score",
+      "meaning": "成绩",
+      "scene": "assignment",
+      "group": "评估",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "4ab016bae457",
+      "word": "grade",
+      "meaning": "成绩",
+      "scene": "assignment",
+      "group": "评估",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "d35a4257186c",
+      "word": "catalogue",
+      "meaning": "目录",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "7e4b6fee5a9a",
+      "word": "multimedia materials",
+      "meaning": "多媒体资料",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "49fbe7ea9551",
+      "word": "classification",
+      "meaning": "分类",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "69edf4792def",
+      "word": "textbooks",
+      "meaning": "教材",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "541529ae7239",
+      "word": "credential",
+      "meaning": "凭证",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "fb1d1ef30cd9",
+      "word": "audio-visual materials",
+      "meaning": "音像材料",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "1efbf6fb0475",
+      "word": "press",
+      "meaning": "出版社",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "8c967b8ab8fb",
+      "word": "periodical",
+      "meaning": "期刊",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "129ec0383187",
+      "word": "student card",
+      "meaning": "学生证",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "c6372ce3bd2f",
+      "word": "video",
+      "meaning": "录像",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "20eb98044c1c",
+      "word": "library card",
+      "meaning": "借书证",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "f878bdb543dc",
+      "word": "current issue",
+      "meaning": "当期期刊",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "b5636c0d4feb",
+      "word": "back issue",
+      "meaning": "过期期刊",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "d3232df30233",
+      "word": "driving license",
+      "meaning": "驾驶证",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "166c6f7b5c6d",
+      "word": "cassette",
+      "meaning": "磁带",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "c0913d6c035f",
+      "word": "document",
+      "meaning": "文件",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "a8d44ba8516e",
+      "word": "journal",
+      "meaning": "学术期刊",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "304c5033474e",
+      "word": "reference book",
+      "meaning": "参考书",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "ad206ad22e9c",
+      "word": "tape",
+      "meaning": "录像带",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "02036873c073",
+      "word": "author",
+      "meaning": "作者",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "057b2e59afad",
+      "word": "newspaper",
+      "meaning": "报纸",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "065ca8552821",
+      "word": "fiction",
+      "meaning": "小说",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "9510fecc19cf",
+      "word": "magazine",
+      "meaning": "杂志",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "476e26c7bf6a",
+      "word": "category",
+      "meaning": "种类",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "af1296d7b9c7",
+      "word": "atlas",
+      "meaning": "地图册",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "7e8d4edff44e",
+      "word": "stacks",
+      "meaning": "书库",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "324bced5293d",
+      "word": "publisher",
+      "meaning": "出版人",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "9b5e56574732",
+      "word": "printed version",
+      "meaning": "纸质版",
+      "scene": "library",
+      "group": "借阅",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "07a840e2fc7b",
+      "word": "available",
+      "meaning": "可借",
+      "scene": "library",
+      "group": "书本情况",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "e0b06db4ba31",
+      "word": "in circulation",
+      "meaning": "可借",
+      "scene": "library",
+      "group": "书本情况",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "7820b5cf1f50",
+      "word": "on shelf",
+      "meaning": "在架",
+      "scene": "library",
+      "group": "书本情况",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "25876824ba62",
+      "word": "out of loan",
+      "meaning": "借出",
+      "scene": "library",
+      "group": "书本情况",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "8bad2498208b",
+      "word": "out of circulation",
+      "meaning": "借出",
+      "scene": "library",
+      "group": "书本情况",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "0833c53a5878",
+      "word": "in stack",
+      "meaning": "在库的",
+      "scene": "library",
+      "group": "书本情况",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "8b2ac537249a",
+      "word": "closed reserved",
+      "meaning": "只读不借的",
+      "scene": "library",
+      "group": "书本情况",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "36dc66f58fa0",
+      "word": "CD-ROM",
+      "meaning": "只读光盘",
+      "scene": "library",
+      "group": "设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "e082b8502c8f",
+      "word": "scanner",
+      "meaning": "扫描仪",
+      "scene": "library",
+      "group": "设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "3e2a8092468d",
+      "word": "database",
+      "meaning": "数据库",
+      "scene": "library",
+      "group": "设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "fb95df554db2",
+      "word": "photocopier",
+      "meaning": "复印机",
+      "scene": "library",
+      "group": "设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "f1b743141971",
+      "word": "Internet access",
+      "meaning": "网络接入",
+      "scene": "library",
+      "group": "设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "5022b480c3fb",
+      "word": "laser printer",
+      "meaning": "激光打印机",
+      "scene": "library",
+      "group": "设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "7d40383e46bc",
+      "word": "laptop",
+      "meaning": "笔记本电脑",
+      "scene": "library",
+      "group": "设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "906f01f39f28",
+      "word": "microscope",
+      "meaning": "显微镜",
+      "scene": "library",
+      "group": "设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "9c1ec7099907",
+      "word": "borrowing period",
+      "meaning": "借阅期限",
+      "scene": "library",
+      "group": "流程",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "4d0f15d59cd7",
+      "word": "loan period",
+      "meaning": "借阅期限",
+      "scene": "library",
+      "group": "流程",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "7b52b4b6b47f",
+      "word": "fines",
+      "meaning": "罚款",
+      "scene": "library",
+      "group": "流程",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "ea81d18b7a34",
+      "word": "date of expiry",
+      "meaning": "截止日期",
+      "scene": "library",
+      "group": "流程",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "aa6ccdef72e3",
+      "word": "renew",
+      "meaning": "续借",
+      "scene": "library",
+      "group": "流程",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "e9780077d2c1",
+      "word": "due date",
+      "meaning": "还书日",
+      "scene": "library",
+      "group": "流程",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "dabf86dcc6a9",
+      "word": "recall",
+      "meaning": "召回",
+      "scene": "library",
+      "group": "流程",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "4ce499e0e4c6",
+      "word": "overdue",
+      "meaning": "过期",
+      "scene": "library",
+      "group": "流程",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "41d1db72891f",
+      "word": "equipment room",
+      "meaning": "器材室",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "27b38d46ef79",
+      "word": "student health centre",
+      "meaning": "医务室",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "c44137b670f0",
+      "word": "media room",
+      "meaning": "媒体室",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "9cbf784412aa",
+      "word": "insurance centre",
+      "meaning": "保险中心",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "578dbd8272a0",
+      "word": "resources room",
+      "meaning": "资源室",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "71644e0db48f",
+      "word": "refectory",
+      "meaning": "食堂",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "6a3da5e923c7",
+      "word": "computer centre",
+      "meaning": "计算机中心",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "fb0423e3d973",
+      "word": "canteen",
+      "meaning": "食堂,餐厅",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "9433ce79a8e9",
+      "word": "laboratory",
+      "meaning": "实验室",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "83e67c7632d1",
+      "word": "cafeteria",
+      "meaning": "自助餐厅",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "10a2b01fef40",
+      "word": "main hall",
+      "meaning": "大厅,礼堂",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "edee84e6728a",
+      "word": "dining room",
+      "meaning": "食堂",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "ba7a321dae0f",
+      "word": "lecture room",
+      "meaning": "阶梯教室",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "b59637e47248",
+      "word": "diner",
+      "meaning": "饭馆",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "e25faea638ae",
+      "word": "lecture theater",
+      "meaning": "演讲厅",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "4b11b60a7402",
+      "word": "nursery",
+      "meaning": "托儿所",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "005266e34117",
+      "word": "drama theater",
+      "meaning": "剧院",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "8fc0139dbcf3",
+      "word": "child care centre",
+      "meaning": "托儿所",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "53569f6dbafd",
+      "word": "halls of residence",
+      "meaning": "宿舍",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "d13654596dfc",
+      "word": "counseling centre",
+      "meaning": "咨询中心",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "1a291a2c7354",
+      "word": "living quarters",
+      "meaning": "居住区",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "429d3490824f",
+      "word": "stadium",
+      "meaning": "体育馆",
+      "scene": "facilities",
+      "group": "大学设施",
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "4f88f3180588",
+      "word": "overheads",
+      "meaning": "经费",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "a863246fb144",
+      "word": "innovation",
+      "meaning": "创新",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "a25da38526d5",
+      "word": "outlay",
+      "meaning": "经费",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "4b7029142097",
+      "word": "outdated",
+      "meaning": "落后的",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "9defade405d0",
+      "word": "investment",
+      "meaning": "投资",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "53a47131d52e",
+      "word": "machinery",
+      "meaning": "机器(总称)",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "ca3324b19dca",
+      "word": "capital",
+      "meaning": "资本",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "c73702696091",
+      "word": "management team",
+      "meaning": "管理层",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "8fae5382ece7",
+      "word": "management layers",
+      "meaning": "管理层",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "67896699d1e7",
+      "word": "strike",
+      "meaning": "罢工",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "b40efb5dd3d8",
+      "word": "employer",
+      "meaning": "雇主",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "09f3731cee31",
+      "word": "takeover",
+      "meaning": "收购",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "f9ae7f9ace36",
+      "word": "employee",
+      "meaning": "雇员",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "0474d66bacd8",
+      "word": "issue",
+      "meaning": "发行",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "08ca6f1f238d",
+      "word": "staff",
+      "meaning": "员工",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "51f6cdc3e169",
+      "word": "stock",
+      "meaning": "股票",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "9da7b8f39fb6",
+      "word": "applicant",
+      "meaning": "申请者",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "439f1d8d8fe7",
+      "word": "share",
+      "meaning": "股份",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "a44d70487627",
+      "word": "corporate",
+      "meaning": "公司的；企业的",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "ddf9cad42b65",
+      "word": "stock market",
+      "meaning": "股市",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "af641da995ea",
+      "word": "organisation",
+      "meaning": "组织",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "c819a2b36f91",
+      "word": "market share",
+      "meaning": "市场份额",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "e1aecfe88724",
+      "word": "corporate crime",
+      "meaning": "集团犯罪",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "7d394cd67941",
+      "word": "outlet",
+      "meaning": "商店",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "08f8ed3dafd7",
+      "word": "embezzlement",
+      "meaning": "盗用,侵吞",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "b624fadd6925",
+      "word": "chain",
+      "meaning": "连锁",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "7cb0d0c3e47a",
+      "word": "fraud",
+      "meaning": "诈骗",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "afaa91dc974a",
+      "word": "retail",
+      "meaning": "零售",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "fc9c19474365",
+      "word": "import",
+      "meaning": "进口",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "81e1e8948cd9",
+      "word": "wholesale",
+      "meaning": "批发",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "33304fc43472",
+      "word": "export",
+      "meaning": "出口",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "82534a5ef42e",
+      "word": "distributor",
+      "meaning": "分销商",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "a190c6c58811",
+      "word": "marketing",
+      "meaning": "市场营销",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "df5db694f139",
+      "word": "wealth",
+      "meaning": "财富",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "9a85e63071bf",
+      "word": "fortune",
+      "meaning": "财富",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "316ada063036",
+      "word": "campaign",
+      "meaning": "战略",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "449dabbff132",
+      "word": "advertising",
+      "meaning": "广告",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "1a759ce4a14a",
+      "word": "market strategy",
+      "meaning": "营销策略",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "d9f29e0562ee",
+      "word": "sales",
+      "meaning": "销售额",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "9cfec93cc43e",
+      "word": "sales figure",
+      "meaning": "销售额",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "bacf93582595",
+      "word": "profit",
+      "meaning": "利润",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "149d3c34b0cd",
+      "word": "cost control",
+      "meaning": "控制成本",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "40e23a53df3e",
+      "word": "product",
+      "meaning": "产品",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "fe76ceb23dba",
+      "word": "taxation",
+      "meaning": "税",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "1c1a22b5b67d",
+      "word": "production",
+      "meaning": "生产",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "563feab30c7a",
+      "word": "expansion",
+      "meaning": "扩张",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "d6c631fb4305",
+      "word": "manufacture",
+      "meaning": "生产",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "6422d922a851",
+      "word": "consumption",
+      "meaning": "消费",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "71f7de395dff",
+      "word": "manufacturer",
+      "meaning": "出厂商",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "1be2fb62a336",
+      "word": "superiority",
+      "meaning": "优越性",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "d94a8ae3b39c",
+      "word": "storehouse",
+      "meaning": "仓库",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2beb7e5a768a",
+      "word": "warehouse",
+      "meaning": "仓库",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "33eb3091419c",
+      "word": "aspiration",
+      "meaning": "抱负",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "b86d8a0fb0f5",
+      "word": "ambition",
+      "meaning": "抱负",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "3512dba0b840",
+      "word": "competition",
+      "meaning": "竞争",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "4629d5baf1d4",
+      "word": "mediator",
+      "meaning": "调停者",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "b4d0b397a7da",
+      "word": "cooperation",
+      "meaning": "合作",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "b675f452e409",
+      "word": "vision",
+      "meaning": "远见",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "0f39b993aba9",
+      "word": "interest rates",
+      "meaning": "利率",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "ccb61697d2d6",
+      "word": "logo",
+      "meaning": "公司标识",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "32a66f703e67",
+      "word": "training",
+      "meaning": "培训",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "01e469099538",
+      "word": "creative",
+      "meaning": "创新的",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "1581bfc0f7d0",
+      "word": "favorable terms",
+      "meaning": "优惠的条款",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "0d76c1df3078",
+      "word": "update",
+      "meaning": "更新",
+      "scene": "economics",
+      "group": "经济",
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "33580e460d35",
+      "word": "species",
+      "meaning": "物种",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "6ce45a59b793",
+      "word": "dolphin",
+      "meaning": "海豚",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "964d02efc2a0",
+      "word": "sub-species",
+      "meaning": "亚种",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "690eea64c52b",
+      "word": "shark",
+      "meaning": "鲨鱼",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "aefb18a0738d",
+      "word": "gene pool",
+      "meaning": "基因库",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "996fb5f5edf9",
+      "word": "kiwi",
+      "meaning": "几维鸟",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "f60563daaf31",
+      "word": "ancestor",
+      "meaning": "祖先",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "6baae6d2b80e",
+      "word": "emus",
+      "meaning": "鸸鹋",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "8a049582de97",
+      "word": "descend",
+      "meaning": "传承",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "9cec2d61092c",
+      "word": "ostrich",
+      "meaning": "鸵鸟",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "01ceafabef66",
+      "word": "breed",
+      "meaning": "繁殖",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "ef30b601da8b",
+      "word": "goose",
+      "meaning": "鹅(复数geese)",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "772a88262739",
+      "word": "rear",
+      "meaning": "养育",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "9581b93a9fbd",
+      "word": "penguin",
+      "meaning": "企鹅",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "d78c3a865e89",
+      "word": "extinction",
+      "meaning": "灭绝",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "cb304b327f55",
+      "word": "pollinate",
+      "meaning": "授粉",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "1d1e9071c9b2",
+      "word": "endanger",
+      "meaning": "濒临灭绝",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "04bad9f3764a",
+      "word": "flora",
+      "meaning": "植物群",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "10a2f0aaeed8",
+      "word": "threaten",
+      "meaning": "威胁",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "4b36c3cd59b4",
+      "word": "sting",
+      "meaning": "(昆虫)叮咬",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "dbdb3c94e8d2",
+      "word": "eradicate",
+      "meaning": "灭绝",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "9b95e365efab",
+      "word": "sense of smell",
+      "meaning": "嗅觉",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "9071c325da35",
+      "word": "infest",
+      "meaning": "寄生于",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "63996c01074c",
+      "word": "vision",
+      "meaning": "视觉,视野",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "611d7f72d3d6",
+      "word": "introduced animals",
+      "meaning": "外来动物",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "7af4f46f087f",
+      "word": "eye-sight",
+      "meaning": "视力",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "c421ab1afacb",
+      "word": "wildlife reserve",
+      "meaning": "野生动物保护区",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "37b519e7d201",
+      "word": "skeleton",
+      "meaning": "骨骼",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "6a73d67f6f6e",
+      "word": "nature reserve",
+      "meaning": "自然保护区",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "8f541dad3277",
+      "word": "limbs",
+      "meaning": "四肢",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "a6cd8e5dd362",
+      "word": "sanctuary",
+      "meaning": "保护区",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "4047dc3037a8",
+      "word": "hoof",
+      "meaning": "蹄子",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "1333725f432f",
+      "word": "refuge",
+      "meaning": "保护区",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "22c2c45af55c",
+      "word": "horn",
+      "meaning": "角",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "ebd7b0af1041",
+      "word": "habitat",
+      "meaning": "栖息地",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "d53c10c0ed46",
+      "word": "hair",
+      "meaning": "皮毛",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "934c12304016",
+      "word": "fur",
+      "meaning": "皮毛",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "3e62c25ffdca",
+      "word": "prohibit",
+      "meaning": "禁止",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "1031d2b9a157",
+      "word": "skin",
+      "meaning": "兽皮",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "7556e8f98de9",
+      "word": "hide",
+      "meaning": "兽皮",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "f3fef524cb56",
+      "word": "quarantine service",
+      "meaning": "检疫局",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "761c2e4ac6d9",
+      "word": "leather",
+      "meaning": "皮革",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "8cc9a4812bc1",
+      "word": "creature",
+      "meaning": "生物",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "89f0158ea367",
+      "word": "mane",
+      "meaning": "鬃毛",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "beb0a89752e0",
+      "word": "parasite",
+      "meaning": "寄生虫",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "8f3f0577d57f",
+      "word": "pouch",
+      "meaning": "育儿袋",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "19d76e5e707f",
+      "word": "scale",
+      "meaning": "鱼鳞",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "3cf71cff58aa",
+      "word": "mite",
+      "meaning": "螨",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "f899805cc92a",
+      "word": "mites",
+      "meaning": "螨",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "8ff869e7cd2c",
+      "word": "tail",
+      "meaning": "尾巴",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "33b68c2c83af",
+      "word": "pest",
+      "meaning": "害虫",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "71dab7c4985c",
+      "word": "fin",
+      "meaning": "鱼鳍",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "e4fb8741c777",
+      "word": "fins",
+      "meaning": "鱼鳍",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "a40f71aeea0b",
+      "word": "insect",
+      "meaning": "昆虫",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "5d1c85421ea6",
+      "word": "beak",
+      "meaning": "喙",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "5b68f77df279",
+      "word": "honey bee",
+      "meaning": "蜜蜂",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "fcce210a2ff2",
+      "word": "feather",
+      "meaning": "羽毛",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "5b2c5e230e2d",
+      "word": "reptile",
+      "meaning": "爬行动物",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "0dbc3c638454",
+      "word": "wings",
+      "meaning": "翅膀",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "9f437b7d0731",
+      "word": "snake",
+      "meaning": "蛇",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "0a00b42a2e03",
+      "word": "flightless",
+      "meaning": "不会飞的",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "a59fce806cf2",
+      "word": "dinosaur",
+      "meaning": "恐龙",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "32e6dda5318f",
+      "word": "chick",
+      "meaning": "雏鸟",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "64bacc4b3b4f",
+      "word": "mammal",
+      "meaning": "哺乳动物",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "62c769ea51e2",
+      "word": "hatch",
+      "meaning": "孵化",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "0ed944dca0cc",
+      "word": "lion",
+      "meaning": "狮子",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "a067782d8265",
+      "word": "pellet",
+      "meaning": "坚硬小球,团粒",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "61c572d0bcf0",
+      "word": "pellets",
+      "meaning": "坚硬小球,团粒",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "0357b23f4722",
+      "word": "whale",
+      "meaning": "鲸鱼",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "7f7e99564c89",
+      "word": "rare breed animal",
+      "meaning": "稀有动物",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "ee385addb2f1",
+      "word": "zebra",
+      "meaning": "斑马",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "ef09b0515750",
+      "word": "elephant",
+      "meaning": "大象",
+      "scene": "biology",
+      "group": "生物",
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "9f762fc8618a",
+      "word": "produce",
+      "meaning": "农产品",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "3f59d1c21b6f",
+      "word": "cottage",
+      "meaning": "农舍",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "8ee32b9f060c",
+      "word": "livestock",
+      "meaning": "牲畜",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "828aaff9008a",
+      "word": "stables",
+      "meaning": "马厩",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "50ddd81e5c47",
+      "word": "poultry",
+      "meaning": "家禽",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "9f314327dc22",
+      "word": "iron forge",
+      "meaning": "打铁铺,锻铁厂",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "c2dc5314f3b0",
+      "word": "cattle",
+      "meaning": "牛群",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "1937114d9d8d",
+      "word": "furnace",
+      "meaning": "熔炉",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "864408f64ef4",
+      "word": "herd",
+      "meaning": "(兽)群",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "bc6fdcd19dec",
+      "word": "industry",
+      "meaning": "工业",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "1dd4aaf6b497",
+      "word": "crops",
+      "meaning": "农作物",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "704d0dd26570",
+      "word": "bull",
+      "meaning": "公牛",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "5960f0566374",
+      "word": "cereal crops",
+      "meaning": "谷物",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "ffdf033189d2",
+      "word": "goat",
+      "meaning": "山羊",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "ce281dd9912f",
+      "word": "wheat",
+      "meaning": "小麦",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "dc36a6349261",
+      "word": "root",
+      "meaning": "根",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "817e7fb4c6c6",
+      "word": "barley",
+      "meaning": "大麦",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "16c4d703f69a",
+      "word": "leaf",
+      "meaning": "叶子(复数leaves)",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "0d30afc98a35",
+      "word": "grain",
+      "meaning": "谷粒",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "9767da881239",
+      "word": "fruit",
+      "meaning": "果实",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "b61b91c23973",
+      "word": "farmland",
+      "meaning": "农地",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "ea4ba4d54958",
+      "word": "core",
+      "meaning": "核",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "68e5d4a65478",
+      "word": "plough",
+      "meaning": "犁;耕地",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "4d93655d0b4e",
+      "word": "seed",
+      "meaning": "种子",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "415ed8b31d53",
+      "word": "cultivation",
+      "meaning": "耕作",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "90efb2145052",
+      "word": "stem",
+      "meaning": "茎",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "106d59707f2b",
+      "word": "husbandry",
+      "meaning": "农业,耕作",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "46a264c032aa",
+      "word": "branch",
+      "meaning": "树枝",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "1e93e8f8470d",
+      "word": "animal husbandry",
+      "meaning": "畜牧",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "6f80e1e9a791",
+      "word": "wood",
+      "meaning": "木材",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "cc3f18bd7a29",
+      "word": "irrigation",
+      "meaning": "灌溉",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "5af0dea3b019",
+      "word": "crop",
+      "meaning": "农作物",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "4f56165190c0",
+      "word": "pottery",
+      "meaning": "陶器",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "0e5546a0f6f7",
+      "word": "clay",
+      "meaning": "粘土",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "c953cdb0ceeb",
+      "word": "bamboo",
+      "meaning": "竹子",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "538ab2e5a97d",
+      "word": "engine room",
+      "meaning": "发动机房",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "b3fee1b17f55",
+      "word": "artificial flower",
+      "meaning": "人造花",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "27adbfffd08e",
+      "word": "steam engine",
+      "meaning": "蒸汽机",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "339d57df8949",
+      "word": "rose",
+      "meaning": "玫瑰",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "7ff4752efe5a",
+      "word": "stone age",
+      "meaning": "石器时代",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "302400ac9642",
+      "word": "grass",
+      "meaning": "草",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "945e49090de8",
+      "word": "Neolithic",
+      "meaning": "新石器时代的",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "790dfcab59d9",
+      "word": "weed",
+      "meaning": "野草",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "b37b6064b95f",
+      "word": "hunter-gatherer",
+      "meaning": "狩猎和采集者",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "97308e075ef0",
+      "word": "bloom",
+      "meaning": "开花",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "14716138fc5b",
+      "word": "blossom",
+      "meaning": "开花",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "14823af0be87",
+      "word": "cultivate",
+      "meaning": "种植",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "c3ddedca851e",
+      "word": "dwellings",
+      "meaning": "居住地",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "5be2c2d8383f",
+      "word": "soil",
+      "meaning": "土壤",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "ac12ba96d802",
+      "word": "dweller",
+      "meaning": "居民",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "c37dcde09a18",
+      "word": "inhabitant",
+      "meaning": "居民",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "de98552152a7",
+      "word": "mud",
+      "meaning": "泥土",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "06ea139dc0c0",
+      "word": "craftsman",
+      "meaning": "工匠",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "f5ce2d9bb22c",
+      "word": "vegetation",
+      "meaning": "植被",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "5118618100e1",
+      "word": "carpenter",
+      "meaning": "木匠",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "a87c9dd04693",
+      "word": "plant",
+      "meaning": "植物",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "15f60b783344",
+      "word": "merchant",
+      "meaning": "商人",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "e68304a8f6cf",
+      "word": "forest",
+      "meaning": "森林",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "e99404a05126",
+      "word": "money-lender",
+      "meaning": "借贷者",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "c145bbdd11f7",
+      "word": "gardening",
+      "meaning": "园艺",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "b6c4d6e71ceb",
+      "word": "water wheel",
+      "meaning": "水车",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "9405b77a81c1",
+      "word": "water mill",
+      "meaning": "水磨坊",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "acd1e9746f72",
+      "word": "grinding shop",
+      "meaning": "磨坊",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "d6dd71907ac5",
+      "word": "quarry",
+      "meaning": "采石场",
+      "scene": "agriculture",
+      "group": "农业",
+      "sourcePages": [
+        17
+      ]
+    },
+    {
+      "id": "c74868fac9fb",
+      "word": "incineration plants",
+      "meaning": "垃圾焚化场",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "78efcad3dd84",
+      "word": "gust",
+      "meaning": "阵风;狂风",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "9d2d0ade4714",
+      "word": "landfill sites",
+      "meaning": "垃圾填埋场",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "9297fd061139",
+      "word": "canyon",
+      "meaning": "峡谷",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "b42f7249bba8",
+      "word": "carbon dioxide emission",
+      "meaning": "二氧化碳排放",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "4cd49cf8f96a",
+      "word": "ocean currents",
+      "meaning": "洋流",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "3b6bf3eb5c6c",
+      "word": "atmosphere",
+      "meaning": "大气",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "5b3cfd4fc93c",
+      "word": "greenhouse effect",
+      "meaning": "温室效应",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "4330f375ad6e",
+      "word": "climate change",
+      "meaning": "气候变化",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "9cca5a4854d6",
+      "word": "greenhouse gas",
+      "meaning": "温室气体",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "426b15738041",
+      "word": "air quality",
+      "meaning": "空气质量",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "2f03c8e4449b",
+      "word": "fuel",
+      "meaning": "燃料",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "4b918a10048f",
+      "word": "global warming",
+      "meaning": "全球变暖",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "7711a9c5f550",
+      "word": "coal",
+      "meaning": "煤",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "1646ebdad2e9",
+      "word": "ecosystem",
+      "meaning": "生态系统",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "e6b20de1474a",
+      "word": "firewood",
+      "meaning": "柴火",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "22802f51f53d",
+      "word": "fossil fuels",
+      "meaning": "矿物燃料",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "c066ccc51486",
+      "word": "oxygen",
+      "meaning": "氧气",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "a524ccabe676",
+      "word": "recycling",
+      "meaning": "回收再利用",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "ccfb87718ff2",
+      "word": "ozone layer",
+      "meaning": "臭氧层",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "ffcee88b86ea",
+      "word": "household waste",
+      "meaning": "家庭垃圾",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "9f875dac928a",
+      "word": "emission",
+      "meaning": "排放",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "4373c723709a",
+      "word": "soil conditioner",
+      "meaning": "土壤调节剂",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "72e54515a521",
+      "word": "rainfall",
+      "meaning": "降雨",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "007da2af6ed2",
+      "word": "recycling containers",
+      "meaning": "回收容器",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "b97f7e156765",
+      "word": "evaporate",
+      "meaning": "蒸发",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "b4c32befe544",
+      "word": "raw materials",
+      "meaning": "原始材料",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "b7977ba17ce3",
+      "word": "virgin materials",
+      "meaning": "原材料",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "a4d107610f43",
+      "word": "fog",
+      "meaning": "雾",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "6baa96c06428",
+      "word": "weather",
+      "meaning": "天气",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "6cf552268829",
+      "word": "drop-off sites",
+      "meaning": "回收站",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "3a133bba2b77",
+      "word": "windy",
+      "meaning": "有风的",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "1a79c92f1095",
+      "word": "bring banks",
+      "meaning": "回收站",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "a4ca7a83b96a",
+      "word": "snowy",
+      "meaning": "有雪的",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "a36825ecc88f",
+      "word": "toughened glass",
+      "meaning": "强化玻璃",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "5dd38d33d338",
+      "word": "cloudy",
+      "meaning": "多云的",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "3323236603b0",
+      "word": "plastic bags",
+      "meaning": "塑料袋",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "1431495d5e92",
+      "word": "humid",
+      "meaning": "潮湿的",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "cab3310ba44e",
+      "word": "moist",
+      "meaning": "潮湿的",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "3a5017d326f2",
+      "word": "water filtration",
+      "meaning": "水处理",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "2c02a1adb066",
+      "word": "alternative energy",
+      "meaning": "可替换能源",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "43a80a124097",
+      "word": "fiberglass manufacture",
+      "meaning": "玻璃纤维制造",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "7cd047bd2e20",
+      "word": "renewable resources",
+      "meaning": "可再生资源",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "d98016669dfd",
+      "word": "crushed glass",
+      "meaning": "碎玻璃",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "224713a4b813",
+      "word": "predictable",
+      "meaning": "可预测的",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "a47774332e53",
+      "word": "polystyrene cups",
+      "meaning": "聚苯乙烯杯子",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "1c62791327e9",
+      "word": "filter",
+      "meaning": "过滤",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "1ee0c463899d",
+      "word": "temperature",
+      "meaning": "温度",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "a2600f268bdc",
+      "word": "pollution",
+      "meaning": "污染",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "42ad79c65414",
+      "word": "contamination",
+      "meaning": "污染",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "a699a66e445a",
+      "word": "humidity",
+      "meaning": "湿度",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "048c5c4e8ace",
+      "word": "waste disposal",
+      "meaning": "垃圾处理",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "a7e6d6b2143c",
+      "word": "landscape",
+      "meaning": "风景, 地形",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "b40c71c80e9e",
+      "word": "plastic collection",
+      "meaning": "回收塑料",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "1a3d0297d82c",
+      "word": "vegetation",
+      "meaning": "植被",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "22a3dc0f08e0",
+      "word": "container",
+      "meaning": "容器",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "5d70a6647649",
+      "word": "erosion",
+      "meaning": "侵蚀",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "452d3b4f0232",
+      "word": "inland",
+      "meaning": "内陆的",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "1d1d45a66ed4",
+      "word": "damage",
+      "meaning": "破坏",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "f380186bc762",
+      "word": "destruction",
+      "meaning": "破坏",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "36f9d4b92df0",
+      "word": "shady",
+      "meaning": "有树荫的",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "d04c8f525966",
+      "word": "acid rain",
+      "meaning": "酸雨",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "e6240c740542",
+      "word": "flood",
+      "meaning": "洪水",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "657fbf24700c",
+      "word": "leaf",
+      "meaning": "叶子",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        18
+      ]
+    },
+    {
+      "id": "fb9ddbf7425c",
+      "word": "deforestation",
+      "meaning": "森林砍伐",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "ec16f51baadf",
+      "word": "solar energy",
+      "meaning": "太阳能",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "11f140a6c8cc",
+      "word": "solar power",
+      "meaning": "太阳能",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "2e2fb18281bc",
+      "word": "hunting",
+      "meaning": "打猎",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "4b06d74af321",
+      "word": "tide",
+      "meaning": "潮汐",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "cfb5f2a7cabc",
+      "word": "sustainable development",
+      "meaning": "可持续发展",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "6ae825bc280b",
+      "word": "wind force",
+      "meaning": "风力",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "a7bf5d8f02e9",
+      "word": "public awareness",
+      "meaning": "公众意识",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "ec8365d5e566",
+      "word": "conservation",
+      "meaning": "保护",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "e144146df986",
+      "word": "preservation",
+      "meaning": "保护",
+      "scene": "environment",
+      "group": "环境",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "b7f979c27bdf",
+      "word": "geographical features",
+      "meaning": "地理特征",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "c985c44ab02e",
+      "word": "aboriginal",
+      "meaning": "土著的",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "f6307a9a74ca",
+      "word": "physical features",
+      "meaning": "物理特征",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "84b7f2019c77",
+      "word": "two-dimensional",
+      "meaning": "二维的",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "413400e08661",
+      "word": "dome",
+      "meaning": "穹顶",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "8415ac259631",
+      "word": "lifestyle",
+      "meaning": "生活方式",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "7be7898a7bb0",
+      "word": "census",
+      "meaning": "人口普查",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "22d1a5cd74bb",
+      "word": "density",
+      "meaning": "密度",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "56d8469ece56",
+      "word": "population",
+      "meaning": "人口",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "bd36f4bfb4e8",
+      "word": "myths and legends",
+      "meaning": "神话和传说",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "249540c65cb1",
+      "word": "impact of tourism",
+      "meaning": "旅游业影响",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "aa2b4faf396d",
+      "word": "dynamic",
+      "meaning": "相互作用的方式",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "f3782014dc8f",
+      "word": "surface",
+      "meaning": "地表",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "6b989456b1e9",
+      "word": "cause and effect",
+      "meaning": "因果关系",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "ed6faee80349",
+      "word": "Earth",
+      "meaning": "地球",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "1fea3a2865af",
+      "word": "technology",
+      "meaning": "技术",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "ce167ccd5e16",
+      "word": "Planet",
+      "meaning": "行星",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "1fa7efb93e65",
+      "word": "pattern",
+      "meaning": "模式",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "04ab9f61a754",
+      "word": "desert",
+      "meaning": "沙漠",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "e33c5148ff19",
+      "word": "monitor",
+      "meaning": "监查",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "32e12d717abf",
+      "word": "monoliths",
+      "meaning": "巨石",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "e0dd692f6032",
+      "word": "interact",
+      "meaning": "互动",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "d32bed0f5aa6",
+      "word": "spires",
+      "meaning": "尖顶",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "872f54df9c01",
+      "word": "migration",
+      "meaning": "迁移",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "91fe6dba7498",
+      "word": "hectares",
+      "meaning": "公顷",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "8bee0cf464e9",
+      "word": "traffic density",
+      "meaning": "交通密度",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "a80d349679f1",
+      "word": "caves",
+      "meaning": "洞穴",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "dce8b5d74864",
+      "word": "population density",
+      "meaning": "人口密度",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "e824b2bef80c",
+      "word": "drought",
+      "meaning": "干旱",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "34d2601d48aa",
+      "word": "ocean floor",
+      "meaning": "海床",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "21ae59cf8c5f",
+      "word": "rainwater",
+      "meaning": "雨水",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "039c80f82661",
+      "word": "satellite",
+      "meaning": "卫星",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "a98be9531467",
+      "word": "vegetation",
+      "meaning": "植被",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "4db32b86d73a",
+      "word": "distortion",
+      "meaning": "扭曲",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "41e2cd0e50ff",
+      "word": "wildlife",
+      "meaning": "野生动物",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "992217cf5869",
+      "word": "aerial",
+      "meaning": "空气的",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "fd39dae40ce6",
+      "word": "shallow-rooted species",
+      "meaning": "浅根物种",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "0e95c1a57fb6",
+      "word": "Antarctic",
+      "meaning": "南极",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "db39d042967c",
+      "word": "fossil",
+      "meaning": "化石",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "4abe5c56788d",
+      "word": "dweller",
+      "meaning": "居民",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "1c6e8f791da2",
+      "word": "inhabitant",
+      "meaning": "居民",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "38b0bc9bf01b",
+      "word": "territory",
+      "meaning": "领地",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "05b325c01ae7",
+      "word": "race",
+      "meaning": "种族",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "2714ccb79561",
+      "word": "outcrop",
+      "meaning": "露出地面的岩层",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "6056437fdf17",
+      "word": "minorities",
+      "meaning": "少数民族",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "7175cb1dc18e",
+      "word": "slave",
+      "meaning": "奴隶",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "350e42a57bb0",
+      "word": "plain",
+      "meaning": "平原",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "9e4ac7f923ce",
+      "word": "plateau",
+      "meaning": "高原",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "eb880515a804",
+      "word": "plateaux",
+      "meaning": "高原",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "0e24e3d7cf47",
+      "word": "language",
+      "meaning": "语言",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "c4f3f825a445",
+      "word": "cliff",
+      "meaning": "悬崖",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "19ea86c1bf90",
+      "word": "slang",
+      "meaning": "俚语",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "b49de5294175",
+      "word": "landscape",
+      "meaning": "地形",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "6380f3361454",
+      "word": "culture",
+      "meaning": "文化",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "d7cd57fe503e",
+      "word": "erode",
+      "meaning": "腐蚀",
+      "scene": "geography",
+      "group": "地理",
+      "sourcePages": [
+        19
+      ]
+    },
+    {
+      "id": "c8a23fee6d25",
+      "word": "carbon dioxide",
+      "meaning": "二氧化碳",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "1cad09c4ab45",
+      "word": "indigestible",
+      "meaning": "无法消化的",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "4201411d4e3d",
+      "word": "ozone",
+      "meaning": "臭氧",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "257e513d284a",
+      "word": "coal",
+      "meaning": "煤",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "666312ba61bd",
+      "word": "metal",
+      "meaning": "金属",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "d666d4ab4f9b",
+      "word": "mine",
+      "meaning": "矿",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "2e9bd59d745f",
+      "word": "iron",
+      "meaning": "铁",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "08d26da41c64",
+      "word": "marble",
+      "meaning": "大理石",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "8d1e4d4753ae",
+      "word": "mineral",
+      "meaning": "矿物质",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "b738d06cd93d",
+      "word": "firewood",
+      "meaning": "柴火",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "f770b71bb0ae",
+      "word": "nutrition",
+      "meaning": "营养物",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "bb89705aab1d",
+      "word": "oil",
+      "meaning": "油类",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "a4b212692029",
+      "word": "salinity",
+      "meaning": "盐分",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "12eec5771810",
+      "word": "petrol",
+      "meaning": "汽油",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "9d987ea6da6d",
+      "word": "gasoline",
+      "meaning": "汽油",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "44284421f33e",
+      "word": "carbohydrate",
+      "meaning": "碳水化合物",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "763960875dfd",
+      "word": "natural resources",
+      "meaning": "自然资源",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "197a13753fb9",
+      "word": "amino acid",
+      "meaning": "氨基酸",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "c7f752c6445c",
+      "word": "raw material",
+      "meaning": "原材料",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "fc191ce715ee",
+      "word": "protein",
+      "meaning": "蛋白质",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "8c44087bf56a",
+      "word": "water treatment",
+      "meaning": "水处理",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "9448bc563f6c",
+      "word": "vitamin",
+      "meaning": "维生素",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "542d0ea8e1c6",
+      "word": "electric power plants",
+      "meaning": "发电厂",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "248ac57df697",
+      "word": "cholesterol",
+      "meaning": "胆固醇",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "ec40097f1e41",
+      "word": "nuclear power plants",
+      "meaning": "核电站",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "13dd41ac63e5",
+      "word": "bitterness",
+      "meaning": "苦味",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "8f7274e59c9c",
+      "word": "fossil fuels",
+      "meaning": "化石燃料",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "02661f0efcfa",
+      "word": "sourness",
+      "meaning": "酸味",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "4c7d8a4cd8a0",
+      "word": "crystal",
+      "meaning": "晶体",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "c36443c7b2f2",
+      "word": "kilocalorie",
+      "meaning": "千卡",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "73d9cb877b35",
+      "word": "fiberglass",
+      "meaning": "玻璃纤维",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "874f1f8df7e2",
+      "word": "metabolism",
+      "meaning": "新陈代谢",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "7244ea38af34",
+      "word": "timber",
+      "meaning": "木材",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "a1bb80e09f47",
+      "word": "photosynthesis",
+      "meaning": "光合作用",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "f9a4b868773f",
+      "word": "solid",
+      "meaning": "固体",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "269fa7b828e3",
+      "word": "fossil",
+      "meaning": "化石",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "147b8525427e",
+      "word": "liquid",
+      "meaning": "液体",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "6924e1b9b135",
+      "word": "toxin",
+      "meaning": "毒素",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "a166370ac299",
+      "word": "gas",
+      "meaning": "气体",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    },
+    {
+      "id": "6e43c34870bd",
+      "word": "digest",
+      "meaning": "消化",
+      "scene": "chemistry",
+      "group": "化学",
+      "sourcePages": [
+        20
+      ]
+    }
+  ]
+}

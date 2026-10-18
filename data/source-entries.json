@@ -1,0 +1,6323 @@
+[
+  {
+    "raw": "landlord/landlady",
+    "meaning": "(女)房东",
+    "page": 2,
+    "y": 233.5,
+    "x": 69.7
+  },
+  {
+    "raw": "guest",
+    "meaning": "客人",
+    "page": 2,
+    "y": 233.5,
+    "x": 297.0
+  },
+  {
+    "raw": "tenant",
+    "meaning": "房客",
+    "page": 2,
+    "y": 253.6,
+    "x": 69.7
+  },
+  {
+    "raw": "neighbour",
+    "meaning": "邻居",
+    "page": 2,
+    "y": 253.6,
+    "x": 297.0
+  },
+  {
+    "raw": "agent/agency",
+    "meaning": "中介",
+    "page": 2,
+    "y": 273.8,
+    "x": 69.7
+  },
+  {
+    "raw": "student adviser/advisor",
+    "meaning": "学生顾问",
+    "page": 2,
+    "y": 273.8,
+    "x": 297.0
+  },
+  {
+    "raw": "host family",
+    "meaning": "接待家庭",
+    "page": 2,
+    "y": 294.0,
+    "x": 69.7
+  },
+  {
+    "raw": "coordinator",
+    "meaning": "协调者",
+    "page": 2,
+    "y": 294.0,
+    "x": 297.0
+  },
+  {
+    "raw": "rental price/rent",
+    "meaning": "租金",
+    "page": 2,
+    "y": 382.0,
+    "x": 69.7
+  },
+  {
+    "raw": "insurance",
+    "meaning": "保险",
+    "page": 2,
+    "y": 382.0,
+    "x": 297.9
+  },
+  {
+    "raw": "deposit",
+    "meaning": "押金",
+    "page": 2,
+    "y": 402.2,
+    "x": 69.7
+  },
+  {
+    "raw": "contract",
+    "meaning": "合同,合约",
+    "page": 2,
+    "y": 402.2,
+    "x": 297.9
+  },
+  {
+    "raw": "utility bills",
+    "meaning": "水电费",
+    "page": 2,
+    "y": 422.3,
+    "x": 69.7
+  },
+  {
+    "raw": "pay for contract/lease",
+    "meaning": "为合约付款",
+    "page": 2,
+    "y": 422.3,
+    "x": 297.9
+  },
+  {
+    "raw": "water/gas/electricity/ phone bill",
+    "meaning": "水/燃气/电/电话 费",
+    "page": 2,
+    "y": 442.5,
+    "x": 69.7
+  },
+  {
+    "raw": "on a weekly/monthly/quarterly basis",
+    "meaning": "按每周/每月/每季 度的频度",
+    "page": 2,
+    "y": 442.5,
+    "x": 297.9
+  },
+  {
+    "raw": "refundable",
+    "meaning": "可退回的",
+    "page": 2,
+    "y": 466.4,
+    "x": 69.7
+  },
+  {
+    "raw": "downtown/city centre",
+    "meaning": "市中心",
+    "page": 2,
+    "y": 553.7,
+    "x": 69.7
+  },
+  {
+    "raw": "east",
+    "meaning": "东",
+    "page": 2,
+    "y": 553.7,
+    "x": 297.9
+  },
+  {
+    "raw": "urban",
+    "meaning": "城市",
+    "page": 2,
+    "y": 573.8,
+    "x": 69.7
+  },
+  {
+    "raw": "west",
+    "meaning": "西",
+    "page": 2,
+    "y": 573.8,
+    "x": 297.9
+  },
+  {
+    "raw": "countryside",
+    "meaning": "乡村",
+    "page": 2,
+    "y": 594.0,
+    "x": 69.7
+  },
+  {
+    "raw": "northern",
+    "meaning": "北边的",
+    "page": 2,
+    "y": 594.0,
+    "x": 297.9
+  },
+  {
+    "raw": "suburbs/outskirts",
+    "meaning": "郊区",
+    "page": 2,
+    "y": 614.2,
+    "x": 69.7
+  },
+  {
+    "raw": "southern",
+    "meaning": "南边的",
+    "page": 2,
+    "y": 614.2,
+    "x": 297.9
+  },
+  {
+    "raw": "rural area",
+    "meaning": "郊县",
+    "page": 2,
+    "y": 634.4,
+    "x": 69.7
+  },
+  {
+    "raw": "eastern",
+    "meaning": "东边的",
+    "page": 2,
+    "y": 634.4,
+    "x": 297.9
+  },
+  {
+    "raw": "road/street/avenue",
+    "meaning": "街道",
+    "page": 2,
+    "y": 654.5,
+    "x": 69.7
+  },
+  {
+    "raw": "western",
+    "meaning": "西边的",
+    "page": 2,
+    "y": 653.3,
+    "x": 297.9
+  },
+  {
+    "raw": "community",
+    "meaning": "社区",
+    "page": 2,
+    "y": 674.7,
+    "x": 69.7
+  },
+  {
+    "raw": "northwest",
+    "meaning": "西北",
+    "page": 2,
+    "y": 673.5,
+    "x": 297.9
+  },
+  {
+    "raw": "neighbourhood",
+    "meaning": "邻舍",
+    "page": 2,
+    "y": 694.9,
+    "x": 69.7
+  },
+  {
+    "raw": "southwest",
+    "meaning": "西南",
+    "page": 2,
+    "y": 697.3,
+    "x": 297.9
+  },
+  {
+    "raw": "north",
+    "meaning": "北",
+    "page": 2,
+    "y": 715.1,
+    "x": 69.7
+  },
+  {
+    "raw": "northeast",
+    "meaning": "东北",
+    "page": 2,
+    "y": 717.5,
+    "x": 297.9
+  },
+  {
+    "raw": "south",
+    "meaning": "南",
+    "page": 2,
+    "y": 735.2,
+    "x": 69.7
+  },
+  {
+    "raw": "southeast",
+    "meaning": "东南",
+    "page": 2,
+    "y": 737.7,
+    "x": 297.9
+  },
+  {
+    "raw": "property",
+    "meaning": "房产",
+    "page": 3,
+    "y": 102.0,
+    "x": 69.7
+  },
+  {
+    "raw": "homestay",
+    "meaning": "寄宿家庭",
+    "page": 3,
+    "y": 102.0,
+    "x": 297.6
+  },
+  {
+    "raw": "guest house",
+    "meaning": "招待所",
+    "page": 3,
+    "y": 122.2,
+    "x": 69.7
+  },
+  {
+    "raw": "flat/apartment",
+    "meaning": "公寓",
+    "page": 3,
+    "y": 122.2,
+    "x": 297.6
+  },
+  {
+    "raw": "studio apartment",
+    "meaning": "单身公寓",
+    "page": 3,
+    "y": 142.4,
+    "x": 69.7
+  },
+  {
+    "raw": "en-suite",
+    "meaning": "个人单间(带独立厕所不 带厨房)",
+    "page": 3,
+    "y": 142.4,
+    "x": 297.6
+  },
+  {
+    "raw": "single room",
+    "meaning": "单人间",
+    "page": 3,
+    "y": 162.5,
+    "x": 69.7
+  },
+  {
+    "raw": "dormitory",
+    "meaning": "宿舍",
+    "page": 3,
+    "y": 165.0,
+    "x": 297.6
+  },
+  {
+    "raw": "twin room",
+    "meaning": "双人间(两个床)",
+    "page": 3,
+    "y": 182.7,
+    "x": 69.7
+  },
+  {
+    "raw": "halls of residence",
+    "meaning": "公寓楼",
+    "page": 3,
+    "y": 185.2,
+    "x": 297.6
+  },
+  {
+    "raw": "triple room",
+    "meaning": "三人间",
+    "page": 3,
+    "y": 202.9,
+    "x": 69.7
+  },
+  {
+    "raw": "cottage",
+    "meaning": "小屋",
+    "page": 3,
+    "y": 205.3,
+    "x": 297.6
+  },
+  {
+    "raw": "on-campus accommodation",
+    "meaning": "校内宿舍",
+    "page": 3,
+    "y": 223.1,
+    "x": 69.7
+  },
+  {
+    "raw": "villa",
+    "meaning": "郊区别墅",
+    "page": 3,
+    "y": 225.5,
+    "x": 297.6
+  },
+  {
+    "raw": "off-campus accommodation",
+    "meaning": "校外宿舍",
+    "page": 3,
+    "y": 246.9,
+    "x": 69.7
+  },
+  {
+    "raw": "house",
+    "meaning": "独栋楼",
+    "page": 3,
+    "y": 245.7,
+    "x": 297.6
+  },
+  {
+    "raw": "refreshments/snack",
+    "meaning": "点心",
+    "page": 3,
+    "y": 330.4,
+    "x": 69.4
+  },
+  {
+    "raw": "vegetarian",
+    "meaning": "素食主义者",
+    "page": 3,
+    "y": 330.4,
+    "x": 297.3
+  },
+  {
+    "raw": "special food/dietary requirement",
+    "meaning": "对于食物特殊要求",
+    "page": 3,
+    "y": 350.6,
+    "x": 69.4
+  },
+  {
+    "raw": "seafood",
+    "meaning": "海鲜",
+    "page": 3,
+    "y": 350.6,
+    "x": 297.3
+  },
+  {
+    "raw": "red meat",
+    "meaning": "牛羊肉",
+    "page": 3,
+    "y": 370.8,
+    "x": 297.3
+  },
+  {
+    "raw": "food allergies/be allergic to",
+    "meaning": "对...食物过敏",
+    "page": 3,
+    "y": 374.4,
+    "x": 69.4
+  },
+  {
+    "raw": "living room",
+    "meaning": "客厅",
+    "page": 3,
+    "y": 457.1,
+    "x": 69.8
+  },
+  {
+    "raw": "garage",
+    "meaning": "车库",
+    "page": 3,
+    "y": 457.1,
+    "x": 297.7
+  },
+  {
+    "raw": "dining room",
+    "meaning": "饭厅",
+    "page": 3,
+    "y": 477.2,
+    "x": 69.8
+  },
+  {
+    "raw": "car park",
+    "meaning": "停车场",
+    "page": 3,
+    "y": 477.2,
+    "x": 297.7
+  },
+  {
+    "raw": "kitchen",
+    "meaning": "厨房",
+    "page": 3,
+    "y": 497.4,
+    "x": 69.8
+  },
+  {
+    "raw": "lift",
+    "meaning": "电梯",
+    "page": 3,
+    "y": 497.4,
+    "x": 297.7
+  },
+  {
+    "raw": "kitchen-diner",
+    "meaning": "有就餐区的大 厨房",
+    "page": 3,
+    "y": 517.6,
+    "x": 69.8
+  },
+  {
+    "raw": "fire gate/exit",
+    "meaning": "紧急出口",
+    "page": 3,
+    "y": 517.6,
+    "x": 297.7
+  },
+  {
+    "raw": "bathroom",
+    "meaning": "卫生间",
+    "page": 3,
+    "y": 540.2,
+    "x": 69.8
+  },
+  {
+    "raw": "toilet",
+    "meaning": "厕所",
+    "page": 3,
+    "y": 537.7,
+    "x": 297.7
+  },
+  {
+    "raw": "garden",
+    "meaning": "花园",
+    "page": 3,
+    "y": 560.4,
+    "x": 69.8
+  },
+  {
+    "raw": "foyer",
+    "meaning": "门厅",
+    "page": 3,
+    "y": 557.9,
+    "x": 297.7
+  },
+  {
+    "raw": "yard",
+    "meaning": "庭院",
+    "page": 3,
+    "y": 580.6,
+    "x": 69.8
+  },
+  {
+    "raw": "corridor",
+    "meaning": "走廊",
+    "page": 3,
+    "y": 578.1,
+    "x": 297.7
+  },
+  {
+    "raw": "cloakroom",
+    "meaning": "衣帽间",
+    "page": 3,
+    "y": 600.7,
+    "x": 69.8
+  },
+  {
+    "raw": "laundry room",
+    "meaning": "洗衣房",
+    "page": 3,
+    "y": 598.3,
+    "x": 297.7
+  },
+  {
+    "raw": "study",
+    "meaning": "书房",
+    "page": 3,
+    "y": 620.9,
+    "x": 69.8
+  },
+  {
+    "raw": "well/half/un-furnished",
+    "meaning": "精装/简装/毛胚",
+    "page": 3,
+    "y": 703.2,
+    "x": 69.8
+  },
+  {
+    "raw": "bookshelf",
+    "meaning": "书架",
+    "page": 3,
+    "y": 703.2,
+    "x": 297.7
+  },
+  {
+    "raw": "cupboard",
+    "meaning": "橱柜",
+    "page": 3,
+    "y": 723.4,
+    "x": 69.8
+  },
+  {
+    "raw": "air conditioner/conditioning",
+    "meaning": "空调",
+    "page": 3,
+    "y": 723.4,
+    "x": 297.7
+  },
+  {
+    "raw": "wardrobe",
+    "meaning": "衣柜",
+    "page": 3,
+    "y": 743.6,
+    "x": 69.8
+  },
+  {
+    "raw": "heating",
+    "meaning": "取暖",
+    "page": 3,
+    "y": 743.6,
+    "x": 297.7
+  },
+  {
+    "raw": "closed-circuit TV/video surveillance",
+    "meaning": "闭路电视/监 控系统",
+    "page": 4,
+    "y": 72.5,
+    "x": 69.7
+  },
+  {
+    "raw": "furnace",
+    "meaning": "火炉",
+    "page": 4,
+    "y": 72.5,
+    "x": 297.6
+  },
+  {
+    "raw": "couch/sofa",
+    "meaning": "沙发",
+    "page": 4,
+    "y": 92.7,
+    "x": 69.7
+  },
+  {
+    "raw": "oven",
+    "meaning": "烤炉",
+    "page": 4,
+    "y": 92.7,
+    "x": 297.6
+  },
+  {
+    "raw": "curtain",
+    "meaning": "窗帘",
+    "page": 4,
+    "y": 112.9,
+    "x": 69.7
+  },
+  {
+    "raw": "washing machine",
+    "meaning": "洗衣机",
+    "page": 4,
+    "y": 112.9,
+    "x": 297.6
+  },
+  {
+    "raw": "fridge",
+    "meaning": "冰箱",
+    "page": 4,
+    "y": 133.1,
+    "x": 69.7
+  },
+  {
+    "raw": "vacuum cleaner",
+    "meaning": "吸尘机",
+    "page": 4,
+    "y": 133.1,
+    "x": 297.6
+  },
+  {
+    "raw": "cooker",
+    "meaning": "厨具",
+    "page": 4,
+    "y": 156.9,
+    "x": 69.7
+  },
+  {
+    "raw": "basin",
+    "meaning": "盆",
+    "page": 4,
+    "y": 153.2,
+    "x": 297.6
+  },
+  {
+    "raw": "travel agency",
+    "meaning": "旅行社",
+    "page": 4,
+    "y": 294.8,
+    "x": 69.8
+  },
+  {
+    "raw": "book/booking",
+    "meaning": "预定",
+    "page": 4,
+    "y": 294.8,
+    "x": 297.7
+  },
+  {
+    "raw": "tour guide",
+    "meaning": "导游",
+    "page": 4,
+    "y": 314.9,
+    "x": 69.8
+  },
+  {
+    "raw": "recreation/entertainment/ leisure",
+    "meaning": "娱乐",
+    "page": 4,
+    "y": 314.9,
+    "x": 297.7
+  },
+  {
+    "raw": "guided tours",
+    "meaning": "带导游的旅行",
+    "page": 4,
+    "y": 335.1,
+    "x": 69.8
+  },
+  {
+    "raw": "backpacker",
+    "meaning": "背包客",
+    "page": 4,
+    "y": 338.8,
+    "x": 297.7
+  },
+  {
+    "raw": "reserve/reservation",
+    "meaning": "预定",
+    "page": 4,
+    "y": 355.3,
+    "x": 69.8
+  },
+  {
+    "raw": "highlight",
+    "meaning": "热点",
+    "page": 4,
+    "y": 428.1,
+    "x": 69.7
+  },
+  {
+    "raw": "theme park",
+    "meaning": "主题公园",
+    "page": 4,
+    "y": 428.1,
+    "x": 297.6
+  },
+  {
+    "raw": "rainforest",
+    "meaning": "雨林",
+    "page": 4,
+    "y": 448.2,
+    "x": 69.7
+  },
+  {
+    "raw": "organic farm",
+    "meaning": "有机农场",
+    "page": 4,
+    "y": 448.2,
+    "x": 297.6
+  },
+  {
+    "raw": "swamp/marsh",
+    "meaning": "沼泽",
+    "page": 4,
+    "y": 468.4,
+    "x": 69.7
+  },
+  {
+    "raw": "aquarium",
+    "meaning": "水族馆",
+    "page": 4,
+    "y": 468.4,
+    "x": 297.6
+  },
+  {
+    "raw": "wetland",
+    "meaning": "湿地",
+    "page": 4,
+    "y": 488.6,
+    "x": 69.7
+  },
+  {
+    "raw": "undersea worlds",
+    "meaning": "海底世界",
+    "page": 4,
+    "y": 488.6,
+    "x": 297.6
+  },
+  {
+    "raw": "desert",
+    "meaning": "沙漠",
+    "page": 4,
+    "y": 508.8,
+    "x": 69.7
+  },
+  {
+    "raw": "amusement park",
+    "meaning": "游乐园",
+    "page": 4,
+    "y": 508.8,
+    "x": 297.6
+  },
+  {
+    "raw": "grassland",
+    "meaning": "草原",
+    "page": 4,
+    "y": 528.9,
+    "x": 69.7
+  },
+  {
+    "raw": "orchard",
+    "meaning": "果园",
+    "page": 4,
+    "y": 528.9,
+    "x": 297.6
+  },
+  {
+    "raw": "bush",
+    "meaning": "灌木丛",
+    "page": 4,
+    "y": 549.1,
+    "x": 69.7
+  },
+  {
+    "raw": "beach/coast/shore",
+    "meaning": "沙滩、海滨",
+    "page": 4,
+    "y": 549.1,
+    "x": 297.6
+  },
+  {
+    "raw": "waterfall",
+    "meaning": "瀑布",
+    "page": 4,
+    "y": 569.3,
+    "x": 69.7
+  },
+  {
+    "raw": "hot spring",
+    "meaning": "温泉",
+    "page": 4,
+    "y": 569.3,
+    "x": 297.6
+  },
+  {
+    "raw": "viewpoint",
+    "meaning": "观景点,制高 点",
+    "page": 4,
+    "y": 589.4,
+    "x": 69.7
+  },
+  {
+    "raw": "water mill",
+    "meaning": "水磨坊",
+    "page": 4,
+    "y": 589.4,
+    "x": 297.6
+  },
+  {
+    "raw": "viewing shelter",
+    "meaning": "观景棚",
+    "page": 4,
+    "y": 612.1,
+    "x": 69.7
+  },
+  {
+    "raw": "dock",
+    "meaning": "港口",
+    "page": 4,
+    "y": 609.6,
+    "x": 297.6
+  },
+  {
+    "raw": "historic(al) interest",
+    "meaning": "历史遗迹",
+    "page": 4,
+    "y": 632.3,
+    "x": 69.7
+  },
+  {
+    "raw": "dam",
+    "meaning": "水坝",
+    "page": 4,
+    "y": 629.8,
+    "x": 297.6
+  },
+  {
+    "raw": "castle",
+    "meaning": "城堡",
+    "page": 4,
+    "y": 652.4,
+    "x": 69.7
+  },
+  {
+    "raw": "footbridge",
+    "meaning": "人行小桥",
+    "page": 4,
+    "y": 650.0,
+    "x": 297.6
+  },
+  {
+    "raw": "Great Barrier Reef",
+    "meaning": "大堡礁",
+    "page": 4,
+    "y": 670.1,
+    "x": 297.6
+  },
+  {
+    "raw": "cathedral",
+    "meaning": "大教堂",
+    "page": 4,
+    "y": 672.6,
+    "x": 69.7
+  },
+  {
+    "raw": "Stonehenge",
+    "meaning": "巨石阵",
+    "page": 4,
+    "y": 690.3,
+    "x": 297.6
+  },
+  {
+    "raw": "botanical garden",
+    "meaning": "植物园",
+    "page": 4,
+    "y": 692.8,
+    "x": 69.7
+  },
+  {
+    "raw": "Sydney Opera House",
+    "meaning": "悉尼歌剧院",
+    "page": 4,
+    "y": 710.5,
+    "x": 297.6
+  },
+  {
+    "raw": "art gallery",
+    "meaning": "画廊",
+    "page": 4,
+    "y": 712.9,
+    "x": 69.7
+  },
+  {
+    "raw": "Tower of London",
+    "meaning": "伦敦塔",
+    "page": 4,
+    "y": 730.7,
+    "x": 297.6
+  },
+  {
+    "raw": "museum",
+    "meaning": "博物馆",
+    "page": 4,
+    "y": 733.1,
+    "x": 69.7
+  },
+  {
+    "raw": "ancient temple",
+    "meaning": "古寺",
+    "page": 4,
+    "y": 753.3,
+    "x": 69.7
+  },
+  {
+    "raw": "musical instrument",
+    "meaning": "乐器",
+    "page": 5,
+    "y": 102.0,
+    "x": 69.7
+  },
+  {
+    "raw": "flute",
+    "meaning": "笛子",
+    "page": 5,
+    "y": 102.0,
+    "x": 297.6
+  },
+  {
+    "raw": "keyboard",
+    "meaning": "键盘",
+    "page": 5,
+    "y": 122.2,
+    "x": 69.7
+  },
+  {
+    "raw": "drum",
+    "meaning": "鼓",
+    "page": 5,
+    "y": 122.2,
+    "x": 297.6
+  },
+  {
+    "raw": "piano",
+    "meaning": "钢琴",
+    "page": 5,
+    "y": 142.4,
+    "x": 69.7
+  },
+  {
+    "raw": "pop",
+    "meaning": "流行音乐",
+    "page": 5,
+    "y": 142.4,
+    "x": 297.6
+  },
+  {
+    "raw": "pianist",
+    "meaning": "钢琴家",
+    "page": 5,
+    "y": 162.5,
+    "x": 69.7
+  },
+  {
+    "raw": "jazz",
+    "meaning": "爵士乐",
+    "page": 5,
+    "y": 162.5,
+    "x": 297.6
+  },
+  {
+    "raw": "string instrument",
+    "meaning": "弦乐器",
+    "page": 5,
+    "y": 182.7,
+    "x": 69.7
+  },
+  {
+    "raw": "folk",
+    "meaning": "民谣",
+    "page": 5,
+    "y": 182.7,
+    "x": 297.6
+  },
+  {
+    "raw": "violin",
+    "meaning": "小提琴",
+    "page": 5,
+    "y": 202.9,
+    "x": 69.7
+  },
+  {
+    "raw": "easy listening",
+    "meaning": "轻音乐",
+    "page": 5,
+    "y": 202.9,
+    "x": 297.6
+  },
+  {
+    "raw": "violinist",
+    "meaning": "小提琴家",
+    "page": 5,
+    "y": 223.1,
+    "x": 69.7
+  },
+  {
+    "raw": "classical",
+    "meaning": "古典音乐",
+    "page": 5,
+    "y": 223.1,
+    "x": 297.6
+  },
+  {
+    "raw": "cello",
+    "meaning": "大提琴",
+    "page": 5,
+    "y": 243.2,
+    "x": 69.7
+  },
+  {
+    "raw": "live music",
+    "meaning": "现场音乐",
+    "page": 5,
+    "y": 243.2,
+    "x": 297.6
+  },
+  {
+    "raw": "cellist",
+    "meaning": "大提琴家",
+    "page": 5,
+    "y": 263.4,
+    "x": 69.7
+  },
+  {
+    "raw": "disco",
+    "meaning": "跳舞厅",
+    "page": 5,
+    "y": 263.4,
+    "x": 297.6
+  },
+  {
+    "raw": "guitar",
+    "meaning": "吉他",
+    "page": 5,
+    "y": 283.6,
+    "x": 69.7
+  },
+  {
+    "raw": "pub",
+    "meaning": "酒吧",
+    "page": 5,
+    "y": 283.6,
+    "x": 297.6
+  },
+  {
+    "raw": "guitarist",
+    "meaning": "吉他手",
+    "page": 5,
+    "y": 303.8,
+    "x": 69.7
+  },
+  {
+    "raw": "clubhouse",
+    "meaning": "会所",
+    "page": 5,
+    "y": 303.7,
+    "x": 297.6
+  },
+  {
+    "raw": "concert hall",
+    "meaning": "音乐厅",
+    "page": 5,
+    "y": 323.6,
+    "x": 69.7
+  },
+  {
+    "raw": "Studio Theatre",
+    "meaning": "演播剧场",
+    "page": 5,
+    "y": 323.9,
+    "x": 297.6
+  },
+  {
+    "raw": "opera house",
+    "meaning": "歌剧院",
+    "page": 5,
+    "y": 344.1,
+    "x": 69.7
+  },
+  {
+    "raw": "theatre",
+    "meaning": "剧院",
+    "page": 5,
+    "y": 344.1,
+    "x": 297.6
+  },
+  {
+    "raw": "karaoke bars",
+    "meaning": "卡拉OK",
+    "page": 5,
+    "y": 364.3,
+    "x": 69.7
+  },
+  {
+    "raw": "theatrical events",
+    "meaning": "戏剧",
+    "page": 5,
+    "y": 364.3,
+    "x": 297.6
+  },
+  {
+    "raw": "concert",
+    "meaning": "音乐会",
+    "page": 5,
+    "y": 384.4,
+    "x": 69.7
+  },
+  {
+    "raw": "exhibition",
+    "meaning": "展览",
+    "page": 5,
+    "y": 384.4,
+    "x": 297.6
+  },
+  {
+    "raw": "cinema",
+    "meaning": "电影院",
+    "page": 5,
+    "y": 404.6,
+    "x": 69.7
+  },
+  {
+    "raw": "department stores",
+    "meaning": "百货商场",
+    "page": 5,
+    "y": 404.6,
+    "x": 297.6
+  },
+  {
+    "raw": "rock climbing/cliff walks",
+    "meaning": "攀岩",
+    "page": 5,
+    "y": 486.1,
+    "x": 297.6
+  },
+  {
+    "raw": "bushwalk",
+    "meaning": "林中漫步",
+    "page": 5,
+    "y": 487.5,
+    "x": 69.7
+  },
+  {
+    "raw": "workshop",
+    "meaning": "工作间",
+    "page": 5,
+    "y": 506.3,
+    "x": 297.6
+  },
+  {
+    "raw": "hiking",
+    "meaning": "徒步旅行",
+    "page": 5,
+    "y": 507.7,
+    "x": 69.7
+  },
+  {
+    "raw": "exhibition",
+    "meaning": "展览",
+    "page": 5,
+    "y": 526.5,
+    "x": 297.6
+  },
+  {
+    "raw": "trekking",
+    "meaning": "跋涉",
+    "page": 5,
+    "y": 527.9,
+    "x": 69.7
+  },
+  {
+    "raw": "excursion",
+    "meaning": "远足",
+    "page": 5,
+    "y": 546.6,
+    "x": 297.6
+  },
+  {
+    "raw": "camping",
+    "meaning": "野营",
+    "page": 5,
+    "y": 548.0,
+    "x": 69.7
+  },
+  {
+    "raw": "horse riding",
+    "meaning": "骑马",
+    "page": 5,
+    "y": 566.8,
+    "x": 297.6
+  },
+  {
+    "raw": "campsite",
+    "meaning": "营地",
+    "page": 5,
+    "y": 568.2,
+    "x": 69.7
+  },
+  {
+    "raw": "cycling",
+    "meaning": "骑自行车",
+    "page": 5,
+    "y": 587.2,
+    "x": 69.7
+  },
+  {
+    "raw": "vehicle",
+    "meaning": "车辆",
+    "page": 5,
+    "y": 670.1,
+    "x": 69.0
+  },
+  {
+    "raw": "helicopter",
+    "meaning": "直升⻜机",
+    "page": 5,
+    "y": 668.7,
+    "x": 296.9
+  },
+  {
+    "raw": "railway station",
+    "meaning": "火车站",
+    "page": 5,
+    "y": 690.3,
+    "x": 69.0
+  },
+  {
+    "raw": "shuttle bus",
+    "meaning": "班车",
+    "page": 5,
+    "y": 688.8,
+    "x": 296.9
+  },
+  {
+    "raw": "Central Station",
+    "meaning": "中央车站",
+    "page": 5,
+    "y": 710.4,
+    "x": 69.0
+  },
+  {
+    "raw": "cab/taxi",
+    "meaning": "计程车",
+    "page": 5,
+    "y": 709.0,
+    "x": 296.9
+  },
+  {
+    "raw": "airport",
+    "meaning": "机场",
+    "page": 5,
+    "y": 730.6,
+    "x": 69.0
+  },
+  {
+    "raw": "four-wheel driver",
+    "meaning": "四驱车",
+    "page": 5,
+    "y": 729.2,
+    "x": 296.9
+  },
+  {
+    "raw": "river cruise",
+    "meaning": "游艇游览",
+    "page": 5,
+    "y": 750.8,
+    "x": 69.0
+  },
+  {
+    "raw": "coach",
+    "meaning": "长途客车",
+    "page": 5,
+    "y": 753.0,
+    "x": 296.9
+  },
+  {
+    "raw": "jeep",
+    "meaning": "吉普车",
+    "page": 6,
+    "y": 81.5,
+    "x": 69.7
+  },
+  {
+    "raw": "river cruise",
+    "meaning": "游船",
+    "page": 6,
+    "y": 81.5,
+    "x": 297.6
+  },
+  {
+    "raw": "minibus",
+    "meaning": "中巴",
+    "page": 6,
+    "y": 101.6,
+    "x": 69.7
+  },
+  {
+    "raw": "boat trips",
+    "meaning": "游船",
+    "page": 6,
+    "y": 101.6,
+    "x": 297.6
+  },
+  {
+    "raw": "underground/subway/tube/ metro",
+    "meaning": "地铁",
+    "page": 6,
+    "y": 121.8,
+    "x": 69.7
+  },
+  {
+    "raw": "ferry",
+    "meaning": "渡船",
+    "page": 6,
+    "y": 142.0,
+    "x": 69.7
+  },
+  {
+    "raw": "sports club",
+    "meaning": "健身俱乐部",
+    "page": 6,
+    "y": 288.4,
+    "x": 69.7
+  },
+  {
+    "raw": "dance studio",
+    "meaning": "舞蹈教室",
+    "page": 6,
+    "y": 287.5,
+    "x": 297.6
+  },
+  {
+    "raw": "fitness centre",
+    "meaning": "健身俱乐部",
+    "page": 6,
+    "y": 308.6,
+    "x": 69.7
+  },
+  {
+    "raw": "swimming pool",
+    "meaning": "游泳池",
+    "page": 6,
+    "y": 307.7,
+    "x": 297.6
+  },
+  {
+    "raw": "gym",
+    "meaning": "健身房",
+    "page": 6,
+    "y": 328.7,
+    "x": 69.7
+  },
+  {
+    "raw": "salad bar",
+    "meaning": "沙拉吧",
+    "page": 6,
+    "y": 327.9,
+    "x": 297.6
+  },
+  {
+    "raw": "reception",
+    "meaning": "前台",
+    "page": 6,
+    "y": 348.9,
+    "x": 69.7
+  },
+  {
+    "raw": "indoor stadium",
+    "meaning": "室内体育馆",
+    "page": 6,
+    "y": 348.1,
+    "x": 297.6
+  },
+  {
+    "raw": "locker room",
+    "meaning": "更衣室",
+    "page": 6,
+    "y": 369.1,
+    "x": 69.7
+  },
+  {
+    "raw": "tennis/squash court",
+    "meaning": "网/壁球场",
+    "page": 6,
+    "y": 368.2,
+    "x": 297.6
+  },
+  {
+    "raw": "keep-fit studio",
+    "meaning": "健身室",
+    "page": 6,
+    "y": 389.3,
+    "x": 69.7
+  },
+  {
+    "raw": "receptionist",
+    "meaning": "前台接待人员",
+    "page": 6,
+    "y": 473.2,
+    "x": 69.7
+  },
+  {
+    "raw": "dietician",
+    "meaning": "饮食专家",
+    "page": 6,
+    "y": 473.0,
+    "x": 297.6
+  },
+  {
+    "raw": "coach/trainer",
+    "meaning": "教练",
+    "page": 6,
+    "y": 493.3,
+    "x": 69.7
+  },
+  {
+    "raw": "internal member",
+    "meaning": "内部人员",
+    "page": 6,
+    "y": 493.2,
+    "x": 297.6
+  },
+  {
+    "raw": "instructor",
+    "meaning": "指导教练",
+    "page": 6,
+    "y": 513.5,
+    "x": 69.7
+  },
+  {
+    "raw": "external member",
+    "meaning": "外部人员",
+    "page": 6,
+    "y": 513.4,
+    "x": 297.6
+  },
+  {
+    "raw": "application form",
+    "meaning": "申请表",
+    "page": 6,
+    "y": 609.1,
+    "x": 69.7
+  },
+  {
+    "raw": "bank statement",
+    "meaning": "银行对账单",
+    "page": 6,
+    "y": 609.1,
+    "x": 297.6
+  },
+  {
+    "raw": "reference number",
+    "meaning": "档案号",
+    "page": 6,
+    "y": 629.3,
+    "x": 69.7
+  },
+  {
+    "raw": "utility bills",
+    "meaning": "水电费账单",
+    "page": 6,
+    "y": 629.3,
+    "x": 297.6
+  },
+  {
+    "raw": "passport photo",
+    "meaning": "护照照片",
+    "page": 6,
+    "y": 649.5,
+    "x": 69.7
+  },
+  {
+    "raw": "reference letter from employer",
+    "meaning": "雇主证明信",
+    "page": 6,
+    "y": 649.5,
+    "x": 297.6
+  },
+  {
+    "raw": "documents for ID/ID card",
+    "meaning": "身份证明",
+    "page": 6,
+    "y": 669.7,
+    "x": 69.7
+  },
+  {
+    "raw": "joining fee",
+    "meaning": "入会费",
+    "page": 6,
+    "y": 669.7,
+    "x": 297.6
+  },
+  {
+    "raw": "driver's license",
+    "meaning": "驾照",
+    "page": 6,
+    "y": 689.8,
+    "x": 69.7
+  },
+  {
+    "raw": "annual fee",
+    "meaning": "年费",
+    "page": 6,
+    "y": 689.8,
+    "x": 297.6
+  },
+  {
+    "raw": "passport",
+    "meaning": "护照",
+    "page": 6,
+    "y": 710.0,
+    "x": 69.7
+  },
+  {
+    "raw": "student card",
+    "meaning": "学生证",
+    "page": 6,
+    "y": 730.2,
+    "x": 69.7
+  },
+  {
+    "raw": "soccer/football",
+    "meaning": "足球",
+    "page": 7,
+    "y": 118.3,
+    "x": 69.7
+  },
+  {
+    "raw": "squash",
+    "meaning": "壁球",
+    "page": 7,
+    "y": 118.3,
+    "x": 297.6
+  },
+  {
+    "raw": "beach volleyball",
+    "meaning": "沙滩排球",
+    "page": 7,
+    "y": 138.5,
+    "x": 69.7
+  },
+  {
+    "raw": "boxing",
+    "meaning": "拳击",
+    "page": 7,
+    "y": 138.5,
+    "x": 297.6
+  },
+  {
+    "raw": "basketball",
+    "meaning": "篮球",
+    "page": 7,
+    "y": 158.7,
+    "x": 69.7
+  },
+  {
+    "raw": "kick-boxing",
+    "meaning": "搏击",
+    "page": 7,
+    "y": 158.7,
+    "x": 297.6
+  },
+  {
+    "raw": "baseball",
+    "meaning": "棒球",
+    "page": 7,
+    "y": 178.8,
+    "x": 69.7
+  },
+  {
+    "raw": "judo",
+    "meaning": "柔道",
+    "page": 7,
+    "y": 178.8,
+    "x": 297.6
+  },
+  {
+    "raw": "hockey",
+    "meaning": "曲棍球",
+    "page": 7,
+    "y": 199.0,
+    "x": 69.7
+  },
+  {
+    "raw": "yoga",
+    "meaning": "瑜伽",
+    "page": 7,
+    "y": 199.0,
+    "x": 297.6
+  },
+  {
+    "raw": "handball",
+    "meaning": "手球",
+    "page": 7,
+    "y": 219.2,
+    "x": 69.7
+  },
+  {
+    "raw": "jogging",
+    "meaning": "慢跑",
+    "page": 7,
+    "y": 219.2,
+    "x": 297.6
+  },
+  {
+    "raw": "golf",
+    "meaning": "高尔夫",
+    "page": 7,
+    "y": 239.4,
+    "x": 69.7
+  },
+  {
+    "raw": "aerobics",
+    "meaning": "有氧运动",
+    "page": 7,
+    "y": 239.4,
+    "x": 297.6
+  },
+  {
+    "raw": "badminton",
+    "meaning": "羽毛球",
+    "page": 7,
+    "y": 259.5,
+    "x": 69.7
+  },
+  {
+    "raw": "stretchclass",
+    "meaning": "拉伸训练课程",
+    "page": 7,
+    "y": 259.5,
+    "x": 297.6
+  },
+  {
+    "raw": "table tennis",
+    "meaning": "乒乓球",
+    "page": 7,
+    "y": 279.7,
+    "x": 69.7
+  },
+  {
+    "raw": "ballet",
+    "meaning": "芭蕾",
+    "page": 7,
+    "y": 279.7,
+    "x": 297.6
+  },
+  {
+    "raw": "tennis",
+    "meaning": "网球",
+    "page": 7,
+    "y": 299.9,
+    "x": 69.7
+  },
+  {
+    "raw": "model",
+    "meaning": "型号",
+    "page": 7,
+    "y": 400.4,
+    "x": 69.4
+  },
+  {
+    "raw": "manufacturer",
+    "meaning": "厂商",
+    "page": 7,
+    "y": 400.4,
+    "x": 297.3
+  },
+  {
+    "raw": "gear change",
+    "meaning": "变速器",
+    "page": 7,
+    "y": 420.5,
+    "x": 69.4
+  },
+  {
+    "raw": "engine size",
+    "meaning": "排量",
+    "page": 7,
+    "y": 420.5,
+    "x": 297.3
+  },
+  {
+    "raw": "manual",
+    "meaning": "手动挡",
+    "page": 7,
+    "y": 440.7,
+    "x": 69.4
+  },
+  {
+    "raw": "frame",
+    "meaning": "车架",
+    "page": 7,
+    "y": 440.7,
+    "x": 297.3
+  },
+  {
+    "raw": "automatic",
+    "meaning": "自动挡",
+    "page": 7,
+    "y": 460.9,
+    "x": 69.4
+  },
+  {
+    "raw": "wheel (front, rear)",
+    "meaning": "车轮( 前轮,后轮)",
+    "page": 7,
+    "y": 460.9,
+    "x": 297.3
+  },
+  {
+    "raw": "top speed",
+    "meaning": "最高速",
+    "page": 7,
+    "y": 481.1,
+    "x": 69.4
+  },
+  {
+    "raw": "steering wheel",
+    "meaning": "方向盘",
+    "page": 7,
+    "y": 481.1,
+    "x": 297.3
+  },
+  {
+    "raw": "mileage",
+    "meaning": "里程数",
+    "page": 7,
+    "y": 501.2,
+    "x": 69.4
+  },
+  {
+    "raw": "car bumper",
+    "meaning": "保险杠",
+    "page": 7,
+    "y": 501.2,
+    "x": 297.3
+  },
+  {
+    "raw": "instrument panel",
+    "meaning": "仪表盘",
+    "page": 7,
+    "y": 521.4,
+    "x": 69.4
+  },
+  {
+    "raw": "insurance company",
+    "meaning": "保险公司",
+    "page": 7,
+    "y": 521.4,
+    "x": 297.3
+  },
+  {
+    "raw": "part exchange",
+    "meaning": "部分抵换",
+    "page": 7,
+    "y": 541.6,
+    "x": 69.4
+  },
+  {
+    "raw": "cash",
+    "meaning": "现金",
+    "page": 7,
+    "y": 692.0,
+    "x": 68.6
+  },
+  {
+    "raw": "credit card",
+    "meaning": "信用卡 (VISA, MASTER, American Express)",
+    "page": 7,
+    "y": 692.0,
+    "x": 296.5
+  },
+  {
+    "raw": "check (cheque)",
+    "meaning": "支票",
+    "page": 7,
+    "y": 712.2,
+    "x": 68.6
+  },
+  {
+    "raw": "deposit",
+    "meaning": "存款",
+    "page": 8,
+    "y": 120.2,
+    "x": 70.1
+  },
+  {
+    "raw": "interest rate",
+    "meaning": "利率",
+    "page": 8,
+    "y": 120.2,
+    "x": 298.0
+  },
+  {
+    "raw": "withdraw (withdrawal)",
+    "meaning": "取款",
+    "page": 8,
+    "y": 140.4,
+    "x": 70.1
+  },
+  {
+    "raw": "teller",
+    "meaning": "(银行)出纳员",
+    "page": 8,
+    "y": 140.4,
+    "x": 298.0
+  },
+  {
+    "raw": "overdraft/overdraw",
+    "meaning": "透支",
+    "page": 8,
+    "y": 160.5,
+    "x": 70.1
+  },
+  {
+    "raw": "transfer",
+    "meaning": "转账",
+    "page": 8,
+    "y": 160.5,
+    "x": 298.0
+  },
+  {
+    "raw": "balance",
+    "meaning": "余额",
+    "page": 8,
+    "y": 180.7,
+    "x": 70.1
+  },
+  {
+    "raw": "loan",
+    "meaning": "贷款",
+    "page": 8,
+    "y": 180.7,
+    "x": 298.0
+  },
+  {
+    "raw": "interest",
+    "meaning": "利息",
+    "page": 8,
+    "y": 200.9,
+    "x": 70.1
+  },
+  {
+    "raw": "current account",
+    "meaning": "活期账户",
+    "page": 8,
+    "y": 298.8,
+    "x": 69.0
+  },
+  {
+    "raw": "opening sum",
+    "meaning": "开户额",
+    "page": 8,
+    "y": 298.8,
+    "x": 296.9
+  },
+  {
+    "raw": "deposit account",
+    "meaning": "定期账户",
+    "page": 8,
+    "y": 319.0,
+    "x": 69.0
+  },
+  {
+    "raw": "identity security",
+    "meaning": "身份认证",
+    "page": 8,
+    "y": 319.0,
+    "x": 296.9
+  },
+  {
+    "raw": "joint account",
+    "meaning": "联合账户",
+    "page": 8,
+    "y": 339.2,
+    "x": 69.0
+  },
+  {
+    "raw": "bank statement",
+    "meaning": "银行对账单",
+    "page": 8,
+    "y": 339.2,
+    "x": 296.9
+  },
+  {
+    "raw": "instant account",
+    "meaning": "速成账户",
+    "page": 8,
+    "y": 359.3,
+    "x": 69.0
+  },
+  {
+    "raw": "select account",
+    "meaning": "高级账户",
+    "page": 8,
+    "y": 379.5,
+    "x": 69.0
+  },
+  {
+    "raw": "foreign currency",
+    "meaning": "外汇",
+    "page": 8,
+    "y": 473.0,
+    "x": 69.7
+  },
+  {
+    "raw": "dollar",
+    "meaning": "$",
+    "page": 8,
+    "y": 473.0,
+    "x": 297.6
+  },
+  {
+    "raw": "exchange rate",
+    "meaning": "汇率",
+    "page": 8,
+    "y": 493.2,
+    "x": 69.7
+  },
+  {
+    "raw": "euro",
+    "meaning": "€",
+    "page": 8,
+    "y": 493.2,
+    "x": 297.6
+  },
+  {
+    "raw": "pound",
+    "meaning": "£",
+    "page": 8,
+    "y": 513.4,
+    "x": 69.7
+  },
+  {
+    "raw": "primary school",
+    "meaning": "小学",
+    "page": 9,
+    "y": 267.6,
+    "x": 69.7
+  },
+  {
+    "raw": "Bachelor",
+    "meaning": "学士",
+    "page": 9,
+    "y": 267.6,
+    "x": 297.6
+  },
+  {
+    "raw": "secondary school",
+    "meaning": "初中",
+    "page": 9,
+    "y": 287.8,
+    "x": 69.7
+  },
+  {
+    "raw": "Master",
+    "meaning": "硕士",
+    "page": 9,
+    "y": 287.8,
+    "x": 297.6
+  },
+  {
+    "raw": "undergraduate",
+    "meaning": "本科",
+    "page": 9,
+    "y": 308.0,
+    "x": 69.7
+  },
+  {
+    "raw": "Doctor",
+    "meaning": "博士",
+    "page": 9,
+    "y": 308.0,
+    "x": 297.6
+  },
+  {
+    "raw": "postgraduate",
+    "meaning": "研究生",
+    "page": 9,
+    "y": 328.1,
+    "x": 69.7
+  },
+  {
+    "raw": "tutor",
+    "meaning": "导师",
+    "page": 9,
+    "y": 420.6,
+    "x": 69.7
+  },
+  {
+    "raw": "director",
+    "meaning": "主任",
+    "page": 9,
+    "y": 420.6,
+    "x": 298.0
+  },
+  {
+    "raw": "lecturer",
+    "meaning": "讲师",
+    "page": 9,
+    "y": 440.8,
+    "x": 69.7
+  },
+  {
+    "raw": "staff",
+    "meaning": "员工",
+    "page": 9,
+    "y": 440.8,
+    "x": 298.0
+  },
+  {
+    "raw": "professor",
+    "meaning": "教授",
+    "page": 9,
+    "y": 461.0,
+    "x": 69.7
+  },
+  {
+    "raw": "Teaching Assistant",
+    "meaning": "助教",
+    "page": 9,
+    "y": 461.0,
+    "x": 298.0
+  },
+  {
+    "raw": "associate professor",
+    "meaning": "副教授",
+    "page": 9,
+    "y": 481.2,
+    "x": 69.7
+  },
+  {
+    "raw": "mentor",
+    "meaning": "导师",
+    "page": 9,
+    "y": 481.2,
+    "x": 298.0
+  },
+  {
+    "raw": "convener",
+    "meaning": "召集人",
+    "page": 9,
+    "y": 501.3,
+    "x": 69.7
+  },
+  {
+    "raw": "student adviser",
+    "meaning": "学生顾问",
+    "page": 9,
+    "y": 501.3,
+    "x": 298.0
+  },
+  {
+    "raw": "counselor",
+    "meaning": "顾问",
+    "page": 9,
+    "y": 521.5,
+    "x": 69.7
+  },
+  {
+    "raw": "course convener",
+    "meaning": "课程组织者",
+    "page": 9,
+    "y": 521.5,
+    "x": 298.0
+  },
+  {
+    "raw": "principal",
+    "meaning": "校长",
+    "page": 9,
+    "y": 541.7,
+    "x": 69.7
+  },
+  {
+    "raw": "mature/adult students",
+    "meaning": "成人学生",
+    "page": 9,
+    "y": 637.0,
+    "x": 69.7
+  },
+  {
+    "raw": "senior student",
+    "meaning": "大四学生",
+    "page": 9,
+    "y": 637.0,
+    "x": 297.6
+  },
+  {
+    "raw": "overseas/international students",
+    "meaning": "国际学生",
+    "page": 9,
+    "y": 657.1,
+    "x": 69.7
+  },
+  {
+    "raw": "undergraduate",
+    "meaning": "大学生",
+    "page": 9,
+    "y": 657.1,
+    "x": 297.6
+  },
+  {
+    "raw": "graduate",
+    "meaning": "大学毕业生",
+    "page": 9,
+    "y": 677.3,
+    "x": 297.6
+  },
+  {
+    "raw": "freshman",
+    "meaning": "大一学生",
+    "page": 9,
+    "y": 681.0,
+    "x": 69.7
+  },
+  {
+    "raw": "sophomore",
+    "meaning": "大二学生",
+    "page": 9,
+    "y": 701.1,
+    "x": 69.7
+  },
+  {
+    "raw": "postgraduate student",
+    "meaning": "研究生",
+    "page": 9,
+    "y": 697.5,
+    "x": 297.6
+  },
+  {
+    "raw": "junior student",
+    "meaning": "大三学生",
+    "page": 9,
+    "y": 721.3,
+    "x": 69.7
+  },
+  {
+    "raw": "enroll",
+    "meaning": "报名参加",
+    "page": 10,
+    "y": 124.8,
+    "x": 69.7
+  },
+  {
+    "raw": "modular course",
+    "meaning": "模块课程",
+    "page": 10,
+    "y": 125.5,
+    "x": 297.6
+  },
+  {
+    "raw": "session",
+    "meaning": "(一节)课",
+    "page": 10,
+    "y": 144.9,
+    "x": 69.7
+  },
+  {
+    "raw": "training session",
+    "meaning": "培训课程",
+    "page": 10,
+    "y": 145.7,
+    "x": 297.6
+  },
+  {
+    "raw": "lecture",
+    "meaning": "讲座",
+    "page": 10,
+    "y": 165.1,
+    "x": 69.7
+  },
+  {
+    "raw": "refresher course",
+    "meaning": "补习课程",
+    "page": 10,
+    "y": 165.8,
+    "x": 297.6
+  },
+  {
+    "raw": "seminar",
+    "meaning": "研讨会",
+    "page": 10,
+    "y": 185.3,
+    "x": 69.7
+  },
+  {
+    "raw": "intensive course",
+    "meaning": "强化课程",
+    "page": 10,
+    "y": 186.0,
+    "x": 297.6
+  },
+  {
+    "raw": "tutorial",
+    "meaning": "辅导课",
+    "page": 10,
+    "y": 205.5,
+    "x": 69.7
+  },
+  {
+    "raw": "studies",
+    "meaning": "研究",
+    "page": 10,
+    "y": 206.2,
+    "x": 297.6
+  },
+  {
+    "raw": "group discussion",
+    "meaning": "小组讨论",
+    "page": 10,
+    "y": 225.6,
+    "x": 69.7
+  },
+  {
+    "raw": "semester/term",
+    "meaning": "学期",
+    "page": 10,
+    "y": 226.4,
+    "x": 297.6
+  },
+  {
+    "raw": "workshop",
+    "meaning": "讨论会",
+    "page": 10,
+    "y": 245.8,
+    "x": 69.7
+  },
+  {
+    "raw": "course outline",
+    "meaning": "课程大纲",
+    "page": 10,
+    "y": 246.5,
+    "x": 297.6
+  },
+  {
+    "raw": "diploma course",
+    "meaning": "文凭课程",
+    "page": 10,
+    "y": 266.0,
+    "x": 69.7
+  },
+  {
+    "raw": "handout(s)",
+    "meaning": "讲义",
+    "page": 10,
+    "y": 266.7,
+    "x": 297.6
+  },
+  {
+    "raw": "orientation week",
+    "meaning": "学习指导周 (开学第一周)",
+    "page": 10,
+    "y": 286.2,
+    "x": 69.7
+  },
+  {
+    "raw": "part-time course",
+    "meaning": "业余制课程",
+    "page": 10,
+    "y": 286.9,
+    "x": 297.6
+  },
+  {
+    "raw": "intensive course",
+    "meaning": "强化课程",
+    "page": 10,
+    "y": 307.0,
+    "x": 297.6
+  },
+  {
+    "raw": "curriculum",
+    "meaning": "课程",
+    "page": 10,
+    "y": 308.8,
+    "x": 69.7
+  },
+  {
+    "raw": "foundation/basic/elementary/ primary course",
+    "meaning": "基础课程",
+    "page": 10,
+    "y": 327.2,
+    "x": 297.6
+  },
+  {
+    "raw": "extracurricular",
+    "meaning": "课外课程",
+    "page": 10,
+    "y": 329.0,
+    "x": 69.7
+  },
+  {
+    "raw": "compulsory course",
+    "meaning": "必修课",
+    "page": 10,
+    "y": 349.1,
+    "x": 69.7
+  },
+  {
+    "raw": "secondary/intermediate course",
+    "meaning": "中级课程",
+    "page": 10,
+    "y": 349.9,
+    "x": 297.6
+  },
+  {
+    "raw": "optional course",
+    "meaning": "选修课",
+    "page": 10,
+    "y": 369.3,
+    "x": 69.7
+  },
+  {
+    "raw": "advanced course",
+    "meaning": "高级课程",
+    "page": 10,
+    "y": 370.0,
+    "x": 297.6
+  },
+  {
+    "raw": "specialized course",
+    "meaning": "专业课",
+    "page": 10,
+    "y": 389.5,
+    "x": 69.7
+  },
+  {
+    "raw": "night class",
+    "meaning": "晚课",
+    "page": 10,
+    "y": 390.2,
+    "x": 297.6
+  },
+  {
+    "raw": "general course",
+    "meaning": "通识课",
+    "page": 10,
+    "y": 409.7,
+    "x": 69.7
+  },
+  {
+    "raw": "weekend class",
+    "meaning": "双休日班",
+    "page": 10,
+    "y": 410.4,
+    "x": 297.6
+  },
+  {
+    "raw": "core programme",
+    "meaning": "核心课程",
+    "page": 10,
+    "y": 429.8,
+    "x": 69.7
+  },
+  {
+    "raw": "module",
+    "meaning": "课程",
+    "page": 10,
+    "y": 430.5,
+    "x": 297.6
+  },
+  {
+    "raw": "full-time course",
+    "meaning": "全日制课程",
+    "page": 10,
+    "y": 450.0,
+    "x": 69.7
+  },
+  {
+    "raw": "duration",
+    "meaning": "持续时间",
+    "page": 10,
+    "y": 450.7,
+    "x": 297.6
+  },
+  {
+    "raw": "Marketing",
+    "meaning": "市场",
+    "page": 10,
+    "y": 571.5,
+    "x": 69.8
+  },
+  {
+    "raw": "Linguistics",
+    "meaning": "语言学",
+    "page": 10,
+    "y": 572.3,
+    "x": 297.7
+  },
+  {
+    "raw": "Politics",
+    "meaning": "政治",
+    "page": 10,
+    "y": 591.7,
+    "x": 69.8
+  },
+  {
+    "raw": "Psychology",
+    "meaning": "心理学",
+    "page": 10,
+    "y": 592.5,
+    "x": 297.7
+  },
+  {
+    "raw": "Sociology",
+    "meaning": "社会学",
+    "page": 10,
+    "y": 611.8,
+    "x": 69.8
+  },
+  {
+    "raw": "Philosophy",
+    "meaning": "哲学",
+    "page": 10,
+    "y": 612.7,
+    "x": 297.7
+  },
+  {
+    "raw": "Statistics",
+    "meaning": "统计学",
+    "page": 10,
+    "y": 632.0,
+    "x": 69.8
+  },
+  {
+    "raw": "Anthropology",
+    "meaning": "人类学",
+    "page": 10,
+    "y": 632.8,
+    "x": 297.7
+  },
+  {
+    "raw": "Social Science",
+    "meaning": "社会科学",
+    "page": 10,
+    "y": 652.2,
+    "x": 69.8
+  },
+  {
+    "raw": "Archaeology",
+    "meaning": "考古学",
+    "page": 10,
+    "y": 653.0,
+    "x": 297.7
+  },
+  {
+    "raw": "Topography",
+    "meaning": "地形学",
+    "page": 10,
+    "y": 672.3,
+    "x": 69.8
+  },
+  {
+    "raw": "Education",
+    "meaning": "教育",
+    "page": 10,
+    "y": 673.2,
+    "x": 297.7
+  },
+  {
+    "raw": "History",
+    "meaning": "历史",
+    "page": 10,
+    "y": 692.5,
+    "x": 69.8
+  },
+  {
+    "raw": "Geography",
+    "meaning": "地理",
+    "page": 10,
+    "y": 693.4,
+    "x": 297.7
+  },
+  {
+    "raw": "Accounting",
+    "meaning": "会计",
+    "page": 10,
+    "y": 712.7,
+    "x": 69.8
+  },
+  {
+    "raw": "Journalism",
+    "meaning": "新闻学",
+    "page": 10,
+    "y": 713.5,
+    "x": 297.7
+  },
+  {
+    "raw": "Law",
+    "meaning": "法律",
+    "page": 10,
+    "y": 732.9,
+    "x": 69.8
+  },
+  {
+    "raw": "Literature",
+    "meaning": "文学",
+    "page": 10,
+    "y": 733.7,
+    "x": 297.7
+  },
+  {
+    "raw": "Biology",
+    "meaning": "生物",
+    "page": 11,
+    "y": 113.4,
+    "x": 69.7
+  },
+  {
+    "raw": "Computer Science",
+    "meaning": "计算机科学",
+    "page": 11,
+    "y": 113.8,
+    "x": 297.6
+  },
+  {
+    "raw": "Biophysics",
+    "meaning": "生理",
+    "page": 11,
+    "y": 133.6,
+    "x": 69.7
+  },
+  {
+    "raw": "Architecture",
+    "meaning": "建筑学",
+    "page": 11,
+    "y": 133.9,
+    "x": 297.6
+  },
+  {
+    "raw": "Cartography",
+    "meaning": "绘图法",
+    "page": 11,
+    "y": 153.8,
+    "x": 69.7
+  },
+  {
+    "raw": "Engineering",
+    "meaning": "工程学",
+    "page": 11,
+    "y": 154.1,
+    "x": 297.6
+  },
+  {
+    "raw": "Economics",
+    "meaning": "经济学",
+    "page": 11,
+    "y": 174.0,
+    "x": 69.7
+  },
+  {
+    "raw": "Statistics",
+    "meaning": "数据",
+    "page": 11,
+    "y": 174.3,
+    "x": 297.6
+  },
+  {
+    "raw": "Finance",
+    "meaning": "金融",
+    "page": 11,
+    "y": 194.1,
+    "x": 69.7
+  },
+  {
+    "raw": "Chemistry",
+    "meaning": "化学",
+    "page": 11,
+    "y": 194.7,
+    "x": 297.6
+  },
+  {
+    "raw": "Mathematics",
+    "meaning": "数学",
+    "page": 11,
+    "y": 214.3,
+    "x": 69.7
+  },
+  {
+    "raw": "Advanced English Studies",
+    "meaning": "高级英语研 究",
+    "page": 11,
+    "y": 308.3,
+    "x": 69.7
+  },
+  {
+    "raw": "Gender Studies",
+    "meaning": "性别研究",
+    "page": 11,
+    "y": 308.3,
+    "x": 297.6
+  },
+  {
+    "raw": "General English",
+    "meaning": "普通英语",
+    "page": 11,
+    "y": 330.9,
+    "x": 69.7
+  },
+  {
+    "raw": "Second Language Acquisition",
+    "meaning": "第二语言习得",
+    "page": 11,
+    "y": 328.5,
+    "x": 297.6
+  },
+  {
+    "raw": "Academic English",
+    "meaning": "学术英语",
+    "page": 11,
+    "y": 351.1,
+    "x": 69.7
+  },
+  {
+    "raw": "China",
+    "meaning": "中国",
+    "page": 11,
+    "y": 466.0,
+    "x": 69.0
+  },
+  {
+    "raw": "Spain",
+    "meaning": "西班牙",
+    "page": 11,
+    "y": 466.8,
+    "x": 298.4
+  },
+  {
+    "raw": "America",
+    "meaning": "美国",
+    "page": 11,
+    "y": 486.1,
+    "x": 69.0
+  },
+  {
+    "raw": "France",
+    "meaning": "法国",
+    "page": 11,
+    "y": 487.0,
+    "x": 298.4
+  },
+  {
+    "raw": "Australia",
+    "meaning": "澳大利亚",
+    "page": 11,
+    "y": 506.3,
+    "x": 69.0
+  },
+  {
+    "raw": "New Zealand",
+    "meaning": "新西兰",
+    "page": 11,
+    "y": 507.2,
+    "x": 298.4
+  },
+  {
+    "raw": "Japan",
+    "meaning": "日本",
+    "page": 11,
+    "y": 526.5,
+    "x": 69.0
+  },
+  {
+    "raw": "Netherland/the Netherlands",
+    "meaning": "荷兰",
+    "page": 11,
+    "y": 527.3,
+    "x": 298.4
+  },
+  {
+    "raw": "Korea",
+    "meaning": "韩国",
+    "page": 11,
+    "y": 546.7,
+    "x": 69.0
+  },
+  {
+    "raw": "Sweden",
+    "meaning": "瑞典",
+    "page": 11,
+    "y": 547.5,
+    "x": 298.4
+  },
+  {
+    "raw": "Portugal",
+    "meaning": "葡萄牙",
+    "page": 11,
+    "y": 566.8,
+    "x": 69.0
+  },
+  {
+    "raw": "Switzerland",
+    "meaning": "瑞士",
+    "page": 11,
+    "y": 567.7,
+    "x": 298.4
+  },
+  {
+    "raw": "Iceland",
+    "meaning": "冰岛",
+    "page": 11,
+    "y": 587.0,
+    "x": 69.0
+  },
+  {
+    "raw": "Greece",
+    "meaning": "希腊",
+    "page": 11,
+    "y": 587.8,
+    "x": 298.4
+  },
+  {
+    "raw": "Egypt",
+    "meaning": "埃及",
+    "page": 11,
+    "y": 607.2,
+    "x": 69.0
+  },
+  {
+    "raw": "Finland",
+    "meaning": "芬兰",
+    "page": 11,
+    "y": 608.0,
+    "x": 298.4
+  },
+  {
+    "raw": "Queensland",
+    "meaning": "昆士兰(澳大 利亚州名)",
+    "page": 11,
+    "y": 666.2,
+    "x": 69.7
+  },
+  {
+    "raw": "Alaska",
+    "meaning": "阿拉斯加",
+    "page": 11,
+    "y": 666.5,
+    "x": 299.1
+  },
+  {
+    "raw": "Washington",
+    "meaning": "华盛顿",
+    "page": 11,
+    "y": 686.7,
+    "x": 299.1
+  },
+  {
+    "raw": "Sydney",
+    "meaning": "悉尼",
+    "page": 11,
+    "y": 688.8,
+    "x": 69.7
+  },
+  {
+    "raw": "York",
+    "meaning": "约克",
+    "page": 11,
+    "y": 706.9,
+    "x": 299.1
+  },
+  {
+    "raw": "New South Wales",
+    "meaning": "新南威尔士州",
+    "page": 11,
+    "y": 709.0,
+    "x": 69.7
+  },
+  {
+    "raw": "Berlin",
+    "meaning": "柏林",
+    "page": 11,
+    "y": 727.0,
+    "x": 299.1
+  },
+  {
+    "raw": "Athens",
+    "meaning": "雅典",
+    "page": 11,
+    "y": 729.2,
+    "x": 69.7
+  },
+  {
+    "raw": "Portuguese",
+    "meaning": "葡萄牙语",
+    "page": 12,
+    "y": 94.1,
+    "x": 69.7
+  },
+  {
+    "raw": "Polish",
+    "meaning": "波兰语",
+    "page": 12,
+    "y": 94.6,
+    "x": 299.1
+  },
+  {
+    "raw": "Spanish",
+    "meaning": "西班牙语",
+    "page": 12,
+    "y": 114.3,
+    "x": 69.7
+  },
+  {
+    "raw": "Scottish",
+    "meaning": "苏格兰语",
+    "page": 12,
+    "y": 114.8,
+    "x": 299.1
+  },
+  {
+    "raw": "French",
+    "meaning": "法语",
+    "page": 12,
+    "y": 134.5,
+    "x": 69.7
+  },
+  {
+    "raw": "Swedish",
+    "meaning": "瑞典语",
+    "page": 12,
+    "y": 135.0,
+    "x": 299.1
+  },
+  {
+    "raw": "Greek",
+    "meaning": "希腊语言",
+    "page": 12,
+    "y": 154.6,
+    "x": 69.7
+  },
+  {
+    "raw": "assignment",
+    "meaning": "作业",
+    "page": 12,
+    "y": 303.3,
+    "x": 69.7
+  },
+  {
+    "raw": "dissertation",
+    "meaning": "学位论文",
+    "page": 12,
+    "y": 303.3,
+    "x": 297.6
+  },
+  {
+    "raw": "essay",
+    "meaning": "论文",
+    "page": 12,
+    "y": 323.5,
+    "x": 69.7
+  },
+  {
+    "raw": "experiment",
+    "meaning": "实验",
+    "page": 12,
+    "y": 323.5,
+    "x": 297.6
+  },
+  {
+    "raw": "report",
+    "meaning": "报告",
+    "page": 12,
+    "y": 343.7,
+    "x": 69.7
+  },
+  {
+    "raw": "written work",
+    "meaning": "书面作业",
+    "page": 12,
+    "y": 343.7,
+    "x": 297.6
+  },
+  {
+    "raw": "case study",
+    "meaning": "案例分析",
+    "page": 12,
+    "y": 363.8,
+    "x": 69.7
+  },
+  {
+    "raw": "journal",
+    "meaning": "杂志",
+    "page": 12,
+    "y": 363.8,
+    "x": 297.6
+  },
+  {
+    "raw": "project",
+    "meaning": "项目",
+    "page": 12,
+    "y": 384.0,
+    "x": 69.7
+  },
+  {
+    "raw": "paper",
+    "meaning": "论文",
+    "page": 12,
+    "y": 384.0,
+    "x": 297.6
+  },
+  {
+    "raw": "presentation",
+    "meaning": "演示,报告",
+    "page": 12,
+    "y": 404.2,
+    "x": 69.7
+  },
+  {
+    "raw": "research",
+    "meaning": "研究",
+    "page": 12,
+    "y": 404.2,
+    "x": 297.6
+  },
+  {
+    "raw": "deadline",
+    "meaning": "最后期限",
+    "page": 12,
+    "y": 497.4,
+    "x": 69.7
+  },
+  {
+    "raw": "subheadings",
+    "meaning": "副标题",
+    "page": 12,
+    "y": 497.4,
+    "x": 297.6
+  },
+  {
+    "raw": "extension",
+    "meaning": "延期",
+    "page": 12,
+    "y": 517.6,
+    "x": 69.7
+  },
+  {
+    "raw": "formatting",
+    "meaning": "格式",
+    "page": 12,
+    "y": 517.6,
+    "x": 297.6
+  },
+  {
+    "raw": "submit/hand in",
+    "meaning": "上交",
+    "page": 12,
+    "y": 537.8,
+    "x": 69.7
+  },
+  {
+    "raw": "numbering",
+    "meaning": "编码",
+    "page": 12,
+    "y": 537.8,
+    "x": 297.6
+  },
+  {
+    "raw": "length/word limit",
+    "meaning": "篇幅/字数 限制",
+    "page": 12,
+    "y": 558.0,
+    "x": 69.7
+  },
+  {
+    "raw": "page numbers",
+    "meaning": "页码",
+    "page": 12,
+    "y": 558.0,
+    "x": 297.6
+  },
+  {
+    "raw": "outline",
+    "meaning": "大纲",
+    "page": 12,
+    "y": 580.6,
+    "x": 69.7
+  },
+  {
+    "raw": "headers",
+    "meaning": "页眉",
+    "page": 12,
+    "y": 578.1,
+    "x": 297.6
+  },
+  {
+    "raw": "title",
+    "meaning": "标题",
+    "page": 12,
+    "y": 600.8,
+    "x": 69.7
+  },
+  {
+    "raw": "footers",
+    "meaning": "页脚",
+    "page": 12,
+    "y": 598.3,
+    "x": 297.6
+  },
+  {
+    "raw": "chapter/section",
+    "meaning": "章,节",
+    "page": 12,
+    "y": 621.0,
+    "x": 69.7
+  },
+  {
+    "raw": "bullet points",
+    "meaning": "要点列举",
+    "page": 12,
+    "y": 618.5,
+    "x": 297.6
+  },
+  {
+    "raw": "bibliography",
+    "meaning": "参考书目",
+    "page": 12,
+    "y": 641.1,
+    "x": 69.7
+  },
+  {
+    "raw": "deadline",
+    "meaning": "截止日期",
+    "page": 12,
+    "y": 639.4,
+    "x": 297.6
+  },
+  {
+    "raw": "draft",
+    "meaning": "初稿",
+    "page": 12,
+    "y": 662.0,
+    "x": 69.7
+  },
+  {
+    "raw": "literature review",
+    "meaning": "文献综述",
+    "page": 12,
+    "y": 659.6,
+    "x": 297.6
+  },
+  {
+    "raw": "typos",
+    "meaning": "拼写错误",
+    "page": 12,
+    "y": 682.2,
+    "x": 69.7
+  },
+  {
+    "raw": "reference",
+    "meaning": "参考书目",
+    "page": 12,
+    "y": 679.7,
+    "x": 297.6
+  },
+  {
+    "raw": "layout",
+    "meaning": "排版",
+    "page": 12,
+    "y": 702.4,
+    "x": 69.7
+  },
+  {
+    "raw": "author",
+    "meaning": "作者",
+    "page": 12,
+    "y": 699.9,
+    "x": 297.6
+  },
+  {
+    "raw": "contents page",
+    "meaning": "目录",
+    "page": 12,
+    "y": 722.5,
+    "x": 69.7
+  },
+  {
+    "raw": "publisher",
+    "meaning": "出版者",
+    "page": 12,
+    "y": 720.1,
+    "x": 297.6
+  },
+  {
+    "raw": "year of publication",
+    "meaning": "出版年代",
+    "page": 12,
+    "y": 740.2,
+    "x": 297.6
+  },
+  {
+    "raw": "heading",
+    "meaning": "标题",
+    "page": 12,
+    "y": 742.7,
+    "x": 69.7
+  },
+  {
+    "raw": "study",
+    "meaning": "研究",
+    "page": 13,
+    "y": 106.8,
+    "x": 69.7
+  },
+  {
+    "raw": "questionnaire",
+    "meaning": "问卷调查",
+    "page": 13,
+    "y": 106.8,
+    "x": 297.6
+  },
+  {
+    "raw": "branch",
+    "meaning": "分支",
+    "page": 13,
+    "y": 126.9,
+    "x": 69.7
+  },
+  {
+    "raw": "response rate",
+    "meaning": "回复率",
+    "page": 13,
+    "y": 126.9,
+    "x": 297.6
+  },
+  {
+    "raw": "identify",
+    "meaning": "鉴定,验明",
+    "page": 13,
+    "y": 147.1,
+    "x": 69.7
+  },
+  {
+    "raw": "interview",
+    "meaning": "采访",
+    "page": 13,
+    "y": 147.1,
+    "x": 297.6
+  },
+  {
+    "raw": "research",
+    "meaning": "研究",
+    "page": 13,
+    "y": 167.3,
+    "x": 69.7
+  },
+  {
+    "raw": "telephone interview",
+    "meaning": "电话采访",
+    "page": 13,
+    "y": 170.9,
+    "x": 297.6
+  },
+  {
+    "raw": "investigation",
+    "meaning": "调查",
+    "page": 13,
+    "y": 187.5,
+    "x": 69.7
+  },
+  {
+    "raw": "face-to-face interview",
+    "meaning": "面对面的采访",
+    "page": 13,
+    "y": 191.1,
+    "x": 297.6
+  },
+  {
+    "raw": "survey",
+    "meaning": "调查",
+    "page": 13,
+    "y": 207.6,
+    "x": 69.7
+  },
+  {
+    "raw": "taped interview",
+    "meaning": "录音采访",
+    "page": 13,
+    "y": 211.3,
+    "x": 297.6
+  },
+  {
+    "raw": "data, statistics, figure",
+    "meaning": "数据",
+    "page": 13,
+    "y": 227.8,
+    "x": 69.7
+  },
+  {
+    "raw": "observation",
+    "meaning": "观察",
+    "page": 13,
+    "y": 231.5,
+    "x": 297.6
+  },
+  {
+    "raw": "main method",
+    "meaning": "主要方式",
+    "page": 13,
+    "y": 248.0,
+    "x": 69.7
+  },
+  {
+    "raw": "field research",
+    "meaning": "实地调查研究",
+    "page": 13,
+    "y": 251.1,
+    "x": 297.6
+  },
+  {
+    "raw": "review",
+    "meaning": "批改",
+    "page": 13,
+    "y": 332.5,
+    "x": 69.7
+  },
+  {
+    "raw": "feedback",
+    "meaning": "反馈",
+    "page": 13,
+    "y": 332.5,
+    "x": 297.6
+  },
+  {
+    "raw": "evaluation",
+    "meaning": "评估",
+    "page": 13,
+    "y": 352.7,
+    "x": 69.7
+  },
+  {
+    "raw": "oral/written test",
+    "meaning": "口(笔)试",
+    "page": 13,
+    "y": 352.7,
+    "x": 297.6
+  },
+  {
+    "raw": "marking criteria",
+    "meaning": "评分标准",
+    "page": 13,
+    "y": 372.9,
+    "x": 69.7
+  },
+  {
+    "raw": "placement test",
+    "meaning": "分级考试",
+    "page": 13,
+    "y": 372.9,
+    "x": 297.6
+  },
+  {
+    "raw": "examination/test",
+    "meaning": "考试",
+    "page": 13,
+    "y": 393.1,
+    "x": 69.7
+  },
+  {
+    "raw": "mark/score/grade",
+    "meaning": "成绩",
+    "page": 13,
+    "y": 393.1,
+    "x": 297.6
+  },
+  {
+    "raw": "oral test",
+    "meaning": "口头测试",
+    "page": 13,
+    "y": 413.2,
+    "x": 69.7
+  },
+  {
+    "raw": "catalogue",
+    "meaning": "目录",
+    "page": 13,
+    "y": 548.1,
+    "x": 69.7
+  },
+  {
+    "raw": "multimedia materials",
+    "meaning": "多媒体资料",
+    "page": 13,
+    "y": 548.1,
+    "x": 297.6
+  },
+  {
+    "raw": "classification",
+    "meaning": "分类",
+    "page": 13,
+    "y": 568.3,
+    "x": 69.7
+  },
+  {
+    "raw": "textbooks",
+    "meaning": "教材",
+    "page": 13,
+    "y": 568.3,
+    "x": 297.6
+  },
+  {
+    "raw": "credential",
+    "meaning": "凭证",
+    "page": 13,
+    "y": 588.4,
+    "x": 69.7
+  },
+  {
+    "raw": "audio-visual materials",
+    "meaning": "音像材料",
+    "page": 13,
+    "y": 588.4,
+    "x": 297.6
+  },
+  {
+    "raw": "press",
+    "meaning": "出版社",
+    "page": 13,
+    "y": 608.6,
+    "x": 69.7
+  },
+  {
+    "raw": "periodical",
+    "meaning": "期刊",
+    "page": 13,
+    "y": 608.6,
+    "x": 297.6
+  },
+  {
+    "raw": "student card",
+    "meaning": "学生证",
+    "page": 13,
+    "y": 628.8,
+    "x": 69.7
+  },
+  {
+    "raw": "video",
+    "meaning": "录像",
+    "page": 13,
+    "y": 628.8,
+    "x": 297.6
+  },
+  {
+    "raw": "library card",
+    "meaning": "借书证",
+    "page": 13,
+    "y": 649.0,
+    "x": 69.7
+  },
+  {
+    "raw": "current/back issue",
+    "meaning": "现(过) 刊",
+    "page": 13,
+    "y": 649.0,
+    "x": 297.6
+  },
+  {
+    "raw": "driving license",
+    "meaning": "驾驶证",
+    "page": 13,
+    "y": 669.1,
+    "x": 69.7
+  },
+  {
+    "raw": "cassette",
+    "meaning": "磁带",
+    "page": 13,
+    "y": 669.1,
+    "x": 297.6
+  },
+  {
+    "raw": "document",
+    "meaning": "文件",
+    "page": 13,
+    "y": 689.3,
+    "x": 69.7
+  },
+  {
+    "raw": "journal",
+    "meaning": "学术期刊",
+    "page": 13,
+    "y": 690.0,
+    "x": 297.6
+  },
+  {
+    "raw": "reference book",
+    "meaning": "参考书",
+    "page": 13,
+    "y": 710.2,
+    "x": 69.7
+  },
+  {
+    "raw": "tape",
+    "meaning": "录像带",
+    "page": 13,
+    "y": 710.2,
+    "x": 297.6
+  },
+  {
+    "raw": "author",
+    "meaning": "作者",
+    "page": 13,
+    "y": 730.4,
+    "x": 69.7
+  },
+  {
+    "raw": "newspaper",
+    "meaning": "报纸",
+    "page": 13,
+    "y": 730.4,
+    "x": 297.6
+  },
+  {
+    "raw": "fiction",
+    "meaning": "小说",
+    "page": 13,
+    "y": 750.5,
+    "x": 69.7
+  },
+  {
+    "raw": "magazine",
+    "meaning": "杂志",
+    "page": 13,
+    "y": 750.5,
+    "x": 297.6
+  },
+  {
+    "raw": "category",
+    "meaning": "种类",
+    "page": 14,
+    "y": 63.5,
+    "x": 69.7
+  },
+  {
+    "raw": "atlas",
+    "meaning": "地图册",
+    "page": 14,
+    "y": 63.5,
+    "x": 297.6
+  },
+  {
+    "raw": "stacks",
+    "meaning": "书库",
+    "page": 14,
+    "y": 83.7,
+    "x": 69.7
+  },
+  {
+    "raw": "publisher",
+    "meaning": "出版人",
+    "page": 14,
+    "y": 83.7,
+    "x": 297.6
+  },
+  {
+    "raw": "printed version",
+    "meaning": "纸质版",
+    "page": 14,
+    "y": 103.9,
+    "x": 69.7
+  },
+  {
+    "raw": "press",
+    "meaning": "出版社",
+    "page": 14,
+    "y": 103.9,
+    "x": 297.6
+  },
+  {
+    "raw": "available/in circulation",
+    "meaning": "可借",
+    "page": 14,
+    "y": 166.4,
+    "x": 69.7
+  },
+  {
+    "raw": "on shelf",
+    "meaning": "在架",
+    "page": 14,
+    "y": 166.4,
+    "x": 297.6
+  },
+  {
+    "raw": "out of loan/out of circulation",
+    "meaning": "借出",
+    "page": 14,
+    "y": 186.6,
+    "x": 69.7
+  },
+  {
+    "raw": "in stack",
+    "meaning": "在库的",
+    "page": 14,
+    "y": 186.6,
+    "x": 297.6
+  },
+  {
+    "raw": "closed reserved",
+    "meaning": "只读不借的",
+    "page": 14,
+    "y": 206.7,
+    "x": 69.7
+  },
+  {
+    "raw": "CD-ROM",
+    "meaning": "只读光盘",
+    "page": 14,
+    "y": 269.6,
+    "x": 69.4
+  },
+  {
+    "raw": "scanner",
+    "meaning": "扫描仪",
+    "page": 14,
+    "y": 269.6,
+    "x": 297.3
+  },
+  {
+    "raw": "database",
+    "meaning": "数据库",
+    "page": 14,
+    "y": 289.7,
+    "x": 69.4
+  },
+  {
+    "raw": "photocopier",
+    "meaning": "复机",
+    "page": 14,
+    "y": 289.7,
+    "x": 297.3
+  },
+  {
+    "raw": "Internet access",
+    "meaning": "网络接入",
+    "page": 14,
+    "y": 309.9,
+    "x": 69.4
+  },
+  {
+    "raw": "laser printer",
+    "meaning": "激光打机",
+    "page": 14,
+    "y": 309.9,
+    "x": 297.3
+  },
+  {
+    "raw": "laptop",
+    "meaning": "笔记本电脑",
+    "page": 14,
+    "y": 330.1,
+    "x": 69.4
+  },
+  {
+    "raw": "microscope",
+    "meaning": "显微镜",
+    "page": 14,
+    "y": 330.1,
+    "x": 297.3
+  },
+  {
+    "raw": "borrowing/loan period",
+    "meaning": "借阅期限",
+    "page": 14,
+    "y": 394.7,
+    "x": 69.7
+  },
+  {
+    "raw": "fines",
+    "meaning": "罚款",
+    "page": 14,
+    "y": 394.7,
+    "x": 297.6
+  },
+  {
+    "raw": "date of expiry",
+    "meaning": "截止日期",
+    "page": 14,
+    "y": 414.9,
+    "x": 69.7
+  },
+  {
+    "raw": "renew",
+    "meaning": "续借",
+    "page": 14,
+    "y": 414.9,
+    "x": 297.6
+  },
+  {
+    "raw": "due date",
+    "meaning": "还书日",
+    "page": 14,
+    "y": 435.0,
+    "x": 69.7
+  },
+  {
+    "raw": "recall",
+    "meaning": "召回",
+    "page": 14,
+    "y": 435.0,
+    "x": 297.6
+  },
+  {
+    "raw": "overdue",
+    "meaning": "过期",
+    "page": 14,
+    "y": 455.2,
+    "x": 69.7
+  },
+  {
+    "raw": "equipment room",
+    "meaning": "器材室",
+    "page": 14,
+    "y": 553.7,
+    "x": 69.7
+  },
+  {
+    "raw": "student health centre",
+    "meaning": "医务室",
+    "page": 14,
+    "y": 553.7,
+    "x": 297.6
+  },
+  {
+    "raw": "media room",
+    "meaning": "媒体室",
+    "page": 14,
+    "y": 573.9,
+    "x": 69.7
+  },
+  {
+    "raw": "insurance centre",
+    "meaning": "保险中心",
+    "page": 14,
+    "y": 573.9,
+    "x": 297.6
+  },
+  {
+    "raw": "resources room",
+    "meaning": "资源室",
+    "page": 14,
+    "y": 594.0,
+    "x": 69.7
+  },
+  {
+    "raw": "refectory",
+    "meaning": "食堂",
+    "page": 14,
+    "y": 594.0,
+    "x": 297.6
+  },
+  {
+    "raw": "computer centre",
+    "meaning": "计算机中心",
+    "page": 14,
+    "y": 614.2,
+    "x": 69.7
+  },
+  {
+    "raw": "canteen",
+    "meaning": "食堂,餐厅",
+    "page": 14,
+    "y": 614.2,
+    "x": 297.6
+  },
+  {
+    "raw": "laboratory",
+    "meaning": "实验室",
+    "page": 14,
+    "y": 634.4,
+    "x": 69.7
+  },
+  {
+    "raw": "cafeteria",
+    "meaning": "自助餐厅",
+    "page": 14,
+    "y": 634.4,
+    "x": 297.6
+  },
+  {
+    "raw": "main hall",
+    "meaning": "大厅,礼堂",
+    "page": 14,
+    "y": 654.6,
+    "x": 69.7
+  },
+  {
+    "raw": "dining room",
+    "meaning": "食堂",
+    "page": 14,
+    "y": 654.6,
+    "x": 297.6
+  },
+  {
+    "raw": "lecture room",
+    "meaning": "阶梯教室",
+    "page": 14,
+    "y": 674.7,
+    "x": 69.7
+  },
+  {
+    "raw": "diner",
+    "meaning": "饭馆",
+    "page": 14,
+    "y": 674.7,
+    "x": 297.6
+  },
+  {
+    "raw": "lecture theater",
+    "meaning": "演讲厅",
+    "page": 14,
+    "y": 694.9,
+    "x": 69.7
+  },
+  {
+    "raw": "nursery",
+    "meaning": "托儿所",
+    "page": 14,
+    "y": 695.6,
+    "x": 297.6
+  },
+  {
+    "raw": "drama theater",
+    "meaning": "剧院",
+    "page": 14,
+    "y": 715.1,
+    "x": 69.7
+  },
+  {
+    "raw": "child care centre",
+    "meaning": "托儿所",
+    "page": 14,
+    "y": 716.5,
+    "x": 297.6
+  },
+  {
+    "raw": "halls of residence",
+    "meaning": "宿舍",
+    "page": 14,
+    "y": 735.3,
+    "x": 69.7
+  },
+  {
+    "raw": "counseling centre",
+    "meaning": "咨询中心",
+    "page": 14,
+    "y": 737.4,
+    "x": 297.6
+  },
+  {
+    "raw": "living quarters",
+    "meaning": "居住区",
+    "page": 14,
+    "y": 755.4,
+    "x": 69.7
+  },
+  {
+    "raw": "stadium",
+    "meaning": "体育馆",
+    "page": 14,
+    "y": 758.3,
+    "x": 297.6
+  },
+  {
+    "raw": "overheads",
+    "meaning": "经费",
+    "page": 15,
+    "y": 148.9,
+    "x": 69.7
+  },
+  {
+    "raw": "innovation",
+    "meaning": "创新",
+    "page": 15,
+    "y": 148.9,
+    "x": 297.3
+  },
+  {
+    "raw": "outlay",
+    "meaning": "经费",
+    "page": 15,
+    "y": 169.1,
+    "x": 69.7
+  },
+  {
+    "raw": "outdated",
+    "meaning": "落后的",
+    "page": 15,
+    "y": 169.1,
+    "x": 297.3
+  },
+  {
+    "raw": "investment",
+    "meaning": "投资",
+    "page": 15,
+    "y": 189.3,
+    "x": 69.7
+  },
+  {
+    "raw": "machinery",
+    "meaning": "机器(总称)",
+    "page": 15,
+    "y": 189.3,
+    "x": 297.3
+  },
+  {
+    "raw": "capital",
+    "meaning": "资本",
+    "page": 15,
+    "y": 209.4,
+    "x": 69.7
+  },
+  {
+    "raw": "management team/layers",
+    "meaning": "管理层",
+    "page": 15,
+    "y": 209.4,
+    "x": 297.3
+  },
+  {
+    "raw": "strike",
+    "meaning": "罢工",
+    "page": 15,
+    "y": 229.6,
+    "x": 69.7
+  },
+  {
+    "raw": "employer",
+    "meaning": "雇主",
+    "page": 15,
+    "y": 229.6,
+    "x": 297.3
+  },
+  {
+    "raw": "takeover",
+    "meaning": "收购",
+    "page": 15,
+    "y": 249.8,
+    "x": 69.7
+  },
+  {
+    "raw": "employee",
+    "meaning": "雇员",
+    "page": 15,
+    "y": 249.8,
+    "x": 297.3
+  },
+  {
+    "raw": "issue",
+    "meaning": "发行",
+    "page": 15,
+    "y": 270.0,
+    "x": 69.7
+  },
+  {
+    "raw": "staff",
+    "meaning": "员工",
+    "page": 15,
+    "y": 270.0,
+    "x": 297.3
+  },
+  {
+    "raw": "stock",
+    "meaning": "股票",
+    "page": 15,
+    "y": 290.1,
+    "x": 69.7
+  },
+  {
+    "raw": "applicant",
+    "meaning": "申请者",
+    "page": 15,
+    "y": 290.1,
+    "x": 297.3
+  },
+  {
+    "raw": "share",
+    "meaning": "股份",
+    "page": 15,
+    "y": 311.0,
+    "x": 69.7
+  },
+  {
+    "raw": "corporate",
+    "meaning": "公司",
+    "page": 15,
+    "y": 311.0,
+    "x": 297.3
+  },
+  {
+    "raw": "stock market",
+    "meaning": "股市",
+    "page": 15,
+    "y": 331.2,
+    "x": 69.7
+  },
+  {
+    "raw": "organisation",
+    "meaning": "组织",
+    "page": 15,
+    "y": 331.2,
+    "x": 297.3
+  },
+  {
+    "raw": "market share",
+    "meaning": "市场份额",
+    "page": 15,
+    "y": 351.4,
+    "x": 69.7
+  },
+  {
+    "raw": "corporate crime",
+    "meaning": "集团犯罪",
+    "page": 15,
+    "y": 351.4,
+    "x": 297.3
+  },
+  {
+    "raw": "outlet",
+    "meaning": "商店",
+    "page": 15,
+    "y": 371.6,
+    "x": 69.7
+  },
+  {
+    "raw": "embezzlement",
+    "meaning": "盗用,侵吞",
+    "page": 15,
+    "y": 371.6,
+    "x": 297.3
+  },
+  {
+    "raw": "chain",
+    "meaning": "连锁",
+    "page": 15,
+    "y": 391.7,
+    "x": 69.7
+  },
+  {
+    "raw": "fraud",
+    "meaning": "诈骗",
+    "page": 15,
+    "y": 391.7,
+    "x": 297.3
+  },
+  {
+    "raw": "retail",
+    "meaning": "零售",
+    "page": 15,
+    "y": 411.9,
+    "x": 69.7
+  },
+  {
+    "raw": "import",
+    "meaning": "进口",
+    "page": 15,
+    "y": 411.9,
+    "x": 297.3
+  },
+  {
+    "raw": "wholesale",
+    "meaning": "批发",
+    "page": 15,
+    "y": 432.1,
+    "x": 69.7
+  },
+  {
+    "raw": "export",
+    "meaning": "出口",
+    "page": 15,
+    "y": 432.1,
+    "x": 297.3
+  },
+  {
+    "raw": "distributor",
+    "meaning": "分销商",
+    "page": 15,
+    "y": 452.2,
+    "x": 69.7
+  },
+  {
+    "raw": "investment",
+    "meaning": "投资",
+    "page": 15,
+    "y": 452.2,
+    "x": 297.3
+  },
+  {
+    "raw": "marketing",
+    "meaning": "市场营销",
+    "page": 15,
+    "y": 472.4,
+    "x": 69.7
+  },
+  {
+    "raw": "wealth/fortune",
+    "meaning": "财富",
+    "page": 15,
+    "y": 472.4,
+    "x": 297.3
+  },
+  {
+    "raw": "campaign",
+    "meaning": "战略",
+    "page": 15,
+    "y": 492.6,
+    "x": 69.7
+  },
+  {
+    "raw": "overheads",
+    "meaning": "经费",
+    "page": 15,
+    "y": 492.6,
+    "x": 297.3
+  },
+  {
+    "raw": "advertising",
+    "meaning": "广告",
+    "page": 15,
+    "y": 512.8,
+    "x": 69.7
+  },
+  {
+    "raw": "market strategy",
+    "meaning": "营销策略",
+    "page": 15,
+    "y": 512.8,
+    "x": 297.3
+  },
+  {
+    "raw": "sales",
+    "meaning": "销售额",
+    "page": 15,
+    "y": 532.9,
+    "x": 69.7
+  },
+  {
+    "raw": "sales figure",
+    "meaning": "销售额",
+    "page": 15,
+    "y": 532.9,
+    "x": 297.3
+  },
+  {
+    "raw": "profit",
+    "meaning": "利润",
+    "page": 15,
+    "y": 553.1,
+    "x": 69.7
+  },
+  {
+    "raw": "cost control",
+    "meaning": "控制成本",
+    "page": 15,
+    "y": 553.1,
+    "x": 297.3
+  },
+  {
+    "raw": "product",
+    "meaning": "产品",
+    "page": 15,
+    "y": 573.3,
+    "x": 69.7
+  },
+  {
+    "raw": "taxation",
+    "meaning": "税",
+    "page": 15,
+    "y": 573.3,
+    "x": 297.3
+  },
+  {
+    "raw": "production",
+    "meaning": "生产",
+    "page": 15,
+    "y": 593.5,
+    "x": 69.7
+  },
+  {
+    "raw": "expansion",
+    "meaning": "扩张",
+    "page": 15,
+    "y": 593.5,
+    "x": 297.3
+  },
+  {
+    "raw": "manufacture",
+    "meaning": "生产",
+    "page": 15,
+    "y": 613.6,
+    "x": 69.7
+  },
+  {
+    "raw": "consumption",
+    "meaning": "消费",
+    "page": 15,
+    "y": 613.6,
+    "x": 297.3
+  },
+  {
+    "raw": "manufacturer",
+    "meaning": "出厂商",
+    "page": 15,
+    "y": 633.8,
+    "x": 69.7
+  },
+  {
+    "raw": "superiority",
+    "meaning": "优越性",
+    "page": 15,
+    "y": 633.8,
+    "x": 297.3
+  },
+  {
+    "raw": "storehouse/warehouse",
+    "meaning": "仓库",
+    "page": 15,
+    "y": 654.0,
+    "x": 69.7
+  },
+  {
+    "raw": "aspiration/ambition",
+    "meaning": "抱负",
+    "page": 15,
+    "y": 654.0,
+    "x": 297.3
+  },
+  {
+    "raw": "competition",
+    "meaning": "竞争",
+    "page": 15,
+    "y": 674.2,
+    "x": 69.7
+  },
+  {
+    "raw": "mediator",
+    "meaning": "调停者",
+    "page": 15,
+    "y": 674.2,
+    "x": 297.3
+  },
+  {
+    "raw": "cooperation",
+    "meaning": "合作",
+    "page": 15,
+    "y": 694.3,
+    "x": 69.7
+  },
+  {
+    "raw": "vision",
+    "meaning": "远见",
+    "page": 15,
+    "y": 694.3,
+    "x": 297.3
+  },
+  {
+    "raw": "interest rates",
+    "meaning": "利率",
+    "page": 15,
+    "y": 714.5,
+    "x": 69.7
+  },
+  {
+    "raw": "logo",
+    "meaning": "公司标识",
+    "page": 15,
+    "y": 714.5,
+    "x": 297.3
+  },
+  {
+    "raw": "training",
+    "meaning": "培训",
+    "page": 15,
+    "y": 734.7,
+    "x": 69.7
+  },
+  {
+    "raw": "creative",
+    "meaning": "创新的",
+    "page": 15,
+    "y": 734.7,
+    "x": 297.3
+  },
+  {
+    "raw": "favorable terms",
+    "meaning": "优惠的条款",
+    "page": 15,
+    "y": 754.8,
+    "x": 69.7
+  },
+  {
+    "raw": "update",
+    "meaning": "更新",
+    "page": 15,
+    "y": 754.8,
+    "x": 297.3
+  },
+  {
+    "raw": "species",
+    "meaning": "物种",
+    "page": 16,
+    "y": 90.5,
+    "x": 69.7
+  },
+  {
+    "raw": "dolphin",
+    "meaning": "海豚",
+    "page": 16,
+    "y": 90.5,
+    "x": 297.3
+  },
+  {
+    "raw": "sub-species",
+    "meaning": "亚种",
+    "page": 16,
+    "y": 110.7,
+    "x": 69.7
+  },
+  {
+    "raw": "shark",
+    "meaning": "鲨鱼",
+    "page": 16,
+    "y": 110.7,
+    "x": 297.3
+  },
+  {
+    "raw": "gene pool",
+    "meaning": "基因库",
+    "page": 16,
+    "y": 130.9,
+    "x": 69.7
+  },
+  {
+    "raw": "kiwi",
+    "meaning": "几维鸟",
+    "page": 16,
+    "y": 130.9,
+    "x": 297.3
+  },
+  {
+    "raw": "ancestor",
+    "meaning": "祖先",
+    "page": 16,
+    "y": 151.1,
+    "x": 69.7
+  },
+  {
+    "raw": "emus",
+    "meaning": "鸸鹋",
+    "page": 16,
+    "y": 151.1,
+    "x": 297.3
+  },
+  {
+    "raw": "descend",
+    "meaning": "传承",
+    "page": 16,
+    "y": 171.2,
+    "x": 69.7
+  },
+  {
+    "raw": "ostrich",
+    "meaning": "鸵鸟",
+    "page": 16,
+    "y": 171.2,
+    "x": 297.3
+  },
+  {
+    "raw": "breed",
+    "meaning": "繁殖",
+    "page": 16,
+    "y": 191.4,
+    "x": 69.7
+  },
+  {
+    "raw": "goose",
+    "meaning": "鹅(复数geese)",
+    "page": 16,
+    "y": 191.4,
+    "x": 297.3
+  },
+  {
+    "raw": "rear",
+    "meaning": "养育",
+    "page": 16,
+    "y": 211.6,
+    "x": 69.7
+  },
+  {
+    "raw": "penguin",
+    "meaning": "企鹅",
+    "page": 16,
+    "y": 211.6,
+    "x": 297.3
+  },
+  {
+    "raw": "extinction",
+    "meaning": "灭绝",
+    "page": 16,
+    "y": 231.8,
+    "x": 69.7
+  },
+  {
+    "raw": "pollinate",
+    "meaning": "授粉",
+    "page": 16,
+    "y": 231.8,
+    "x": 297.3
+  },
+  {
+    "raw": "endanger",
+    "meaning": "濒临灭绝",
+    "page": 16,
+    "y": 252.6,
+    "x": 69.7
+  },
+  {
+    "raw": "flora",
+    "meaning": "植物群",
+    "page": 16,
+    "y": 252.6,
+    "x": 297.3
+  },
+  {
+    "raw": "threaten",
+    "meaning": "威胁",
+    "page": 16,
+    "y": 272.8,
+    "x": 69.7
+  },
+  {
+    "raw": "sting",
+    "meaning": "(昆虫)叮咬",
+    "page": 16,
+    "y": 272.8,
+    "x": 297.3
+  },
+  {
+    "raw": "eradicate",
+    "meaning": "灭绝",
+    "page": 16,
+    "y": 293.0,
+    "x": 69.7
+  },
+  {
+    "raw": "sense of smell",
+    "meaning": "嗅觉",
+    "page": 16,
+    "y": 293.0,
+    "x": 297.3
+  },
+  {
+    "raw": "infest",
+    "meaning": "寄生于",
+    "page": 16,
+    "y": 313.2,
+    "x": 69.7
+  },
+  {
+    "raw": "vision",
+    "meaning": "视觉,视野",
+    "page": 16,
+    "y": 313.2,
+    "x": 297.3
+  },
+  {
+    "raw": "introduced animals",
+    "meaning": "外来动物",
+    "page": 16,
+    "y": 333.3,
+    "x": 69.7
+  },
+  {
+    "raw": "eye-sight",
+    "meaning": "视力",
+    "page": 16,
+    "y": 333.3,
+    "x": 297.3
+  },
+  {
+    "raw": "wildlife reserve",
+    "meaning": "野生动物保 护区",
+    "page": 16,
+    "y": 353.5,
+    "x": 69.7
+  },
+  {
+    "raw": "skeleton",
+    "meaning": "骨骼",
+    "page": 16,
+    "y": 353.5,
+    "x": 297.3
+  },
+  {
+    "raw": "nature reserve",
+    "meaning": "自然保护区",
+    "page": 16,
+    "y": 376.1,
+    "x": 69.7
+  },
+  {
+    "raw": "limbs",
+    "meaning": "四肢",
+    "page": 16,
+    "y": 373.7,
+    "x": 297.3
+  },
+  {
+    "raw": "sanctuary",
+    "meaning": "保护区",
+    "page": 16,
+    "y": 396.3,
+    "x": 69.7
+  },
+  {
+    "raw": "hoof",
+    "meaning": "蹄子",
+    "page": 16,
+    "y": 393.9,
+    "x": 297.3
+  },
+  {
+    "raw": "refuge",
+    "meaning": "保护区",
+    "page": 16,
+    "y": 416.5,
+    "x": 69.7
+  },
+  {
+    "raw": "horn",
+    "meaning": "角",
+    "page": 16,
+    "y": 414.0,
+    "x": 297.3
+  },
+  {
+    "raw": "habitat",
+    "meaning": "栖息地",
+    "page": 16,
+    "y": 436.7,
+    "x": 69.7
+  },
+  {
+    "raw": "hair/fur",
+    "meaning": "皮毛",
+    "page": 16,
+    "y": 434.2,
+    "x": 297.3
+  },
+  {
+    "raw": "prohibit",
+    "meaning": "禁止",
+    "page": 16,
+    "y": 456.8,
+    "x": 69.7
+  },
+  {
+    "raw": "skin/hide",
+    "meaning": "兽皮",
+    "page": 16,
+    "y": 454.4,
+    "x": 297.3
+  },
+  {
+    "raw": "quarantine service",
+    "meaning": "检疫局",
+    "page": 16,
+    "y": 477.0,
+    "x": 69.7
+  },
+  {
+    "raw": "leather",
+    "meaning": "皮革",
+    "page": 16,
+    "y": 474.6,
+    "x": 297.3
+  },
+  {
+    "raw": "creature",
+    "meaning": "生物",
+    "page": 16,
+    "y": 497.2,
+    "x": 69.7
+  },
+  {
+    "raw": "mane",
+    "meaning": "鬃毛",
+    "page": 16,
+    "y": 494.7,
+    "x": 297.3
+  },
+  {
+    "raw": "parasite",
+    "meaning": "寄生虫",
+    "page": 16,
+    "y": 517.4,
+    "x": 69.7
+  },
+  {
+    "raw": "pouch",
+    "meaning": "育儿袋",
+    "page": 16,
+    "y": 514.9,
+    "x": 297.3
+  },
+  {
+    "raw": "scale",
+    "meaning": "鱼鳞",
+    "page": 16,
+    "y": 535.1,
+    "x": 297.3
+  },
+  {
+    "raw": "mite(s)",
+    "meaning": "螨",
+    "page": 16,
+    "y": 537.5,
+    "x": 69.7
+  },
+  {
+    "raw": "tail",
+    "meaning": "尾巴",
+    "page": 16,
+    "y": 555.2,
+    "x": 297.3
+  },
+  {
+    "raw": "pest",
+    "meaning": "害虫",
+    "page": 16,
+    "y": 557.7,
+    "x": 69.7
+  },
+  {
+    "raw": "fin(s)",
+    "meaning": "鱼鳍",
+    "page": 16,
+    "y": 575.4,
+    "x": 297.3
+  },
+  {
+    "raw": "insect",
+    "meaning": "昆虫",
+    "page": 16,
+    "y": 577.9,
+    "x": 69.7
+  },
+  {
+    "raw": "beak",
+    "meaning": "喙",
+    "page": 16,
+    "y": 595.6,
+    "x": 297.3
+  },
+  {
+    "raw": "honey bee",
+    "meaning": "蜜蜂",
+    "page": 16,
+    "y": 598.1,
+    "x": 69.7
+  },
+  {
+    "raw": "feather",
+    "meaning": "羽毛",
+    "page": 16,
+    "y": 615.8,
+    "x": 297.3
+  },
+  {
+    "raw": "reptile",
+    "meaning": "爬行动物",
+    "page": 16,
+    "y": 618.2,
+    "x": 69.7
+  },
+  {
+    "raw": "wings",
+    "meaning": "翅膀",
+    "page": 16,
+    "y": 635.9,
+    "x": 297.3
+  },
+  {
+    "raw": "snake",
+    "meaning": "蛇",
+    "page": 16,
+    "y": 638.4,
+    "x": 69.7
+  },
+  {
+    "raw": "flightless",
+    "meaning": "不会飞的",
+    "page": 16,
+    "y": 656.1,
+    "x": 297.3
+  },
+  {
+    "raw": "dinosaur",
+    "meaning": "恐龙",
+    "page": 16,
+    "y": 658.6,
+    "x": 69.7
+  },
+  {
+    "raw": "chick",
+    "meaning": "雏鸟",
+    "page": 16,
+    "y": 676.3,
+    "x": 297.3
+  },
+  {
+    "raw": "mammal",
+    "meaning": "哺乳动物",
+    "page": 16,
+    "y": 678.7,
+    "x": 69.7
+  },
+  {
+    "raw": "hatch",
+    "meaning": "孵化",
+    "page": 16,
+    "y": 696.5,
+    "x": 297.3
+  },
+  {
+    "raw": "lion",
+    "meaning": "狮子",
+    "page": 16,
+    "y": 698.9,
+    "x": 69.7
+  },
+  {
+    "raw": "pellet(s)",
+    "meaning": "坚硬小球,团粒",
+    "page": 16,
+    "y": 716.6,
+    "x": 297.3
+  },
+  {
+    "raw": "whale",
+    "meaning": "鲸鱼",
+    "page": 16,
+    "y": 719.1,
+    "x": 69.7
+  },
+  {
+    "raw": "rare breed animal",
+    "meaning": "稀有动物",
+    "page": 16,
+    "y": 736.8,
+    "x": 297.3
+  },
+  {
+    "raw": "zebra",
+    "meaning": "斑马",
+    "page": 16,
+    "y": 739.3,
+    "x": 69.7
+  },
+  {
+    "raw": "creature",
+    "meaning": "生物",
+    "page": 16,
+    "y": 757.0,
+    "x": 297.3
+  },
+  {
+    "raw": "elephant",
+    "meaning": "大象",
+    "page": 16,
+    "y": 759.4,
+    "x": 69.7
+  },
+  {
+    "raw": "produce",
+    "meaning": "农产品",
+    "page": 17,
+    "y": 94.4,
+    "x": 69.7
+  },
+  {
+    "raw": "cottage",
+    "meaning": "农舍",
+    "page": 17,
+    "y": 94.4,
+    "x": 297.3
+  },
+  {
+    "raw": "livestock",
+    "meaning": "牲畜",
+    "page": 17,
+    "y": 114.6,
+    "x": 69.7
+  },
+  {
+    "raw": "stables",
+    "meaning": "马厩",
+    "page": 17,
+    "y": 114.6,
+    "x": 297.3
+  },
+  {
+    "raw": "poultry",
+    "meaning": "家禽",
+    "page": 17,
+    "y": 134.7,
+    "x": 69.7
+  },
+  {
+    "raw": "iron forge",
+    "meaning": "打铁铺,锻铁厂",
+    "page": 17,
+    "y": 134.7,
+    "x": 297.3
+  },
+  {
+    "raw": "cattle",
+    "meaning": "牛群",
+    "page": 17,
+    "y": 154.9,
+    "x": 69.7
+  },
+  {
+    "raw": "furnace",
+    "meaning": "熔炉",
+    "page": 17,
+    "y": 154.9,
+    "x": 297.3
+  },
+  {
+    "raw": "herd",
+    "meaning": "(兽)群",
+    "page": 17,
+    "y": 175.1,
+    "x": 69.7
+  },
+  {
+    "raw": "industry",
+    "meaning": "工业",
+    "page": 17,
+    "y": 175.1,
+    "x": 297.3
+  },
+  {
+    "raw": "crops",
+    "meaning": "农作物",
+    "page": 17,
+    "y": 195.3,
+    "x": 69.7
+  },
+  {
+    "raw": "bull",
+    "meaning": "公牛",
+    "page": 17,
+    "y": 195.3,
+    "x": 297.3
+  },
+  {
+    "raw": "cereal crops",
+    "meaning": "谷物",
+    "page": 17,
+    "y": 215.4,
+    "x": 69.7
+  },
+  {
+    "raw": "goat",
+    "meaning": "山羊",
+    "page": 17,
+    "y": 215.4,
+    "x": 297.3
+  },
+  {
+    "raw": "wheat",
+    "meaning": "小麦",
+    "page": 17,
+    "y": 235.6,
+    "x": 69.7
+  },
+  {
+    "raw": "root",
+    "meaning": "根",
+    "page": 17,
+    "y": 235.6,
+    "x": 297.3
+  },
+  {
+    "raw": "barley",
+    "meaning": "大麦",
+    "page": 17,
+    "y": 256.5,
+    "x": 69.7
+  },
+  {
+    "raw": "leaf",
+    "meaning": "叶子(复数leaves)",
+    "page": 17,
+    "y": 256.5,
+    "x": 297.3
+  },
+  {
+    "raw": "grain",
+    "meaning": "谷粒",
+    "page": 17,
+    "y": 276.7,
+    "x": 69.7
+  },
+  {
+    "raw": "fruit",
+    "meaning": "果实",
+    "page": 17,
+    "y": 276.7,
+    "x": 297.3
+  },
+  {
+    "raw": "farmland",
+    "meaning": "农地",
+    "page": 17,
+    "y": 296.9,
+    "x": 69.7
+  },
+  {
+    "raw": "core",
+    "meaning": "核",
+    "page": 17,
+    "y": 296.9,
+    "x": 297.3
+  },
+  {
+    "raw": "plough",
+    "meaning": "犁;耕地",
+    "page": 17,
+    "y": 317.0,
+    "x": 69.7
+  },
+  {
+    "raw": "seed",
+    "meaning": "种子",
+    "page": 17,
+    "y": 317.0,
+    "x": 297.3
+  },
+  {
+    "raw": "cultivation",
+    "meaning": "耕作",
+    "page": 17,
+    "y": 337.2,
+    "x": 69.7
+  },
+  {
+    "raw": "stem",
+    "meaning": "茎",
+    "page": 17,
+    "y": 337.2,
+    "x": 297.3
+  },
+  {
+    "raw": "husbandry",
+    "meaning": "农业,耕作",
+    "page": 17,
+    "y": 357.4,
+    "x": 69.7
+  },
+  {
+    "raw": "branch",
+    "meaning": "树枝",
+    "page": 17,
+    "y": 357.4,
+    "x": 297.3
+  },
+  {
+    "raw": "animal husbandry",
+    "meaning": "畜牧",
+    "page": 17,
+    "y": 377.5,
+    "x": 69.7
+  },
+  {
+    "raw": "wood",
+    "meaning": "木材",
+    "page": 17,
+    "y": 377.5,
+    "x": 297.3
+  },
+  {
+    "raw": "irrigation",
+    "meaning": "灌溉",
+    "page": 17,
+    "y": 397.7,
+    "x": 69.7
+  },
+  {
+    "raw": "crop",
+    "meaning": "农作物",
+    "page": 17,
+    "y": 397.7,
+    "x": 297.3
+  },
+  {
+    "raw": "pottery",
+    "meaning": "陶器",
+    "page": 17,
+    "y": 417.9,
+    "x": 69.7
+  },
+  {
+    "raw": "grain",
+    "meaning": "谷物",
+    "page": 17,
+    "y": 417.9,
+    "x": 297.3
+  },
+  {
+    "raw": "clay",
+    "meaning": "粘土",
+    "page": 17,
+    "y": 438.1,
+    "x": 69.7
+  },
+  {
+    "raw": "bamboo",
+    "meaning": "竹子",
+    "page": 17,
+    "y": 438.1,
+    "x": 297.3
+  },
+  {
+    "raw": "engine room",
+    "meaning": "发动机房",
+    "page": 17,
+    "y": 458.2,
+    "x": 69.7
+  },
+  {
+    "raw": "artificial flower",
+    "meaning": "人造花",
+    "page": 17,
+    "y": 458.2,
+    "x": 297.3
+  },
+  {
+    "raw": "steam engine",
+    "meaning": "蒸汽机",
+    "page": 17,
+    "y": 478.4,
+    "x": 69.7
+  },
+  {
+    "raw": "rose",
+    "meaning": "玫瑰",
+    "page": 17,
+    "y": 478.4,
+    "x": 297.3
+  },
+  {
+    "raw": "stone age",
+    "meaning": "石器时代",
+    "page": 17,
+    "y": 498.6,
+    "x": 69.7
+  },
+  {
+    "raw": "grass",
+    "meaning": "草",
+    "page": 17,
+    "y": 498.6,
+    "x": 297.3
+  },
+  {
+    "raw": "Neolithic",
+    "meaning": "新石器时代 的",
+    "page": 17,
+    "y": 518.8,
+    "x": 69.7
+  },
+  {
+    "raw": "weed",
+    "meaning": "野草",
+    "page": 17,
+    "y": 518.8,
+    "x": 297.3
+  },
+  {
+    "raw": "hunter-gatherer",
+    "meaning": "狩猎和采集 者",
+    "page": 17,
+    "y": 541.4,
+    "x": 69.7
+  },
+  {
+    "raw": "bloom/blossom",
+    "meaning": "开花",
+    "page": 17,
+    "y": 538.9,
+    "x": 297.3
+  },
+  {
+    "raw": "cultivate",
+    "meaning": "种植",
+    "page": 17,
+    "y": 559.1,
+    "x": 297.3
+  },
+  {
+    "raw": "dwellings",
+    "meaning": "居住地",
+    "page": 17,
+    "y": 564.0,
+    "x": 69.7
+  },
+  {
+    "raw": "soil",
+    "meaning": "土壤",
+    "page": 17,
+    "y": 579.3,
+    "x": 297.3
+  },
+  {
+    "raw": "dweller",
+    "meaning": "居民",
+    "page": 17,
+    "y": 584.2,
+    "x": 69.7
+  },
+  {
+    "raw": "clay",
+    "meaning": "粘土",
+    "page": 17,
+    "y": 599.4,
+    "x": 297.3
+  },
+  {
+    "raw": "inhabitant",
+    "meaning": "居民",
+    "page": 17,
+    "y": 604.4,
+    "x": 69.7
+  },
+  {
+    "raw": "mud",
+    "meaning": "泥土",
+    "page": 17,
+    "y": 619.6,
+    "x": 297.3
+  },
+  {
+    "raw": "craftsman",
+    "meaning": "工匠",
+    "page": 17,
+    "y": 624.5,
+    "x": 69.7
+  },
+  {
+    "raw": "vegetation",
+    "meaning": "植被",
+    "page": 17,
+    "y": 639.8,
+    "x": 297.3
+  },
+  {
+    "raw": "carpenter",
+    "meaning": "木匠",
+    "page": 17,
+    "y": 644.7,
+    "x": 69.7
+  },
+  {
+    "raw": "plant",
+    "meaning": "植物",
+    "page": 17,
+    "y": 660.0,
+    "x": 297.3
+  },
+  {
+    "raw": "merchant",
+    "meaning": "商人",
+    "page": 17,
+    "y": 664.9,
+    "x": 69.7
+  },
+  {
+    "raw": "forest",
+    "meaning": "森林",
+    "page": 17,
+    "y": 680.1,
+    "x": 297.3
+  },
+  {
+    "raw": "money-lender",
+    "meaning": "借贷者",
+    "page": 17,
+    "y": 685.1,
+    "x": 69.7
+  },
+  {
+    "raw": "gardening",
+    "meaning": "园艺",
+    "page": 17,
+    "y": 700.3,
+    "x": 297.3
+  },
+  {
+    "raw": "water wheel",
+    "meaning": "水车",
+    "page": 17,
+    "y": 705.2,
+    "x": 69.7
+  },
+  {
+    "raw": "irrigation",
+    "meaning": "灌溉",
+    "page": 17,
+    "y": 720.5,
+    "x": 297.3
+  },
+  {
+    "raw": "water mill",
+    "meaning": "水磨坊",
+    "page": 17,
+    "y": 725.4,
+    "x": 69.7
+  },
+  {
+    "raw": "grinding shop",
+    "meaning": "磨坊",
+    "page": 17,
+    "y": 740.7,
+    "x": 297.3
+  },
+  {
+    "raw": "quarry",
+    "meaning": "采石场",
+    "page": 17,
+    "y": 745.6,
+    "x": 69.7
+  },
+  {
+    "raw": "incineration plants",
+    "meaning": "垃圾焚化场",
+    "page": 18,
+    "y": 96.9,
+    "x": 69.7
+  },
+  {
+    "raw": "gust",
+    "meaning": "阵风;狂风",
+    "page": 18,
+    "y": 96.2,
+    "x": 297.3
+  },
+  {
+    "raw": "landfill sites",
+    "meaning": "垃圾填埋场",
+    "page": 18,
+    "y": 117.1,
+    "x": 69.7
+  },
+  {
+    "raw": "canyon",
+    "meaning": "峡谷",
+    "page": 18,
+    "y": 116.3,
+    "x": 297.3
+  },
+  {
+    "raw": "carbon dioxide emission",
+    "meaning": "二氧化碳排 放",
+    "page": 18,
+    "y": 137.2,
+    "x": 69.7
+  },
+  {
+    "raw": "ocean currents",
+    "meaning": "洋流",
+    "page": 18,
+    "y": 136.5,
+    "x": 297.3
+  },
+  {
+    "raw": "atmosphere",
+    "meaning": "大气",
+    "page": 18,
+    "y": 156.7,
+    "x": 297.3
+  },
+  {
+    "raw": "greenhouse effect",
+    "meaning": "温室效应",
+    "page": 18,
+    "y": 159.9,
+    "x": 69.7
+  },
+  {
+    "raw": "climate change",
+    "meaning": "气候变化",
+    "page": 18,
+    "y": 176.9,
+    "x": 297.3
+  },
+  {
+    "raw": "greenhouse gas",
+    "meaning": "温室气体",
+    "page": 18,
+    "y": 180.0,
+    "x": 69.7
+  },
+  {
+    "raw": "air quality",
+    "meaning": "空气质量",
+    "page": 18,
+    "y": 197.0,
+    "x": 297.3
+  },
+  {
+    "raw": "fuel",
+    "meaning": "燃料",
+    "page": 18,
+    "y": 200.2,
+    "x": 69.7
+  },
+  {
+    "raw": "global warming",
+    "meaning": "全球变暖",
+    "page": 18,
+    "y": 217.2,
+    "x": 297.3
+  },
+  {
+    "raw": "coal",
+    "meaning": "煤",
+    "page": 18,
+    "y": 220.4,
+    "x": 69.7
+  },
+  {
+    "raw": "ecosystem",
+    "meaning": "生态系统",
+    "page": 18,
+    "y": 237.4,
+    "x": 297.3
+  },
+  {
+    "raw": "firewood",
+    "meaning": "柴火",
+    "page": 18,
+    "y": 240.6,
+    "x": 69.7
+  },
+  {
+    "raw": "fossil fuels",
+    "meaning": "矿物燃料",
+    "page": 18,
+    "y": 261.4,
+    "x": 69.7
+  },
+  {
+    "raw": "oxygen",
+    "meaning": "氧气",
+    "page": 18,
+    "y": 258.3,
+    "x": 297.3
+  },
+  {
+    "raw": "recycling",
+    "meaning": "回收再利用",
+    "page": 18,
+    "y": 281.6,
+    "x": 69.7
+  },
+  {
+    "raw": "ozone layer",
+    "meaning": "臭氧层",
+    "page": 18,
+    "y": 278.4,
+    "x": 297.3
+  },
+  {
+    "raw": "household waste",
+    "meaning": "家庭垃圾",
+    "page": 18,
+    "y": 301.8,
+    "x": 69.7
+  },
+  {
+    "raw": "emission",
+    "meaning": "排放",
+    "page": 18,
+    "y": 298.6,
+    "x": 297.3
+  },
+  {
+    "raw": "soil conditioner",
+    "meaning": "土壤调节剂",
+    "page": 18,
+    "y": 322.0,
+    "x": 69.7
+  },
+  {
+    "raw": "rainfall",
+    "meaning": "降雨",
+    "page": 18,
+    "y": 318.8,
+    "x": 297.3
+  },
+  {
+    "raw": "recycling containers",
+    "meaning": "回收容器",
+    "page": 18,
+    "y": 342.1,
+    "x": 69.7
+  },
+  {
+    "raw": "evaporate",
+    "meaning": "蒸发",
+    "page": 18,
+    "y": 339.0,
+    "x": 297.3
+  },
+  {
+    "raw": "raw materials",
+    "meaning": "原始材料",
+    "page": 18,
+    "y": 362.3,
+    "x": 69.7
+  },
+  {
+    "raw": "ocean currents",
+    "meaning": "洋流",
+    "page": 18,
+    "y": 359.1,
+    "x": 297.3
+  },
+  {
+    "raw": "virgin materials",
+    "meaning": "原材料",
+    "page": 18,
+    "y": 382.5,
+    "x": 69.7
+  },
+  {
+    "raw": "fog",
+    "meaning": "雾",
+    "page": 18,
+    "y": 379.3,
+    "x": 297.3
+  },
+  {
+    "raw": "weather",
+    "meaning": "天气",
+    "page": 18,
+    "y": 399.5,
+    "x": 297.3
+  },
+  {
+    "raw": "drop-off sites",
+    "meaning": "回收站",
+    "page": 18,
+    "y": 402.7,
+    "x": 69.7
+  },
+  {
+    "raw": "windy",
+    "meaning": "有风的",
+    "page": 18,
+    "y": 419.7,
+    "x": 297.3
+  },
+  {
+    "raw": "bring banks",
+    "meaning": "回收站",
+    "page": 18,
+    "y": 422.8,
+    "x": 69.7
+  },
+  {
+    "raw": "snowy",
+    "meaning": "有雪的",
+    "page": 18,
+    "y": 439.8,
+    "x": 297.3
+  },
+  {
+    "raw": "toughened glass",
+    "meaning": "强化玻璃",
+    "page": 18,
+    "y": 443.0,
+    "x": 69.7
+  },
+  {
+    "raw": "cloudy",
+    "meaning": "多云的",
+    "page": 18,
+    "y": 460.0,
+    "x": 297.3
+  },
+  {
+    "raw": "plastic bags",
+    "meaning": "塑料袋",
+    "page": 18,
+    "y": 463.2,
+    "x": 69.7
+  },
+  {
+    "raw": "humid/moist",
+    "meaning": "潮湿的",
+    "page": 18,
+    "y": 480.2,
+    "x": 297.3
+  },
+  {
+    "raw": "water filtration",
+    "meaning": "水处理",
+    "page": 18,
+    "y": 483.4,
+    "x": 69.7
+  },
+  {
+    "raw": "alternative energy",
+    "meaning": "可替换能源",
+    "page": 18,
+    "y": 500.4,
+    "x": 297.3
+  },
+  {
+    "raw": "fiberglass manufacture",
+    "meaning": "玻璃纤维制 造",
+    "page": 18,
+    "y": 503.5,
+    "x": 69.7
+  },
+  {
+    "raw": "renewable resources",
+    "meaning": "可再生资源",
+    "page": 18,
+    "y": 520.5,
+    "x": 297.3
+  },
+  {
+    "raw": "crushed glass",
+    "meaning": "碎玻璃",
+    "page": 18,
+    "y": 526.2,
+    "x": 69.7
+  },
+  {
+    "raw": "predictable",
+    "meaning": "可预测的",
+    "page": 18,
+    "y": 540.7,
+    "x": 297.3
+  },
+  {
+    "raw": "polystyrene cups",
+    "meaning": "聚苯乙烯杯 子",
+    "page": 18,
+    "y": 546.3,
+    "x": 69.7
+  },
+  {
+    "raw": "filter",
+    "meaning": "过滤",
+    "page": 18,
+    "y": 560.9,
+    "x": 297.3
+  },
+  {
+    "raw": "temperature",
+    "meaning": "温度",
+    "page": 18,
+    "y": 569.0,
+    "x": 69.7
+  },
+  {
+    "raw": "pollution",
+    "meaning": "污染",
+    "page": 18,
+    "y": 581.0,
+    "x": 297.3
+  },
+  {
+    "raw": "humid",
+    "meaning": "潮湿",
+    "page": 18,
+    "y": 589.1,
+    "x": 69.7
+  },
+  {
+    "raw": "contamination",
+    "meaning": "污染",
+    "page": 18,
+    "y": 601.2,
+    "x": 297.3
+  },
+  {
+    "raw": "humidity",
+    "meaning": "潮湿",
+    "page": 18,
+    "y": 609.3,
+    "x": 69.7
+  },
+  {
+    "raw": "waste disposal",
+    "meaning": "垃圾处理",
+    "page": 18,
+    "y": 621.4,
+    "x": 297.3
+  },
+  {
+    "raw": "landscape",
+    "meaning": "风景, 地形",
+    "page": 18,
+    "y": 629.5,
+    "x": 69.7
+  },
+  {
+    "raw": "plastic collection",
+    "meaning": "回收塑料",
+    "page": 18,
+    "y": 641.6,
+    "x": 297.3
+  },
+  {
+    "raw": "vegetation",
+    "meaning": "植被",
+    "page": 18,
+    "y": 649.7,
+    "x": 69.7
+  },
+  {
+    "raw": "container",
+    "meaning": "容器",
+    "page": 18,
+    "y": 661.7,
+    "x": 297.3
+  },
+  {
+    "raw": "climate change",
+    "meaning": "气候变化",
+    "page": 18,
+    "y": 669.8,
+    "x": 69.7
+  },
+  {
+    "raw": "erosion",
+    "meaning": "侵蚀",
+    "page": 18,
+    "y": 681.9,
+    "x": 297.3
+  },
+  {
+    "raw": "inland",
+    "meaning": "内陆的",
+    "page": 18,
+    "y": 690.0,
+    "x": 69.7
+  },
+  {
+    "raw": "damage/destruction",
+    "meaning": "破坏",
+    "page": 18,
+    "y": 702.1,
+    "x": 297.3
+  },
+  {
+    "raw": "shady",
+    "meaning": "有树荫的",
+    "page": 18,
+    "y": 710.2,
+    "x": 69.7
+  },
+  {
+    "raw": "acid rain",
+    "meaning": "酸雨",
+    "page": 18,
+    "y": 722.3,
+    "x": 297.3
+  },
+  {
+    "raw": "evaporate",
+    "meaning": "蒸发",
+    "page": 18,
+    "y": 730.4,
+    "x": 69.7
+  },
+  {
+    "raw": "flood",
+    "meaning": "洪水",
+    "page": 18,
+    "y": 742.4,
+    "x": 297.3
+  },
+  {
+    "raw": "leaf",
+    "meaning": "叶子",
+    "page": 18,
+    "y": 750.5,
+    "x": 69.7
+  },
+  {
+    "raw": "deforestation",
+    "meaning": "森林砍伐",
+    "page": 19,
+    "y": 77.8,
+    "x": 69.7
+  },
+  {
+    "raw": "solar energy/solar power",
+    "meaning": "太阳能",
+    "page": 19,
+    "y": 77.8,
+    "x": 297.6
+  },
+  {
+    "raw": "hunting",
+    "meaning": "打猎",
+    "page": 19,
+    "y": 98.0,
+    "x": 69.7
+  },
+  {
+    "raw": "tide",
+    "meaning": "潮汐",
+    "page": 19,
+    "y": 98.0,
+    "x": 297.6
+  },
+  {
+    "raw": "sustainable development",
+    "meaning": "可持续发展",
+    "page": 19,
+    "y": 118.2,
+    "x": 69.7
+  },
+  {
+    "raw": "wind force",
+    "meaning": "风力",
+    "page": 19,
+    "y": 118.2,
+    "x": 297.6
+  },
+  {
+    "raw": "public awareness",
+    "meaning": "公众意识",
+    "page": 19,
+    "y": 138.3,
+    "x": 69.7
+  },
+  {
+    "raw": "conservation/preservation",
+    "meaning": "保护",
+    "page": 19,
+    "y": 158.5,
+    "x": 69.7
+  },
+  {
+    "raw": "geographical features",
+    "meaning": "地理特征",
+    "page": 19,
+    "y": 225.9,
+    "x": 69.7
+  },
+  {
+    "raw": "aboriginal",
+    "meaning": "土著的",
+    "page": 19,
+    "y": 225.9,
+    "x": 297.3
+  },
+  {
+    "raw": "physical features",
+    "meaning": "物理特征",
+    "page": 19,
+    "y": 246.1,
+    "x": 69.7
+  },
+  {
+    "raw": "two-dimensional",
+    "meaning": "二维的",
+    "page": 19,
+    "y": 246.1,
+    "x": 297.3
+  },
+  {
+    "raw": "dome",
+    "meaning": "穹顶",
+    "page": 19,
+    "y": 266.2,
+    "x": 69.7
+  },
+  {
+    "raw": "lifestyle",
+    "meaning": "生活方式",
+    "page": 19,
+    "y": 266.2,
+    "x": 297.3
+  },
+  {
+    "raw": "census",
+    "meaning": "人口普查",
+    "page": 19,
+    "y": 286.4,
+    "x": 69.7
+  },
+  {
+    "raw": "density",
+    "meaning": "密度",
+    "page": 19,
+    "y": 286.4,
+    "x": 297.3
+  },
+  {
+    "raw": "population",
+    "meaning": "人口",
+    "page": 19,
+    "y": 306.6,
+    "x": 69.7
+  },
+  {
+    "raw": "myths and legends",
+    "meaning": "神话和传说",
+    "page": 19,
+    "y": 306.6,
+    "x": 297.3
+  },
+  {
+    "raw": "impact of tourism",
+    "meaning": "旅游业影响",
+    "page": 19,
+    "y": 326.8,
+    "x": 69.7
+  },
+  {
+    "raw": "dynamic",
+    "meaning": "相互作用的方式",
+    "page": 19,
+    "y": 326.8,
+    "x": 297.3
+  },
+  {
+    "raw": "surface",
+    "meaning": "地表",
+    "page": 19,
+    "y": 346.9,
+    "x": 69.7
+  },
+  {
+    "raw": "cause and effect",
+    "meaning": "因果关系",
+    "page": 19,
+    "y": 346.9,
+    "x": 297.3
+  },
+  {
+    "raw": "Earth",
+    "meaning": "地球",
+    "page": 19,
+    "y": 367.1,
+    "x": 69.7
+  },
+  {
+    "raw": "technology",
+    "meaning": "技术",
+    "page": 19,
+    "y": 367.1,
+    "x": 297.3
+  },
+  {
+    "raw": "Planet",
+    "meaning": "行星",
+    "page": 19,
+    "y": 388.0,
+    "x": 69.7
+  },
+  {
+    "raw": "pattern",
+    "meaning": "模式",
+    "page": 19,
+    "y": 388.0,
+    "x": 297.3
+  },
+  {
+    "raw": "desert",
+    "meaning": "沙漠",
+    "page": 19,
+    "y": 408.2,
+    "x": 69.7
+  },
+  {
+    "raw": "monitor",
+    "meaning": "监查",
+    "page": 19,
+    "y": 408.2,
+    "x": 297.3
+  },
+  {
+    "raw": "monoliths",
+    "meaning": "巨石",
+    "page": 19,
+    "y": 428.4,
+    "x": 69.7
+  },
+  {
+    "raw": "interact",
+    "meaning": "互动",
+    "page": 19,
+    "y": 428.4,
+    "x": 297.3
+  },
+  {
+    "raw": "spires",
+    "meaning": "尖顶",
+    "page": 19,
+    "y": 448.5,
+    "x": 69.7
+  },
+  {
+    "raw": "migration",
+    "meaning": "迁移",
+    "page": 19,
+    "y": 448.5,
+    "x": 297.3
+  },
+  {
+    "raw": "hectares",
+    "meaning": "公顷",
+    "page": 19,
+    "y": 468.7,
+    "x": 69.7
+  },
+  {
+    "raw": "traffic density",
+    "meaning": "交通密度",
+    "page": 19,
+    "y": 468.7,
+    "x": 297.3
+  },
+  {
+    "raw": "caves",
+    "meaning": "洞穴",
+    "page": 19,
+    "y": 488.9,
+    "x": 69.7
+  },
+  {
+    "raw": "population density",
+    "meaning": "人口密度",
+    "page": 19,
+    "y": 488.9,
+    "x": 297.3
+  },
+  {
+    "raw": "drought",
+    "meaning": "干旱",
+    "page": 19,
+    "y": 509.0,
+    "x": 69.7
+  },
+  {
+    "raw": "ocean floor",
+    "meaning": "海床",
+    "page": 19,
+    "y": 509.0,
+    "x": 297.3
+  },
+  {
+    "raw": "rainwater",
+    "meaning": "雨水",
+    "page": 19,
+    "y": 529.2,
+    "x": 69.7
+  },
+  {
+    "raw": "satellite",
+    "meaning": "卫星",
+    "page": 19,
+    "y": 529.2,
+    "x": 297.3
+  },
+  {
+    "raw": "vegetation",
+    "meaning": "植被",
+    "page": 19,
+    "y": 549.4,
+    "x": 69.7
+  },
+  {
+    "raw": "distortion",
+    "meaning": "扭曲",
+    "page": 19,
+    "y": 549.4,
+    "x": 297.3
+  },
+  {
+    "raw": "wildlife",
+    "meaning": "野生动物",
+    "page": 19,
+    "y": 569.6,
+    "x": 69.7
+  },
+  {
+    "raw": "aerial",
+    "meaning": "空气的",
+    "page": 19,
+    "y": 569.6,
+    "x": 297.3
+  },
+  {
+    "raw": "shallow-rooted species",
+    "meaning": "浅根物种",
+    "page": 19,
+    "y": 589.7,
+    "x": 69.7
+  },
+  {
+    "raw": "Antarctic",
+    "meaning": "南极",
+    "page": 19,
+    "y": 589.7,
+    "x": 297.3
+  },
+  {
+    "raw": "fossil",
+    "meaning": "化石",
+    "page": 19,
+    "y": 609.9,
+    "x": 69.7
+  },
+  {
+    "raw": "dweller/inhabitant",
+    "meaning": "居民",
+    "page": 19,
+    "y": 609.9,
+    "x": 297.3
+  },
+  {
+    "raw": "territory",
+    "meaning": "领地",
+    "page": 19,
+    "y": 630.1,
+    "x": 69.7
+  },
+  {
+    "raw": "race",
+    "meaning": "种族",
+    "page": 19,
+    "y": 630.1,
+    "x": 297.3
+  },
+  {
+    "raw": "outcrop",
+    "meaning": "露出地面的 岩层",
+    "page": 19,
+    "y": 650.3,
+    "x": 69.7
+  },
+  {
+    "raw": "minorities",
+    "meaning": "少数民族",
+    "page": 19,
+    "y": 650.3,
+    "x": 297.3
+  },
+  {
+    "raw": "slave",
+    "meaning": "奴隶",
+    "page": 19,
+    "y": 670.4,
+    "x": 297.3
+  },
+  {
+    "raw": "plain",
+    "meaning": "平原",
+    "page": 19,
+    "y": 672.9,
+    "x": 69.7
+  },
+  {
+    "raw": "lifestyle",
+    "meaning": "生活方式",
+    "page": 19,
+    "y": 690.6,
+    "x": 297.3
+  },
+  {
+    "raw": "plateau(x)",
+    "meaning": "高原",
+    "page": 19,
+    "y": 693.1,
+    "x": 69.7
+  },
+  {
+    "raw": "language",
+    "meaning": "语言",
+    "page": 19,
+    "y": 710.8,
+    "x": 297.3
+  },
+  {
+    "raw": "cliff",
+    "meaning": "悬崖",
+    "page": 19,
+    "y": 713.2,
+    "x": 69.7
+  },
+  {
+    "raw": "slang",
+    "meaning": "俚语",
+    "page": 19,
+    "y": 731.0,
+    "x": 297.3
+  },
+  {
+    "raw": "landscape",
+    "meaning": "地形",
+    "page": 19,
+    "y": 733.4,
+    "x": 69.7
+  },
+  {
+    "raw": "culture",
+    "meaning": "文化",
+    "page": 19,
+    "y": 751.1,
+    "x": 297.3
+  },
+  {
+    "raw": "erode",
+    "meaning": "腐蚀",
+    "page": 19,
+    "y": 753.6,
+    "x": 69.7
+  },
+  {
+    "raw": "carbon dioxide",
+    "meaning": "二氧化碳",
+    "page": 20,
+    "y": 99.1,
+    "x": 69.7
+  },
+  {
+    "raw": "indigestible",
+    "meaning": "无法消化的",
+    "page": 20,
+    "y": 99.1,
+    "x": 297.3
+  },
+  {
+    "raw": "ozone",
+    "meaning": "臭氧",
+    "page": 20,
+    "y": 119.3,
+    "x": 69.7
+  },
+  {
+    "raw": "coal",
+    "meaning": "煤",
+    "page": 20,
+    "y": 119.3,
+    "x": 297.3
+  },
+  {
+    "raw": "metal",
+    "meaning": "金属",
+    "page": 20,
+    "y": 139.5,
+    "x": 69.7
+  },
+  {
+    "raw": "mine",
+    "meaning": "矿",
+    "page": 20,
+    "y": 139.5,
+    "x": 297.3
+  },
+  {
+    "raw": "iron",
+    "meaning": "铁",
+    "page": 20,
+    "y": 159.7,
+    "x": 69.7
+  },
+  {
+    "raw": "marble",
+    "meaning": "大理石",
+    "page": 20,
+    "y": 159.7,
+    "x": 297.3
+  },
+  {
+    "raw": "mineral",
+    "meaning": "矿物质",
+    "page": 20,
+    "y": 179.8,
+    "x": 69.7
+  },
+  {
+    "raw": "firewood",
+    "meaning": "柴火",
+    "page": 20,
+    "y": 179.8,
+    "x": 297.3
+  },
+  {
+    "raw": "nutrition",
+    "meaning": "营养物",
+    "page": 20,
+    "y": 200.0,
+    "x": 69.7
+  },
+  {
+    "raw": "oil",
+    "meaning": "油类",
+    "page": 20,
+    "y": 200.0,
+    "x": 297.3
+  },
+  {
+    "raw": "salinity",
+    "meaning": "盐分",
+    "page": 20,
+    "y": 220.2,
+    "x": 69.7
+  },
+  {
+    "raw": "petrol/gasoline",
+    "meaning": "汽油",
+    "page": 20,
+    "y": 220.2,
+    "x": 297.3
+  },
+  {
+    "raw": "carbohydrate",
+    "meaning": "碳水化合物",
+    "page": 20,
+    "y": 240.3,
+    "x": 69.7
+  },
+  {
+    "raw": "natural resources",
+    "meaning": "自然资源",
+    "page": 20,
+    "y": 240.3,
+    "x": 297.3
+  },
+  {
+    "raw": "amino acid",
+    "meaning": "氨基酸",
+    "page": 20,
+    "y": 261.2,
+    "x": 69.7
+  },
+  {
+    "raw": "raw material",
+    "meaning": "原材料",
+    "page": 20,
+    "y": 261.2,
+    "x": 297.3
+  },
+  {
+    "raw": "protein",
+    "meaning": "蛋白质",
+    "page": 20,
+    "y": 281.4,
+    "x": 69.7
+  },
+  {
+    "raw": "water treatment",
+    "meaning": "水处理",
+    "page": 20,
+    "y": 281.4,
+    "x": 297.3
+  },
+  {
+    "raw": "vitamin",
+    "meaning": "维生素",
+    "page": 20,
+    "y": 301.6,
+    "x": 69.7
+  },
+  {
+    "raw": "electric power plants",
+    "meaning": "发电厂",
+    "page": 20,
+    "y": 301.6,
+    "x": 297.3
+  },
+  {
+    "raw": "cholesterol",
+    "meaning": "胆固醇",
+    "page": 20,
+    "y": 321.8,
+    "x": 69.7
+  },
+  {
+    "raw": "nuclear power plants",
+    "meaning": "核发电",
+    "page": 20,
+    "y": 321.8,
+    "x": 297.3
+  },
+  {
+    "raw": "bitterness",
+    "meaning": "苦味",
+    "page": 20,
+    "y": 341.9,
+    "x": 69.7
+  },
+  {
+    "raw": "fossil fuels",
+    "meaning": "化石燃料",
+    "page": 20,
+    "y": 341.9,
+    "x": 297.3
+  },
+  {
+    "raw": "sourness",
+    "meaning": "酸味",
+    "page": 20,
+    "y": 362.1,
+    "x": 69.7
+  },
+  {
+    "raw": "crystal",
+    "meaning": "晶体",
+    "page": 20,
+    "y": 362.1,
+    "x": 297.3
+  },
+  {
+    "raw": "kilocalorie",
+    "meaning": "千卡",
+    "page": 20,
+    "y": 382.3,
+    "x": 69.7
+  },
+  {
+    "raw": "fiberglass",
+    "meaning": "玻璃纤维",
+    "page": 20,
+    "y": 382.3,
+    "x": 297.3
+  },
+  {
+    "raw": "metabolism",
+    "meaning": "新陈代谢",
+    "page": 20,
+    "y": 402.5,
+    "x": 69.7
+  },
+  {
+    "raw": "timber",
+    "meaning": "木材",
+    "page": 20,
+    "y": 402.5,
+    "x": 297.3
+  },
+  {
+    "raw": "photosynthesis",
+    "meaning": "光合作用",
+    "page": 20,
+    "y": 422.6,
+    "x": 69.7
+  },
+  {
+    "raw": "solid",
+    "meaning": "固体",
+    "page": 20,
+    "y": 422.6,
+    "x": 297.3
+  },
+  {
+    "raw": "fossil",
+    "meaning": "化石",
+    "page": 20,
+    "y": 442.8,
+    "x": 69.7
+  },
+  {
+    "raw": "liquid",
+    "meaning": "液体",
+    "page": 20,
+    "y": 442.8,
+    "x": 297.3
+  },
+  {
+    "raw": "toxin",
+    "meaning": "毒素",
+    "page": 20,
+    "y": 463.0,
+    "x": 69.7
+  },
+  {
+    "raw": "gas",
+    "meaning": "气体",
+    "page": 20,
+    "y": 463.0,
+    "x": 297.3
+  },
+  {
+    "raw": "digest",
+    "meaning": "消化",
+    "page": 20,
+    "y": 483.1,
+    "x": 69.7
+  }
+]
