@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#203c35">
-  <meta name="description" content="雅思听力场景词汇练习：听发音、默写单词、错词重练五遍。在熟悉的场景里记住每一个词。">
-  <title>词间 · 雅思场景听写</title>
+  <meta name="theme-color" content="#111217">
+  <meta name="description" content="雅思听力练习室：场景词汇、剑10–剑20同义替换、数字与信息听写、填空考点词。听音默写，错题重练五遍。">
+  <title>词间 · 雅思听力练习室</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
 </head>
@@ -17,10 +17,10 @@
     <nav class="main-nav" aria-label="主要导航">
       <button data-view="practice" class="nav-button active"><span>◧</span>听音默写<span class="nav-shortcut">01</span></button>
       <button data-view="mistakes" class="nav-button"><span>▱</span>我的错题本<span class="badge" id="mistake-badge">0</span></button>
-      <button data-view="vocabulary" class="nav-button"><span>▤</span>场景词库<span class="nav-shortcut">03</span></button>
+      <button data-view="vocabulary" class="nav-button"><span>▤</span>资料词库<span class="nav-shortcut">03</span></button>
     </nav>
-    <div class="sidebar-label">选择练习场景 <span id="scene-total">15</span></div>
-    <nav id="scenes" class="scene-list" aria-label="场景分类"></nav>
+    <div class="sidebar-label">选择练习分类 <span id="scene-total">15</span></div>
+    <nav id="scenes" class="scene-list" aria-label="资料分类"></nav>
     <div class="sidebar-note"><span class="status-dot"></span> 进度自动保存在此浏览器<small>一点一滴，也是在进步。</small></div>
   </aside>
   <div class="workspace">
@@ -28,8 +28,9 @@
     <main id="main" tabindex="-1">
       <div id="storage-warning" class="warning" hidden role="status"></div>
       <section class="page-heading"><div><div class="eyebrow">LISTEN. SPELL. REMEMBER.</div><h1 id="heading">让听过的词，<span>真正记住。</span></h1><p id="subtitle">从声音开始，在场景里积累。今天，也学会一点点。</p></div><div class="heading-stamp" aria-hidden="true">一词一境<span>ONE WORD<br>ONE STEP</span></div></section>
+      <section class="library-section" aria-label="选择学习资料"><div class="library-heading"><span>我的资料库</span><span>THE LISTENING COLLECTION / 04</span></div><div id="book-shelf" class="book-shelf"></div><p id="book-description" class="book-description"></p></section>
       <section class="stats" aria-label="学习统计">
-        <div><span class="stat-icon">◈</span><div><span class="stat-label">已掌握词汇</span><strong id="mastered">0<small> / 966</small></strong></div></div>
+        <div><span class="stat-icon">◈</span><div><span class="stat-label">累计掌握条目</span><strong id="mastered">0<small> 项</small></strong></div></div>
         <div><span class="stat-icon">↗</span><div><span class="stat-label">累计首答正确率</span><strong id="accuracy">—<small> %</small></strong></div></div>
         <div><span class="stat-icon amber">↺</span><div><span class="stat-label">待巩固错词</span><strong id="pending">0<small> 个</small></strong></div></div>
       </section>
@@ -42,9 +43,9 @@
           </article>
           <aside class="practice-settings">
             <section class="settings-card"><div class="section-title">本次练习 <span>SESSION</span></div>
-              <label for="session-scene">场景</label><select id="session-scene"></select>
-              <label for="session-size">每组词数</label><select id="session-size"><option value="10">10 词 · 轻量热身</option><option value="20" selected>20 词 · 日常积累</option><option value="50">50 词 · 集中练习</option><option value="0">全部词汇</option></select>
-              <label class="check-label"><input id="shuffle" type="checkbox">随机排列词序</label>
+              <label for="session-scene">练习分类</label><select id="session-scene"></select>
+              <label for="session-size">每组题数</label><select id="session-size"><option value="10">10 题 · 轻量热身</option><option value="20" selected>20 题 · 日常积累</option><option value="50">50 题 · 集中练习</option><option value="0">全部内容</option></select>
+              <label class="check-label"><input id="shuffle" type="checkbox">随机排列题序</label>
               <p class="small-note" id="settings-note">完成一组，再向前一步。</p>
             </section>
             <section class="settings-card audio-settings"><div class="section-title">发音设置 <span>AUDIO</span></div>
@@ -58,7 +59,7 @@
       </section>
       <section id="mistakes-view" hidden><div class="list-toolbar"><div class="tabs"><button id="pending-tab" class="selected">待巩固</button><button id="all-tab">全部记录</button></div><button id="review-all" class="primary">开始错词复习 ↗</button></div><div id="mistake-list"></div></section>
       <section id="vocabulary-view" hidden><div class="list-toolbar"><label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="搜索单词或中文释义" aria-label="搜索单词或中文释义"></label><span id="vocabulary-count" class="muted"></span></div><div id="vocabulary-list"></div></section>
-      <footer><span>词间 · 在场景里，听见进步</span><span>词库整理自《雅思听力场景词汇》 · <a href="https://github.com/Zhihan-iris/learning-websites" target="_blank" rel="noopener">GitHub ↗</a></span></footer>
+      <footer><span>词间 · 在场景里，听见进步</span><span>四份听力资料 · 场景 / 替换 / 数字 / 填空 · <a href="https://github.com/Zhihan-iris/learning-websites" target="_blank" rel="noopener">GitHub ↗</a></span></footer>
     </main>
   </div>
   <noscript>请启用 JavaScript 以使用听音默写和错题本。</noscript>

@@ -20,12 +20,41 @@ const variants = [
   ['favorable terms', 'favourable terms'], ['en-suite', 'en suite'],
   ['eye-sight', 'eyesight'], ['kick-boxing', 'kickboxing'],
 ];
-export function isCorrect(answer, word) {
-  const a = normalize(answer), w = normalize(word);
-  return a === w || variants.some(group => group.includes(w) && group.includes(a));
+function canonicalTime(text) {
+  const parts = normalize(text).replace(/\b([ap])\.?m\.?/g, '$1m').replace(/\s+to\s+/g, '-').split('-');
+  if (parts.length > 2) return null;
+  const times = parts.map(part => {
+    const m = part.trim().match(/^(\d{1,2})(?:[:.](\d{2}))?\s*(am|pm)?$/);
+    if (!m) return null;
+    let hour = Number(m[1]); const minute = Number(m[2] || 0);
+    if (minute > 59 || (m[3] ? hour < 1 || hour > 12 : hour > 23)) return null;
+    if (m[3]) hour = hour % 12 + (m[3] === 'pm' ? 12 : 0);
+    return hour * 60 + minute;
+  });
+  return times.includes(null) ? null : times.join('-');
+}
+function canonicalAnswer(answer, kind) {
+  let value = normalize(answer);
+  if (kind === 'phone') return /^[\d\s()-]+$/.test(value) ? value.replace(/[\s()-]/g, '') : null;
+  if (kind === 'postcode') return value.replace(/\s/g, '');
+  if (kind === 'time') return canonicalTime(value);
+  if (kind === 'address') return value.replace(/^no\.?\s*/, '').replace(/[.,]/g, '')
+    .replace(/\b(rd|st|ave|ln)\b/g, s => ({rd:'road',st:'street',ave:'avenue',ln:'lane'}[s]));
+  if (kind === 'date') return value.replace(/,/g, '').replace(/^0*(\d+)[/-]0*(\d+)$/, '$1/$2');
+  if (kind === 'synonym') return value.replace(/[.,;:!?]/g, '').replace(/\s+/g, ' ').trim();
+  return value;
+}
+export function isCorrect(answer, entry) {
+  const item = typeof entry === 'string' ? { word: entry } : entry;
+  const a = canonicalAnswer(answer, item.kind);
+  if (a === null) return false;
+  return [item.word, ...(item.acceptedAnswers || [])].some(word => {
+    const w = canonicalAnswer(word, item.kind);
+    return a === w || variants.some(group => group.includes(w) && group.includes(a));
+  });
 }
 export function emptyProgress() {
-  return { version: 1, attempts: 0, correct: 0, mastered: [], mistakes: {}, session: null, settings: { scene: 'all', size: 20, accent: 'en-GB', rate: 0.85, shuffle: false } };
+  return { version: 1, attempts: 0, correct: 0, mastered: [], mistakes: {}, session: null, settings: { book: 'scenes', scene: 'all', size: 20, accent: 'en-GB', rate: 0.85, shuffle: false } };
 }
 export function loadProgress(raw, words) {
   const fresh = emptyProgress();
@@ -44,7 +73,9 @@ export function loadProgress(raw, words) {
   }
   const s = data.settings;
   if (s && typeof s === 'object') {
+    if (['scenes', 'synonyms', 'numbers', 'gapfill'].includes(s.book)) fresh.settings.book = s.book;
     if (s.scene === 'all' || words.some(w => w.scene === s.scene)) fresh.settings.scene = s.scene;
+    if (fresh.settings.scene !== 'all' && !words.some(w => w.scene === fresh.settings.scene && (w.book || 'scenes') === fresh.settings.book)) fresh.settings.scene = 'all';
     if ([10, 20, 50, 0].includes(s.size)) fresh.settings.size = s.size;
     if (['en-GB', 'en-US'].includes(s.accent)) fresh.settings.accent = s.accent;
     if ([0.65, 0.85, 1].includes(s.rate)) fresh.settings.rate = s.rate;
@@ -67,7 +98,7 @@ export function startSession(progress, ids, review = false) {
 export function submitAnswer(progress, word, answer) {
   const s = progress.session;
   if (!s || !['question', 'repairing'].includes(s.phase) || !normalize(answer)) return 'ignored';
-  const ok = isCorrect(answer, word.word);
+  const ok = isCorrect(answer, word);
   if (s.phase === 'repairing') {
     if (!ok) { s.phase = 'repair-error'; return 'repair-error'; }
     s.repeats++;
