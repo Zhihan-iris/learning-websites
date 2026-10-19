@@ -2,7 +2,7 @@
 
 本仓库分别发布两个独立网站：
 
-- [听力练习室](https://zhihan-iris.github.io/learning-websites/)：原有听力与同义替换练习。
+- [听力练习室](https://zhihan-iris.github.io/learning-websites/listening/)：原有听力与同义替换练习。
 - [写作学习室](https://zhihan-iris.github.io/learning-websites/writing/)：高频词错后重写一次、场景搭配分步练习；详见 [写作站说明](writing/README.md)。
 
 两个网站的学习记录独立保存。以下为听力练习室说明。
@@ -37,7 +37,7 @@
 python3 -m http.server 4173
 ```
 
-打开 <http://localhost:4173>。不要直接双击 HTML；词库通过 `fetch` 加载，需要 HTTP 服务。
+打开 <http://localhost:4173/listening/>。不要直接双击 HTML；词库通过 `fetch` 加载，需要 HTTP 服务。
 
 可用 Node.js 运行核心逻辑与词库检查：
 
@@ -49,7 +49,7 @@ npm test
 
 在仓库 **Settings → Pages → Build and deployment** 中选择 **Deploy from a branch**，分支选 `main`，目录选 `/ (root)`，保存。根目录有 `.nojekyll`，可直接发布静态资源。
 
-网站地址：<https://zhihan-iris.github.io/learning-websites/>。
+网站地址：<https://zhihan-iris.github.io/learning-websites/listening/>。原根路径会自动跳转到新地址，浏览器学习记录沿用原存储键。
 
 ## 数据与隐私
 
@@ -63,24 +63,26 @@ npm test
 
 来源：用户提供的《雅思听力场景词汇》（新东方在线雅思研发中心），PDF 第 2–20 页，共 **903 条原始表格记录**。封面与推广页不进入词库。原 PDF 不在仓库内。
 
-- `data/source-entries.json`：原始表格提取内容、PDF 页码及位置，便于核对。
-- `data/vocabulary.json`：应用实际使用的 966 条练习词。拆开斜杠表达、补全共享的词组部分、展开括号可选形式；同一场景的相同词去重，跨场景同词保留。
-- `scripts/build-vocabulary.py`：从原始记录重建应用词库，无第三方 Python 依赖。
+- `listening/data/source-entries.json`：原始表格提取内容、PDF 页码及位置，便于核对。
+- `listening/data/vocabulary.json`：应用实际使用的 966 条练习词。拆开斜杠表达、补全共享的词组部分、展开括号可选形式；同一场景的相同词去重，跨场景同词保留。
+- `listening/scripts/build-vocabulary.py`：从原始记录重建应用词库，无第三方 Python 依赖。
 - 词库保留英文与中文，并在词库页显示来源页码。
 - 修正了明显排印或翻译问题，例如 `four-wheel driver → four-wheel drive`、`stretchclass → stretch class`、`Biophysics → 生物物理学`、`photocopier → 复印机`、`laser printer → 激光打印机`、`nuclear power plants → 核电站`；货币符号补充中文，分拆词汇补充对应释义。完整规则见构建脚本。
 
 ## 文件结构
 
 ```text
-index.html                 页面结构
-styles.css                 桌面 / 手机样式
-app.js                     朗读、页面交互、记录持久化
-core.js                    判题、练习状态、5 遍计数
-synonyms.js                同义词分组与旧进度迁移
- data/vocabulary.json      场景词库
- data/source-entries.json  提取的原始记录
-scripts/build-vocabulary.py 词库整理规则
-tests/core.test.js         核心流程与数据检查
+index.html                    旧地址自动跳转入口
+listening/
+  index.html                  听力页面结构
+  styles.css                  桌面 / 手机样式
+  app.js                      朗读、页面交互、记录持久化
+  core.js                     判题、练习状态、5 遍计数
+  synonyms.js                 同义词分组与旧进度迁移
+  data/                       听力词库及原始提取记录
+  scripts/                    词库整理脚本
+  tests/core.test.js          核心流程与数据检查
+writing/                      独立写作学习室
 ```
 
 
@@ -92,7 +94,7 @@ tests/core.test.js         核心流程与数据检查
 - **填空考点词**：显示资料中的音标和常用义，英美拼写选项作为可接受答案。合并 `plastic`、`sweetener` 的同册重复记录，保留不同页码。音标按来源保留，朗读使用设备的英语语音。
 - 四个资料库都沿用错题本、5 次正确默写和 Enter 进入下一题的流程。不同资料库中的同词是不同练习条目；累计掌握条目按练习 ID 计数。切换资料库时会提示是否结束当前组，历史答题和错题记录保留。
 
-新增资料原始提取内容在 `data/additional-source-entries.json`，应用数据在 `data/additional-books.json`；运行 `python3 scripts/build-additional-books.py` 可重建，只有标准库依赖。原 PDF 不上传仓库。
+新增资料原始提取内容在 `listening/data/additional-source-entries.json`，应用数据在 `listening/data/additional-books.json`；运行 `python3 listening/scripts/build-additional-books.py` 可重建，只有标准库依赖。原 PDF 不上传仓库。
 
 
 ## 2026-10-19 练习流程更新
