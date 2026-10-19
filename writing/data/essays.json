@@ -1,0 +1,3260 @@
+[
+  {
+    "id": "essay-01",
+    "title": "在家学习与学校教育",
+    "sections": [
+      "教育体系及阶段",
+      "学校科目及校园活动"
+    ],
+    "topics": [
+      "topic-01"
+    ],
+    "prompt": "Some parents educate their children at home rather than sending them to school. Do the advantages of homeschooling outweigh the disadvantages?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "承认灵活性，但认为多数家庭中学校的系统教学与同伴环境更有优势。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "先界定比较对象为家庭教育与学校教育，给出总体判断。",
+        "link": "先界定比较对象为家庭教育与学校教育，给出总体判断。"
+      },
+      {
+        "role": "主体一",
+        "idea": "解释自主节奏怎样帮助学习，用具体课程安排说明优点。",
+        "link": "解释自主节奏怎样帮助学习，用具体课程安排说明优点。"
+      },
+      {
+        "role": "主体二",
+        "idea": "转折到家庭资源限制，再说明学校如何补足互动和教学支持。",
+        "link": "转折到家庭资源限制，再说明学校如何补足互动和教学支持。"
+      },
+      {
+        "role": "结论",
+        "idea": "综合比较而非重复列举，提出学校为主、灵活学习为辅。",
+        "link": "综合比较而非重复列举，提出学校为主、灵活学习为辅。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Families increasingly have access to lessons beyond the classroom, making homeschooling a realistic choice for some children. Its flexibility can be valuable, particularly when a child's circumstances make regular attendance difficult. However, I believe that for most families its advantages do not outweigh the loss of professional teaching and daily contact with other pupils."
+      },
+      {
+        "role": "主体一",
+        "text": "The strongest argument for learning at home is that children can study at their own pace. A parent can spend longer on a difficult mathematical idea instead of moving on because a timetable requires it. Meanwhile, a child who already understands a topic can attempt a more challenging task. Families may also adapt the curriculum to connect academic work with practical experiences. For example, a visit to a local river could provide material for science, geography and descriptive writing. Such flexibility can make learning purposeful rather than simply a sequence of exercises."
+      },
+      {
+        "role": "主体二",
+        "text": "Nevertheless, designing a balanced programme requires time and specialist knowledge that not every parent possesses. A school can provide a systematic teaching plan and access to teachers with different areas of expertise. It also creates repeated opportunities to interact with peers. During a group project, pupils must explain their ideas, share responsibilities and deal with disagreements. These experiences cannot always be reproduced by studying alone, even when online lessons are excellent. Flexible lessons are most useful when they are supported by reliable guidance. Without that support, freedom may result in important gaps in learning."
+      },
+      {
+        "role": "结论",
+        "text": "Overall, home education can suit particular children and well-prepared families, but it is not generally a better replacement for school. A more practical approach is to combine professional classroom teaching with flexible activities at home, preserving both individual attention and the social experience of education."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 0,
+        "answer": "homeschooling",
+        "acceptedAnswers": [],
+        "hint": "家庭教育；在家上学",
+        "explanation": "先界定比较对象为家庭教育与学校教育，给出总体判断。",
+        "entryIds": [
+          "v-0022-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "study at their own pace",
+        "acceptedAnswers": [],
+        "hint": "按照自己的节奏学习",
+        "explanation": "解释自主节奏怎样帮助学习，用具体课程安排说明优点。",
+        "entryIds": [
+          "c-001"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "curriculum",
+        "acceptedAnswers": [],
+        "hint": "课程体系",
+        "explanation": "解释自主节奏怎样帮助学习，用具体课程安排说明优点。",
+        "entryIds": [
+          "v-0065-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "a systematic teaching plan",
+        "acceptedAnswers": [],
+        "hint": "系统的教学计划",
+        "explanation": "转折到家庭资源限制，再说明学校如何补足互动和教学支持。",
+        "entryIds": [
+          "c-all-0064"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "interact with peers",
+        "acceptedAnswers": [],
+        "hint": "与同龄人互动",
+        "explanation": "转折到家庭资源限制，再说明学校如何补足互动和教学支持。",
+        "entryIds": [
+          "c-all-0041"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "Flexible lessons are most useful when they are supported by reliable guidance.",
+        "acceptedAnswers": [],
+        "hint": "灵活课程最有价值的前提是有可靠指导。",
+        "explanation": "转折到家庭资源限制，再说明学校如何补足互动和教学支持。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 285
+  },
+  {
+    "id": "essay-02",
+    "title": "教育应服务工作还是个人成长",
+    "sections": [
+      "教育的作用及帮助"
+    ],
+    "topics": [
+      "topic-02"
+    ],
+    "prompt": "Some people believe education should mainly prepare students for employment, while others think it should develop them as individuals. Discuss both views and give your own opinion.",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "职业准备与个人成长互相支持，课程不应被当下岗位需求完全限制。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "引言回应双方并提出兼顾立场。",
+        "link": "引言回应双方并提出兼顾立场。"
+      },
+      {
+        "role": "主体一",
+        "idea": "从就业需要推到专业能力，再用具体工作场景展示价值。",
+        "link": "从就业需要推到专业能力，再用具体工作场景展示价值。"
+      },
+      {
+        "role": "主体二",
+        "idea": "由岗位变化引出可迁移能力，解释个人成长如何反过来支持职业发展。",
+        "link": "由岗位变化引出可迁移能力，解释个人成长如何反过来支持职业发展。"
+      },
+      {
+        "role": "结论",
+        "idea": "回到课程取舍，说明两类目标应如何结合。",
+        "link": "回到课程取舍，说明两类目标应如何结合。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "The purpose of education is often discussed as a choice between preparing people for work and helping them develop as individuals. Employment clearly matters because most adults need to support themselves. Nevertheless, I believe education should combine vocational preparation with broader development, since a person's future responsibilities extend beyond a single job."
+      },
+      {
+        "role": "主体一",
+        "text": "Those who prioritise employment argue that students need opportunities to develop expertise. A qualification has limited practical value if its holder cannot perform the work it supposedly prepares them for. Training that includes an internship, for instance, can help students apply classroom ideas to actual tasks and receive immediate feedback from experienced colleagues. Employers may then spend less time teaching basic procedures. For students with limited financial resources, a clear route into paid work can also justify the considerable time and cost involved in further study."
+      },
+      {
+        "role": "主体二",
+        "text": "However, a narrowly occupational curriculum may prepare learners for tasks that later change or disappear. Education should therefore cultivate critical thinking and analytical skills, enabling graduates to question information and solve unfamiliar problems. Communication skills are equally important outside employment: people need to explain their concerns, understand different viewpoints and participate in community decisions. A class debate about local transport, for example, requires students to assess evidence and consider the needs of others. These habits can improve both civic participation and professional judgement. The ability to learn new things matters more than familiarity with one fixed procedure."
+      },
+      {
+        "role": "结论",
+        "text": "In my view, education serves students best when specialist training is embedded in a broad intellectual foundation. Schools and universities should offer practical experience while retaining opportunities for discussion, independent inquiry and creative work. This combination prepares people to earn a living without reducing their development to the requirements of their first employer."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "develop expertise",
+        "acceptedAnswers": [],
+        "hint": "培养专业知识与技能",
+        "explanation": "从就业需要推到专业能力，再用具体工作场景展示价值。",
+        "entryIds": [
+          "v-0043-0",
+          "c-004"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "immediate feedback",
+        "acceptedAnswers": [],
+        "hint": "即时反馈",
+        "explanation": "从就业需要推到专业能力，再用具体工作场景展示价值。",
+        "entryIds": [
+          "v-0063-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 2,
+        "answer": "critical thinking",
+        "acceptedAnswers": [],
+        "hint": "批判性思维",
+        "explanation": "由岗位变化引出可迁移能力，解释个人成长如何反过来支持职业发展。",
+        "entryIds": [
+          "v-0042-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "analytical skills",
+        "acceptedAnswers": [],
+        "hint": "分析能力",
+        "explanation": "由岗位变化引出可迁移能力，解释个人成长如何反过来支持职业发展。",
+        "entryIds": [
+          "v-0030-0",
+          "c-all-0086"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "Communication skills",
+        "acceptedAnswers": [],
+        "hint": "沟通能力",
+        "explanation": "由岗位变化引出可迁移能力，解释个人成长如何反过来支持职业发展。",
+        "entryIds": [
+          "v-0032-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "The ability to learn new things matters more than familiarity with one fixed procedure.",
+        "acceptedAnswers": [],
+        "hint": "学习新事物的能力比熟悉一个固定程序更重要。",
+        "explanation": "由岗位变化引出可迁移能力，解释个人成长如何反过来支持职业发展。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 288
+  },
+  {
+    "id": "essay-03",
+    "title": "数字工具能否取代教师",
+    "sections": [
+      "教育与科技"
+    ],
+    "topics": [
+      "topic-03"
+    ],
+    "prompt": "Technology is increasingly used in education. Some people think it can replace classroom teachers. To what extent do you agree or disagree?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "数字工具可补充教学，但不能普遍替代教师的判断、反馈和支持。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "先明确不同意全面替代，并承认技术用途。",
+        "link": "先明确不同意全面替代，并承认技术用途。"
+      },
+      {
+        "role": "主体一",
+        "idea": "从资源和节奏解释优势，用回放教学例子具体化。",
+        "link": "从资源和节奏解释优势，用回放教学例子具体化。"
+      },
+      {
+        "role": "主体二",
+        "idea": "讨论机器反馈边界与社交需求，转出教师不可替代的功能。",
+        "link": "讨论机器反馈边界与社交需求，转出教师不可替代的功能。"
+      },
+      {
+        "role": "结论",
+        "idea": "提出混合教学而不是全盘肯定或否定。",
+        "link": "提出混合教学而不是全盘肯定或否定。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Digital resources have changed how students find information and practise new skills. Some observers therefore expect software to replace classroom teachers altogether. I disagree with this prediction. Technology can make lessons more accessible and flexible, but education also requires judgement, encouragement and interaction that a programme cannot reliably provide in every situation."
+      },
+      {
+        "role": "主体一",
+        "text": "One significant advantage of digital learning is the opportunity to offer diverse learning options. A student who struggles to understand an explanation can replay the audio or video rather than wait until the next class. Interactive diagrams can also make an abstract process easier to follow. Moreover, adaptive learning techniques may identify recurring errors and suggest suitable practice. For a learner studying after work or living far from a specialist teacher, these resources can remove practical barriers. They are especially useful when the learning objective is clear and answers can be checked consistently."
+      },
+      {
+        "role": "主体二",
+        "text": "Yet completing exercises is only one part of education. Students may give a correct answer without understanding why it is correct, and teachers can investigate this through conversation. Learners who lack face-to-face interaction may also have fewer chances to negotiate meanings or respond to unexpected questions. In addition, excessive screen time can displace other valuable activities if lessons are poorly planned. A teacher can select relevant materials, notice frustration and change the approach when a student becomes confused. Access to information does not automatically produce understanding. Human guidance helps learners turn available resources into coherent knowledge."
+      },
+      {
+        "role": "结论",
+        "text": "For these reasons, I support using technology to extend teachers' capabilities rather than eliminate their role. A balanced classroom can combine digital practice with discussion, individual feedback and collaborative work. The aim should be better learning, not merely replacing a person with a screen."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "offer diverse learning options",
+        "acceptedAnswers": [],
+        "hint": "提供多样的学习选择",
+        "explanation": "从资源和节奏解释优势，用回放教学例子具体化。",
+        "entryIds": [
+          "v-0092-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "replay the audio or video",
+        "acceptedAnswers": [],
+        "hint": "回放录音或视频",
+        "explanation": "从资源和节奏解释优势，用回放教学例子具体化。",
+        "entryIds": []
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "adaptive learning techniques",
+        "acceptedAnswers": [],
+        "hint": "自适应学习技术",
+        "explanation": "从资源和节奏解释优势，用回放教学例子具体化。",
+        "entryIds": [
+          "v-0094-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "lack face-to-face interaction",
+        "acceptedAnswers": [],
+        "hint": "缺乏面对面互动",
+        "explanation": "讨论机器反馈边界与社交需求，转出教师不可替代的功能。",
+        "entryIds": [
+          "v-0099-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "excessive screen time",
+        "acceptedAnswers": [],
+        "hint": "过多的屏幕使用时间",
+        "explanation": "讨论机器反馈边界与社交需求，转出教师不可替代的功能。",
+        "entryIds": [
+          "v-0096-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "Access to information does not automatically produce understanding.",
+        "acceptedAnswers": [],
+        "hint": "获得信息并不自动意味着理解。",
+        "explanation": "讨论机器反馈边界与社交需求，转出教师不可替代的功能。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 285
+  },
+  {
+    "id": "essay-04",
+    "title": "换工作与长期发展",
+    "sections": [
+      "工作与就业"
+    ],
+    "topics": [
+      "topic-04"
+    ],
+    "prompt": "People change jobs more frequently than in the past. What are the reasons for this, and is it a positive or negative development?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "原因包括产业变化与个人需求；有计划的流动有益，但频繁无目标跳槽有成本。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "同时回应成因与评价两个问题，提出有条件的立场。",
+        "link": "同时回应成因与评价两个问题，提出有条件的立场。"
+      },
+      {
+        "role": "主体一",
+        "idea": "解释外部岗位变化与内部生活需求如何共同促成转职。",
+        "link": "解释外部岗位变化与内部生活需求如何共同促成转职。"
+      },
+      {
+        "role": "主体二",
+        "idea": "比较技能增长与频繁适应成本，用对比说明条件。",
+        "link": "比较技能增长与频繁适应成本，用对比说明条件。"
+      },
+      {
+        "role": "结论",
+        "idea": "总结评价标准是发展方向和准备程度，而非次数。",
+        "link": "总结评价标准是发展方向和准备程度，而非次数。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Frequent job switching has become a familiar feature of many people's working lives. It can reflect changes in the economy as well as a desire for more satisfying employment. I regard this development as broadly positive when moves follow a clear purpose, although repeated changes without preparation can damage both workers and organisations."
+      },
+      {
+        "role": "主体一",
+        "text": "One reason people move is that the job market does not remain static. New services create opportunities while automation changes the tasks required in established occupations. Someone whose work consists mainly of repetitive procedures may need to seek a different role. Personal priorities also change. An employee might accept flexible hours to achieve a better work-life balance, even without a higher salary. Others move because their employer offers little staff training or no realistic route to promotion. In these circumstances, remaining in the same position can be less secure than developing skills elsewhere."
+      },
+      {
+        "role": "主体二",
+        "text": "A well-chosen move may allow a person to develop multiple skill sets and discover work that suits their strengths. For example, a customer-service employee who joins a project team may learn how to organise schedules and coordinate colleagues. These abilities can support a more resilient career path. However, every transition also involves costs. New workers need time to understand systems and establish trust, while employers must recruit and train replacements. A new position is valuable only if it offers more than a temporary escape from dissatisfaction. Workers should therefore investigate the role and consider its longer-term demands before leaving."
+      },
+      {
+        "role": "结论",
+        "text": "Overall, greater mobility can improve the match between people and jobs, but its benefits depend on informed choices. Employees should assess opportunities against their goals and responsibilities, while employers can retain staff through fair treatment and credible development prospects. Stability and movement both have value when they serve a coherent plan."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 0,
+        "answer": "job switching",
+        "acceptedAnswers": [],
+        "hint": "换工作",
+        "explanation": "同时回应成因与评价两个问题，提出有条件的立场。",
+        "entryIds": [
+          "v-0201-0",
+          "c-all-0261"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "job market",
+        "acceptedAnswers": [],
+        "hint": "就业市场",
+        "explanation": "解释外部岗位变化与内部生活需求如何共同促成转职。",
+        "entryIds": [
+          "v-0169-0",
+          "c-all-0241"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "work-life balance",
+        "acceptedAnswers": [],
+        "hint": "工作与生活的平衡",
+        "explanation": "解释外部岗位变化与内部生活需求如何共同促成转职。",
+        "entryIds": [
+          "v-0181-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 1,
+        "answer": "staff training",
+        "acceptedAnswers": [],
+        "hint": "员工培训",
+        "explanation": "解释外部岗位变化与内部生活需求如何共同促成转职。",
+        "entryIds": [
+          "v-0205-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "develop multiple skill sets",
+        "acceptedAnswers": [],
+        "hint": "培养多种技能",
+        "explanation": "比较技能增长与频繁适应成本，用对比说明条件。",
+        "entryIds": [
+          "c-010"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "career path",
+        "acceptedAnswers": [],
+        "hint": "职业道路",
+        "explanation": "比较技能增长与频繁适应成本，用对比说明条件。",
+        "entryIds": [
+          "v-0198-0"
+        ]
+      },
+      {
+        "id": "g7",
+        "paragraph": 2,
+        "answer": "A new position is valuable only if it offers more than a temporary escape from dissatisfaction.",
+        "acceptedAnswers": [],
+        "hint": "新岗位只有不止于暂时逃避不满时才有价值。",
+        "explanation": "比较技能增长与频繁适应成本，用对比说明条件。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 296
+  },
+  {
+    "id": "essay-05",
+    "title": "线上联系与真实关系",
+    "sections": [
+      "社交及关系"
+    ],
+    "topics": [
+      "topic-05"
+    ],
+    "prompt": "Some people say online communication is weakening relationships between family members and friends. To what extent do you agree or disagree?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "技术能维系远距离联系，但替代专注相处时会削弱关系。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "区分使用工具和用工具取代关系，明确条件立场。",
+        "link": "区分使用工具和用工具取代关系，明确条件立场。"
+      },
+      {
+        "role": "主体一",
+        "idea": "先说明远距离联系的实际价值，避免单方面否定技术。",
+        "link": "先说明远距离联系的实际价值，避免单方面否定技术。"
+      },
+      {
+        "role": "主体二",
+        "idea": "转向注意力被分散的机制，以家庭生活例子展开。",
+        "link": "转向注意力被分散的机制，以家庭生活例子展开。"
+      },
+      {
+        "role": "结论",
+        "idea": "提出有边界的使用方式并回扣关系质量。",
+        "link": "提出有边界的使用方式并回扣关系质量。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Online communication allows people to remain in contact across considerable distances, yet it is sometimes blamed for weakening close relationships. I partly agree with this criticism. Digital tools can strengthen existing connections, but problems arise when constant online activity replaces the focused attention that family members and friends need from one another."
+      },
+      {
+        "role": "主体一",
+        "text": "For people living apart, messages and video calls can provide meaningful emotional support. A student studying abroad can discuss a difficult day with a parent without waiting for a holiday visit. Sharing ordinary experiences can preserve a sense of belonging even when relatives cannot meet regularly. Online groups may also help people find others with similar interests, creating opportunities for friendships that would otherwise be difficult to establish. These benefits show why the mere amount of digital communication is not a reliable measure of the strength or weakness of a relationship."
+      },
+      {
+        "role": "主体二",
+        "text": "The difficulty is that frequent contact does not necessarily involve careful attention. During face-to-face communication, people use facial expression and tone to interpret what someone means. Short messages can lose these signals and create misunderstanding. More importantly, checking notifications throughout a shared meal reduces the quality time available to those present. A family may occupy the same room while each member is absorbed in a separate conversation. Being constantly reachable is not the same as being emotionally available. If this habit continues, individuals may feel ignored despite having an extensive digital network."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, online communication is neither inherently destructive nor sufficient on its own. Its value depends on whether it supports or displaces attentive interaction. Families and friends can benefit from keeping remote channels open while protecting regular opportunities to listen to each other without competing distractions."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "emotional support",
+        "acceptedAnswers": [],
+        "hint": "情感支持",
+        "explanation": "先说明远距离联系的实际价值，避免单方面否定技术。",
+        "entryIds": [
+          "v-0116-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "a sense of belonging",
+        "acceptedAnswers": [],
+        "hint": "归属感",
+        "explanation": "先说明远距离联系的实际价值，避免单方面否定技术。",
+        "entryIds": [
+          "v-0114-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 2,
+        "answer": "face-to-face communication",
+        "acceptedAnswers": [],
+        "hint": "面对面沟通",
+        "explanation": "转向注意力被分散的机制，以家庭生活例子展开。",
+        "entryIds": [
+          "v-0104-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "facial expression",
+        "acceptedAnswers": [],
+        "hint": "面部表情",
+        "explanation": "转向注意力被分散的机制，以家庭生活例子展开。",
+        "entryIds": [
+          "v-0113-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "quality time",
+        "acceptedAnswers": [],
+        "hint": "高质量相处时间",
+        "explanation": "转向注意力被分散的机制，以家庭生活例子展开。",
+        "entryIds": [
+          "v-0110-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "Being constantly reachable is not the same as being emotionally available.",
+        "acceptedAnswers": [],
+        "hint": "随时能联系到不等于在情感上真正投入。",
+        "explanation": "转向注意力被分散的机制，以家庭生活例子展开。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 281
+  },
+  {
+    "id": "essay-06",
+    "title": "工作机会与性别平等",
+    "sections": [],
+    "topics": [
+      "topic-06"
+    ],
+    "prompt": "Some people think employers should give equal opportunities to men and women in all occupations. To what extent do you agree or disagree?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "按岗位相关能力评价，提供平等机会，不用群体刻板印象代替个人判断。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "明确平等机会不等于忽视岗位要求。",
+        "link": "明确平等机会不等于忽视岗位要求。"
+      },
+      {
+        "role": "主体一",
+        "idea": "从选才机制论证个人能力评价怎样改善匹配。",
+        "link": "从选才机制论证个人能力评价怎样改善匹配。"
+      },
+      {
+        "role": "主体二",
+        "idea": "从照护责任和制度障碍说明为何仅口头平等不够。",
+        "link": "从照护责任和制度障碍说明为何仅口头平等不够。"
+      },
+      {
+        "role": "结论",
+        "idea": "提出透明标准与实际支持的组合。",
+        "link": "提出透明标准与实际支持的组合。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Employers should provide equal opportunities to men and women, although this does not mean ignoring the requirements of a particular occupation. In my view, recruitment and promotion should be based on relevant abilities rather than assumptions about gender. Such an approach is fairer to applicants and helps organisations select people who can actually perform the work."
+      },
+      {
+        "role": "主体一",
+        "text": "Gender stereotypes are an unreliable guide to individual capability. A position may require someone to develop leadership and management skills, communicate clearly or handle demanding technical tasks. None of these requirements justifies assuming that every member of one gender is more suitable than every member of another. Employers who assess demonstrated skills may recruit more suitable talents. For example, a practical assessment can show whether an applicant can solve a work-related problem, whereas a general belief about personality cannot. Transparent selection criteria also allow unsuccessful candidates to understand which skills they need to improve."
+      },
+      {
+        "role": "主体二",
+        "text": "However, fair assessment alone may not remove all barriers. Employees who undertake household chores or provide care can face difficulties attending inflexible training sessions. Where one group carries a disproportionate share of these duties, apparently neutral rules may restrict their opportunities. Flexible schedules and shared parental leave can help create a gender-balanced environment without lowering professional standards. Organisations should also address gender-based violence and harassment so that workers can participate safely. Equal opportunity requires removing avoidable barriers, not guaranteeing identical outcomes."
+      },
+      {
+        "role": "结论",
+        "text": "Overall, people should be judged as individuals against clear occupational requirements. Employers can support this principle through transparent recruitment, accessible development programmes and reasonable flexibility. These measures respect both fairness and competence, rather than treating them as competing goals."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "develop leadership and management skills",
+        "acceptedAnswers": [],
+        "hint": "培养领导与管理技能",
+        "explanation": "从选才机制论证个人能力评价怎样改善匹配。",
+        "entryIds": []
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "recruit more suitable talents",
+        "acceptedAnswers": [],
+        "hint": "招到更合适的人才",
+        "explanation": "从选才机制论证个人能力评价怎样改善匹配。",
+        "entryIds": []
+      },
+      {
+        "id": "g3",
+        "paragraph": 2,
+        "answer": "undertake household chores",
+        "acceptedAnswers": [],
+        "hint": "承担家务",
+        "explanation": "从照护责任和制度障碍说明为何仅口头平等不够。",
+        "entryIds": [
+          "c-016"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "create a gender-balanced environment",
+        "acceptedAnswers": [],
+        "hint": "营造性别更加平衡的环境",
+        "explanation": "从照护责任和制度障碍说明为何仅口头平等不够。",
+        "entryIds": [
+          "c-all-0459"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "gender-based violence",
+        "acceptedAnswers": [],
+        "hint": "基于性别的暴力",
+        "explanation": "从照护责任和制度障碍说明为何仅口头平等不够。",
+        "entryIds": []
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "Equal opportunity requires removing avoidable barriers, not guaranteeing identical outcomes.",
+        "acceptedAnswers": [],
+        "hint": "平等机会要求消除可避免的障碍，而非保证完全相同的结果。",
+        "explanation": "从照护责任和制度障碍说明为何仅口头平等不够。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 270
+  },
+  {
+    "id": "essay-07",
+    "title": "老龄社会中的参与",
+    "sections": [
+      "老龄化现象"
+    ],
+    "topics": [
+      "topic-07"
+    ],
+    "prompt": "An increasing proportion of the population is elderly. Do the disadvantages of this trend outweigh the advantages?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "承认照护与财政压力，但不把老年人只看作负担；制度适配决定净影响。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "引言将人口趋势与政策适应区分，给出不必然弊大于利的判断。",
+        "link": "引言将人口趋势与政策适应区分，给出不必然弊大于利的判断。"
+      },
+      {
+        "role": "主体一",
+        "idea": "先具体说明照护与养老金压力怎样产生。",
+        "link": "先具体说明照护与养老金压力怎样产生。"
+      },
+      {
+        "role": "主体二",
+        "idea": "再说明经验和社区贡献，并写明参与应自愿、支持因人而异。",
+        "link": "再说明经验和社区贡献，并写明参与应自愿、支持因人而异。"
+      },
+      {
+        "role": "结论",
+        "idea": "以制度调整回应前面的问题，形成有条件结论。",
+        "link": "以制度调整回应前面的问题，形成有条件结论。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "An aging population changes the demands placed on public services and the workplace. It can create serious financial and practical difficulties, particularly where institutions have not adapted. Nevertheless, I do not believe its disadvantages inevitably outweigh its advantages. Older people can make substantial contributions when society provides appropriate opportunities and support."
+      },
+      {
+        "role": "主体一",
+        "text": "The main concern is the pressure on care systems. If more people require long-term assistance, governments may face higher healthcare costs, while relatives must balance paid work with caring responsibilities. A pension fund may also come under strain if its financing arrangements assume a much younger population. These challenges cannot be solved simply by asking families to work harder. Accessible housing, reliable community services and trained care workers are needed to make elderly care sustainable. Without such investment, the burden may fall disproportionately on households with the fewest resources."
+      },
+      {
+        "role": "主体二",
+        "text": "At the same time, age does not determine whether someone can contribute effectively. An experienced workforce can pass on practical knowledge that is difficult to capture in a manual. Retired residents may also volunteer, support neighbours or share local history with children. However, participation should be based on ability and preference, rather than an expectation that everyone will remain healthy or continue working. Removing age discrimination allows willing individuals to participate while protecting those who need support. Longer lives are more valuable when people retain choices about how to live them."
+      },
+      {
+        "role": "结论",
+        "text": "Overall, population ageing presents challenges rather than a predetermined social loss. Its consequences depend greatly on pension design, accessible services and opportunities for participation. A balanced response should recognise older people as individuals with varied needs and abilities, not merely as a cost attached to demographic change."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 0,
+        "answer": "aging population",
+        "acceptedAnswers": [],
+        "hint": "人口老龄化",
+        "explanation": "引言将人口趋势与政策适应区分，给出不必然弊大于利的判断。",
+        "entryIds": [
+          "v-0349-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "higher healthcare costs",
+        "acceptedAnswers": [],
+        "hint": "更高的医疗费用",
+        "explanation": "先具体说明照护与养老金压力怎样产生。",
+        "entryIds": [
+          "v-0363-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "pension fund",
+        "acceptedAnswers": [],
+        "hint": "养老基金",
+        "explanation": "先具体说明照护与养老金压力怎样产生。",
+        "entryIds": [
+          "v-0362-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 1,
+        "answer": "elderly care",
+        "acceptedAnswers": [],
+        "hint": "养老照护",
+        "explanation": "先具体说明照护与养老金压力怎样产生。",
+        "entryIds": [
+          "v-0351-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "experienced workforce",
+        "acceptedAnswers": [],
+        "hint": "经验丰富的劳动力",
+        "explanation": "再说明经验和社区贡献，并写明参与应自愿、支持因人而异。",
+        "entryIds": [
+          "v-0366-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "age discrimination",
+        "acceptedAnswers": [],
+        "hint": "年龄歧视",
+        "explanation": "再说明经验和社区贡献，并写明参与应自愿、支持因人而异。",
+        "entryIds": [
+          "v-0358-0"
+        ]
+      },
+      {
+        "id": "g7",
+        "paragraph": 2,
+        "answer": "Longer lives are more valuable when people retain choices about how to live them.",
+        "acceptedAnswers": [],
+        "hint": "当人们仍能选择如何生活时，更长寿命才更有价值。",
+        "explanation": "再说明经验和社区贡献，并写明参与应自愿、支持因人而异。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 278
+  },
+  {
+    "id": "essay-08",
+    "title": "旅游发展与当地生活",
+    "sections": [
+      "旅游与交通"
+    ],
+    "topics": [
+      "topic-08"
+    ],
+    "prompt": "International tourism brings benefits to host communities but can also cause problems. Discuss the advantages and disadvantages and give your opinion.",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "支持有管理的旅游，评价标准是当地长期收益而非游客数量。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "明确旅游收益与成本应从当地社区角度衡量。",
+        "link": "明确旅游收益与成本应从当地社区角度衡量。"
+      },
+      {
+        "role": "主体一",
+        "idea": "说明游客支出如何形成岗位和文化交流，给出具体服务链。",
+        "link": "说明游客支出如何形成岗位和文化交流，给出具体服务链。"
+      },
+      {
+        "role": "主体二",
+        "idea": "讨论拥堵和文化商业化的机制，再提出可针对问题的管理。",
+        "link": "讨论拥堵和文化商业化的机制，再提出可针对问题的管理。"
+      },
+      {
+        "role": "结论",
+        "idea": "综合判断并以居民生活质量作结。",
+        "link": "综合判断并以居民生活质量作结。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "International tourism can bring income and cultural contact to a host community, but its success should not be measured only by visitor numbers. A destination may attract large crowds while residents receive few benefits. I believe tourism is generally valuable when local authorities and businesses manage its effects on daily life and the environment."
+      },
+      {
+        "role": "主体一",
+        "text": "The most obvious advantage is that the tourism industry can provide jobs. Visitors pay for accommodation, meals, transport and guided activities, supporting a range of local services. A family-run guesthouse, for example, may purchase food from nearby farmers and recommend independent shops. Tourism can also encourage residents to explain their traditions to outsiders, giving visitors opportunities for local culture exploration. These encounters may increase mutual understanding, especially when tourists take time to learn about the places they visit rather than treating them as interchangeable backgrounds for photographs."
+      },
+      {
+        "role": "主体二",
+        "text": "However, rapid growth can place pressure on a destination. Heavy traffic may increase traffic congestion, while popular neighbourhoods become less convenient for residents. Cultural commercialization is another concern: performances or crafts may be changed solely to meet visitors' expectations, weakening their meaning for the community. There is also a carbon footprint associated with travel that should not be ignored. Investment in public transport and sensible limits at crowded attractions can reduce some local pressures. Tourism should support the people who live in a place throughout the year. This requires residents to have a voice in planning decisions."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, tourism offers genuine economic and cultural opportunities, but uncontrolled expansion can undermine the qualities that attract visitors. Policies should favour local participation, suitable infrastructure and protection of important sites. A smaller, well-managed flow of visitors may benefit a community more than growth pursued without regard to its consequences."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "tourism industry",
+        "acceptedAnswers": [],
+        "hint": "旅游业",
+        "explanation": "说明游客支出如何形成岗位和文化交流，给出具体服务链。",
+        "entryIds": [
+          "v-0210-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "provide jobs",
+        "acceptedAnswers": [],
+        "hint": "提供就业岗位",
+        "explanation": "说明游客支出如何形成岗位和文化交流，给出具体服务链。",
+        "entryIds": [
+          "v-0240-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "local culture exploration",
+        "acceptedAnswers": [],
+        "hint": "探索当地文化",
+        "explanation": "说明游客支出如何形成岗位和文化交流，给出具体服务链。",
+        "entryIds": [
+          "v-0225-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "traffic congestion",
+        "acceptedAnswers": [],
+        "hint": "交通拥堵",
+        "explanation": "讨论拥堵和文化商业化的机制，再提出可针对问题的管理。",
+        "entryIds": [
+          "v-0239-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "Cultural commercialization",
+        "acceptedAnswers": [],
+        "hint": "文化商业化",
+        "explanation": "讨论拥堵和文化商业化的机制，再提出可针对问题的管理。",
+        "entryIds": [
+          "v-0226-0",
+          "c-all-0592"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "carbon footprint",
+        "acceptedAnswers": [],
+        "hint": "碳足迹",
+        "explanation": "讨论拥堵和文化商业化的机制，再提出可针对问题的管理。",
+        "entryIds": [
+          "v-0222-0"
+        ]
+      },
+      {
+        "id": "g7",
+        "paragraph": 2,
+        "answer": "Tourism should support the people who live in a place throughout the year.",
+        "acceptedAnswers": [],
+        "hint": "旅游应支持一年四季居住在当地的人。",
+        "explanation": "讨论拥堵和文化商业化的机制，再提出可针对问题的管理。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 288
+  },
+  {
+    "id": "essay-09",
+    "title": "广告与消费选择",
+    "sections": [
+      "消费及娱乐",
+      "广告相关"
+    ],
+    "topics": [
+      "topic-09"
+    ],
+    "prompt": "Advertising encourages people to buy things they do not need. To what extent do you agree or disagree?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "区分提供产品信息与制造需求；赞同广告会助长不必要消费，但不是所有广告。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "先避免绝对化，将不同广告功能分开。",
+        "link": "先避免绝对化，将不同广告功能分开。"
+      },
+      {
+        "role": "主体一",
+        "idea": "解释信息功能为何能帮助消费者比较真实需要。",
+        "link": "解释信息功能为何能帮助消费者比较真实需要。"
+      },
+      {
+        "role": "主体二",
+        "idea": "转向身份焦虑和重复曝光如何诱导购买，说明儿童更需保护。",
+        "link": "转向身份焦虑和重复曝光如何诱导购买，说明儿童更需保护。"
+      },
+      {
+        "role": "结论",
+        "idea": "提出透明信息与批判性选择，回扣同意程度。",
+        "link": "提出透明信息与批判性选择，回扣同意程度。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Advertising is often criticised for turning ordinary wants into apparently urgent needs. I agree that it can encourage unnecessary purchases, particularly when it appeals to status or anxiety. However, it would be inaccurate to treat every advertisement as manipulation. Some advertising helps consumers identify useful products and compare available alternatives."
+      },
+      {
+        "role": "主体一",
+        "text": "A legitimate role of advertising is to provide information to consumers. A household replacing a broken appliance needs to know which products are available, what they cost and how they differ. A clear product demonstration may reveal whether a particular feature solves a genuine problem. Businesses also use advertising to reach a relevant target audience, including people who might otherwise be unaware of a service. When claims are specific and verifiable, advertising can reduce the time required to search for a suitable purchase rather than simply increasing consumption."
+      },
+      {
+        "role": "主体二",
+        "text": "Problems arise when the message shifts from practical usefulness to personal worth. A product may be presented as a status symbol, suggesting that buying it is necessary to gain respect or belong to a group. Repeated messages and limited-time offers can encourage impulsive buying, even when the buyer already owns a satisfactory alternative. Children may be particularly vulnerable because they are still learning to distinguish persuasion from impartial advice. A desirable image is not evidence that a product will improve someone's life. Clear labels, restrictions on misleading claims and discussion of commercial motives can help people evaluate these messages more critically."
+      },
+      {
+        "role": "结论",
+        "text": "Overall, advertising can both inform and distort consumer choice. I agree that unnecessary consumption is an important consequence of some campaigns, but a complete rejection of advertising would overlook its practical functions. The better response is to demand accurate information and help consumers connect purchasing decisions to their actual needs."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "provide information to consumers",
+        "acceptedAnswers": [],
+        "hint": "向消费者提供信息",
+        "explanation": "解释信息功能为何能帮助消费者比较真实需要。",
+        "entryIds": [
+          "v-0863-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "product demonstration",
+        "acceptedAnswers": [],
+        "hint": "产品演示",
+        "explanation": "解释信息功能为何能帮助消费者比较真实需要。",
+        "entryIds": [
+          "v-0874-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "target audience",
+        "acceptedAnswers": [],
+        "hint": "目标受众",
+        "explanation": "解释信息功能为何能帮助消费者比较真实需要。",
+        "entryIds": [
+          "v-0855-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "status symbol",
+        "acceptedAnswers": [],
+        "hint": "身份象征",
+        "explanation": "转向身份焦虑和重复曝光如何诱导购买，说明儿童更需保护。",
+        "entryIds": [
+          "v-0269-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "impulsive buying",
+        "acceptedAnswers": [],
+        "hint": "冲动购物",
+        "explanation": "转向身份焦虑和重复曝光如何诱导购买，说明儿童更需保护。",
+        "entryIds": [
+          "v-0273-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "A desirable image is not evidence that a product will improve someone's life.",
+        "acceptedAnswers": [],
+        "hint": "令人向往的形象不能证明产品会改善生活。",
+        "explanation": "转向身份焦虑和重复曝光如何诱导购买，说明儿童更需保护。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 289
+  },
+  {
+    "id": "essay-10",
+    "title": "纸质新闻还有价值吗",
+    "sections": [
+      "媒体及媒体报道"
+    ],
+    "topics": [
+      "topic-10"
+    ],
+    "prompt": "Some people believe printed newspapers are no longer necessary because news is available online. To what extent do you agree or disagree?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "线上新闻更及时，但媒介便利不能替代新闻质量，纸质版对特定读者仍有作用。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "区分新闻内容的价值与传播载体的价值。",
+        "link": "区分新闻内容的价值与传播载体的价值。"
+      },
+      {
+        "role": "主体一",
+        "idea": "分析数字传播在及时性和可访问性上的优势。",
+        "link": "分析数字传播在及时性和可访问性上的优势。"
+      },
+      {
+        "role": "主体二",
+        "idea": "讨论阅读习惯、数字排除与可信报道，避免把纸质等同真实。",
+        "link": "讨论阅读习惯、数字排除与可信报道，避免把纸质等同真实。"
+      },
+      {
+        "role": "结论",
+        "idea": "提出多渠道并存，以内容标准为共同底线。",
+        "link": "提出多渠道并存，以内容标准为共同底线。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "News can now reach readers within seconds, leading some people to regard printed newspapers as unnecessary. I agree that digital publication has reduced the practical need for many printed editions. However, printed newspapers still serve some readers, and the debate should distinguish the quality of journalism from the format in which it appears."
+      },
+      {
+        "role": "主体一",
+        "text": "Online services are particularly effective at delivering breaking news. A report can be updated as events develop, and readers can follow links to background information or original documents. Digital distribution also avoids the need to transport a physical copy to every customer. For someone living far from a major city, access to an exclusive report may be as easy as opening a website. Search functions and adjustable text sizes can make this format convenient, provided readers have suitable devices and reliable internet access. These advantages explain why many people prefer online news for everyday updates."
+      },
+      {
+        "role": "主体二",
+        "text": "Nevertheless, convenience does not automatically make a source trustworthy. Pressure to publish quickly may allow misleading information to spread before it is checked, although printed publications can also make mistakes. Both formats need a clear code of ethics and effective correction procedures. Print may additionally suit readers who prefer a defined collection of articles without continual notifications. It can remain useful where digital access is limited. The value of a newspaper lies in its reporting, not simply in the material on which it is read. Supporting careful investigation matters more than defending paper for its own sake."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, printed newspapers are no longer essential for everyone, but declaring them entirely unnecessary ignores different reading needs. Publishers should adapt their distribution while preserving rigorous reporting. A mixture of formats can be reasonable as long as resources are directed towards accessible, accurate and independent journalism."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "breaking news",
+        "acceptedAnswers": [],
+        "hint": "突发新闻",
+        "explanation": "分析数字传播在及时性和可访问性上的优势。",
+        "entryIds": [
+          "v-0783-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "exclusive report",
+        "acceptedAnswers": [],
+        "hint": "独家报道",
+        "explanation": "分析数字传播在及时性和可访问性上的优势。",
+        "entryIds": [
+          "v-0786-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 2,
+        "answer": "trustworthy",
+        "acceptedAnswers": [],
+        "hint": "值得信赖的",
+        "explanation": "讨论阅读习惯、数字排除与可信报道，避免把纸质等同真实。",
+        "entryIds": [
+          "v-0789-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "misleading information",
+        "acceptedAnswers": [],
+        "hint": "误导性信息",
+        "explanation": "讨论阅读习惯、数字排除与可信报道，避免把纸质等同真实。",
+        "entryIds": [
+          "v-0784-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "code of ethics",
+        "acceptedAnswers": [],
+        "hint": "职业道德准则",
+        "explanation": "讨论阅读习惯、数字排除与可信报道，避免把纸质等同真实。",
+        "entryIds": [
+          "v-0803-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "The value of a newspaper lies in its reporting, not simply in the material on which it is read.",
+        "acceptedAnswers": [],
+        "hint": "报纸的价值在于报道，而不只在于阅读载体。",
+        "explanation": "讨论阅读习惯、数字排除与可信报道，避免把纸质等同真实。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 292
+  },
+  {
+    "id": "essay-11",
+    "title": "技术便利与工作边界",
+    "sections": [
+      "科技发展及应用",
+      "科技影响"
+    ],
+    "topics": [
+      "topic-11"
+    ],
+    "prompt": "Modern technology has made working life easier but has also created new problems. Discuss both views and give your opinion.",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "技术总体有帮助，但效率提升需要培训、隐私保护和合理工作边界。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "回应便利与问题双方，并提出有条件支持。",
+        "link": "回应便利与问题双方，并提出有条件支持。"
+      },
+      {
+        "role": "主体一",
+        "idea": "从具体任务解释工具怎样节省时间和扩大协作范围。",
+        "link": "从具体任务解释工具怎样节省时间和扩大协作范围。"
+      },
+      {
+        "role": "主体二",
+        "idea": "转向信息过载、隐私和持续在线，说明设计与规则的重要性。",
+        "link": "转向信息过载、隐私和持续在线，说明设计与规则的重要性。"
+      },
+      {
+        "role": "结论",
+        "idea": "把解决方式接回优势，让结论不是简单折中。",
+        "link": "把解决方式接回优势，让结论不是简单折中。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Digital tools have changed both the tasks people perform and the way colleagues cooperate. Many routine activities are now quicker, but the same tools can introduce distraction and new forms of pressure. I believe technology generally improves working life when organisations invest in training and establish clear boundaries around its use."
+      },
+      {
+        "role": "主体一",
+        "text": "One advantage is the ability to process documents and share them without repeatedly transporting paper between offices. A well-designed database can help employees find current information instead of searching through disconnected records. Communication platforms also facilitate remote work, allowing a specialist to contribute to a project without travelling to every meeting. For an employee with caring responsibilities, this flexibility may make continued employment possible. These examples show that technology can remove obstacles rather than simply make people perform the same task at a slightly faster pace."
+      },
+      {
+        "role": "主体二",
+        "text": "However, access to more tools does not necessarily produce better work. Constant messages can create information overload, leaving employees less time for concentrated thought. Monitoring software may also raise a privacy concern when workers do not understand what information is collected or how it will be used. Furthermore, the ability to contact someone at any hour can blur the boundary between employment and rest. A faster system is not an improvement if it leaves people permanently unable to disconnect. Employers should therefore limit unnecessary notifications, explain data practices and judge results rather than continuous online presence."
+      },
+      {
+        "role": "结论",
+        "text": "Overall, the benefits of workplace technology are substantial but depend on how it is introduced. Tools should be selected to solve specific problems, with employees involved in evaluating their effects. Training and realistic expectations can preserve the gains in efficiency while reducing the distraction, insecurity and pressure that poorly managed digital systems create."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "process documents",
+        "acceptedAnswers": [],
+        "hint": "处理文件",
+        "explanation": "从具体任务解释工具怎样节省时间和扩大协作范围。",
+        "entryIds": [
+          "v-0706-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "database",
+        "acceptedAnswers": [],
+        "hint": "数据库",
+        "explanation": "从具体任务解释工具怎样节省时间和扩大协作范围。",
+        "entryIds": [
+          "v-0698-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "facilitate remote work",
+        "acceptedAnswers": [],
+        "hint": "促进远程工作",
+        "explanation": "从具体任务解释工具怎样节省时间和扩大协作范围。",
+        "entryIds": [
+          "v-0738-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "information overload",
+        "acceptedAnswers": [],
+        "hint": "信息过载",
+        "explanation": "转向信息过载、隐私和持续在线，说明设计与规则的重要性。",
+        "entryIds": [
+          "v-0690-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "privacy concern",
+        "acceptedAnswers": [],
+        "hint": "隐私担忧",
+        "explanation": "转向信息过载、隐私和持续在线，说明设计与规则的重要性。",
+        "entryIds": [
+          "v-0726-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "A faster system is not an improvement if it leaves people permanently unable to disconnect.",
+        "acceptedAnswers": [],
+        "hint": "如果更快的系统让人始终无法下线，它就不能算改善。",
+        "explanation": "转向信息过载、隐私和持续在线，说明设计与规则的重要性。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 286
+  },
+  {
+    "id": "essay-12",
+    "title": "太空探索与公共预算",
+    "sections": [
+      "太空探索相关"
+    ],
+    "topics": [
+      "topic-12"
+    ],
+    "prompt": "Governments spend large amounts of money on space exploration. Some people think this money should be spent on problems on Earth instead. Discuss both views and give your opinion.",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "支持有明确公共用途和成本审查的科研，反对无视基本服务的声望竞争。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "明确争议是公共资金优先顺序，而非科学是否有价值。",
+        "link": "明确争议是公共资金优先顺序，而非科学是否有价值。"
+      },
+      {
+        "role": "主体一",
+        "idea": "先论证地球上的直接需求及预算机会成本。",
+        "link": "先论证地球上的直接需求及预算机会成本。"
+      },
+      {
+        "role": "主体二",
+        "idea": "再解释太空研究的公共用途，并限制对未知收益的承诺。",
+        "link": "再解释太空研究的公共用途，并限制对未知收益的承诺。"
+      },
+      {
+        "role": "结论",
+        "idea": "用透明评估连接科研与民生，不做虚假二选一。",
+        "link": "用透明评估连接科研与民生，不做虚假二选一。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Public spending on space exploration raises a difficult question about priorities. Supporters emphasise discovery and technological progress, whereas critics point to unmet needs on Earth. In my view, governments should support carefully evaluated space research, but its scale and objectives must be justified alongside essential domestic services."
+      },
+      {
+        "role": "主体一",
+        "text": "The strongest argument against large programmes is their high cost. Building and operating complex equipment requires specialised staff, long preparation and continuing maintenance. Where hospitals lack basic resources or schools cannot provide safe classrooms, a major diversion of resources towards a prestige project is difficult to defend. Uncertain future benefits should not be treated as if they were guaranteed income. Moreover, projects that exceed their budgets can restrict other public choices for years. Citizens are therefore entitled to ask which alternatives were considered and why a particular mission deserves priority over more immediate needs."
+      },
+      {
+        "role": "主体二",
+        "text": "Nevertheless, not all space spending is disconnected from daily life. Environmental monitoring can provide information about changes on Earth, while satellite communication systems support connections across large distances. Research may also contribute to the development of new materials, although useful applications cannot be promised in advance for every project. International cooperation can share expertise and reduce unnecessary duplication. The relevant question is what a programme can contribute, not merely how impressive it appears. Independent review and published objectives help distinguish valuable scientific work from competition driven mainly by national prestige."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, solving problems on Earth and conducting space research need not be mutually exclusive. Governments should protect essential services, assess opportunity costs and cooperate where possible. Space programmes deserve support when their scientific or public value is credible and their financial demands remain proportionate to the resources available."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "high cost",
+        "acceptedAnswers": [],
+        "hint": "高昂成本",
+        "explanation": "先论证地球上的直接需求及预算机会成本。",
+        "entryIds": [
+          "v-0749-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "diversion of resources",
+        "acceptedAnswers": [],
+        "hint": "资源转移",
+        "explanation": "先论证地球上的直接需求及预算机会成本。",
+        "entryIds": [
+          "v-0766-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 2,
+        "answer": "Environmental monitoring",
+        "acceptedAnswers": [],
+        "hint": "环境监测",
+        "explanation": "再解释太空研究的公共用途，并限制对未知收益的承诺。",
+        "entryIds": [
+          "v-0740-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "satellite communication systems",
+        "acceptedAnswers": [],
+        "hint": "卫星通信系统",
+        "explanation": "再解释太空研究的公共用途，并限制对未知收益的承诺。",
+        "entryIds": [
+          "v-0746-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "development of new materials",
+        "acceptedAnswers": [],
+        "hint": "新材料开发",
+        "explanation": "再解释太空研究的公共用途，并限制对未知收益的承诺。",
+        "entryIds": [
+          "v-0743-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "The relevant question is what a programme can contribute, not merely how impressive it appears.",
+        "acceptedAnswers": [],
+        "hint": "关键问题是项目能贡献什么，而不只是它看起来多么壮观。",
+        "explanation": "再解释太空研究的公共用途，并限制对未知收益的承诺。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 280
+  },
+  {
+    "id": "essay-13",
+    "title": "基本公共服务应如何投入",
+    "sections": [
+      "政府部门及制度"
+    ],
+    "topics": [
+      "topic-13"
+    ],
+    "prompt": "Some people think governments should provide free healthcare and education for everyone. Others believe individuals should pay for these services. Discuss both views and give your opinion.",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "支持保障基础服务的普遍可及性，同时承认资源约束和部分服务的合理分担。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "说明“免费”实际是共同融资，并提出基础保障立场。",
+        "link": "说明“免费”实际是共同融资，并提出基础保障立场。"
+      },
+      {
+        "role": "主体一",
+        "idea": "解释教育健康的个人与社会收益，以及收费怎样形成排除。",
+        "link": "解释教育健康的个人与社会收益，以及收费怎样形成排除。"
+      },
+      {
+        "role": "主体二",
+        "idea": "讨论预算约束和激励，提出透明分配而非无限免费承诺。",
+        "link": "讨论预算约束和激励，提出透明分配而非无限免费承诺。"
+      },
+      {
+        "role": "结论",
+        "idea": "归纳基本保障与负责任融资的结合。",
+        "link": "归纳基本保障与负责任融资的结合。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Healthcare and education are essential to individual opportunity, but providing them requires substantial resources. Services described as free are usually financed collectively through taxation. I believe governments should guarantee access to basic provision, while the funding of additional or specialised services can involve carefully designed contributions from individuals."
+      },
+      {
+        "role": "主体一",
+        "text": "There are strong reasons for government intervention. A child cannot choose the income of their parents, and an untreated illness may prevent an adult from working or studying. If access depends entirely on immediate ability to pay, existing disadvantages can become harder to escape. Public provision can give people a fairer starting point and help them participate productively in society. A school that provides basic learning materials, for example, enables pupils from different backgrounds to complete the same tasks. Health and education policies should therefore be judged by whether they remove serious barriers, not only by the number of services announced."
+      },
+      {
+        "role": "主体二",
+        "text": "However, governments cannot promise unlimited provision without considering how to allocate resources. Funding one service may leave less money for another, and poorly managed spending can fail to reach those who need it. Authorities should monitor progress and publish clear information about costs, waiting times and outcomes. They must also combat corruption so that public funding serves its intended purpose. Reasonable contributions for some non-essential services may be defensible if exemptions protect people with low incomes. Universal access to basic services does not require every possible service to be free."
+      },
+      {
+        "role": "结论",
+        "text": "Overall, I support collective funding where charges would prevent people from meeting essential health and learning needs. At the same time, transparent priorities and fair cost-sharing can make the system sustainable. The objective should be dependable access to necessary services rather than a promise whose breadth exceeds the resources available."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "government intervention",
+        "acceptedAnswers": [],
+        "hint": "政府干预",
+        "explanation": "解释教育健康的个人与社会收益，以及收费怎样形成排除。",
+        "entryIds": [
+          "v-0394-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 2,
+        "answer": "allocate resources",
+        "acceptedAnswers": [],
+        "hint": "分配资源",
+        "explanation": "讨论预算约束和激励，提出透明分配而非无限免费承诺。",
+        "entryIds": [
+          "v-0393-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 2,
+        "answer": "monitor progress",
+        "acceptedAnswers": [],
+        "hint": "监测进展",
+        "explanation": "讨论预算约束和激励，提出透明分配而非无限免费承诺。",
+        "entryIds": [
+          "v-0399-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "combat corruption",
+        "acceptedAnswers": [],
+        "hint": "打击腐败",
+        "explanation": "讨论预算约束和激励，提出透明分配而非无限免费承诺。",
+        "entryIds": [
+          "v-0405-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "Universal access to basic services does not require every possible service to be free.",
+        "acceptedAnswers": [],
+        "hint": "普遍获得基础服务不等于所有可能的服务都必须免费。",
+        "explanation": "讨论预算约束和激励，提出透明分配而非无限免费承诺。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 289
+  },
+  {
+    "id": "essay-14",
+    "title": "援助如何形成长期能力",
+    "sections": [
+      "政府投资及国际援助"
+    ],
+    "topics": [
+      "topic-14"
+    ],
+    "prompt": "Some people believe international aid helps poorer countries develop, while others think it creates dependency. Discuss both views and give your opinion.",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "应区分紧急救援与长期发展，支持由当地参与、透明管理且能建立能力的援助。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "先区分两类援助，避免把所有项目归为单一结果。",
+        "link": "先区分两类援助，避免把所有项目归为单一结果。"
+      },
+      {
+        "role": "主体一",
+        "idea": "解释紧急救援如何解决短期资源缺口。",
+        "link": "解释紧急救援如何解决短期资源缺口。"
+      },
+      {
+        "role": "主体二",
+        "idea": "讨论依赖和治理风险，再提出地方参与及退出安排。",
+        "link": "讨论依赖和治理风险，再提出地方参与及退出安排。"
+      },
+      {
+        "role": "结论",
+        "idea": "以项目设计而不是援助有无作为评价重点。",
+        "link": "以项目设计而不是援助有无作为评价重点。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "International aid can provide essential support, but its effects depend on what is supplied and how decisions are made. Critics argue that repeated transfers discourage independence, while supporters emphasise the resources that poorer communities lack. I believe aid is valuable when it responds to genuine needs and builds local capacity rather than replacing it indefinitely."
+      },
+      {
+        "role": "主体一",
+        "text": "In an emergency, humanitarian assistance may address an immediate shortage of food, shelter or medical supplies. A community affected by flooding cannot necessarily restore transport routes using its own resources at once. Timely disaster relief can help residents recover enough stability to begin rebuilding. Longer-term support can also finance training or build infrastructure that makes future economic activity possible. For example, reliable water facilities may free people from spending hours obtaining basic supplies. These benefits explain why an automatic rejection of aid would overlook circumstances in which outside help is urgently needed."
+      },
+      {
+        "role": "主体二",
+        "text": "Nevertheless, poorly designed programmes can create dependency on aid. If imported goods continually replace local production, businesses may struggle to survive and communities become vulnerable when funding ends. Corruption and mismanagement can further prevent resources from reaching intended recipients. Donors should therefore work with residents to identify priorities, publish spending information and train local staff to maintain projects. A successful programme should leave a community better able to make its own decisions. A planned transition to local management is often more valuable than a highly visible project that cannot operate without permanent external support."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, aid can either strengthen or weaken independence depending on its design. Emergency support should be rapid, while development programmes should emphasise transparency, local participation and lasting skills. The appropriate question is not simply whether money crosses a border, but whether it improves a community's ability to meet future needs."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "humanitarian assistance",
+        "acceptedAnswers": [],
+        "hint": "人道主义援助",
+        "explanation": "解释紧急救援如何解决短期资源缺口。",
+        "entryIds": [
+          "v-0424-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "disaster relief",
+        "acceptedAnswers": [],
+        "hint": "灾害救援",
+        "explanation": "解释紧急救援如何解决短期资源缺口。",
+        "entryIds": [
+          "v-0434-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "build infrastructure",
+        "acceptedAnswers": [],
+        "hint": "建设基础设施",
+        "explanation": "解释紧急救援如何解决短期资源缺口。",
+        "entryIds": [
+          "v-0439-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "dependency on aid",
+        "acceptedAnswers": [],
+        "hint": "对援助的依赖",
+        "explanation": "讨论依赖和治理风险，再提出地方参与及退出安排。",
+        "entryIds": [
+          "v-0417-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "Corruption and mismanagement",
+        "acceptedAnswers": [],
+        "hint": "腐败与管理不善",
+        "explanation": "讨论依赖和治理风险，再提出地方参与及退出安排。",
+        "entryIds": [
+          "v-0419-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "A successful programme should leave a community better able to make its own decisions.",
+        "acceptedAnswers": [],
+        "hint": "成功的项目应让社区更有能力自主作出决定。",
+        "explanation": "讨论依赖和治理风险，再提出地方参与及退出安排。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 292
+  },
+  {
+    "id": "essay-15",
+    "title": "环境责任如何分担",
+    "sections": [
+      "污染及环保",
+      "能源相关"
+    ],
+    "topics": [
+      "topic-15"
+    ],
+    "prompt": "Environmental problems should be solved by governments and large companies rather than individuals. To what extent do you agree or disagree?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "政府和企业应承担结构性责任，个人行动在有可行选择时补充制度变化。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "明确主要责任与共同参与并不矛盾。",
+        "link": "明确主要责任与共同参与并不矛盾。"
+      },
+      {
+        "role": "主体一",
+        "idea": "说明基础设施和生产决策为何超出个人能力。",
+        "link": "说明基础设施和生产决策为何超出个人能力。"
+      },
+      {
+        "role": "主体二",
+        "idea": "解释个人行动的作用及其限制，以条件回应反方。",
+        "link": "解释个人行动的作用及其限制，以条件回应反方。"
+      },
+      {
+        "role": "结论",
+        "idea": "提出相互配合而非责任转嫁。",
+        "link": "提出相互配合而非责任转嫁。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Environmental problems involve decisions made at many levels. Individuals are often encouraged to change their habits, but their options depend heavily on public infrastructure and business practices. I largely agree that governments and major companies should take the lead, while recognising a useful supporting role for personal action."
+      },
+      {
+        "role": "主体一",
+        "text": "Some changes require powers and resources that an individual does not possess. A city needs coordinated investment to improve waste treatment or provide reliable public transport. Similarly, the shift away from fossil fuel depends on energy systems, regulation and industrial decisions, not simply on household preferences. Governments can establish clear standards while companies improve energy efficiency in production. For example, better building design can reduce the energy needed for heating across many homes. These structural measures can make lower-impact choices practical for people who cannot afford expensive equipment or live near specialist services."
+      },
+      {
+        "role": "主体二",
+        "text": "Personal behaviour nevertheless affects how systems are used. Residents can separate household waste, avoid unnecessary purchases and support products designed to last. Such actions may also signal public demand for better environmental performance. However, asking everyone to choose clean energy is ineffective if an affordable alternative is unavailable. Responsibility should be matched with the ability to make a meaningful change. Campaigns that focus exclusively on individual guilt may distract attention from decisions with much larger effects. Education is most useful when it is accompanied by convenient services and transparent information about available choices."
+      },
+      {
+        "role": "结论",
+        "text": "Overall, environmental protection requires cooperation, but cooperation does not mean that every participant has equal influence. Governments should create effective rules and infrastructure, businesses should improve production, and individuals should use the opportunities provided. This distribution of responsibilities is more realistic than expecting private goodwill alone to solve problems built into wider systems."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "waste treatment",
+        "acceptedAnswers": [],
+        "hint": "废物处理",
+        "explanation": "说明基础设施和生产决策为何超出个人能力。",
+        "entryIds": [
+          "v-0609-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "fossil fuel",
+        "acceptedAnswers": [],
+        "hint": "化石燃料",
+        "explanation": "说明基础设施和生产决策为何超出个人能力。",
+        "entryIds": [
+          "v-0664-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "energy efficiency",
+        "acceptedAnswers": [],
+        "hint": "能源效率",
+        "explanation": "说明基础设施和生产决策为何超出个人能力。",
+        "entryIds": [
+          "v-0665-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "household waste",
+        "acceptedAnswers": [],
+        "hint": "家庭垃圾",
+        "explanation": "解释个人行动的作用及其限制，以条件回应反方。",
+        "entryIds": [
+          "v-0617-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "clean energy",
+        "acceptedAnswers": [],
+        "hint": "清洁能源",
+        "explanation": "解释个人行动的作用及其限制，以条件回应反方。",
+        "entryIds": [
+          "v-0643-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "Responsibility should be matched with the ability to make a meaningful change.",
+        "acceptedAnswers": [],
+        "hint": "责任应与作出实质改变的能力相匹配。",
+        "explanation": "解释个人行动的作用及其限制，以条件回应反方。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 287
+  },
+  {
+    "id": "essay-16",
+    "title": "动物保护与人类需要",
+    "sections": [],
+    "topics": [
+      "topic-16"
+    ],
+    "prompt": "Some people think human needs should always take priority over animal welfare. To what extent do you agree or disagree?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "反对“总是优先”；区分基本需要、可替代消费和科研，要求最小化伤害。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "针对always提出限定，明确不同用途不能一概而论。",
+        "link": "针对always提出限定，明确不同用途不能一概而论。"
+      },
+      {
+        "role": "主体一",
+        "idea": "承认必要研究可能有价值，但将必要性与替代性纳入评价。",
+        "link": "承认必要研究可能有价值，但将必要性与替代性纳入评价。"
+      },
+      {
+        "role": "主体二",
+        "idea": "说明娱乐或可替代消费难以证明严重伤害合理，并加入生态联系。",
+        "link": "说明娱乐或可替代消费难以证明严重伤害合理，并加入生态联系。"
+      },
+      {
+        "role": "结论",
+        "idea": "提出比例原则及审查机制。",
+        "link": "提出比例原则及审查机制。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Human activities often affect animals, from food production to scientific research. Some people therefore argue that human needs should always take priority over animal welfare. I disagree with the word \"always\". A basic need may justify carefully limited harm in some circumstances, but convenience or entertainment should not automatically outweigh the suffering of other living creatures."
+      },
+      {
+        "role": "主体一",
+        "text": "The difficult cases involve activities intended to protect human health. Supporters of animal research argue that it can help measure the effectiveness of a new drug. However, this purpose alone does not establish that every proposed experiment is necessary or well designed. Researchers should consider alternatives and explain why the expected benefit cannot be obtained in a less harmful way. Where an activity is justified, it should be conducted using humane methods and designed to minimize the pain experienced by animals. Independent oversight is important because those conducting a project may face incentives to underestimate its costs."
+      },
+      {
+        "role": "主体二",
+        "text": "The argument for human priority is weaker when the supposed need is merely a preference. Entertainment that causes animals to suffer under cruel conditions is difficult to defend if other forms of recreation are available. Habitat protection also matters because species are connected through the food chain, so damage to one population may affect others. These relationships give people reasons to act carefully even when the immediate effects seem remote. The existence of a human benefit does not remove the need to consider alternatives. The seriousness of the need and the scale of the harm must both be assessed."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, human interests deserve consideration but should not operate as an unlimited exemption from ethical responsibility. Decisions should distinguish essential needs from optional preferences, investigate substitutes and minimise unavoidable harm. This approach is more defensible than assuming that any advantage to humans is sufficient to justify any treatment of animals."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "measure the effectiveness of a new drug",
+        "acceptedAnswers": [],
+        "hint": "测量新药的有效性",
+        "explanation": "承认必要研究可能有价值，但将必要性与替代性纳入评价。",
+        "entryIds": [
+          "c-all-1146"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "conducted using humane methods",
+        "acceptedAnswers": [],
+        "hint": "采用人道的方法实施",
+        "explanation": "承认必要研究可能有价值，但将必要性与替代性纳入评价。",
+        "entryIds": []
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "minimize the pain experienced by animals",
+        "acceptedAnswers": [],
+        "hint": "尽量减少动物承受的痛苦",
+        "explanation": "承认必要研究可能有价值，但将必要性与替代性纳入评价。",
+        "entryIds": [
+          "c-046"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "suffer under cruel conditions",
+        "acceptedAnswers": [],
+        "hint": "在残酷条件下遭受痛苦",
+        "explanation": "说明娱乐或可替代消费难以证明严重伤害合理，并加入生态联系。",
+        "entryIds": []
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "food chain",
+        "acceptedAnswers": [],
+        "hint": "食物链",
+        "explanation": "说明娱乐或可替代消费难以证明严重伤害合理，并加入生态联系。",
+        "entryIds": []
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "The existence of a human benefit does not remove the need to consider alternatives.",
+        "acceptedAnswers": [],
+        "hint": "存在人类收益并不意味着无需考虑替代方案。",
+        "explanation": "说明娱乐或可替代消费难以证明严重伤害合理，并加入生态联系。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 303
+  },
+  {
+    "id": "essay-17",
+    "title": "惩罚与重新融入社会",
+    "sections": [
+      "犯罪及惩罚"
+    ],
+    "topics": [
+      "topic-17"
+    ],
+    "prompt": "Some people believe longer prison sentences are the best way to reduce crime, while others favour education and rehabilitation. Discuss both views and give your opinion.",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "严重犯罪需要相称惩罚，但减少再犯还需教育、职业支持与融入。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "明确刑罚与康复的目标不同而可互补。",
+        "link": "明确刑罚与康复的目标不同而可互补。"
+      },
+      {
+        "role": "主体一",
+        "idea": "解释监禁的公共保护和威慑逻辑，同时限制其充分性。",
+        "link": "解释监禁的公共保护和威慑逻辑，同时限制其充分性。"
+      },
+      {
+        "role": "主体二",
+        "idea": "说明技能和支持如何影响释放后的选择，并强调非保证。",
+        "link": "说明技能和支持如何影响释放后的选择，并强调非保证。"
+      },
+      {
+        "role": "结论",
+        "idea": "以分类处置和后续支持作结。",
+        "link": "以分类处置和后续支持作结。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "A criminal justice system must protect the public while deciding how offenders should be treated. Longer prison terms are sometimes presented as the best way to reduce crime, whereas others emphasise education and rehabilitation. I believe proportionate punishment is necessary, but reducing future offending also requires attention to what happens after a sentence ends."
+      },
+      {
+        "role": "主体一",
+        "text": "Imprisonment can prevent a dangerous person from harming others in the community for a period of time. A clear and predictable penalty may also have a deterrent effect, especially when people believe that offences will be detected and dealt with fairly. Victims are entitled to expect that serious wrongdoing will have consequences. Nevertheless, sentence length is only one part of this process. If a person believes they will not be caught, adding years to a possible sentence may do little to change their decision. Authorities must therefore enforce the law consistently rather than rely on severity alone."
+      },
+      {
+        "role": "主体二",
+        "text": "Education addresses a different problem: the options available to a person returning to society. Vocational training and basic literacy courses may help a former inmate prepare for legitimate employment. Support in finding accommodation and maintaining family contact can also make reintegration less unstable. A criminal record can remain an obstacle, so programmes need cooperation from employers rather than promises that training automatically guarantees a job. Punishment can restrict behaviour temporarily, but rehabilitation aims to change future choices. These approaches should be assessed by their results and adapted to different offenders' circumstances."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, longer sentences alone are not a complete crime-reduction strategy. Serious offences may require substantial imprisonment, but education and practical support can address factors that punishment leaves untouched. A balanced system should combine proportionate sanctions, reliable enforcement and credible routes back into lawful community life."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "a deterrent effect",
+        "acceptedAnswers": [],
+        "hint": "威慑作用",
+        "explanation": "解释监禁的公共保护和威慑逻辑，同时限制其充分性。",
+        "entryIds": [
+          "v-0447-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "enforce the law",
+        "acceptedAnswers": [],
+        "hint": "执行法律",
+        "explanation": "解释监禁的公共保护和威慑逻辑，同时限制其充分性。",
+        "entryIds": [
+          "v-0450-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 2,
+        "answer": "Vocational training",
+        "acceptedAnswers": [],
+        "hint": "职业培训",
+        "explanation": "说明技能和支持如何影响释放后的选择，并强调非保证。",
+        "entryIds": [
+          "v-0461-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "former inmate",
+        "acceptedAnswers": [],
+        "hint": "曾被监禁者",
+        "explanation": "说明技能和支持如何影响释放后的选择，并强调非保证。",
+        "entryIds": [
+          "v-0464-4",
+          "v-0468-2"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "criminal record",
+        "acceptedAnswers": [],
+        "hint": "犯罪记录",
+        "explanation": "说明技能和支持如何影响释放后的选择，并强调非保证。",
+        "entryIds": [
+          "v-0464-0",
+          "v-0478-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "Punishment can restrict behaviour temporarily, but rehabilitation aims to change future choices.",
+        "acceptedAnswers": [],
+        "hint": "惩罚可暂时限制行为，而康复教育旨在改变未来选择。",
+        "explanation": "说明技能和支持如何影响释放后的选择，并强调非保证。",
+        "entryIds": [
+          "v-0481-0"
+        ]
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 288
+  },
+  {
+    "id": "essay-18",
+    "title": "文化保护与现代需求",
+    "sections": [
+      "文化、艺术及语言"
+    ],
+    "topics": [
+      "topic-18"
+    ],
+    "prompt": "Some people believe old buildings and traditional languages should be preserved, while others think resources should focus on modern needs. Discuss both views and give your opinion.",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "选择性保护有文化意义的遗产，同时合理改造并与当下需求结合。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "明确保护与现代化不是必然对立，提出选择性保护。",
+        "link": "明确保护与现代化不是必然对立，提出选择性保护。"
+      },
+      {
+        "role": "主体一",
+        "idea": "说明记忆、认同和知识价值，具体到建筑和语言。",
+        "link": "说明记忆、认同和知识价值，具体到建筑和语言。"
+      },
+      {
+        "role": "主体二",
+        "idea": "承认安全与预算限制，提出适应性利用及社区参与。",
+        "link": "承认安全与预算限制，提出适应性利用及社区参与。"
+      },
+      {
+        "role": "结论",
+        "idea": "给出决定优先级的标准并回扣双方。",
+        "link": "给出决定优先级的标准并回扣双方。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Communities often face choices between protecting their past and meeting present needs. Historic buildings require maintenance, and traditional languages may need active support to remain in use. I believe important cultural heritage should be preserved, but protection should be selective and compatible with the safety and practical needs of current residents."
+      },
+      {
+        "role": "主体一",
+        "text": "Heritage connects people with experiences that would otherwise be difficult to recover. An old workshop can show how a neighbourhood once earned its living, while a minority language may contain stories and expressions closely linked to local life. Preserving these resources helps maintain cultural diversity and prevents every place from becoming interchangeable. Their educational value does not depend entirely on attracting tourists. A school visit to a restored building, for example, can make historical change more tangible than a list of dates in a textbook. Such experiences can encourage people to ask informed questions about their surroundings."
+      },
+      {
+        "role": "主体二",
+        "text": "However, protection has costs and should not mean keeping every structure unchanged. Unsafe housing requires action, and public budgets must also support essential services. One solution is to adapt suitable buildings for new uses rather than leave them empty. A former market might become a library or community centre while retaining important architectural features. Language documentation can likewise be combined with opportunities for younger speakers to use the language in everyday activities. A tradition is more likely to survive when people can find a place for it in present life. Residents should help decide which features matter and how they can be maintained."
+      },
+      {
+        "role": "结论",
+        "text": "Overall, modern development need not require the wholesale loss of local identity. Governments should assess cultural significance, safety and community demand before allocating support. Thoughtful adaptation can protect valuable knowledge and places while allowing them to serve changing needs, making preservation an active part of development rather than an obstacle to it."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 0,
+        "answer": "cultural heritage",
+        "acceptedAnswers": [],
+        "hint": "文化遗产",
+        "explanation": "明确保护与现代化不是必然对立，提出选择性保护。",
+        "entryIds": [
+          "v-0140-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "minority language",
+        "acceptedAnswers": [],
+        "hint": "少数群体语言",
+        "explanation": "说明记忆、认同和知识价值，具体到建筑和语言。",
+        "entryIds": [
+          "v-0153-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "maintain cultural diversity",
+        "acceptedAnswers": [],
+        "hint": "维护文化多样性",
+        "explanation": "说明记忆、认同和知识价值，具体到建筑和语言。",
+        "entryIds": [
+          "v-0136-0",
+          "c-052"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "Language documentation",
+        "acceptedAnswers": [],
+        "hint": "语言记录与整理",
+        "explanation": "承认安全与预算限制，提出适应性利用及社区参与。",
+        "entryIds": [
+          "v-0168-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "A tradition is more likely to survive when people can find a place for it in present life.",
+        "acceptedAnswers": [],
+        "hint": "当传统能在当下生活中找到位置时，它更可能延续。",
+        "explanation": "承认安全与预算限制，提出适应性利用及社区参与。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 303
+  },
+  {
+    "id": "essay-19",
+    "title": "全球交流与地方文化",
+    "sections": [
+      "全球化的影响"
+    ],
+    "topics": [
+      "topic-19"
+    ],
+    "prompt": "Globalisation is making cultures increasingly similar. Is this a positive or negative development?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "交流与共同工具有益，但不应以地方语言和表达消失为代价。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "区分交流带来的相似与选择被挤出的同质化。",
+        "link": "区分交流带来的相似与选择被挤出的同质化。"
+      },
+      {
+        "role": "主体一",
+        "idea": "解释共享工具如何降低合作成本并带来经济机会。",
+        "link": "解释共享工具如何降低合作成本并带来经济机会。"
+      },
+      {
+        "role": "主体二",
+        "idea": "讨论市场支配和文化弱化，提出让地方表达继续可见的条件。",
+        "link": "讨论市场支配和文化弱化，提出让地方表达继续可见的条件。"
+      },
+      {
+        "role": "结论",
+        "idea": "结论支持开放但反对单一文化替代多样性。",
+        "link": "结论支持开放但反对单一文化替代多样性。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Globalisation makes it easier for people in different countries to use similar products, media and forms of communication. Some of this convergence supports cooperation, but it can also reduce the visibility of local traditions. I regard the development as positive only when shared connections expand people's choices rather than replace them with a single dominant culture."
+      },
+      {
+        "role": "主体一",
+        "text": "Greater similarity can remove practical obstacles. A common working language, for instance, allows researchers or businesses to exchange ideas without translating every discussion. Access to global markets may also allow a small producer to reach customers beyond its immediate community. Such contact can create employment opportunities and expose people to unfamiliar ways of solving problems. Importantly, learning from another culture does not necessarily require abandoning one's own. A musician can combine international influences with a local tradition, creating something that would not emerge in isolation. Cultural exchange can therefore produce diversity as well as similarity."
+      },
+      {
+        "role": "主体二",
+        "text": "The risk arises when a few powerful suppliers dominate the channels through which people discover culture. Local artists and publishers may struggle to compete for attention, contributing to the erosion of local cultures and languages. A community may then find that its own experiences are rarely represented. There are economic risks too: overdependence on global markets can leave local livelihoods vulnerable to decisions made elsewhere. Policies supporting language education and independent cultural production can reduce these pressures without closing borders. Openness is most valuable when people retain the capacity to contribute their own voices."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, growing cultural similarity is neither entirely beneficial nor inevitably harmful. Shared tools can improve communication and cooperation, but they should coexist with meaningful local alternatives. The goal should be exchange between cultures with the ability to participate, rather than the gradual replacement of many traditions by whichever culture has the greatest commercial reach."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "Access to global markets",
+        "acceptedAnswers": [],
+        "hint": "进入全球市场的机会",
+        "explanation": "解释共享工具如何降低合作成本并带来经济机会。",
+        "entryIds": [
+          "v-0553-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "create employment opportunities",
+        "acceptedAnswers": [],
+        "hint": "创造就业机会",
+        "explanation": "解释共享工具如何降低合作成本并带来经济机会。",
+        "entryIds": [
+          "v-0551-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 2,
+        "answer": "erosion of local cultures and languages",
+        "acceptedAnswers": [],
+        "hint": "地方文化与语言的弱化",
+        "explanation": "讨论市场支配和文化弱化，提出让地方表达继续可见的条件。",
+        "entryIds": [
+          "v-0559-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "overdependence on global markets",
+        "acceptedAnswers": [],
+        "hint": "过度依赖全球市场",
+        "explanation": "讨论市场支配和文化弱化，提出让地方表达继续可见的条件。",
+        "entryIds": [
+          "v-0561-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "Openness is most valuable when people retain the capacity to contribute their own voices.",
+        "acceptedAnswers": [],
+        "hint": "当人们仍有能力表达自己的声音时，开放最有价值。",
+        "explanation": "讨论市场支配和文化弱化，提出让地方表达继续可见的条件。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 300
+  },
+  {
+    "id": "essay-20",
+    "title": "公共资金应支持艺术吗",
+    "sections": [],
+    "topics": [
+      "topic-20"
+    ],
+    "prompt": "Governments should spend money on essential public services rather than the arts. To what extent do you agree or disagree?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "基本服务优先，但可负担、可及、透明的艺术支持也有公共价值。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "先承认基本服务优先，再反对完全取消艺术预算。",
+        "link": "先承认基本服务优先，再反对完全取消艺术预算。"
+      },
+      {
+        "role": "主体一",
+        "idea": "从共享体验和参与解释艺术价值，不编造万能健康效果。",
+        "link": "从共享体验和参与解释艺术价值，不编造万能健康效果。"
+      },
+      {
+        "role": "主体二",
+        "idea": "讨论机会成本与受益范围，提出透明分配和可及性条件。",
+        "link": "讨论机会成本与受益范围，提出透明分配和可及性条件。"
+      },
+      {
+        "role": "结论",
+        "idea": "以有比例的投入回应题目，而非宣称艺术无限重要。",
+        "link": "以有比例的投入回应题目，而非宣称艺术无限重要。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Public budgets must support needs such as healthcare, education and safe transport. It is therefore reasonable to question spending on the arts, particularly when essential services are inadequate. However, I disagree that arts funding should be eliminated altogether. Modest and carefully targeted support can provide public value that commercial markets do not always deliver."
+      },
+      {
+        "role": "主体一",
+        "text": "Art can provide an aesthetic experience while creating opportunities for people to meet and express ideas. A community theatre project, for example, may allow residents to explore a shared concern through performance. Exhibitions can also represent history, culture and traditions, helping visitors encounter perspectives different from their own. These activities offer intangible benefits that are not fully captured by ticket sales. If every project must immediately make a profit, work serving small or less affluent audiences may disappear. Public support can keep some opportunities available to people who would otherwise be excluded by cost."
+      },
+      {
+        "role": "主体二",
+        "text": "Nevertheless, cultural value does not excuse wasteful spending. An expensive venue that remains largely inaccessible to ordinary residents is difficult to justify while basic facilities deteriorate. Funding decisions should consider who benefits, whether cheaper alternatives exist and how outcomes will be reviewed. Supporting libraries, local workshops or affordable performances may encourage public participation in the arts more effectively than a prestigious building. Partnerships can also help draw public attention without placing the entire cost on taxpayers. The case for public support depends on public access as well as artistic ambition."
+      },
+      {
+        "role": "结论",
+        "text": "Overall, essential services should have priority, but priority does not imply that all other purposes lack value. Governments should fund the arts at a proportionate level, with transparent criteria and a strong emphasis on access. This approach recognises cultural life as part of a functioning community while respecting the limits of public resources."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "provide an aesthetic experience",
+        "acceptedAnswers": [],
+        "hint": "提供审美体验",
+        "explanation": "从共享体验和参与解释艺术价值，不编造万能健康效果。",
+        "entryIds": [
+          "c-058"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "represent history, culture and traditions",
+        "acceptedAnswers": [],
+        "hint": "呈现历史、文化与传统",
+        "explanation": "从共享体验和参与解释艺术价值，不编造万能健康效果。",
+        "entryIds": [
+          "c-all-1495"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "intangible benefits",
+        "acceptedAnswers": [],
+        "hint": "无形的益处",
+        "explanation": "从共享体验和参与解释艺术价值，不编造万能健康效果。",
+        "entryIds": [
+          "c-all-1533"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "encourage public participation in the arts",
+        "acceptedAnswers": [],
+        "hint": "鼓励公众参与艺术",
+        "explanation": "讨论机会成本与受益范围，提出透明分配和可及性条件。",
+        "entryIds": [
+          "c-all-1510"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "draw public attention",
+        "acceptedAnswers": [],
+        "hint": "吸引公众注意",
+        "explanation": "讨论机会成本与受益范围，提出透明分配和可及性条件。",
+        "entryIds": [
+          "c-all-1523"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "The case for public support depends on public access as well as artistic ambition.",
+        "acceptedAnswers": [],
+        "hint": "公共支持的理由既取决于艺术追求，也取决于公众能否参与。",
+        "explanation": "讨论机会成本与受益范围，提出透明分配和可及性条件。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 291
+  },
+  {
+    "id": "essay-21",
+    "title": "本地食物与进口食物",
+    "sections": [
+      "饮食及生活方式"
+    ],
+    "topics": [],
+    "prompt": "Some people think countries should produce all the food they need instead of importing it. To what extent do you agree or disagree?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "支持增强本地生产韧性，但反对完全停止进口，以多元可靠供应为目标。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "区分减少脆弱性与完全自给，明确反对绝对化。",
+        "link": "区分减少脆弱性与完全自给，明确反对绝对化。"
+      },
+      {
+        "role": "主体一",
+        "idea": "说明本地供应的可追溯、时效和农户支持价值。",
+        "link": "说明本地供应的可追溯、时效和农户支持价值。"
+      },
+      {
+        "role": "主体二",
+        "idea": "讨论气候与季节限制，并解释多元来源为何也能提升韧性。",
+        "link": "讨论气候与季节限制，并解释多元来源为何也能提升韧性。"
+      },
+      {
+        "role": "结论",
+        "idea": "提出本地能力与合理贸易结合。",
+        "link": "提出本地能力与合理贸易结合。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Concerns about food security have encouraged calls for countries to produce everything their populations consume. Supporting local agriculture is sensible, but complete self-sufficiency is neither practical nor necessarily desirable everywhere. I believe countries should strengthen reliable domestic production while retaining carefully managed trade with a range of partners."
+      },
+      {
+        "role": "主体一",
+        "text": "There are clear advantages to locally sourced food. Shorter supply routes can make it easier to deliver fresh ingredients and investigate where a product came from. Consumers may also develop a better understanding of seasonal availability, adjusting their purchases to what local farmers can grow. For example, public institutions could plan some meals around suitable regional produce, providing a dependable market for nearby growers. Domestic production can additionally offer protection when distant transport routes are disrupted. These benefits justify investment in farming skills, storage and distribution rather than assuming that imports will always be available."
+      },
+      {
+        "role": "主体二",
+        "text": "However, geographical conditions limit what can be produced efficiently. A country with little suitable land or a difficult climate may struggle to supply a varied diet throughout the year. Imported food can help expand food choices and compensate for a failed local harvest. The environmental comparison is also more complex than distance alone, because production methods and storage requirements matter. Excessive dependence on foreign markets is risky, but dependence on a single domestic harvest can be risky as well. Resilience comes from dependable alternatives, not from assuming that one source can never fail."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, governments should improve local food systems without treating every import as a weakness. A diverse combination of domestic capacity, responsible trade and effective monitoring is more realistic than total self-sufficiency. The objective should be a secure, nutritious and affordable supply, rather than a symbolic commitment to producing every item within national borders."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "locally sourced food",
+        "acceptedAnswers": [],
+        "hint": "本地采购的食物",
+        "explanation": "说明本地供应的可追溯、时效和农户支持价值。",
+        "entryIds": [
+          "v-0302-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "fresh ingredients",
+        "acceptedAnswers": [],
+        "hint": "新鲜食材",
+        "explanation": "说明本地供应的可追溯、时效和农户支持价值。",
+        "entryIds": [
+          "v-0286-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "seasonal availability",
+        "acceptedAnswers": [],
+        "hint": "季节性供应情况",
+        "explanation": "说明本地供应的可追溯、时效和农户支持价值。",
+        "entryIds": [
+          "v-0312-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "Imported food",
+        "acceptedAnswers": [],
+        "hint": "进口食物",
+        "explanation": "讨论气候与季节限制，并解释多元来源为何也能提升韧性。",
+        "entryIds": [
+          "v-0304-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "expand food choices",
+        "acceptedAnswers": [],
+        "hint": "扩大食物选择范围",
+        "explanation": "讨论气候与季节限制，并解释多元来源为何也能提升韧性。",
+        "entryIds": [
+          "v-0310-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "dependence on foreign markets",
+        "acceptedAnswers": [],
+        "hint": "依赖国外市场",
+        "explanation": "讨论气候与季节限制，并解释多元来源为何也能提升韧性。",
+        "entryIds": [
+          "v-0301-0"
+        ]
+      },
+      {
+        "id": "g7",
+        "paragraph": 2,
+        "answer": "Resilience comes from dependable alternatives, not from assuming that one source can never fail.",
+        "acceptedAnswers": [],
+        "hint": "韧性来自可靠的替代来源，而非假定某个来源永远不会失败。",
+        "explanation": "讨论气候与季节限制，并解释多元来源为何也能提升韧性。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 290
+  },
+  {
+    "id": "essay-22",
+    "title": "名人作为榜样",
+    "sections": [
+      "名人及明星效应"
+    ],
+    "topics": [],
+    "prompt": "Young people often see celebrities as role models. Is this a positive or negative development?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "榜样作用取决于可核实行为，不应把知名度当道德或专业能力。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "提出判断标准：行为及成就，而非知名度本身。",
+        "link": "提出判断标准：行为及成就，而非知名度本身。"
+      },
+      {
+        "role": "主体一",
+        "idea": "说明努力和公益行动如何产生可学习的积极影响。",
+        "link": "说明努力和公益行动如何产生可学习的积极影响。"
+      },
+      {
+        "role": "主体二",
+        "idea": "讨论商业形象、攀比和模仿的风险，区分私人选择与公共建议。",
+        "link": "讨论商业形象、攀比和模仿的风险，区分私人选择与公共建议。"
+      },
+      {
+        "role": "结论",
+        "idea": "建议批判性欣赏而非盲目崇拜。",
+        "link": "建议批判性欣赏而非盲目崇拜。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Celebrities are highly visible in young people's daily lives, and their actions can influence attitudes and ambitions. Seeing a famous person as a role model is not necessarily harmful. However, I believe the effect depends on which qualities are admired and whether young people can distinguish a carefully managed image from evidence of worthwhile behaviour."
+      },
+      {
+        "role": "主体一",
+        "text": "A public figure can demonstrate persistence, discipline or commitment to a cause. An athlete who explains the gradual process behind a skill may encourage followers to practise rather than expect instant success. Celebrities can also use fame for good causes and raise funds for charity. Their visibility may direct attention towards organisations that would otherwise struggle to reach a wide audience. When they acknowledge the expertise of people working in those organisations, they can help followers understand an issue instead of presenting themselves as the sole solution. Such examples can make constructive action appear both important and achievable."
+      },
+      {
+        "role": "主体二",
+        "text": "Nevertheless, fame does not guarantee sound judgement. Commercial messages may encourage materialism by associating admiration with expensive possessions or a carefully styled appearance. Young followers who try to emulate idols may compare ordinary life with a highly selective account of someone else's experiences. This can create unrealistic expectations about success and personal worth. A celebrity's popularity should also not be mistaken for professional authority outside their field. An achievement worth admiring does not make every opinion of its author reliable. Parents and teachers can help young people examine claims and recognise advertising without dismissing all their interests."
+      },
+      {
+        "role": "结论",
+        "text": "Overall, celebrity influence can be constructive when admiration is linked to specific actions and realistic lessons. It becomes harmful when status replaces independent judgement. Young people should be encouraged to appreciate useful examples while remaining free to question the messages, products and assumptions attached to a famous personality."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 0,
+        "answer": "role model",
+        "acceptedAnswers": [],
+        "hint": "榜样",
+        "explanation": "提出判断标准：行为及成就，而非知名度本身。",
+        "entryIds": [
+          "v-0331-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "use fame for good causes",
+        "acceptedAnswers": [],
+        "hint": "利用知名度支持公益事业",
+        "explanation": "说明努力和公益行动如何产生可学习的积极影响。",
+        "entryIds": [
+          "v-0324-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "raise funds for charity",
+        "acceptedAnswers": [],
+        "hint": "为慈善筹款",
+        "explanation": "说明努力和公益行动如何产生可学习的积极影响。",
+        "entryIds": [
+          "v-0348-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "encourage materialism",
+        "acceptedAnswers": [],
+        "hint": "助长物质主义",
+        "explanation": "讨论商业形象、攀比和模仿的风险，区分私人选择与公共建议。",
+        "entryIds": [
+          "v-0332-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "emulate idols",
+        "acceptedAnswers": [],
+        "hint": "模仿偶像",
+        "explanation": "讨论商业形象、攀比和模仿的风险，区分私人选择与公共建议。",
+        "entryIds": [
+          "v-0335-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "An achievement worth admiring does not make every opinion of its author reliable.",
+        "acceptedAnswers": [],
+        "hint": "值得欣赏的成就不意味着成就者的每个观点都可靠。",
+        "explanation": "讨论商业形象、攀比和模仿的风险，区分私人选择与公共建议。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 298
+  },
+  {
+    "id": "essay-23",
+    "title": "紧凑城市与公共空间",
+    "sections": [
+      "城市建造相关"
+    ],
+    "topics": [],
+    "prompt": "Cities should build more high-density housing rather than expand into surrounding countryside. To what extent do you agree or disagree?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "支持设计良好的紧凑发展，但密度不能以公共空间、基础设施和可负担性为代价。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "明确支持有条件的高密度，区分密度与拥挤。",
+        "link": "明确支持有条件的高密度，区分密度与拥挤。"
+      },
+      {
+        "role": "主体一",
+        "idea": "解释紧凑布局如何减少距离并保护城郊土地。",
+        "link": "解释紧凑布局如何减少距离并保护城郊土地。"
+      },
+      {
+        "role": "主体二",
+        "idea": "讨论基础设施与公共空间不足的风险，提出配套条件。",
+        "link": "讨论基础设施与公共空间不足的风险，提出配套条件。"
+      },
+      {
+        "role": "结论",
+        "idea": "结论回到设计质量而非楼层数量。",
+        "link": "结论回到设计质量而非楼层数量。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "As cities grow, planners must decide whether to accommodate residents within existing boundaries or extend development into surrounding countryside. I generally support well-designed high-density housing, because it can reduce pressure on land and bring services closer together. However, density should be accompanied by suitable infrastructure and shared spaces rather than treated as a goal in itself."
+      },
+      {
+        "role": "主体一",
+        "text": "Compact development can limit urban sprawl. When homes, shops and workplaces are located reasonably close to each other, residents may spend less time travelling between everyday activities. Concentrated demand can also make frequent public transport easier to support. A neighbourhood built around a transportation hub, for example, can offer access to jobs without requiring every household to own a car. Keeping growth within developed areas may additionally protect agricultural land and natural habitats outside the city. These advantages are strongest when planning coordinates land use with actual travel needs."
+      },
+      {
+        "role": "主体二",
+        "text": "Nevertheless, adding apartments without improving local services can produce overcrowded schools and uncomfortable streets. A successful neighbourhood needs green space and accessible public space, not merely more buildings. Residents should be able to walk safely, rest outdoors and meet others without always purchasing a service. Existing communities also need protection from redevelopment that displaces them without realistic alternatives. Higher density improves urban life only when the surrounding systems can support it. Investment in utilities, transport and community facilities must therefore be planned alongside construction, and affordability should remain part of the assessment."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, compact housing is often preferable to uncontrolled expansion, but the quality of its design determines its value. Cities should combine increased capacity with public amenities, dependable infrastructure and attention to existing residents. The aim is a neighbourhood in which more people can live well, not simply one that contains more people per square kilometre."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 0,
+        "answer": "high-density housing",
+        "acceptedAnswers": [],
+        "hint": "高密度住宅",
+        "explanation": "明确支持有条件的高密度，区分密度与拥挤。",
+        "entryIds": [
+          "v-0510-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "urban sprawl",
+        "acceptedAnswers": [],
+        "hint": "城市无序扩张",
+        "explanation": "解释紧凑布局如何减少距离并保护城郊土地。",
+        "entryIds": [
+          "v-0495-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "transportation hub",
+        "acceptedAnswers": [],
+        "hint": "交通枢纽",
+        "explanation": "解释紧凑布局如何减少距离并保护城郊土地。",
+        "entryIds": [
+          "v-0505-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "green space",
+        "acceptedAnswers": [],
+        "hint": "绿地",
+        "explanation": "讨论基础设施与公共空间不足的风险，提出配套条件。",
+        "entryIds": [
+          "v-0497-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "public space",
+        "acceptedAnswers": [],
+        "hint": "公共空间",
+        "explanation": "讨论基础设施与公共空间不足的风险，提出配套条件。",
+        "entryIds": [
+          "v-0493-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "Higher density improves urban life only when the surrounding systems can support it.",
+        "acceptedAnswers": [],
+        "hint": "只有周边系统能够承载时，更高密度才会改善城市生活。",
+        "explanation": "讨论基础设施与公共空间不足的风险，提出配套条件。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 293
+  },
+  {
+    "id": "essay-24",
+    "title": "城市化与公共服务",
+    "sections": [
+      "城市化的影响"
+    ],
+    "topics": [],
+    "prompt": "More people are moving from rural areas to cities. What problems can this cause, and how can they be addressed?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "针对住房与服务压力，用供给协调和区域机会改善回应，而非责怪迁入者。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "引言指出迁移机会与城市承载压力并存。",
+        "link": "引言指出迁移机会与城市承载压力并存。"
+      },
+      {
+        "role": "主体一",
+        "idea": "解释住房增长滞后怎样引发成本和通勤问题。",
+        "link": "解释住房增长滞后怎样引发成本和通勤问题。"
+      },
+      {
+        "role": "主体二",
+        "idea": "把公共服务扩容、交通和区域发展逐项对应前段问题。",
+        "link": "把公共服务扩容、交通和区域发展逐项对应前段问题。"
+      },
+      {
+        "role": "结论",
+        "idea": "总结增长需要提前规划和公平获取。",
+        "link": "总结增长需要提前规划和公平获取。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Cities attract people through employment, education and social opportunities. Yet rapid population growth can create difficulties when housing and public services do not expand at a similar pace. The most serious problems are pressure on affordable accommodation and unequal access to essential facilities. Addressing them requires coordinated planning rather than treating new residents as the cause of every urban difficulty."
+      },
+      {
+        "role": "主体一",
+        "text": "A sudden increase in demand can worsen a housing shortage. Households may accept overcrowded accommodation or move far from their workplaces because central rents are unaffordable. Longer journeys can then increase traffic congestion and pollution, particularly where public transport is unreliable. Meanwhile, existing schools and clinics may struggle to serve a larger population. These pressures are not experienced equally: residents with limited income often have the fewest alternatives. Redevelopment can also contribute to the loss of community and social bonds when established neighbours are dispersed without opportunities to rebuild local connections."
+      },
+      {
+        "role": "主体二",
+        "text": "The response should connect housing policy with transport and service provision. Building homes near jobs and efficient public transportation systems can reduce the need for long car journeys. Authorities should also improve access to healthcare services in growing neighbourhoods instead of concentrating facilities only in established centres. Planning information must be updated regularly so that investment follows actual population change. Beyond the city, better regional education and employment opportunities can make migration a choice rather than the only realistic route to a livelihood. Urban growth is easier to manage when services are planned before shortages become severe."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, rural-to-urban migration can strain housing, transport and public facilities, but these consequences are not unavoidable. Coordinated investment and inclusive planning can help cities accommodate newcomers while protecting existing residents. Improving opportunities in other regions can further reduce unnecessary pressure without restricting people's freedom to seek a better life."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "housing shortage",
+        "acceptedAnswers": [],
+        "hint": "住房短缺",
+        "explanation": "解释住房增长滞后怎样引发成本和通勤问题。",
+        "entryIds": [
+          "v-0527-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "increase traffic congestion and pollution",
+        "acceptedAnswers": [],
+        "hint": "增加交通拥堵与污染",
+        "explanation": "解释住房增长滞后怎样引发成本和通勤问题。",
+        "entryIds": [
+          "v-0525-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "loss of community and social bonds",
+        "acceptedAnswers": [],
+        "hint": "社区联系与社会纽带的丧失",
+        "explanation": "解释住房增长滞后怎样引发成本和通勤问题。",
+        "entryIds": [
+          "v-0534-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "efficient public transportation systems",
+        "acceptedAnswers": [],
+        "hint": "高效的公共交通系统",
+        "explanation": "把公共服务扩容、交通和区域发展逐项对应前段问题。",
+        "entryIds": [
+          "v-0520-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "improve access to healthcare services",
+        "acceptedAnswers": [],
+        "hint": "改善医疗服务的可及性",
+        "explanation": "把公共服务扩容、交通和区域发展逐项对应前段问题。",
+        "entryIds": [
+          "v-0522-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "Urban growth is easier to manage when services are planned before shortages become severe.",
+        "acceptedAnswers": [],
+        "hint": "在短缺变得严重前规划服务，更有利于管理城市增长。",
+        "explanation": "把公共服务扩容、交通和区域发展逐项对应前段问题。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 298
+  },
+  {
+    "id": "essay-25",
+    "title": "贸易开放与公平保护",
+    "sections": [
+      "国际旅游及国际贸易"
+    ],
+    "topics": [],
+    "prompt": "International trade benefits consumers but may harm local workers and the environment. Do the advantages outweigh the disadvantages?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "有条件支持贸易，收益分配与劳工环境标准决定优势是否兑现。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "明确以配套制度作为总体利大于弊的条件。",
+        "link": "明确以配套制度作为总体利大于弊的条件。"
+      },
+      {
+        "role": "主体一",
+        "idea": "解释比较选择与知识交流如何使消费者和企业受益。",
+        "link": "解释比较选择与知识交流如何使消费者和企业受益。"
+      },
+      {
+        "role": "主体二",
+        "idea": "承认转型成本并对应培训、劳动与环境规则。",
+        "link": "承认转型成本并对应培训、劳动与环境规则。"
+      },
+      {
+        "role": "结论",
+        "idea": "回扣开放与保护标准可以兼容。",
+        "link": "回扣开放与保护标准可以兼容。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "International trade allows goods, services and knowledge to move between economies. Consumers can benefit from wider choice, but workers and communities may experience substantial adjustment costs. I believe the advantages can outweigh the disadvantages, provided that trade policy includes credible protection for labour and the environment rather than assuming that growth alone will solve these problems."
+      },
+      {
+        "role": "主体一",
+        "text": "Trade gives consumers access to products that may be unavailable or expensive to produce locally. Businesses can obtain specialised equipment and learn from overseas partners through technology and knowledge transfer. A small manufacturer, for example, might improve production after working with a supplier that has developed a more efficient technique. Access to larger markets can also provide job opportunities in competitive industries. A well-designed trade agreement can make these exchanges more predictable by clarifying rules, reducing unnecessary delays and creating procedures for resolving disputes between trading partners."
+      },
+      {
+        "role": "主体二",
+        "text": "However, the gains are not distributed automatically or evenly. Workers in industries exposed to new competition may lose jobs before other opportunities become accessible to them. Lower prices can also conceal exploitation of resources and labor if businesses operate where standards are weak. Simply celebrating aggregate growth overlooks these costs. Governments should support retraining and regional investment while requiring environmental protection and conservation throughout relevant production chains. Cheaper goods are not an unqualified benefit when their real costs are shifted onto vulnerable people. Transparent standards and enforceable agreements are therefore important parts of open trade, not obstacles to it."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, international trade can improve choice, productivity and opportunity, but it should be judged by more than the volume of goods exchanged. With effective labour protections, environmental rules and support for displaced workers, its advantages are likely to be more widely shared. Without these measures, benefits for some consumers may coexist with avoidable harm to other communities."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "technology and knowledge transfer",
+        "acceptedAnswers": [],
+        "hint": "技术与知识转移",
+        "explanation": "解释比较选择与知识交流如何使消费者和企业受益。",
+        "entryIds": [
+          "v-0565-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "provide job opportunities",
+        "acceptedAnswers": [],
+        "hint": "提供就业机会",
+        "explanation": "解释比较选择与知识交流如何使消费者和企业受益。",
+        "entryIds": [
+          "v-0594-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "trade agreement",
+        "acceptedAnswers": [],
+        "hint": "贸易协定",
+        "explanation": "解释比较选择与知识交流如何使消费者和企业受益。",
+        "entryIds": [
+          "v-0562-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "exploitation of resources and labor",
+        "acceptedAnswers": [],
+        "hint": "对资源与劳动力的剥削",
+        "explanation": "承认转型成本并对应培训、劳动与环境规则。",
+        "entryIds": [
+          "v-0577-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "environmental protection and conservation",
+        "acceptedAnswers": [],
+        "hint": "环境保护与资源保育",
+        "explanation": "承认转型成本并对应培训、劳动与环境规则。",
+        "entryIds": [
+          "v-0573-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "Cheaper goods are not an unqualified benefit when their real costs are shifted onto vulnerable people.",
+        "acceptedAnswers": [],
+        "hint": "如果真实成本转嫁给弱势群体，更便宜的商品就不是无条件的收益。",
+        "explanation": "承认转型成本并对应培训、劳动与环境规则。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 300
+  },
+  {
+    "id": "essay-26",
+    "title": "数字平台的内容治理",
+    "sections": [
+      "数媒管控"
+    ],
+    "topics": [],
+    "prompt": "Governments should regulate information on social media to prevent harm. To what extent do you agree or disagree?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "支持针对明确伤害的透明监管，反对不受监督的广泛压制。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "区分防害规则和任意信息控制，给出有限支持。",
+        "link": "区分防害规则和任意信息控制，给出有限支持。"
+      },
+      {
+        "role": "主体一",
+        "idea": "说明传播速度和平台激励为何需要规则。",
+        "link": "说明传播速度和平台激励为何需要规则。"
+      },
+      {
+        "role": "主体二",
+        "idea": "讨论权力滥用与误删风险，提出申诉、公开标准和独立监督。",
+        "link": "讨论权力滥用与误删风险，提出申诉、公开标准和独立监督。"
+      },
+      {
+        "role": "结论",
+        "idea": "总结监管的范围、程序和问责条件。",
+        "link": "总结监管的范围、程序和问责条件。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "Social media enables information to spread quickly, including claims that may cause serious harm. Governments therefore have reasons to establish rules for platforms. I support targeted and transparent regulation, but I do not support unlimited powers to remove information simply because it is controversial or inconvenient to those in authority."
+      },
+      {
+        "role": "主体一",
+        "text": "Some intervention is necessary to prevent the spread of misinformation and fake news. A misleading message can reach many people before a careful correction attracts attention. Platforms also make decisions about which material receives visibility, so they cannot always describe themselves as passive channels. Rules requiring clear advertising labels, accessible reporting tools and reliable verification can help users evaluate information. When a platform receives evidence of a specific harm, it should explain how that evidence is assessed. These obligations can encourage responsible practices without requiring officials to approve every ordinary conversation in advance."
+      },
+      {
+        "role": "主体二",
+        "text": "However, broad restrictions may suppress freedom of speech and expression. Authorities might use vague definitions to silence criticism, while automated moderation can misunderstand satire or discussion of harmful ideas. Excessive secrecy may also undermine public trust in media, because users cannot distinguish a justified removal from political pressure. Regulation should therefore include published standards, independent review and a meaningful appeal process. The power to restrict information must itself be open to scrutiny. Efforts to prevent media monopoly and improve digital literacy can further protect users without concentrating all control in one institution."
+      },
+      {
+        "role": "结论",
+        "text": "Overall, governments should address clearly defined online harms, but their actions must be proportionate and accountable. Effective regulation combines duties for platforms with safeguards for lawful discussion. This is more defensible than either allowing powerful companies to set every rule privately or giving the state unrestricted authority over what people may read and say."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "prevent the spread of misinformation and fake news",
+        "acceptedAnswers": [],
+        "hint": "防止错误信息与虚假新闻传播",
+        "explanation": "说明传播速度和平台激励为何需要规则。",
+        "entryIds": [
+          "v-0806-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "verification",
+        "acceptedAnswers": [],
+        "hint": "核实机制",
+        "explanation": "说明传播速度和平台激励为何需要规则。",
+        "entryIds": [
+          "v-0809-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 2,
+        "answer": "suppress freedom of speech and expression",
+        "acceptedAnswers": [],
+        "hint": "压制言论与表达自由",
+        "explanation": "讨论权力滥用与误删风险，提出申诉、公开标准和独立监督。",
+        "entryIds": [
+          "v-0820-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "undermine public trust in media",
+        "acceptedAnswers": [],
+        "hint": "削弱公众对媒体的信任",
+        "explanation": "讨论权力滥用与误删风险，提出申诉、公开标准和独立监督。",
+        "entryIds": [
+          "v-0824-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "The power to restrict information must itself be open to scrutiny.",
+        "acceptedAnswers": [],
+        "hint": "限制信息的权力本身也必须接受审查。",
+        "explanation": "讨论权力滥用与误删风险，提出申诉、公开标准和独立监督。",
+        "entryIds": []
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "prevent media monopoly",
+        "acceptedAnswers": [],
+        "hint": "防止媒体垄断",
+        "explanation": "讨论权力滥用与误删风险，提出申诉、公开标准和独立监督。",
+        "entryIds": [
+          "v-0814-0"
+        ]
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 289
+  },
+  {
+    "id": "essay-27",
+    "title": "新闻如何影响公共判断",
+    "sections": [
+      "媒体及报道的作用"
+    ],
+    "topics": [],
+    "prompt": "News organisations should focus on positive stories rather than negative events. To what extent do you agree or disagree?",
+    "taskType": "Task 2 · 回应题目中的具体要求",
+    "stance": "不以正负情绪作为选题标准，兼顾重要问题、解决路径与准确背景。",
+    "plan": [
+      {
+        "role": "引言",
+        "idea": "引言把情绪倾向与公共重要性分开。",
+        "link": "引言把情绪倾向与公共重要性分开。"
+      },
+      {
+        "role": "主体一",
+        "idea": "解释报道问题的监督功能及为何不能只报好消息。",
+        "link": "解释报道问题的监督功能及为何不能只报好消息。"
+      },
+      {
+        "role": "主体二",
+        "idea": "说明煽情与片面呈现的危害，提出背景和进展报道。",
+        "link": "说明煽情与片面呈现的危害，提出背景和进展报道。"
+      },
+      {
+        "role": "结论",
+        "idea": "以准确、相关、均衡的新闻标准收束。",
+        "link": "以准确、相关、均衡的新闻标准收束。"
+      }
+    ],
+    "paragraphs": [
+      {
+        "role": "引言",
+        "text": "News organisations help people understand events beyond their immediate experience. Some readers therefore want more positive stories to counter the constant attention given to disasters and conflict. I agree that constructive reporting deserves space, but I do not think positivity should become the main criterion for selecting news. Public importance and accuracy are more useful standards."
+      },
+      {
+        "role": "主体一",
+        "text": "Reporting difficult events can direct public attention towards problems that require action. An investigation into unsafe housing, for example, may reveal conditions that affected residents cannot easily publicise themselves. Such reporting can increase awareness and allow citizens to question those responsible. Avoiding negative material would risk leaving important failures unexamined. News can also foster debate by presenting evidence and competing explanations rather than assuming that public disagreement is inherently undesirable. A comfortable picture of society is not necessarily an informative one, particularly for people whose experiences are rarely represented."
+      },
+      {
+        "role": "主体二",
+        "text": "Nevertheless, the way problems are reported matters. Sensationalized news may emphasise dramatic images while providing little explanation of causes or frequency. This can create fear and panic or encourage readers to view an entire community through one exceptional incident. Journalists should therefore include relevant context and follow developments after the initial headline. Reporting how a damaged neighbourhood rebuilds, for instance, can show both continuing difficulties and practical progress. Constructive reporting explains what can be done without pretending that the problem has disappeared. Positive developments should receive attention when they are meaningful, not merely because they make audiences feel better."
+      },
+      {
+        "role": "结论",
+        "text": "In conclusion, news should neither dwell exclusively on suffering nor replace investigation with reassurance. Responsible organisations need to explain important problems, assess responses and report genuine improvements. A balanced picture emerges from careful selection and context, rather than from a fixed rule that good news must always take priority over bad news."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "g1",
+        "paragraph": 1,
+        "answer": "direct public attention",
+        "acceptedAnswers": [],
+        "hint": "引导公众注意",
+        "explanation": "解释报道问题的监督功能及为何不能只报好消息。",
+        "entryIds": [
+          "v-0832-0"
+        ]
+      },
+      {
+        "id": "g2",
+        "paragraph": 1,
+        "answer": "increase awareness",
+        "acceptedAnswers": [],
+        "hint": "提高认识",
+        "explanation": "解释报道问题的监督功能及为何不能只报好消息。",
+        "entryIds": [
+          "v-0838-0"
+        ]
+      },
+      {
+        "id": "g3",
+        "paragraph": 1,
+        "answer": "foster debate",
+        "acceptedAnswers": [],
+        "hint": "促进讨论",
+        "explanation": "解释报道问题的监督功能及为何不能只报好消息。",
+        "entryIds": [
+          "v-0840-0"
+        ]
+      },
+      {
+        "id": "g4",
+        "paragraph": 2,
+        "answer": "Sensationalized news",
+        "acceptedAnswers": [],
+        "hint": "煽情化新闻",
+        "explanation": "说明煽情与片面呈现的危害，提出背景和进展报道。",
+        "entryIds": [
+          "v-0841-0"
+        ]
+      },
+      {
+        "id": "g5",
+        "paragraph": 2,
+        "answer": "create fear and panic",
+        "acceptedAnswers": [],
+        "hint": "制造恐惧与惊慌",
+        "explanation": "说明煽情与片面呈现的危害，提出背景和进展报道。",
+        "entryIds": [
+          "v-0843-0"
+        ]
+      },
+      {
+        "id": "g6",
+        "paragraph": 2,
+        "answer": "Constructive reporting explains what can be done without pretending that the problem has disappeared.",
+        "acceptedAnswers": [],
+        "hint": "建设性报道解释可以采取什么行动，而不假装问题已经消失。",
+        "explanation": "说明煽情与片面呈现的危害，提出背景和进展报道。",
+        "entryIds": []
+      }
+    ],
+    "transfer": "换一个具体例子重写主体段，保留“观点 → 原因 → 例子 → 回扣题目”的逻辑；只使用与新题相关的表达。",
+    "wordCount": 296
+  }
+]

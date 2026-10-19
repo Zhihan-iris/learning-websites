@@ -6,7 +6,7 @@
 - 错题正确默写次数可选 1–10 遍；听力默认 5 遍，写作默认 1 遍。两站分别保存偏好。
 - 修改次数用于下一次新错题；正在重写的题目保留原目标及已完成次数，刷新也可继续。
 - 每次正确默写均再次朗读，错误不计数；达到目标后仍需另按 Enter 继续。
-- 听力的同义替换按整组全部正确计一次；写作的搭配回忆和填空也使用此设置。
+- 听力的同义替换按整组全部正确计一次；写作搭配回忆也使用此设置；范文错空可单独重练。
 
 以下流程中的固定次数为默认设置示例。
 
@@ -15,7 +15,7 @@
 
 - [计量经济学学习室](https://zhihan-iris.github.io/learning-websites/econometrics/)：20 个单元、60 道自测、5 个交互实验、公式卡与学习笔记；详见 [计量站说明](econometrics/README.md)。
 - [听力练习室](https://zhihan-iris.github.io/learning-websites/listening/)：原有听力与同义替换练习。
-- [写作学习室](https://zhihan-iris.github.io/learning-websites/writing/)：高频词错后重写一次、场景搭配分步练习；详见 [写作站说明](writing/README.md)。
+- [写作学习室](https://zhihan-iris.github.io/learning-websites/writing/)：28 个词汇板块、1,537 个场景表达、27 篇中文提示范文填空；详见 [写作站说明](writing/README.md)。
 
 各网站的学习记录独立保存。以下为听力练习室说明。
 
