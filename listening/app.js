@@ -1,5 +1,5 @@
-import { STORAGE_KEY, emptyProgress, loadProgress, startSession, submitAnswer, advance, checkSynonymAnswers } from './core.js?v=3';
-import { buildSynonymGroups, migrateSynonymProgress } from './synonyms.js?v=3';
+import { STORAGE_KEY, emptyProgress, loadProgress, startSession, submitAnswer, advance, checkSynonymAnswers } from './core.js?v=settings-1';
+import { buildSynonymGroups, migrateSynonymProgress } from './synonyms.js?v=settings-1';
 
 const $ = selector => document.querySelector(selector);
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -7,7 +7,8 @@ let data, progress, byId, view = 'practice', showAllMistakes = false, pageLimit 
 let speechToken = 0, currentSpeech, speechTimeout;
 let synonymGroups = [];
 const waveform = label => `<button class="wave-icon" type="button" data-action="play" aria-label="${label}">${'<span aria-hidden="true"></span>'.repeat(7)}</button>`;
-const repetitions = count => `<div class="repair-count" aria-label="已正确默写 ${count} 遍，共 5 遍">${Array.from({ length: 5 }, (_, i) => `<span class="${i < count ? 'done' : ''}">${i < count ? '✓' : i + 1}</span>`).join('')}</div>`;
+const repairGoal = () => progress.session?.repairGoal || progress.settings.repairGoal;
+const repetitions = count => `<div class="repair-count" aria-label="已正确默写 ${count} 遍，共 ${repairGoal()} 遍">${Array.from({ length: repairGoal() }, (_, i) => `<span class="${i < count ? 'done' : ''}">${i < count ? '✓' : i + 1}</span>`).join('')}</div>`;
 const currentWord = () => byId.get(progress.session?.ids[progress.session.index]);
 const active = () => progress.session && progress.session.phase !== 'complete';
 const pendingIds = () => Object.keys(progress.mistakes).filter(id => !progress.mistakes[id].resolved);
@@ -63,7 +64,7 @@ function speak(entry) {
   const utterance = new SpeechSynthesisUtterance(word);
   currentSpeech = utterance; // Keep a reference until onend (some browsers otherwise stop early).
   if (chosen) utterance.voice = chosen;
-  utterance.lang = chosen?.lang || accent; utterance.rate = progress.settings.rate;
+  utterance.lang = chosen?.lang || accent; utterance.rate = progress.settings.rate; utterance.volume = progress.settings.volume;
   utterance.onstart = () => {
     if (token !== speechToken) return;
     clearTimeout(speechTimeout); $('.wave-icon')?.classList.add('speaking');
@@ -94,6 +95,9 @@ function renderScenes() {
   $('#shuffle').checked = progress.settings.shuffle;
   $('#accent').value = progress.settings.accent;
   $('#rate').value = progress.settings.rate;
+  $('#volume').value = Math.round(progress.settings.volume * 100);
+  $('#volume-value').textContent = `${Math.round(progress.settings.volume * 100)}%`;
+  $('#repairGoal').value = progress.settings.repairGoal;
   for (const selector of ['#session-scene', '#session-size', '#shuffle']) $(selector).disabled = !!active();
   $('#settings-note').textContent = active() ? '本组进度已保存。完成或结束本组后，可调整练习范围。' : '完成一组，再向前一步。';
 }
@@ -101,7 +105,7 @@ function focusAnswer() { if (view === 'practice') $('#answer')?.focus({ preventS
 function answerForm(repair = false) {
   const w = currentWord();
   const isNumber = w.book === 'numbers';
-  return `<form id="answer-form" autocomplete="off"><label class="input-label" for="answer">${repair ? `第 ${progress.session.repeats + 1} / 5 遍 · 根据发音和释义默写` : (isNumber ? '写下你听到的数字、字母或信息' : '写下你听到的单词或短语')}</label><div class="input-wrap"><input id="answer" class="answer-input" type="text" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="none" inputmode="${w.kind === 'phone' ? 'tel' : 'text'}" enterkeyhint="done" placeholder="${isNumber ? '在这里输入听到的信息…' : '在这里输入英文…'}" aria-describedby="input-error" maxlength="200"></div><p id="input-error" class="inline-error" role="status"></p><div class="submit-row"><button type="button" data-action="play" class="text-button">↻ 再听一次</button><button type="submit" class="primary">检查拼写 <kbd>Enter ↵</kbd></button></div></form>`;
+  return `<form id="answer-form" autocomplete="off"><label class="input-label" for="answer">${repair ? `第 ${progress.session.repeats + 1} / ${repairGoal()} 遍 · 根据发音和释义默写` : (isNumber ? '写下你听到的数字、字母或信息' : '写下你听到的单词或短语')}</label><div class="input-wrap"><input id="answer" class="answer-input" type="text" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="none" inputmode="${w.kind === 'phone' ? 'tel' : 'text'}" enterkeyhint="done" placeholder="${isNumber ? '在这里输入听到的信息…' : '在这里输入英文…'}" aria-describedby="input-error" maxlength="200"></div><p id="input-error" class="inline-error" role="status"></p><div class="submit-row"><button type="button" data-action="play" class="text-button">↻ 再听一次</button><button type="submit" class="primary">检查拼写 <kbd>Enter ↵</kbd></button></div></form>`;
 }
 function synonymStudyList(w) {
   return `<div class="synonym-study-list">${w.answers.map((a,i)=>`<div class="synonym-study-item"><div class="synonym-term"><strong lang="en">${escape(a.word)}</strong><button type="button" class="row-audio" data-pronounce="${escape(a.speechText)}" aria-label="朗读 ${escape(a.word)}">♪</button></div><p>${escape(a.meaning)}</p><small>${a.contexts.map(c=>`${escape(c.group)} · ${escape(c.meaning)} · PDF 第 ${c.sourcePages.join('、')} 页`).join('<br>')}</small></div>`).join('')}</div>`;
@@ -116,7 +120,7 @@ function renderSynonymExercise(w, s, source, exit) {
   if (s.phase === 'question' || s.phase === 'repairing') return `<div class="group-note">${s.phase === 'repairing' ? '每组全部写对，计入一次巩固' : 'RECALL THE CONNECTION · 回想对应表达'}</div><h2>它有哪些对应表达？</h2>${cue}${s.phase === 'repairing' ? repetitions(s.repeats) : ''}${synonymForm(w,s.phase === 'repairing')}<p class="keyboard-note">重播只读题目，不揭晓答案。${s.phase === 'repairing' ? '整组每写对一遍，会再读一遍答案。' : ''}</p>${exit}`;
   const error=['mistake','repair-error'].includes(s.phase), repaired=s.phase==='repaired';
   const checked=error?checkSynonymAnswers(s.lastAnswer || progress.mistakes[w.id]?.lastAnswer || '',w):null;
-  return `<div class="feedback-tag ${error?'error':''}">${error?(s.phase==='mistake'?'有错漏 · 已加入错题本':'还有错漏 · 本次不计数'):(repaired?'✓ 已完成 5 遍整组默写':'✓ 整组正确，听一遍加深记忆')}</div>${cue}${checked?`<div class="synonym-check"><p>已正确回忆 ${checked.matched.length} / ${w.answers.length} 个表达</p>${checked.missing.length?`<p>还需记住：<strong lang="en">${checked.missing.map(a=>escape(a.word)).join('；')}</strong></p>`:''}${checked.unexpected.length?`<p>未匹配到本组 / 重复填写：${checked.unexpected.map(escape).join('；')}</p>`:''}</div>`:''}${synonymStudyList(w)}${notice}<button class="text-button" data-pronounce="${escape(w.speechText)}">♪ 再读一遍对应表达</button>${error||repaired?repetitions(s.repeats):''}<button class="primary wide" data-action="advance">${error?'隐藏答案，'+(s.phase==='mistake'?'整组默写 5 遍':'继续默写'):(s.index+1===s.ids.length?'查看本组结果':'学习下一组')} <kbd>Enter ↵</kbd></button>${source}${exit}`;
+  return `<div class="feedback-tag ${error?'error':''}">${error?(s.phase==='mistake'?'有错漏 · 已加入错题本':'还有错漏 · 本次不计数'):(repaired?`✓ 已完成 ${repairGoal()} 遍整组默写`:'✓ 整组正确，听一遍加深记忆')}</div>${cue}${checked?`<div class="synonym-check"><p>已正确回忆 ${checked.matched.length} / ${w.answers.length} 个表达</p>${checked.missing.length?`<p>还需记住：<strong lang="en">${checked.missing.map(a=>escape(a.word)).join('；')}</strong></p>`:''}${checked.unexpected.length?`<p>未匹配到本组 / 重复填写：${checked.unexpected.map(escape).join('；')}</p>`:''}</div>`:''}${synonymStudyList(w)}${notice}<button class="text-button" data-pronounce="${escape(w.speechText)}">♪ 再读一遍对应表达</button>${error||repaired?repetitions(s.repeats):''}<button class="primary wide" data-action="advance">${error?'隐藏答案，'+(s.phase==='mistake'?`整组默写 ${repairGoal()} 遍`:'继续默写'):(s.index+1===s.ids.length?'查看本组结果':'学习下一组')} <kbd>Enter ↵</kbd></button>${source}${exit}`;
 }
 function renderExercise() {
   const s = progress.session;
@@ -125,7 +129,7 @@ function renderExercise() {
     const count = Math.min(filteredWords().length, progress.settings.size || Infinity);
     $('#current-scene').textContent = `${currentBook().name} · ${sceneName(progress.settings.scene)}`;
     $('#question-count').textContent = '准备开始'; $('#progress-fill').style.width = '0%';
-    area.innerHTML = `<div class="group-note">把注意力，交给耳朵</div>${waveform('开始练习并播放第一个单词')}<h2>${progress.settings.book === 'synonyms' ? '先学一组，再回想它们。' : '听见，然后写下来。'}</h2><p class="prompt">${escape(currentBook().description)}<br>${progress.settings.book === 'synonyms' ? '隐藏对应表达后逐项默写，整组写对才通过。' : '答对再听一遍，答错默写 5 遍；每写对一遍都会朗读。'}</p><div class="idle-meta"><span>◷ ${count} 道练习</span><span>◈ ${sceneName(progress.settings.scene)}</span></div><button class="primary wide" data-action="start">开始今日练习 <kbd>Enter ↵</kbd></button><p class="keyboard-note">戴好耳机，给记忆一点专注的时间。</p>`;
+    area.innerHTML = `<div class="group-note">把注意力，交给耳朵</div>${waveform('开始练习并播放第一个单词')}<h2>${progress.settings.book === 'synonyms' ? '先学一组，再回想它们。' : '听见，然后写下来。'}</h2><p class="prompt">${escape(currentBook().description)}<br>${progress.settings.book === 'synonyms' ? '隐藏对应表达后逐项默写，整组写对才通过。' : `答对再听一遍，答错默写 ${progress.settings.repairGoal} 遍；每写对一遍都会朗读。`}</p><div class="idle-meta"><span>◷ ${count} 道练习</span><span>◈ ${sceneName(progress.settings.scene)}</span></div><button class="primary wide" data-action="start">开始今日练习 <kbd>Enter ↵</kbd></button><p class="keyboard-note">戴好耳机，给记忆一点专注的时间。</p>`;
     return;
   }
   const w = currentWord();
@@ -138,16 +142,16 @@ function renderExercise() {
     area.innerHTML = renderSynonymExercise(w, s, source, exit); return;
   }
   if (s.phase === 'complete') {
-    area.innerHTML = `<div class="complete-icon">✧</div><h2>又前进了一小步。</h2><p class="prompt">本组 ${s.ids.length} 道练习已完成。每一次练习，都算数。</p><div class="session-summary"><div><strong>${s.correct}</strong><span>首次拼写正确</span></div><div><strong>${s.wrong}</strong><span>已完成 5 遍巩固</span></div></div><button class="primary wide" data-action="new">再练一组 <kbd>Enter ↵</kbd></button><div style="margin-top:15px"><button class="text-button" data-action="mistakes">看看我的错题本 →</button><button class="text-button" data-action="choose">重新选择场景</button></div>`;
+    area.innerHTML = `<div class="complete-icon">✧</div><h2>又前进了一小步。</h2><p class="prompt">本组 ${s.ids.length} 道练习已完成。每一次练习，都算数。</p><div class="session-summary"><div><strong>${s.correct}</strong><span>首次拼写正确</span></div><div><strong>${s.wrong}</strong><span>已完成错题巩固</span></div></div><button class="primary wide" data-action="new">再练一组 <kbd>Enter ↵</kbd></button><div style="margin-top:15px"><button class="text-button" data-action="mistakes">看看我的错题本 →</button><button class="text-button" data-action="choose">重新选择场景</button></div>`;
   } else if (s.phase === 'question') {
     area.innerHTML = `<div class="group-note">${escape(w.group)} · LISTEN & SPELL</div>${waveform('重播当前单词')}<h2>${w.book === 'numbers' ? '这条信息，你听清了吗？' : '这个表达，你听出来了吗？'}</h2><p class="prompt">${w.book === 'numbers' ? '电话保留前导 0；邮编不区分大小写；时间支持 24 小时制。' : w.book === 'synonyms' ? '听写原文表达，答后查看题目中的对应表达。' : '点击声波重播，输入答案后按回车。'}</p>${answerForm()}<div class="keyboard-note"><kbd>Alt</kbd> + <kbd>P</kbd> 重播发音 · 忽略大小写与首尾空格</div>${exit}`;
   } else if (s.phase === 'repairing') {
-    area.innerHTML = `<div class="group-note">再写对 5 遍，让记忆更牢一点</div>${waveform('重播正在巩固的单词')}<div class="repair-meaning">${escape(w.meaning)}</div>${repetitions(s.repeats)}${answerForm(true)}<p class="keyboard-note">只计入正确默写；中途刷新也会保留次数。</p>${exit}`;
+    area.innerHTML = `<div class="group-note">目标 ${repairGoal()} 遍，已完成 ${s.repeats} 遍</div>${waveform('重播正在巩固的单词')}<div class="repair-meaning">${escape(w.meaning)}</div>${repetitions(s.repeats)}${answerForm(true)}<p class="keyboard-note">只计入正确默写；中途刷新也会保留次数。</p>${exit}`;
   } else {
     const error = ['mistake', 'repair-error'].includes(s.phase);
     const repaired = s.phase === 'repaired';
-    const tag = error ? (s.phase === 'mistake' ? '拼写错误 · 已加入错题本' : '还差一点 · 本次不计入 5 遍') : (repaired ? '✓ 已完成 5 遍正确默写' : '✓ 拼写正确，记住它的意思');
-    const label = error ? (s.phase === 'mistake' ? '开始 5 遍默写' : '隐藏拼写，继续默写') : (s.index + 1 === s.ids.length ? '查看本组结果' : '下一个单词');
+    const tag = error ? (s.phase === 'mistake' ? '拼写错误 · 已加入错题本' : '还差一点 · 本次不计数') : (repaired ? `✓ 已完成 ${repairGoal()} 遍正确默写` : '✓ 拼写正确，记住它的意思');
+    const label = error ? (s.phase === 'mistake' ? `开始 ${repairGoal()} 遍默写` : '隐藏拼写，继续默写') : (s.index + 1 === s.ids.length ? '查看本组结果' : '下一个单词');
     area.innerHTML = `<div class="feedback-tag ${error ? 'error' : ''}">${tag}</div><div class="answer-card ${error ? 'error' : ''}"><div class="answer-word" lang="en">${escape(w.word)}</div><div class="answer-meaning">${escape(w.meaning)}</div>${answerDetails(w)}${s.phase === 'mistake' ? `<div class="error-detail">你的拼写：${escape(progress.mistakes[w.id].lastAnswer)}</div>` : ''}<button data-action="play" class="text-button" aria-label="朗读正确单词">◖)) 听一遍正确发音</button></div>${error || repaired ? repetitions(s.repeats) : ''}<p class="prompt">${error ? '先记住正确拼写，准备好后按回车隐藏答案。' : repaired ? '认真写过的词，会慢慢成为你的词汇。' : '把声音、拼写和意思，连在一起。'}</p><button class="primary wide" data-action="advance">${label} <kbd>Enter ↵</kbd></button>${source}${exit}`;
   }
 }
@@ -157,7 +161,7 @@ function setView(next) {
   document.querySelectorAll('[data-view]').forEach(b => { b.classList.toggle('active', b.dataset.view === view); b.setAttribute('aria-current', b.dataset.view === view ? 'page' : 'false'); });
   $('#page-name').textContent = { practice: '听音默写', mistakes: '我的错题本', vocabulary: '资料词库' }[view];
   $('#heading').innerHTML = { practice: '让听过的词，<span>真正记住。</span>', mistakes: '每个错词，<span>都是进步的起点。</span>', vocabulary: '翻开资料，<span>积累听力词汇。</span>' }[view];
-  $('#subtitle').textContent = { practice: '从声音开始，在场景里积累。今天，也学会一点点。', mistakes: '错过的单词留在这里。练过 5 遍后标记已巩固，记录依然保留。', vocabulary: `${currentBook().title} · ${bookWords().length} 道练习。搜索、听发音，查看资料中的释义。` }[view];
+  $('#subtitle').textContent = { practice: '从声音开始，在场景里积累。今天，也学会一点点。', mistakes: '错过的单词留在这里。完成设定次数后标记已巩固，记录依然保留。', vocabulary: `${currentBook().title} · ${bookWords().length} 道练习。搜索、听发音，查看资料中的释义。` }[view];
   if (view === 'practice') { renderExercise(); focusAnswer(); }
   if (view === 'mistakes') renderMistakes();
   if (view === 'vocabulary') renderVocabulary();
@@ -254,6 +258,8 @@ async function init() {
   for (const [selector, key, convert] of [['#session-scene', 'scene', String], ['#session-size', 'size', Number], ['#accent', 'accent', String], ['#rate', 'rate', Number]]) {
     $(selector).addEventListener('change', event => { progress.settings[key] = convert(event.target.value); save(); renderScenes(); if (['scene', 'size'].includes(key)) renderExercise(); });
   }
+  $('#volume').addEventListener('input', event => { progress.settings.volume = Number(event.target.value) / 100; $('#volume-value').textContent = `${event.target.value}%`; save(); });
+  $('#repairGoal').addEventListener('change', event => { progress.settings.repairGoal = Number(event.target.value); save(); if (!active()) renderExercise(); });
   $('#shuffle').addEventListener('change', event => { progress.settings.shuffle = event.target.checked; save(); });
   $('#pending-tab').onclick = () => { showAllMistakes = false; renderMistakes(); };
   $('#all-tab').onclick = () => { showAllMistakes = true; renderMistakes(); };

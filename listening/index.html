@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="application-name" content="Zhihan · 雅思听力练习室">
   <meta name="theme-color" content="#111217">
-  <meta name="description" content="雅思听力练习室：场景词汇、剑10–剑20同义替换、数字与信息听写、填空考点词。听音默写，答对复读，错题重练五遍；同义替换先学后测。">
+  <meta name="description" content="雅思听力练习室：场景词汇、剑10–剑20同义替换、数字与信息听写、填空考点词。听音默写，答对复读，错题按自选次数重练；同义替换先学后测。">
   <link rel="canonical" href="https://zhihan-iris.github.io/learning-websites/listening/">
   <title>Zhihan · 雅思听力练习室</title>
-  <link rel="icon" href="./favicon.svg?v=zhihan-3" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css?v=zhihan-3">
+  <link rel="icon" href="./favicon.svg?v=settings-1" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css?v=settings-1">
 </head>
 <body>
   <a class="skip" href="#main">跳转到练习</a>
@@ -47,17 +47,19 @@
             <section class="settings-card"><div class="section-title">本次练习 <span>SESSION</span></div>
               <label for="session-scene">练习分类</label><select id="session-scene"></select>
               <label for="session-size">每组题数</label><select id="session-size"><option value="10">10 题 · 轻量热身</option><option value="20" selected>20 题 · 日常积累</option><option value="50">50 题 · 集中练习</option><option value="0">全部内容</option></select>
+              <label for="repairGoal">错题默写次数</label><select id="repairGoal"><option value="1">1 遍</option><option value="2">2 遍</option><option value="3">3 遍</option><option value="4">4 遍</option><option value="5" selected>5 遍</option><option value="6">6 遍</option><option value="7">7 遍</option><option value="8">8 遍</option><option value="9">9 遍</option><option value="10">10 遍</option></select><p class="small-note">从下一次新错题开始生效，当前错题的目标次数保持不变。</p>
               <label class="check-label"><input id="shuffle" type="checkbox">随机排列题序</label>
               <p class="small-note" id="settings-note">完成一组，再向前一步。</p>
             </section>
             <section class="settings-card audio-settings"><div class="section-title">发音设置 <span>AUDIO</span></div>
               <label for="accent">英语口音</label><select id="accent"><option value="en-GB">英式英语 · British</option><option value="en-US">美式英语 · American</option></select>
               <label for="rate">朗读速度</label><select id="rate"><option value="0.65">慢速 · 0.65×</option><option value="0.85" selected>舒缓 · 0.85×</option><option value="1">常速 · 1.0×</option></select>
+              <label for="volume">播放音量 <output id="volume-value" for="volume">100%</output></label><input id="volume" type="range" min="0" max="100" step="1" value="100" aria-describedby="volume-help"><p id="volume-help" class="small-note">0% 为静音；调整后从下一次播放生效。</p>
               <p id="audio-status" class="small-note" role="status">使用设备提供的英语语音</p>
             </section>
           </aside>
         </div>
-        <div class="learning-path"><span class="path-label">记忆的三小步</span><span><b>01</b> 听发音，写单词</span><i>→</i><span><b>02</b> 看释义，建立联想</span><i>→</i><span><b>03</b> 错词练 5 遍，巩固记忆</span></div>
+        <div class="learning-path"><span class="path-label">记忆的三小步</span><span><b>01</b> 听发音，写单词</span><i>→</i><span><b>02</b> 看释义，建立联想</span><i>→</i><span><b>03</b> 错词按设定次数练习</span></div>
       </section>
       <section id="mistakes-view" hidden><div class="list-toolbar"><div class="tabs"><button id="pending-tab" class="selected">待巩固</button><button id="all-tab">全部记录</button></div><button id="review-all" class="primary">开始错词复习 ↗</button></div><div id="mistake-list"></div></section>
       <section id="vocabulary-view" hidden><div class="list-toolbar"><label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="搜索单词或中文释义" aria-label="搜索单词或中文释义"></label><span id="vocabulary-count" class="muted"></span></div><div id="vocabulary-list"></div></section>
@@ -65,6 +67,6 @@
     </main>
   </div>
   <noscript>请启用 JavaScript 以使用听音默写和错题本。</noscript>
-  <script type="module" src="./app.js?v=zhihan-3"></script>
+  <script type="module" src="./app.js?v=settings-1"></script>
 </body>
 </html>

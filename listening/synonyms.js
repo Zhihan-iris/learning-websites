@@ -1,4 +1,4 @@
-import {normalize,isCorrect} from './core.js?v=3';
+import {normalize,isCorrect} from './core.js?v=settings-1';
 // Group only identical cues within the same Cambridge volume; retain source context.
 export function buildSynonymGroups(words){
  const map=new Map();

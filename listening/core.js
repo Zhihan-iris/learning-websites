@@ -65,7 +65,7 @@ export function isCorrect(answer, entry) {
   });
 }
 export function emptyProgress() {
-  return { version: 1, attempts: 0, correct: 0, mastered: [], mistakes: {}, session: null, settings: { book: 'scenes', scene: 'all', size: 20, accent: 'en-GB', rate: 0.85, shuffle: false } };
+  return { version: 1, attempts: 0, correct: 0, mastered: [], mistakes: {}, session: null, settings: { book: 'scenes', scene: 'all', size: 20, accent: 'en-GB', rate: 0.85, volume: 1, repairGoal: 5, shuffle: false } };
 }
 export function loadProgress(raw, words) {
   const fresh = emptyProgress();
@@ -90,14 +90,17 @@ export function loadProgress(raw, words) {
     if ([10, 20, 50, 0].includes(s.size)) fresh.settings.size = s.size;
     if (['en-GB', 'en-US'].includes(s.accent)) fresh.settings.accent = s.accent;
     if ([0.65, 0.85, 1].includes(s.rate)) fresh.settings.rate = s.rate;
+    if (Number.isFinite(s.volume) && s.volume >= 0 && s.volume <= 1) fresh.settings.volume = s.volume;
+    if (Number.isInteger(s.repairGoal) && s.repairGoal >= 1 && s.repairGoal <= 10) fresh.settings.repairGoal = s.repairGoal;
     fresh.settings.shuffle = s.shuffle === true;
   }
   const session = data.session;
   if (session && Array.isArray(session.ids) && session.ids.length && session.ids.every(id => ids.has(id)) &&
-      number(session.index) && session.index < session.ids.length && number(session.repeats) && session.repeats <= 5 &&
+      number(session.index) && session.index < session.ids.length && number(session.repeats) && session.repeats <= 10 &&
       number(session.correct) && number(session.wrong) &&
       ['study', 'question', 'correct', 'mistake', 'repairing', 'repair-error', 'repaired', 'complete'].includes(session.phase)) {
     fresh.session = { ids: session.ids, index: session.index, repeats: session.repeats, phase: session.phase,
+      repairGoal: Number.isInteger(session.repairGoal) && session.repairGoal >= 1 && session.repairGoal <= 10 ? session.repairGoal : 5,
       correct: session.correct, wrong: session.wrong, review: session.review === true, lastAnswer: typeof session.lastAnswer === 'string' ? session.lastAnswer.slice(0,2000) : '' };
   }
   return fresh;
@@ -113,7 +116,7 @@ export function submitAnswer(progress, word, answer) {
   if (s.phase === 'repairing') {
     if (!ok) { s.phase = 'repair-error'; return 'repair-error'; }
     s.repeats++;
-    if (s.repeats === 5) {
+    if (s.repeats >= (s.repairGoal || 5)) {
       s.phase = 'repaired';
       if (progress.mistakes[word.id]) progress.mistakes[word.id].resolved = true;
     }
@@ -125,7 +128,7 @@ export function submitAnswer(progress, word, answer) {
     if (!progress.mastered.includes(word.id)) progress.mastered.push(word.id);
     if (progress.mistakes[word.id]) progress.mistakes[word.id].resolved = true;
   } else {
-    s.wrong++; s.phase = 'mistake'; s.repeats = 0;
+    s.wrong++; s.phase = 'mistake'; s.repeats = 0; s.repairGoal = progress.settings.repairGoal;
     progress.mastered = progress.mastered.filter(id => id !== word.id);
     const old = progress.mistakes[word.id];
     progress.mistakes[word.id] = { count: (old?.count || 0) + 1, lastAnswer: Array.isArray(answer) ? answer.join('；') : answer, resolved: false };
@@ -139,6 +142,6 @@ export function advance(progress, nextEntry = null) {
   if (['mistake', 'repair-error'].includes(s.phase)) { s.phase = 'repairing'; return true; }
   if (!['correct', 'repaired'].includes(s.phase)) return false;
   if (s.index + 1 === s.ids.length) s.phase = 'complete';
-  else { s.index++; s.repeats = 0; s.phase = nextEntry?.kind === 'synonym-group' ? 'study' : 'question'; }
+  else { s.index++; s.repeats = 0; delete s.repairGoal; s.phase = nextEntry?.kind === 'synonym-group' ? 'study' : 'question'; }
   return true;
 }

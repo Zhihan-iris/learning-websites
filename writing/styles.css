@@ -8,3 +8,10 @@
 /* Shared midnight and brass palette from the Zhihan listening room. */
 @media screen{body{background:radial-gradient(ellipse at 90% 0%,#b28b3d0b,transparent 45%),#111217}.sidebar{background:linear-gradient(180deg,#19191e,#14151a)}.primary{background:linear-gradient(120deg,#e0c18a,#c7a167);color:#17181c}.primary:hover{background:#edcf97}}
 @media screen and (max-width:600px){.sidebar{background:#16171c}}
+
+/* Personal audio and repair preferences. */
+#volume{width:100%;min-width:0;min-height:32px;padding:0;accent-color:#d5b475;cursor:pointer}
+#volume-value{color:#d5b475;font-variant-numeric:tabular-nums}
+.audio-settings,.practice-aside .audio-settings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.audio-settings .setting-wide{grid-column:1/-1;margin:0}
+.audio-settings label{min-width:0}

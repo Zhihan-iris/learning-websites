@@ -11,3 +11,30 @@ test('collocation errors repair once and return to the right stage without skipp
 test('spelling variants are accepted while missing words and wrong inflections are rejected',()=>{assert.ok(isCorrect('  ANALYZE and interpret data. ',{word:'analyse and interpret data'}));assert.ok(isCorrect('neighborhoods',{word:'neighbourhoods'}));assert.ok(isCorrect('long term commitment',{word:'long-term commitment'}));assert.equal(isCorrect('develop expertises',{word:'develop expertise'}),false);assert.equal(isCorrect('develop',{word:'develop expertise'}),false);assert.equal(isCorrect('develop expertise',{word:'build expertise'}),false);});
 test('all 887 source rows are covered; all 20 topics have three usable lessons with intact examples',()=>{assert.equal(data.meta.rawVocabulary,887);assert.equal(data.vocabulary.length,903);assert.equal(new Set(entries.map(e=>e.id)).size,entries.length);assert.deepEqual([...new Set(data.vocabulary.flatMap(w=>w.sources.map(s=>s.row)))].sort((a,b)=>a-b),Array.from({length:887},(_,i)=>i));assert.equal(data.topics.length,20);assert.equal(data.lessons.length,60);for(const t of data.topics){assert.equal(t.lessons.length,3);assert.ok(t.ideas.length>0);}for(const l of data.lessons){assert.ok(l.example.includes(l.word));assert.ok(l.meaning&&l.tip&&l.prompt&&l.page>=3&&l.page<=88);}for(const w of data.vocabulary){assert.ok(w.word&&w.meaning&&w.sources.length);assert.ok(!w.word.includes('/'));assert.ok(!/[\u4e00-\u9fff]/.test(w.word));}assert.equal(data.vocabulary.find(w=>w.word==='kidnap').meaning,'绑架');assert.equal(data.vocabulary.find(w=>w.word==='low-carb diet').meaning,'低碳水化合物饮食');});
 test('saved notes cannot inject markup into rendered output',()=>{assert.equal(escapeHTML('<img src=x onerror="bad">'),'&lt;img src=x onerror=&quot;bad&quot;&gt;');});
+
+test('custom writing goals count only correct repetitions, survive reload and keep current target',()=>{
+ for(const goal of [1,3,10]){
+  let s=emptyState();s.settings.repairGoal=goal;s.settings.volume=.42;start(s,'vocab',[word.id,data.vocabulary[1].id]);submit(s,word,'wrong');next(s);s.settings.repairGoal=2;
+  for(let i=1;i<=goal;i++){
+   submit(s,word,'wrong again');assert.equal(s.session.repeats,i-1);next(s);
+   assert.equal(submit(s,word,word.word),i===goal?'repaired':'repair-progress');
+   s=loadState(JSON.stringify(s),entries);assert.equal(s.session.repeats,i);assert.equal(s.session.repairGoal,goal);assert.equal(s.session.phase,i===goal?'repaired':'repair');assert.equal(s.records[word.id].resolved,i===goal);assert.equal(s.settings.volume,.42);
+  }
+  next(s);submit(s,data.vocabulary[1],'wrong');assert.equal(s.session.repairGoal,2);assert.equal(s.session.repeats,0);
+ }
+});
+test('multi-repeat collocation repairs finish at their original recall and gap stages',()=>{
+ let s=emptyState();s.settings.repairGoal=3;start(s,'collocation',[lesson.id]);next(s);
+ for(const target of ['recall-ok','gap-ok']){
+  submit(s,lesson,'wrong');next(s);assert.equal(s.session.repeats,0);
+  for(let i=0;i<3;i++){submit(s,lesson,lesson.word);s=loadState(JSON.stringify(s),entries);}
+  assert.equal(s.session.phase,target);next(s);
+ }
+ assert.equal(s.session.phase,'write');assert.equal(s.records[lesson.id].completed,0);
+});
+test('legacy writing repairs keep one repetition and invalid settings cannot bypass practice',()=>{
+ const s=emptyState();start(s,'vocab',[word.id]);submit(s,word,'wrong');next(s);delete s.settings.volume;delete s.settings.repairGoal;delete s.session.repeats;delete s.session.repairGoal;
+ let r=loadState(JSON.stringify(s),entries);assert.equal(r.settings.volume,1);assert.equal(r.settings.repairGoal,1);assert.equal(r.session.repeats,0);assert.equal(submit(r,word,word.word),'repaired');
+ for(const bad of [0,-1,11,2.5,'3',null]){s.settings.repairGoal=bad;s.settings.volume=2;r=loadState(JSON.stringify(s),entries);assert.equal(r.settings.repairGoal,1);assert.equal(r.settings.volume,1);}
+ s.settings.volume=0;assert.equal(loadState(JSON.stringify(s),entries).settings.volume,0);
+});

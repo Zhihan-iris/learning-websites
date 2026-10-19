@@ -134,3 +134,33 @@ test('legacy synonym records migrate without losing totals or unresolved mistake
  assert.equal(p.session.phase,'study');assert.equal(p.session.ids[0],multi.id);
  const snapshot=JSON.stringify(p);assert.equal(migrateSynonymProgress(p,groups),false);assert.equal(JSON.stringify(p),snapshot);
 });
+
+test('custom repair goals preserve partial work and apply changed preferences to the next mistake',()=>{
+ for(const goal of [1,3,10]){
+  let p=setup();p.settings.repairGoal=goal;p.settings.volume=.37;
+  submitAnswer(p,words[0],'wrong');advance(p);p.settings.repairGoal=2;
+  for(let i=1;i<=goal;i++){
+   submitAnswer(p,words[0],'wrong again');assert.equal(p.session.repeats,i-1);advance(p);
+   submitAnswer(p,words[0],words[0].word);
+   p=loadProgress(JSON.stringify(p),words);
+   assert.equal(p.session.repeats,i);assert.equal(p.session.repairGoal,goal);
+   assert.equal(p.session.phase,i===goal?'repaired':'repairing');assert.equal(p.mistakes.a.resolved,i===goal);
+   assert.equal(p.settings.volume,.37);
+  }
+  advance(p);submitAnswer(p,words[1],'wrong');assert.equal(p.session.repairGoal,2);assert.equal(p.session.repeats,0);
+ }
+});
+test('old listening sessions retain five repetitions; invalid preferences fall back safely',()=>{
+ const p=setup();submitAnswer(p,words[0],'wrong');advance(p);submitAnswer(p,words[0],words[0].word);
+ delete p.settings.volume;delete p.settings.repairGoal;delete p.session.repairGoal;
+ let restored=loadProgress(JSON.stringify(p),words);assert.equal(restored.settings.volume,1);assert.equal(restored.settings.repairGoal,5);assert.equal(restored.session.repairGoal,5);assert.equal(restored.session.repeats,1);
+ for(const bad of [-1,11,1.5,'3',null]){p.settings.repairGoal=bad;p.settings.volume=2;restored=loadProgress(JSON.stringify(p),words);assert.equal(restored.settings.repairGoal,5);assert.equal(restored.settings.volume,1);}
+ p.settings.volume=0;assert.equal(loadProgress(JSON.stringify(p),words).settings.volume,0);
+});
+test('custom synonym goal counts complete groups, not individual matching expressions',()=>{
+ const p=emptyProgress();p.settings.repairGoal=2;startSession(p,[multi.id],false,multi);advance(p);
+ submitAnswer(p,multi,['incorrect']);advance(p);
+ submitAnswer(p,multi,[multi.answers[0].word]);assert.equal(p.session.repeats,0);advance(p);
+ const answers=multi.answers.map(a=>a.word);submitAnswer(p,multi,answers);assert.equal(p.session.repeats,1);assert.equal(p.session.phase,'repairing');
+ const restored=loadProgress(JSON.stringify(p),groups);submitAnswer(restored,multi,answers);assert.equal(restored.session.phase,'repaired');assert.equal(restored.session.repeats,2);
+});
