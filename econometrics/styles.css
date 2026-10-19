@@ -3,6 +3,6 @@
 .chapter-layout>*{min-width:0}.formula .katex-display{width:max-content;min-width:100%;text-align:left}.formula .katex-display>.katex{text-align:center}.chapter article p{overflow-wrap:anywhere}.chapter article p>.katex{display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;vertical-align:middle}
 @media(max-width:1100px){.chapter-layout{grid-template-columns:minmax(0,1fr)}}
 @media print{.formula .katex-display{width:auto;min-width:0}.formula .katex{white-space:normal}.chapter article p>.katex{overflow:visible}}
-/* Keep off-screen equation glyphs inside the workspace; equations retain their own scroll area. */
-.workspace{overflow-x:clip}
-@media print{.workspace{overflow:visible}}
+/* Contain KaTeX glyph overflow while preserving the formula’s own horizontal scroll. */
+.formula{contain:layout paint}
+@media print{.formula{contain:none}}
