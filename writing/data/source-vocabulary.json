@@ -1,0 +1,7985 @@
+[
+  {
+    "word": "educational institution",
+    "meaning": "教育机构",
+    "page": 2,
+    "y": 232.6,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "public school",
+    "meaning": "公立学校",
+    "page": 2,
+    "y": 232.6,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "educational status",
+    "meaning": "教育水平",
+    "page": 2,
+    "y": 252.8,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "further education",
+    "meaning": "深造",
+    "page": 2,
+    "y": 252.8,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "kindergarten",
+    "meaning": "幼儿园",
+    "page": 2,
+    "y": 273.0,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "general education",
+    "meaning": "通才教育",
+    "page": 2,
+    "y": 273.0,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "elementary / primary education",
+    "meaning": "初等教育 / 小学教育",
+    "page": 2,
+    "y": 293.1,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "career-oriented education",
+    "meaning": "职业导向教育",
+    "page": 2,
+    "y": 293.1,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "specialized education",
+    "meaning": "专科教育",
+    "page": 2,
+    "y": 313.3,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "secondary education",
+    "meaning": "中学教育",
+    "page": 2,
+    "y": 317.0,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "vocational and technical education",
+    "meaning": "职业教育技术教育",
+    "page": 2,
+    "y": 333.5,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "high school",
+    "meaning": "高中",
+    "page": 2,
+    "y": 337.2,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "academic qualification",
+    "meaning": "学历",
+    "page": 2,
+    "y": 353.7,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "higher education",
+    "meaning": "高等教育",
+    "page": 2,
+    "y": 357.3,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "boarding school",
+    "meaning": "寄宿学校",
+    "page": 2,
+    "y": 373.8,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "certificate",
+    "meaning": "证书",
+    "page": 2,
+    "y": 377.5,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "international school",
+    "meaning": "国际学校",
+    "page": 2,
+    "y": 394.0,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "diploma",
+    "meaning": "文凭",
+    "page": 2,
+    "y": 397.7,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "private/independent school",
+    "meaning": "私立学校",
+    "page": 2,
+    "y": 414.2,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "bachelor degree",
+    "meaning": "学士学位",
+    "page": 2,
+    "y": 417.8,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "special education school",
+    "meaning": "特殊教育学校",
+    "page": 2,
+    "y": 434.4,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "undergraduate",
+    "meaning": "本科/大学生",
+    "page": 2,
+    "y": 438.0,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "home school",
+    "meaning": "在家教育",
+    "page": 2,
+    "y": 454.5,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "graduate",
+    "meaning": "毕业生",
+    "page": 2,
+    "y": 458.2,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "comprehensive school",
+    "meaning": "综合学校",
+    "page": 2,
+    "y": 474.7,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "postgraduate",
+    "meaning": "研究生",
+    "page": 2,
+    "y": 478.4,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "research-based school",
+    "meaning": "研究型学校",
+    "page": 2,
+    "y": 494.9,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "master degree",
+    "meaning": "硕士学位",
+    "page": 2,
+    "y": 500.0,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "doctorate",
+    "meaning": "博士学位",
+    "page": 2,
+    "y": 517.9,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育体系及阶段"
+  },
+  {
+    "word": "well-educated people",
+    "meaning": "受过良好教育的人",
+    "page": 2,
+    "y": 584.8,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "analytical skills",
+    "meaning": "分析能力",
+    "page": 2,
+    "y": 584.8,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "overall development",
+    "meaning": "综合发展",
+    "page": 2,
+    "y": 605.0,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "communication skills",
+    "meaning": "交流能力",
+    "page": 2,
+    "y": 605.0,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "qualified labour forces",
+    "meaning": "合格的劳动力",
+    "page": 2,
+    "y": 625.2,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "cooperation skills",
+    "meaning": "合作能力",
+    "page": 2,
+    "y": 625.2,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "foster innovation",
+    "meaning": "激发创新",
+    "page": 2,
+    "y": 645.3,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "personal and professional growth",
+    "meaning": "个人和职业发展",
+    "page": 2,
+    "y": 645.3,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "discover interests",
+    "meaning": "发掘兴趣",
+    "page": 2,
+    "y": 665.5,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "shape personalities",
+    "meaning": "塑造性格",
+    "page": 2,
+    "y": 665.5,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "master cutting-edge technology",
+    "meaning": "掌握前沿科技",
+    "page": 2,
+    "y": 684.5,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "logical thinking",
+    "meaning": "逻辑思考",
+    "page": 2,
+    "y": 685.7,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "increase cross-cultural awareness",
+    "meaning": "增强跨文化意识",
+    "page": 2,
+    "y": 704.6,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "critical thinking",
+    "meaning": "辩证思考",
+    "page": 2,
+    "y": 705.9,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "develop expertise",
+    "meaning": "培养专业技能",
+    "page": 2,
+    "y": 726.0,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "a rapidly changing world",
+    "meaning": "快速变化的世界",
+    "page": 2,
+    "y": 728.5,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "promote literacy level",
+    "meaning": "提高读写能力",
+    "page": 2,
+    "y": 746.2,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "enrich/abundant experience",
+    "meaning": "丰富阅历",
+    "page": 2,
+    "y": 748.6,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "expand the scope of knowledge",
+    "meaning": "拓展知识面",
+    "page": 3,
+    "y": 72.8,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "increase cross-cultural awareness",
+    "meaning": "增强跨文化意识",
+    "page": 3,
+    "y": 72.8,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "prestigious universities",
+    "meaning": "著名大学",
+    "page": 3,
+    "y": 95.5,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "boost brain activities",
+    "meaning": "增加大脑活跃",
+    "page": 3,
+    "y": 97.7,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "expand horizons",
+    "meaning": "开阔视野",
+    "page": 3,
+    "y": 115.6,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "promote intelligence",
+    "meaning": "提高智力",
+    "page": 3,
+    "y": 117.8,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "have a broader view of life",
+    "meaning": "人生的视野更加开阔",
+    "page": 3,
+    "y": 135.8,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "a sense of accomplishment",
+    "meaning": "成就感",
+    "page": 3,
+    "y": 138.0,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "experience the world",
+    "meaning": "感受世界",
+    "page": 3,
+    "y": 156.0,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "quality of life",
+    "meaning": "生活质量",
+    "page": 3,
+    "y": 163.8,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "provide individual guidance",
+    "meaning": "提供个性化指导",
+    "page": 3,
+    "y": 176.2,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "become competitive in the workplace",
+    "meaning": "在工作中有竞争力",
+    "page": 3,
+    "y": 184.0,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "be tailored to students’ needs",
+    "meaning": "满足个性化的需要",
+    "page": 3,
+    "y": 196.3,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "distinguish right from wrong",
+    "meaning": "辨别是非",
+    "page": 3,
+    "y": 206.7,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "create learning environment",
+    "meaning": "创造学习环境",
+    "page": 3,
+    "y": 216.5,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "build one’s world value",
+    "meaning": "建立世界观",
+    "page": 3,
+    "y": 229.3,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "immediate feedback/response",
+    "meaning": "及时反馈/ 回应",
+    "page": 3,
+    "y": 236.7,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "be more open-minded",
+    "meaning": "更开放",
+    "page": 3,
+    "y": 249.5,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育的作用及帮助"
+  },
+  {
+    "word": "curriculum",
+    "meaning": "学校课程",
+    "page": 3,
+    "y": 327.6,
+    "x": 65,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "practical/specialist knowledge",
+    "meaning": "专业知识",
+    "page": 3,
+    "y": 327.6,
+    "x": 290,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "discipline",
+    "meaning": "学科",
+    "page": 3,
+    "y": 347.8,
+    "x": 65,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "engineering",
+    "meaning": "工科",
+    "page": 3,
+    "y": 347.8,
+    "x": 290,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "compulsory subjects",
+    "meaning": "必修课",
+    "page": 3,
+    "y": 367.9,
+    "x": 65,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "science",
+    "meaning": "理科",
+    "page": 3,
+    "y": 367.9,
+    "x": 290,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "selective subjects",
+    "meaning": "选修课",
+    "page": 3,
+    "y": 388.1,
+    "x": 65,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "arts",
+    "meaning": "文科",
+    "page": 3,
+    "y": 388.1,
+    "x": 290,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "a wide range of",
+    "meaning": "广泛的",
+    "page": 3,
+    "y": 408.3,
+    "x": 65,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "extra-curricular activities",
+    "meaning": "课外活动",
+    "page": 3,
+    "y": 408.3,
+    "x": 290,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "theoretical knowledge",
+    "meaning": "理论知识",
+    "page": 3,
+    "y": 428.4,
+    "x": 65,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "student union",
+    "meaning": "学生会",
+    "page": 3,
+    "y": 428.4,
+    "x": 290,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "pursue a hobby",
+    "meaning": "追求爱好",
+    "page": 3,
+    "y": 448.6,
+    "x": 65,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "community service",
+    "meaning": "社区服务",
+    "page": 3,
+    "y": 448.6,
+    "x": 290,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "leisure activities",
+    "meaning": "休闲活动",
+    "page": 3,
+    "y": 468.8,
+    "x": 65,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "volunteering activity",
+    "meaning": "志愿活动",
+    "page": 3,
+    "y": 468.8,
+    "x": 290,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "campus life/facilities",
+    "meaning": "校园生活/ 设施",
+    "page": 3,
+    "y": 489.0,
+    "x": 65,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "seminar",
+    "meaning": "讨论会",
+    "page": 3,
+    "y": 489.0,
+    "x": 290,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "join a club",
+    "meaning": "参加社团",
+    "page": 3,
+    "y": 509.1,
+    "x": 65,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "workshop",
+    "meaning": "研讨会",
+    "page": 3,
+    "y": 509.1,
+    "x": 290,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "sports centre",
+    "meaning": "运动中心",
+    "page": 3,
+    "y": 529.3,
+    "x": 65,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "internship",
+    "meaning": "实习",
+    "page": 3,
+    "y": 529.3,
+    "x": 290,
+    "topic": "教育类",
+    "section": "学校科目及校园活动"
+  },
+  {
+    "word": "online courses",
+    "meaning": "线上课",
+    "page": 3,
+    "y": 608.2,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "improve problem-solving abilities",
+    "meaning": "提高问题解决能力",
+    "page": 3,
+    "y": 608.2,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "remote education",
+    "meaning": "远程教育",
+    "page": 3,
+    "y": 628.4,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "easy access to information",
+    "meaning": "容易获取信息",
+    "page": 3,
+    "y": 632.0,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "become familiar with computer skills",
+    "meaning": "熟悉电脑技能",
+    "page": 3,
+    "y": 648.5,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "offer diverse learning options",
+    "meaning": "提供多样的学习选择",
+    "page": 3,
+    "y": 652.2,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "communicate online",
+    "meaning": "线上交流",
+    "page": 3,
+    "y": 672.4,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "adaptive learning techniques",
+    "meaning": "自适应学习技术",
+    "page": 3,
+    "y": 672.4,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "facilitate better hand-eye coordination",
+    "meaning": "激发手眼协调",
+    "page": 3,
+    "y": 692.6,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "excessive screen time",
+    "meaning": "过长的屏幕时间",
+    "page": 3,
+    "y": 692.6,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "hinder the social and emotional development",
+    "meaning": "影响社交和情感发展",
+    "page": 3,
+    "y": 712.7,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "cultural exchange and collaboration",
+    "meaning": "文化交流及共建",
+    "page": 3,
+    "y": 716.4,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "lacks the face-to-face interaction",
+    "meaning": "缺乏面对面互动",
+    "page": 3,
+    "y": 736.6,
+    "x": 290,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "meet one’s special needs",
+    "meaning": "满足个人特殊需求",
+    "page": 3,
+    "y": 740.2,
+    "x": 65,
+    "topic": "教育类",
+    "section": "教育与科技"
+  },
+  {
+    "word": "social rule",
+    "meaning": "社会规则",
+    "page": 4,
+    "y": 132.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "social activity",
+    "meaning": "社交活动",
+    "page": 4,
+    "y": 132.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "social norm",
+    "meaning": "社会规范",
+    "page": 4,
+    "y": 152.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "face-to-face communication",
+    "meaning": "面对面交流",
+    "page": 4,
+    "y": 152.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "social etiquette",
+    "meaning": "社交礼仪",
+    "page": 4,
+    "y": 173.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "a good impression",
+    "meaning": "好的印象",
+    "page": 4,
+    "y": 173.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "social bond",
+    "meaning": "社会关系",
+    "page": 4,
+    "y": 193.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "family activity",
+    "meaning": "家庭活动",
+    "page": 4,
+    "y": 193.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "social network",
+    "meaning": "社会关系网",
+    "page": 4,
+    "y": 213.3,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "quality time",
+    "meaning": "宝贵时光",
+    "page": 4,
+    "y": 213.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "interpersonal relationship",
+    "meaning": "人际关系",
+    "page": 4,
+    "y": 233.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "commitment",
+    "meaning": "责任",
+    "page": 4,
+    "y": 233.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "facial expression",
+    "meaning": "面部表情",
+    "page": 4,
+    "y": 253.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "a sense of belonging",
+    "meaning": "归属感",
+    "page": 4,
+    "y": 253.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "body language",
+    "meaning": "肢体语言",
+    "page": 4,
+    "y": 273.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "emotional support",
+    "meaning": "情感支持",
+    "page": 4,
+    "y": 273.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "misunderstanding",
+    "meaning": "误解",
+    "page": 4,
+    "y": 294.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "a sense of isolation",
+    "meaning": "孤立感",
+    "page": 4,
+    "y": 294.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "listen to others",
+    "meaning": "倾听别人",
+    "page": 4,
+    "y": 314.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "expand friend circle",
+    "meaning": "拓展朋友圈",
+    "page": 4,
+    "y": 314.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "mutual understanding and respect",
+    "meaning": "相互理解与尊重",
+    "page": 4,
+    "y": 334.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "marginalization",
+    "meaning": "边缘化",
+    "page": 4,
+    "y": 334.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "online social networking",
+    "meaning": "线上社交网络",
+    "page": 4,
+    "y": 354.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "a good communicator",
+    "meaning": "擅长沟通的人",
+    "page": 4,
+    "y": 357.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "integrate into the community",
+    "meaning": "融入社区",
+    "page": 4,
+    "y": 374.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "form strong relationships",
+    "meaning": "形成牢固的关系",
+    "page": 4,
+    "y": 377.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "real-life interaction",
+    "meaning": "真实世界互动",
+    "page": 4,
+    "y": 394.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "family life",
+    "meaning": "家庭生活",
+    "page": 4,
+    "y": 399.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "社交及关系"
+  },
+  {
+    "word": "cultural conflict /culture shock",
+    "meaning": "文化冲突",
+    "page": 4,
+    "y": 465.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "cultural exchange",
+    "meaning": "文化交流",
+    "page": 4,
+    "y": 465.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "dominant culture",
+    "meaning": "主流文化",
+    "page": 4,
+    "y": 485.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "national identity",
+    "meaning": "民族特征",
+    "page": 4,
+    "y": 489.3,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "mass culture",
+    "meaning": "大众文化",
+    "page": 4,
+    "y": 505.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "cultural assimilation",
+    "meaning": "文化趋同性",
+    "page": 4,
+    "y": 509.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "pop culture trend",
+    "meaning": "流行文化趋势",
+    "page": 4,
+    "y": 526.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "cultural diversity",
+    "meaning": "文化多样性",
+    "page": 4,
+    "y": 529.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "conservation of cultural relics",
+    "meaning": "保护文物",
+    "page": 4,
+    "y": 546.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "cultural integration",
+    "meaning": "文化融合",
+    "page": 4,
+    "y": 549.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "historical interest",
+    "meaning": "古迹",
+    "page": 4,
+    "y": 566.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "cultural heritage",
+    "meaning": "文化遗产",
+    "page": 4,
+    "y": 570.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "bilingual",
+    "meaning": "双语的",
+    "page": 4,
+    "y": 586.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "stereotype",
+    "meaning": "固有观念",
+    "page": 4,
+    "y": 590.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "multilingual society",
+    "meaning": "多语言社会",
+    "page": 4,
+    "y": 606.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "superstition",
+    "meaning": "迷信",
+    "page": 4,
+    "y": 610.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "language barrier",
+    "meaning": "语言障碍",
+    "page": 4,
+    "y": 626.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "traditional/conventional",
+    "meaning": "传统的",
+    "page": 4,
+    "y": 630.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "language preservation",
+    "meaning": "语言保护",
+    "page": 4,
+    "y": 647.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "foster cultural pride",
+    "meaning": "培养文化自信",
+    "page": 4,
+    "y": 650.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "language evolution",
+    "meaning": "语言进化",
+    "page": 4,
+    "y": 667.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "inspire artistic expressions",
+    "meaning": "启发艺术创作",
+    "page": 4,
+    "y": 670.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "linguistic research",
+    "meaning": "语言研究",
+    "page": 4,
+    "y": 687.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "modern art",
+    "meaning": "现代艺术",
+    "page": 4,
+    "y": 691.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "minority language",
+    "meaning": "小众语言",
+    "page": 4,
+    "y": 707.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "traditional art",
+    "meaning": "传统艺术",
+    "page": 4,
+    "y": 711.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "preservation of traditional knowledge",
+    "meaning": "保护传统知识",
+    "page": 4,
+    "y": 727.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "artistic expression",
+    "meaning": "艺术表达",
+    "page": 4,
+    "y": 731.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "linguistic right",
+    "meaning": "语言权利",
+    "page": 4,
+    "y": 750.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "interpretation of art",
+    "meaning": "艺术理解",
+    "page": 4,
+    "y": 751.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "cultural expression through art",
+    "meaning": "通过艺术传递文化",
+    "page": 5,
+    "y": 72.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "language revitalization",
+    "meaning": "语言复兴",
+    "page": 5,
+    "y": 72.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "official support",
+    "meaning": "官方支持",
+    "page": 5,
+    "y": 92.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "a medium for art",
+    "meaning": "艺术媒介",
+    "page": 5,
+    "y": 95.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "assistance from international community",
+    "meaning": "国际社会支持",
+    "page": 5,
+    "y": 112.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "linguistic diversity",
+    "meaning": "语言多样性",
+    "page": 5,
+    "y": 115.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "mother tongue",
+    "meaning": "母语",
+    "page": 5,
+    "y": 135.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "media promotion",
+    "meaning": "媒体传播",
+    "page": 5,
+    "y": 135.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "language acquisition",
+    "meaning": "语言习得",
+    "page": 5,
+    "y": 155.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "language documentation",
+    "meaning": "语言记录",
+    "page": 5,
+    "y": 155.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "文化、艺术及语言"
+  },
+  {
+    "word": "job market",
+    "meaning": "就业市场",
+    "page": 5,
+    "y": 223.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "apply skills to work",
+    "meaning": "将技能用于工作",
+    "page": 5,
+    "y": 223.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "labour market",
+    "meaning": "劳动力市场",
+    "page": 5,
+    "y": 244.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "increase productivity",
+    "meaning": "增加产出",
+    "page": 5,
+    "y": 244.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "job opportunity",
+    "meaning": "就业机会",
+    "page": 5,
+    "y": 264.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "tackle problems creatively",
+    "meaning": "有创造性地解决问题",
+    "page": 5,
+    "y": 264.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "employment rate",
+    "meaning": "就业率",
+    "page": 5,
+    "y": 284.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "make profits",
+    "meaning": "创造利润",
+    "page": 5,
+    "y": 284.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "improve job skills",
+    "meaning": "提高工作能力",
+    "page": 5,
+    "y": 304.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "workload",
+    "meaning": "工作量",
+    "page": 5,
+    "y": 304.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "workload",
+    "meaning": "工作量",
+    "page": 5,
+    "y": 324.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "working condition",
+    "meaning": "工作条件",
+    "page": 5,
+    "y": 324.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "work-life balance",
+    "meaning": "工作和生活的平衡",
+    "page": 5,
+    "y": 344.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "job satisfaction",
+    "meaning": "工作满意度",
+    "page": 5,
+    "y": 344.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "job security",
+    "meaning": "工作稳定性",
+    "page": 5,
+    "y": 365.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "managerial skill",
+    "meaning": "管理技能",
+    "page": 5,
+    "y": 367.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "loyalty",
+    "meaning": "忠诚",
+    "page": 5,
+    "y": 385.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "competency",
+    "meaning": "称职,能力",
+    "page": 5,
+    "y": 387.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "personal ambition",
+    "meaning": "个人野心",
+    "page": 5,
+    "y": 405.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "business leader",
+    "meaning": "商业领袖",
+    "page": 5,
+    "y": 407.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "flexible patterns of work",
+    "meaning": "灵活的工作模式",
+    "page": 5,
+    "y": 425.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "a decent income",
+    "meaning": "体面的收入",
+    "page": 5,
+    "y": 428.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "working relationship",
+    "meaning": "工作关系",
+    "page": 5,
+    "y": 445.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "a well-paid job",
+    "meaning": "高薪工作",
+    "page": 5,
+    "y": 447.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "working experience",
+    "meaning": "工作经验",
+    "page": 5,
+    "y": 465.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "a steady career",
+    "meaning": "稳定的职业",
+    "page": 5,
+    "y": 468.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "career enthusiasm",
+    "meaning": "事业热情",
+    "page": 5,
+    "y": 486.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "job prospect",
+    "meaning": "工作前景",
+    "page": 5,
+    "y": 488.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "get a pay rise",
+    "meaning": "涨薪",
+    "page": 5,
+    "y": 506.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "career path",
+    "meaning": "职业路径",
+    "page": 5,
+    "y": 508.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "repetitive work",
+    "meaning": "重复性的工作",
+    "page": 5,
+    "y": 526.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "achieve career success",
+    "meaning": "实现职场成功",
+    "page": 5,
+    "y": 528.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "job switching",
+    "meaning": "换工作",
+    "page": 5,
+    "y": 546.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "work at home",
+    "meaning": "远程办公",
+    "page": 5,
+    "y": 549.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "recruit experienced workers",
+    "meaning": "招聘有经验的员工",
+    "page": 5,
+    "y": 566.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "out of work",
+    "meaning": "失业",
+    "page": 5,
+    "y": 569.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "staff training",
+    "meaning": "员工培训",
+    "page": 5,
+    "y": 587.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "a sense of belonging",
+    "meaning": "归属感",
+    "page": 5,
+    "y": 589.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "specialize in one specific area",
+    "meaning": "专注在一个领域",
+    "page": 5,
+    "y": 607.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "mental and physical work",
+    "meaning": "脑力和体力劳动",
+    "page": 5,
+    "y": 609.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "工作与就业"
+  },
+  {
+    "word": "make a trip",
+    "meaning": "一次旅行",
+    "page": 5,
+    "y": 680.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "tourism industry",
+    "meaning": "旅游业",
+    "page": 5,
+    "y": 681.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "worth a visit",
+    "meaning": "值得去看看",
+    "page": 5,
+    "y": 700.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "tourist/traveller",
+    "meaning": "游客",
+    "page": 5,
+    "y": 702.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "travel experience",
+    "meaning": "旅游体验",
+    "page": 5,
+    "y": 720.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "tourist destination",
+    "meaning": "旅游胜地",
+    "page": 5,
+    "y": 722.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "transportation form",
+    "meaning": "交通方式",
+    "page": 5,
+    "y": 741.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "cultural attraction",
+    "meaning": "文化胜地",
+    "page": 5,
+    "y": 742.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "ravel budget",
+    "meaning": "旅游预算",
+    "page": 5,
+    "y": 761.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "travel expense",
+    "meaning": "旅游开销",
+    "page": 5,
+    "y": 762.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "tourist attraction",
+    "meaning": "旅游景点",
+    "page": 6,
+    "y": 76.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "travel agency",
+    "meaning": "旅游中介",
+    "page": 6,
+    "y": 76.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "travel package",
+    "meaning": "旅行套餐",
+    "page": 6,
+    "y": 96.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "carbon footprint",
+    "meaning": "碳排放",
+    "page": 6,
+    "y": 96.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "travel insurance",
+    "meaning": "旅游保险",
+    "page": 6,
+    "y": 116.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "greenhouse gas emission",
+    "meaning": "温室气体排放",
+    "page": 6,
+    "y": 116.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "local culture exploration",
+    "meaning": "当地文化探索",
+    "page": 6,
+    "y": 136.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "cultural commercialization",
+    "meaning": "文化商业化",
+    "page": 6,
+    "y": 136.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "souvenir",
+    "meaning": "纪念品",
+    "page": 6,
+    "y": 157.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "offend the host culture",
+    "meaning": "冒犯当地文化",
+    "page": 6,
+    "y": 157.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "wildlife safari",
+    "meaning": "野生动物观光",
+    "page": 6,
+    "y": 177.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "threat to the local culture",
+    "meaning": "威胁当地文化",
+    "page": 6,
+    "y": 177.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "sightseeing",
+    "meaning": "观光",
+    "page": 6,
+    "y": 197.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "public transportation",
+    "meaning": "公共交通",
+    "page": 6,
+    "y": 197.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "outdoor adventure",
+    "meaning": "户外探险",
+    "page": 6,
+    "y": 217.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "private transportation",
+    "meaning": "私人交通",
+    "page": 6,
+    "y": 217.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "promote international connection",
+    "meaning": "促进国际连接",
+    "page": 6,
+    "y": 237.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "commute",
+    "meaning": "通勤",
+    "page": 6,
+    "y": 237.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "transportation infrastructure",
+    "meaning": "交通基础建设",
+    "page": 6,
+    "y": 257.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "increase tourism revenue",
+    "meaning": "提高旅游收入",
+    "page": 6,
+    "y": 260.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "traffic congestion",
+    "meaning": "交通拥堵",
+    "page": 6,
+    "y": 278.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "provide job",
+    "meaning": "提供工作岗位",
+    "page": 6,
+    "y": 280.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "congestion tax",
+    "meaning": "交通拥堵税",
+    "page": 6,
+    "y": 298.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "investment in infrastructure",
+    "meaning": "基础设施投资",
+    "page": 6,
+    "y": 300.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "encourage green transportation",
+    "meaning": "鼓励绿色出行",
+    "page": 6,
+    "y": 318.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "safety concern",
+    "meaning": "安全隐患",
+    "page": 6,
+    "y": 323.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "broaden roads",
+    "meaning": "扩宽道路",
+    "page": 6,
+    "y": 341.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "transportation delay",
+    "meaning": "交通延误",
+    "page": 6,
+    "y": 343.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "clean energy vehicle",
+    "meaning": "清洁能源汽车",
+    "page": 6,
+    "y": 361.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "cultural difference",
+    "meaning": "文化差异",
+    "page": 6,
+    "y": 363.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "旅游与交通"
+  },
+  {
+    "word": "special effect",
+    "meaning": "特技效果",
+    "page": 6,
+    "y": 429.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "variety show",
+    "meaning": "综艺节目",
+    "page": 6,
+    "y": 430.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "box office",
+    "meaning": "票房",
+    "page": 6,
+    "y": 449.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "reality show",
+    "meaning": "真人秀",
+    "page": 6,
+    "y": 450.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "filmmaker",
+    "meaning": "电影人(制片人)",
+    "page": 6,
+    "y": 469.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "music concert",
+    "meaning": "音乐会",
+    "page": 6,
+    "y": 470.3,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "produce high-quality films",
+    "meaning": "制作高质量的电影",
+    "page": 6,
+    "y": 489.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "film industry",
+    "meaning": "电影行业",
+    "page": 6,
+    "y": 490.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "foster creativity",
+    "meaning": "促进创新",
+    "page": 6,
+    "y": 509.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "entertainment industry",
+    "meaning": "娱乐行业",
+    "page": 6,
+    "y": 510.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "provide laughter",
+    "meaning": "带来欢乐",
+    "page": 6,
+    "y": 530.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "domestically produced film",
+    "meaning": "国产电影",
+    "page": 6,
+    "y": 530.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "materialistic culture",
+    "meaning": "物质文化",
+    "page": 6,
+    "y": 550.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "locally produced film",
+    "meaning": "当地制作的电影",
+    "page": 6,
+    "y": 551.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "consumer society",
+    "meaning": "消费社会",
+    "page": 6,
+    "y": 570.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "video streaming media",
+    "meaning": "视频流媒体",
+    "page": 6,
+    "y": 571.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "excessive consumption",
+    "meaning": "过度消费",
+    "page": 6,
+    "y": 590.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "e-commerce",
+    "meaning": "电子商务",
+    "page": 6,
+    "y": 591.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "brand loyalty",
+    "meaning": "品牌忠诚度",
+    "page": 6,
+    "y": 610.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "live performance",
+    "meaning": "现场表演",
+    "page": 6,
+    "y": 611.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "status symbol",
+    "meaning": "地位的象征",
+    "page": 6,
+    "y": 630.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "enrich the culture",
+    "meaning": "丰富文化",
+    "page": 6,
+    "y": 631.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "throwaway society",
+    "meaning": "一次性(商品)社会",
+    "page": 6,
+    "y": 651.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "keep up with the trend",
+    "meaning": "紧跟潮流",
+    "page": 6,
+    "y": 651.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "impulsive buying",
+    "meaning": "冲动购买",
+    "page": 6,
+    "y": 671.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "escapism",
+    "meaning": "逃避现实",
+    "page": 6,
+    "y": 672.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "mass consumption",
+    "meaning": "大众消费",
+    "page": 6,
+    "y": 691.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "educational value",
+    "meaning": "教育意义",
+    "page": 6,
+    "y": 692.3,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "commercialization of society",
+    "meaning": "社会商业化",
+    "page": 6,
+    "y": 711.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "cultural preservation",
+    "meaning": "文化保护",
+    "page": 6,
+    "y": 712.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "encourage imagination",
+    "meaning": "激发想象力",
+    "page": 6,
+    "y": 732.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "消费及娱乐"
+  },
+  {
+    "word": "life skills",
+    "meaning": "生活技能",
+    "page": 7,
+    "y": 114.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "authentic international cuisine",
+    "meaning": "地道的国际食品",
+    "page": 7,
+    "y": 114.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "lifestyle",
+    "meaning": "生活方式",
+    "page": 7,
+    "y": 134.3,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "enhance cooking creativity",
+    "meaning": "增强烹饪的丰富性",
+    "page": 7,
+    "y": 134.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "a healthy diet",
+    "meaning": "健康的饮食",
+    "page": 7,
+    "y": 154.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "a balanced lifestyle",
+    "meaning": "均衡的生活方式",
+    "page": 7,
+    "y": 154.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "fresh ingredients",
+    "meaning": "新鲜的食材",
+    "page": 7,
+    "y": 174.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "fast food",
+    "meaning": "快餐",
+    "page": 7,
+    "y": 174.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "food prices",
+    "meaning": "食品价格",
+    "page": 7,
+    "y": 194.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "soft drink",
+    "meaning": "碳酸饮料",
+    "page": 7,
+    "y": 194.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "organic food",
+    "meaning": "有机食品",
+    "page": 7,
+    "y": 215.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "access to rare ingredients",
+    "meaning": "获得稀有食材",
+    "page": 7,
+    "y": 215.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "vegetarian lifestyle",
+    "meaning": "素食生活方式",
+    "page": 7,
+    "y": 235.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "support global farmers",
+    "meaning": "支持全球的农民",
+    "page": 7,
+    "y": 235.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "eco-friendly habit",
+    "meaning": "环保的习惯",
+    "page": 7,
+    "y": 255.3,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "cultural appreciation",
+    "meaning": "文化尊重",
+    "page": 7,
+    "y": 255.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "low-carb diet",
+    "meaning": "低碳饮食",
+    "page": 7,
+    "y": 275.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "environmental impact of transportation",
+    "meaning": "运输的环境影响",
+    "page": 7,
+    "y": 275.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "high-protein diet",
+    "meaning": "高蛋白饮食",
+    "page": 7,
+    "y": 295.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "loss of local agricultural diversity",
+    "meaning": "失去当地农业多样性",
+    "page": 7,
+    "y": 299.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "sugar-free diet",
+    "meaning": "无糖饮食",
+    "page": 7,
+    "y": 315.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "dependence on foreign markets",
+    "meaning": "依赖国外市场",
+    "page": 7,
+    "y": 323.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "locally sourced food",
+    "meaning": "当地食品",
+    "page": 7,
+    "y": 336.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "food contamination",
+    "meaning": "食品污染",
+    "page": 7,
+    "y": 343.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "imported food",
+    "meaning": "进口食品",
+    "page": 7,
+    "y": 356.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "higher cost",
+    "meaning": "更高的成本",
+    "page": 7,
+    "y": 363.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "food diversity",
+    "meaning": "食品多样性",
+    "page": 7,
+    "y": 376.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "lack of transparency",
+    "meaning": "来源不透明",
+    "page": 7,
+    "y": 383.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "exotic flavor",
+    "meaning": "异域风味",
+    "page": 7,
+    "y": 396.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "ethical concerns in production",
+    "meaning": "生产过程的伦理问题",
+    "page": 7,
+    "y": 403.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "expand food choices",
+    "meaning": "增加食品选择",
+    "page": 7,
+    "y": 416.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "overexploitation of natural resources",
+    "meaning": "过度开发自然资源",
+    "page": 7,
+    "y": 424.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "seasonal availability",
+    "meaning": "季节性",
+    "page": 7,
+    "y": 436.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "economic strain on local food producers",
+    "meaning": "当地食品生产者经济压力",
+    "page": 7,
+    "y": 446.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "unique food experience",
+    "meaning": "独特的食品体验",
+    "page": 7,
+    "y": 457.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "饮食及生活方式"
+  },
+  {
+    "word": "achieve fame",
+    "meaning": "成名",
+    "page": 7,
+    "y": 556.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "become world famous",
+    "meaning": "变得世界闻名",
+    "page": 7,
+    "y": 556.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "start from scratch",
+    "meaning": "白手起家",
+    "page": 7,
+    "y": 576.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "public figure",
+    "meaning": "公众人物",
+    "page": 7,
+    "y": 576.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "iconic figure",
+    "meaning": "标志性的人物",
+    "page": 7,
+    "y": 597.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "advocate for social justice",
+    "meaning": "提倡社会平等",
+    "page": 7,
+    "y": 597.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "pop culture icon",
+    "meaning": "流行文化标志",
+    "page": 7,
+    "y": 617.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "promote environmental conservation",
+    "meaning": "推广环境保护",
+    "page": 7,
+    "y": 617.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "movie stars",
+    "meaning": "电影明星",
+    "page": 7,
+    "y": 637.3,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "use fame for good causes",
+    "meaning": "利用名声做好事",
+    "page": 7,
+    "y": 641.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "pop singers",
+    "meaning": "流行歌手",
+    "page": 7,
+    "y": 657.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "support underprivileged communities",
+    "meaning": "支持贫困群体",
+    "page": 7,
+    "y": 661.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "sports stars",
+    "meaning": "体育明星",
+    "page": 7,
+    "y": 677.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "enhance cultural understanding",
+    "meaning": "增强文化理解",
+    "page": 7,
+    "y": 683.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "lead a luxurious lifestyle",
+    "meaning": "奢侈的生活方式",
+    "page": 7,
+    "y": 697.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "promote arts and culture",
+    "meaning": "推广艺术和文化",
+    "page": 7,
+    "y": 706.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "role model",
+    "meaning": "楷模",
+    "page": 7,
+    "y": 718.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "encourage materialism",
+    "meaning": "鼓励物质文化",
+    "page": 7,
+    "y": 726.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "cultivate image",
+    "meaning": "打造人设",
+    "page": 7,
+    "y": 738.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "body image concern",
+    "meaning": "个人形象问题",
+    "page": 7,
+    "y": 746.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "emulate idols",
+    "meaning": "模仿偶像",
+    "page": 8,
+    "y": 75.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "inspire acts of generosity",
+    "meaning": "激发慷慨的行为",
+    "page": 8,
+    "y": 75.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "devoted fan",
+    "meaning": "忠实粉丝",
+    "page": 8,
+    "y": 95.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "encourage self-confidence",
+    "meaning": "鼓励自信",
+    "page": 8,
+    "y": 95.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "scandal",
+    "meaning": "丑闻",
+    "page": 8,
+    "y": 116.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "reckless behavior",
+    "meaning": "鲁莽的行为",
+    "page": 8,
+    "y": 116.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "promote charitable causes",
+    "meaning": "促进慈善事业",
+    "page": 8,
+    "y": 136.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "extravagant spending",
+    "meaning": "奢侈的开销",
+    "page": 8,
+    "y": 136.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "celebrity worship",
+    "meaning": "名人崇拜",
+    "page": 8,
+    "y": 156.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "spread awareness",
+    "meaning": "传播意识",
+    "page": 8,
+    "y": 158.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "unhealthy competition",
+    "meaning": "不健康竞争",
+    "page": 8,
+    "y": 176.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "set positive examples",
+    "meaning": "树立积极的榜样",
+    "page": 8,
+    "y": 179.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "fame-seeking behavior",
+    "meaning": "追逐名利的行为",
+    "page": 8,
+    "y": 197.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "raise funds for charity",
+    "meaning": "为慈善筹资",
+    "page": 8,
+    "y": 201.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "名人及明星效应"
+  },
+  {
+    "word": "aging population",
+    "meaning": "老龄人口",
+    "page": 8,
+    "y": 292.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "ability to handle complex tasks",
+    "meaning": "能够解决复杂问题",
+    "page": 8,
+    "y": 292.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "elderly care",
+    "meaning": "老年人看护",
+    "page": 8,
+    "y": 312.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "aging society",
+    "meaning": "老龄化社会",
+    "page": 8,
+    "y": 312.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "senior citizen welfare",
+    "meaning": "老年居民福利",
+    "page": 8,
+    "y": 332.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "health issues",
+    "meaning": "健康问题",
+    "page": 8,
+    "y": 332.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "effective communication skills",
+    "meaning": "有效沟通",
+    "page": 8,
+    "y": 353.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "elderly isolation",
+    "meaning": "老年孤独感",
+    "page": 8,
+    "y": 355.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "resistance to change",
+    "meaning": "排斥变化",
+    "page": 8,
+    "y": 373.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "age discrimination",
+    "meaning": "年龄歧视",
+    "page": 8,
+    "y": 375.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "technology skills gap",
+    "meaning": "技术能力空缺",
+    "page": 8,
+    "y": 393.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "aging workforce",
+    "meaning": "老年劳动力",
+    "page": 8,
+    "y": 395.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "lack flexibility",
+    "meaning": "缺乏灵活性",
+    "page": 8,
+    "y": 413.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "pension fund",
+    "meaning": "养老金",
+    "page": 8,
+    "y": 415.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "higher healthcare costs",
+    "meaning": "更高的医疗开销",
+    "page": 8,
+    "y": 433.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "senior employee",
+    "meaning": "老年员工",
+    "page": 8,
+    "y": 436.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "difficulty in learning new skills",
+    "meaning": "难以学习新技能",
+    "page": 8,
+    "y": 454.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "experienced workforce",
+    "meaning": "有经验的劳动力",
+    "page": 8,
+    "y": 457.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "conflict with younger workers",
+    "meaning": "与年轻员工矛盾",
+    "page": 8,
+    "y": 474.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "work ethic",
+    "meaning": "职业道德",
+    "page": 8,
+    "y": 479.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "higher salary expectations",
+    "meaning": "更高的薪酬预期",
+    "page": 8,
+    "y": 494.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "reliable and dependable",
+    "meaning": "可靠",
+    "page": 8,
+    "y": 499.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "reduce career advancement opportunities for younger employees",
+    "meaning": "减少年轻人升值机会",
+    "page": 8,
+    "y": 514.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "stability in the workplace",
+    "meaning": "职场稳定性",
+    "page": 8,
+    "y": 520.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "effective problem-solving skills",
+    "meaning": "有效解决问题的能力",
+    "page": 8,
+    "y": 540.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "lack of diversity in perspectives",
+    "meaning": "缺乏观点多样性",
+    "page": 8,
+    "y": 548.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "leadership quality",
+    "meaning": "领导力才能",
+    "page": 8,
+    "y": 562.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "difficulty in relating to younger",
+    "meaning": "难以与年轻客户共情",
+    "page": 8,
+    "y": 568.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "reduce turnover rates",
+    "meaning": "减少离职率",
+    "page": 8,
+    "y": 583.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "reduced innovation and creativity",
+    "meaning": "更低的创新能力",
+    "page": 8,
+    "y": 588.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "lower training costs",
+    "meaning": "减少培训成本",
+    "page": 8,
+    "y": 603.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "enhance productivity",
+    "meaning": "增强生产力",
+    "page": 8,
+    "y": 625.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "老龄化现象"
+  },
+  {
+    "word": "Department of Health",
+    "meaning": "卫生部",
+    "page": 8,
+    "y": 720.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "impose a tax on",
+    "meaning": "(在某方面)征税",
+    "page": 8,
+    "y": 720.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "Ministry of Education",
+    "meaning": "教育部",
+    "page": 8,
+    "y": 740.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "safety measures",
+    "meaning": "安全措施",
+    "page": 8,
+    "y": 740.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "Department of Transportation",
+    "meaning": "交通部",
+    "page": 9,
+    "y": 76.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "avoid abusing power",
+    "meaning": "避免滥用权利",
+    "page": 9,
+    "y": 76.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "Environmental Protection Agency",
+    "meaning": "环境保护署",
+    "page": 9,
+    "y": 96.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "implement regulations",
+    "meaning": "落实制度",
+    "page": 9,
+    "y": 96.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "address domestic issues",
+    "meaning": "处理国内问题",
+    "page": 9,
+    "y": 116.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "Food and Drug Administration",
+    "meaning": "食品药品监督管理局",
+    "page": 9,
+    "y": 120.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "enforce regulations",
+    "meaning": "执行法规",
+    "page": 9,
+    "y": 136.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "Department of Justice",
+    "meaning": "司法部门",
+    "page": 9,
+    "y": 142.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "allocate resources",
+    "meaning": "分配资源",
+    "page": 9,
+    "y": 157.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "government intervention",
+    "meaning": "政府介入",
+    "page": 9,
+    "y": 163.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "regulate industries and businesses",
+    "meaning": "监管商业行为",
+    "page": 9,
+    "y": 177.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "government action",
+    "meaning": "政府行为",
+    "page": 9,
+    "y": 183.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "improve government services",
+    "meaning": "改进政府服务",
+    "page": 9,
+    "y": 201.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "official support",
+    "meaning": "政府支持",
+    "page": 9,
+    "y": 203.3,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "monitor progress",
+    "meaning": "监控进展",
+    "page": 9,
+    "y": 221.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "government initiative",
+    "meaning": "政府倡议",
+    "page": 9,
+    "y": 223.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "enhance public security",
+    "meaning": "提高公众安全",
+    "page": 9,
+    "y": 241.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "introduce laws",
+    "meaning": "颁布法律",
+    "page": 9,
+    "y": 244.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "foster international collaboration",
+    "meaning": "促进合作",
+    "page": 9,
+    "y": 261.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "make policies",
+    "meaning": "制定政策",
+    "page": 9,
+    "y": 264.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "combat corruption",
+    "meaning": "打击腐败",
+    "page": 9,
+    "y": 284.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "strengthen regulations on",
+    "meaning": "加强监管",
+    "page": 9,
+    "y": 284.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "reinforce surveillance",
+    "meaning": "加强监控",
+    "page": 9,
+    "y": 304.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府部门及制度"
+  },
+  {
+    "word": "allocate funding",
+    "meaning": "分配资金",
+    "page": 9,
+    "y": 407.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "promote economic growth",
+    "meaning": "促进经济增长",
+    "page": 9,
+    "y": 408.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "government budget",
+    "meaning": "政府预算",
+    "page": 9,
+    "y": 427.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "foster peace and stability",
+    "meaning": "促进和平与稳定",
+    "page": 9,
+    "y": 428.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "official investment",
+    "meaning": "官方投资",
+    "page": 9,
+    "y": 448.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "strengthen international cooperation",
+    "meaning": "加强国际合作",
+    "page": 9,
+    "y": 448.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "government sponsorship",
+    "meaning": "政府赞助",
+    "page": 9,
+    "y": 468.3,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "empower local communities",
+    "meaning": "授权当地社区",
+    "page": 9,
+    "y": 472.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "government support",
+    "meaning": "政府支持",
+    "page": 9,
+    "y": 488.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "dependency on aid",
+    "meaning": "对援助的依赖",
+    "page": 9,
+    "y": 492.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "government subsidy program",
+    "meaning": "政府补贴计划",
+    "page": 9,
+    "y": 508.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "corruption and mismanagement",
+    "meaning": "腐败和管理不善",
+    "page": 9,
+    "y": 513.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "financial aid",
+    "meaning": "财政援助",
+    "page": 9,
+    "y": 528.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "distortion of local markets",
+    "meaning": "扭曲当地市场",
+    "page": 9,
+    "y": 535.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "funding initiative",
+    "meaning": "资助计划",
+    "page": 9,
+    "y": 549.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "aid fatigue",
+    "meaning": "援助疲劳",
+    "page": 9,
+    "y": 555.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "humanitarian assistance",
+    "meaning": "人道主义援助",
+    "page": 9,
+    "y": 569.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "inequality and distribution issue",
+    "meaning": "不平等和分配问题",
+    "page": 9,
+    "y": 576.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "foreign aid",
+    "meaning": "外国援助",
+    "page": 9,
+    "y": 589.3,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "environmental degradation",
+    "meaning": "环境恶化",
+    "page": 9,
+    "y": 598.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "aid agencies",
+    "meaning": "援助机构",
+    "page": 9,
+    "y": 609.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "political manipulation",
+    "meaning": "政治操纵",
+    "page": 9,
+    "y": 618.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "aid workers",
+    "meaning": "援助人员",
+    "page": 9,
+    "y": 629.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "cultural homogenization",
+    "meaning": "文化同质化",
+    "page": 9,
+    "y": 638.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "emergency aid",
+    "meaning": "紧急援助",
+    "page": 9,
+    "y": 649.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "lack of sustainability",
+    "meaning": "可持续性缺乏",
+    "page": 9,
+    "y": 659.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "disaster relief",
+    "meaning": "灾难救济",
+    "page": 9,
+    "y": 670.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "aid transparency",
+    "meaning": "援助透明度",
+    "page": 9,
+    "y": 679.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "international donations",
+    "meaning": "国际捐款",
+    "page": 9,
+    "y": 690.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "alleviate poverty",
+    "meaning": "缓解贫困",
+    "page": 9,
+    "y": 699.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "bilateral aid",
+    "meaning": "双边援助",
+    "page": 9,
+    "y": 710.3,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "build infrastructure",
+    "meaning": "建设基础设施",
+    "page": 9,
+    "y": 719.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "multilateral aid",
+    "meaning": "多边援助",
+    "page": 9,
+    "y": 730.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "政府投资及国际援助"
+  },
+  {
+    "word": "issue legislation",
+    "meaning": "颁布法规",
+    "page": 10,
+    "y": 77.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "curb crime",
+    "meaning": "遏制犯罪",
+    "page": 10,
+    "y": 77.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "sound legal system",
+    "meaning": "健全的法律体制",
+    "page": 10,
+    "y": 98.0,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "prevent crime",
+    "meaning": "阻止犯罪",
+    "page": 10,
+    "y": 98.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "combat crime",
+    "meaning": "打击犯罪",
+    "page": 10,
+    "y": 118.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "criminal justice",
+    "meaning": "司法公正",
+    "page": 10,
+    "y": 120.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "a deterrent effect",
+    "meaning": "威慑作用",
+    "page": 10,
+    "y": 138.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "enact policy",
+    "meaning": "颁布政策",
+    "page": 10,
+    "y": 140.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "catch criminals",
+    "meaning": "抓捕罪犯",
+    "page": 10,
+    "y": 158.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "enforce the law",
+    "meaning": "执法",
+    "page": 10,
+    "y": 160.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "escape punishment",
+    "meaning": "逃避惩罚",
+    "page": 10,
+    "y": 178.9,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "take effect",
+    "meaning": "奏效",
+    "page": 10,
+    "y": 181.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "armed police",
+    "meaning": "武装警察",
+    "page": 10,
+    "y": 199.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "abide by the law",
+    "meaning": "守法",
+    "page": 10,
+    "y": 201.3,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "carry weapons",
+    "meaning": "携带武器",
+    "page": 10,
+    "y": 219.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "violate laws",
+    "meaning": "触犯法律",
+    "page": 10,
+    "y": 221.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "pay a fine",
+    "meaning": "支付罚款",
+    "page": 10,
+    "y": 239.4,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "commit a crime",
+    "meaning": "犯罪",
+    "page": 10,
+    "y": 242.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "serve a prison term",
+    "meaning": "服刑",
+    "page": 10,
+    "y": 259.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "crime rate",
+    "meaning": "犯罪率",
+    "page": 10,
+    "y": 262.5,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "vocational/job training",
+    "meaning": "职业培训",
+    "page": 10,
+    "y": 279.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "criminal tendency",
+    "meaning": "犯罪倾向",
+    "page": 10,
+    "y": 282.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "surveillance cameras",
+    "meaning": "视频监控",
+    "page": 10,
+    "y": 300.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "criminal/offender/convict/ prisoner/inmate",
+    "meaning": "罪犯",
+    "page": 10,
+    "y": 302.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "threaten social security",
+    "meaning": "威胁社会安全",
+    "page": 10,
+    "y": 320.1,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "organized crime",
+    "meaning": "有组织犯罪",
+    "page": 10,
+    "y": 326.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "violate privacy",
+    "meaning": "侵犯隐私",
+    "page": 10,
+    "y": 340.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "ex-prisoner/released prisoners/former inmate",
+    "meaning": "出狱的罪犯",
+    "page": 10,
+    "y": 346.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "victim",
+    "meaning": "受害者",
+    "page": 10,
+    "y": 360.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "first-time offender",
+    "meaning": "初犯",
+    "page": 10,
+    "y": 370.7,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "violence",
+    "meaning": "暴力",
+    "page": 10,
+    "y": 380.6,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "repeat criminal/recidivist",
+    "meaning": "惯犯",
+    "page": 10,
+    "y": 390.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "juvenile delinquency",
+    "meaning": "青少年犯罪",
+    "page": 10,
+    "y": 400.8,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "detention centre",
+    "meaning": "管教中心",
+    "page": 10,
+    "y": 411.1,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "be imprisoned",
+    "meaning": "监禁",
+    "page": 10,
+    "y": 421.0,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "correctional education",
+    "meaning": "矫正教育",
+    "page": 10,
+    "y": 431.2,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "be deprived of",
+    "meaning": "被剥夺",
+    "page": 10,
+    "y": 441.2,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "criminal record",
+    "meaning": "犯罪记录",
+    "page": 10,
+    "y": 451.4,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "release",
+    "meaning": "释放",
+    "page": 10,
+    "y": 461.3,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "kidnap",
+    "meaning": "抢劫",
+    "page": 10,
+    "y": 471.6,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "punishment/penalty",
+    "meaning": "惩罚",
+    "page": 10,
+    "y": 481.5,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "theft",
+    "meaning": "偷盗",
+    "page": 10,
+    "y": 491.8,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "surveillance",
+    "meaning": "监视,看守",
+    "page": 10,
+    "y": 501.7,
+    "x": 290,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "be brought to justice",
+    "meaning": "绳之以法",
+    "page": 10,
+    "y": 511.9,
+    "x": 65,
+    "topic": "社会生活类",
+    "section": "犯罪及惩罚"
+  },
+  {
+    "word": "urban development",
+    "meaning": "城市发展",
+    "page": 10,
+    "y": 655.3,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "city square",
+    "meaning": "市政广场",
+    "page": 10,
+    "y": 655.3,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "city planning",
+    "meaning": "城市规划",
+    "page": 10,
+    "y": 675.5,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "cultural center",
+    "meaning": "文化中心",
+    "page": 10,
+    "y": 675.5,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "urban design",
+    "meaning": "城市设计",
+    "page": 10,
+    "y": 695.7,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "shopping district",
+    "meaning": "购物区",
+    "page": 10,
+    "y": 695.7,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "architectural heritage",
+    "meaning": "建筑遗产",
+    "page": 10,
+    "y": 715.8,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "entertainment venue",
+    "meaning": "娱乐场所",
+    "page": 10,
+    "y": 715.8,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "public space",
+    "meaning": "公共空间",
+    "page": 10,
+    "y": 736.0,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "residential neighborhood",
+    "meaning": "住宅区",
+    "page": 10,
+    "y": 736.3,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "urban sprawl",
+    "meaning": "城市扩张",
+    "page": 10,
+    "y": 756.2,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "business district",
+    "meaning": "商业区",
+    "page": 10,
+    "y": 756.7,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "green space",
+    "meaning": "绿地",
+    "page": 11,
+    "y": 80.2,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "waterfront area",
+    "meaning": "滨水区",
+    "page": 11,
+    "y": 80.2,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "green belt",
+    "meaning": "绿地带",
+    "page": 11,
+    "y": 100.4,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "historic district",
+    "meaning": "历史街区",
+    "page": 11,
+    "y": 100.4,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "transportation infrastructure",
+    "meaning": "交通基础设施",
+    "page": 11,
+    "y": 120.5,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "religious site",
+    "meaning": "宗教场所",
+    "page": 11,
+    "y": 120.5,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "sports facility",
+    "meaning": "体育设施",
+    "page": 11,
+    "y": 140.7,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "historic preservation",
+    "meaning": "历史保护",
+    "page": 11,
+    "y": 143.2,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "transportation hub",
+    "meaning": "交通枢纽",
+    "page": 11,
+    "y": 160.9,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "urban renewal",
+    "meaning": "城市更新",
+    "page": 11,
+    "y": 163.4,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "industrial zone",
+    "meaning": "工业区",
+    "page": 11,
+    "y": 181.1,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "infrastructure development",
+    "meaning": "基础设施建设",
+    "page": 11,
+    "y": 183.5,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "boulevard (n.)",
+    "meaning": "林荫大道",
+    "page": 11,
+    "y": 201.2,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "high-density housing",
+    "meaning": "高密度住宅",
+    "page": 11,
+    "y": 206.2,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "highway and freeway",
+    "meaning": "高速公路",
+    "page": 11,
+    "y": 221.4,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "pedestrian-friendly environment",
+    "meaning": "步行友好环境",
+    "page": 11,
+    "y": 226.3,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "expressway (n.)",
+    "meaning": "快速公路",
+    "page": 11,
+    "y": 241.6,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "landmarks and monuments",
+    "meaning": "地标和纪念碑",
+    "page": 11,
+    "y": 250.2,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "pedestrian street",
+    "meaning": "步行街",
+    "page": 11,
+    "y": 261.8,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "parks and gardens",
+    "meaning": "公园和花园",
+    "page": 11,
+    "y": 272.8,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市建造相关"
+  },
+  {
+    "word": "economic growth",
+    "meaning": "经济增长",
+    "page": 11,
+    "y": 340.7,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "promotion of arts and cultural events",
+    "meaning": "推动艺术和文化活动",
+    "page": 11,
+    "y": 340.7,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "creation of employment in various sectors",
+    "meaning": "在各个领域创造就业机会",
+    "page": 11,
+    "y": 360.9,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "efficient public transportation systems",
+    "meaning": "高效的公共交通系统",
+    "page": 11,
+    "y": 360.9,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "promotion of urban farming",
+    "meaning": "推动城市农业",
+    "page": 11,
+    "y": 384.7,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "improve access to healthcare services",
+    "meaning": "改善医疗服务获取",
+    "page": 11,
+    "y": 394.3,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "loss of green spaces",
+    "meaning": "绿地丧失",
+    "page": 11,
+    "y": 404.9,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "enhance educational opportunities",
+    "meaning": "增强教育机会",
+    "page": 11,
+    "y": 418.2,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "increase traffic congestion and pollution",
+    "meaning": "交通拥堵和污染增加",
+    "page": 11,
+    "y": 425.1,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "cultural diversity and exchange",
+    "meaning": "文化多样性和交流",
+    "page": 11,
+    "y": 442.0,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "housing shortage",
+    "meaning": "住房短缺",
+    "page": 11,
+    "y": 448.9,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "technological advancements and innovation",
+    "meaning": "技术进步和创新",
+    "page": 11,
+    "y": 465.9,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "environmental degradation",
+    "meaning": "环境恶化",
+    "page": 11,
+    "y": 469.1,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "cultural homogenization",
+    "meaning": "文化同质化",
+    "page": 11,
+    "y": 489.3,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "improve transportation infrastructure",
+    "meaning": "改善的交通基础设施",
+    "page": 11,
+    "y": 489.7,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "mental health issue",
+    "meaning": "心理健康问题",
+    "page": 11,
+    "y": 509.4,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "access to better housing options",
+    "meaning": "获得更好的住房选择",
+    "page": 11,
+    "y": 513.5,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "loss of community and social bonds",
+    "meaning": "社区和社会联系的丧失",
+    "page": 11,
+    "y": 529.6,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "availability of public services",
+    "meaning": "公共服务的提供",
+    "page": 11,
+    "y": 537.4,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "climate change impact",
+    "meaning": "气候变化影响",
+    "page": 11,
+    "y": 552.3,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "vibrant urban space",
+    "meaning": "充满活力的城市空间",
+    "page": 11,
+    "y": 560.0,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "damage to historical and cultural heritage",
+    "meaning": "损害历史和文化遗产",
+    "page": 11,
+    "y": 572.4,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "development of recreational facilities",
+    "meaning": "娱乐设施的发展",
+    "page": 11,
+    "y": 582.6,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "overconsumption of resources",
+    "meaning": "资源过度消耗",
+    "page": 11,
+    "y": 596.3,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "opportunities for entrepreneurship",
+    "meaning": "创业的机会",
+    "page": 11,
+    "y": 606.5,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "more access to financial services",
+    "meaning": "更多金融服务",
+    "page": 11,
+    "y": 630.3,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "城市化的影响"
+  },
+  {
+    "word": "economic growth and development",
+    "meaning": "经济增长和发展",
+    "page": 11,
+    "y": 708.5,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "increase standard of living",
+    "meaning": "提高生活水平",
+    "page": 11,
+    "y": 708.5,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "environmental awareness and cooperation",
+    "meaning": "环境意识和合作",
+    "page": 11,
+    "y": 728.7,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "cultural exchange and diversity",
+    "meaning": "文化交流和多样性",
+    "page": 11,
+    "y": 732.3,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "economic inequality and exploitation",
+    "meaning": "经济不平等和剥削",
+    "page": 11,
+    "y": 752.5,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "technological advancements and innovation",
+    "meaning": "技术进步和创新",
+    "page": 11,
+    "y": 756.2,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "improve access to goods and services",
+    "meaning": "更好地获取商品和服务",
+    "page": 12,
+    "y": 79.2,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "cultural homogenization and loss of identity",
+    "meaning": "文化同质化和身份丧失",
+    "page": 12,
+    "y": 79.2,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "create employment opportunity",
+    "meaning": "创造就业机会",
+    "page": 12,
+    "y": 103.0,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "environmental degradation and pollution",
+    "meaning": "环境恶化和污染",
+    "page": 12,
+    "y": 103.0,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "access to global markets",
+    "meaning": "进入全球市场",
+    "page": 12,
+    "y": 126.9,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "job displacement and outsourcing",
+    "meaning": "工作岗位流失和外包",
+    "page": 12,
+    "y": 126.9,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "enhance communication and connectivity",
+    "meaning": "加强沟通和连接",
+    "page": 12,
+    "y": 149.5,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "social unrest and inequality",
+    "meaning": "社会动荡和不平等",
+    "page": 12,
+    "y": 150.7,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "health risks and pandemics",
+    "meaning": "健康风险和大流行病",
+    "page": 12,
+    "y": 170.9,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "improve healthcare and education",
+    "meaning": "改善医疗和教育",
+    "page": 12,
+    "y": 173.4,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "erosion of local cultures and languages",
+    "meaning": "地方文化和语言的侵蚀",
+    "page": 12,
+    "y": 191.1,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "loss of traditional skills and knowledge",
+    "meaning": "传统技能和知识的丧失",
+    "page": 12,
+    "y": 197.2,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "overdependence on global markets",
+    "meaning": "过度依赖全球市场",
+    "page": 12,
+    "y": 221.0,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "全球化的影响"
+  },
+  {
+    "word": "trade agreement",
+    "meaning": "贸易协定",
+    "page": 12,
+    "y": 296.1,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "poverty reduction",
+    "meaning": "贫困减少",
+    "page": 12,
+    "y": 296.1,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "import and export",
+    "meaning": "进口和出口",
+    "page": 12,
+    "y": 316.3,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "technology and knowledge transfer",
+    "meaning": "技术和知识转移",
+    "page": 12,
+    "y": 316.3,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "trade barrier",
+    "meaning": "贸易壁垒",
+    "page": 12,
+    "y": 336.4,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "global cooperation and peace promotion",
+    "meaning": "全球合作和和平促进",
+    "page": 12,
+    "y": 340.1,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "free trade",
+    "meaning": "自由贸易",
+    "page": 12,
+    "y": 356.6,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "cultural enrichment and preservation",
+    "meaning": "文化丰富和保护",
+    "page": 12,
+    "y": 363.9,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "trade deficit",
+    "meaning": "贸易逆差",
+    "page": 12,
+    "y": 376.8,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "improved standards of living",
+    "meaning": "改善生活水平",
+    "page": 12,
+    "y": 387.8,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "trade surplus",
+    "meaning": "贸易顺差",
+    "page": 12,
+    "y": 397.0,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "environmental protection and conservation",
+    "meaning": "环境保护和保护",
+    "page": 12,
+    "y": 407.9,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "trade partners",
+    "meaning": "贸易伙伴",
+    "page": 12,
+    "y": 417.1,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "economic dependence",
+    "meaning": "经济依赖性",
+    "page": 12,
+    "y": 431.8,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "trade route",
+    "meaning": "贸易路线",
+    "page": 12,
+    "y": 437.3,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "exploitation of resources and labor",
+    "meaning": "资源和劳工的剥削",
+    "page": 12,
+    "y": 452.7,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "trade policy",
+    "meaning": "贸易政策",
+    "page": 12,
+    "y": 458.2,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "environmental degradation and pollution",
+    "meaning": "环境恶化和污染",
+    "page": 12,
+    "y": 476.5,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "tourist attraction",
+    "meaning": "旅游景点",
+    "page": 12,
+    "y": 478.4,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "tourist destination",
+    "meaning": "旅游目的地",
+    "page": 12,
+    "y": 498.5,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "safety concern",
+    "meaning": "安全隐患",
+    "page": 12,
+    "y": 500.3,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "tourist accommodation",
+    "meaning": "旅游住宿",
+    "page": 12,
+    "y": 518.7,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "economic disparity",
+    "meaning": "经济差距",
+    "page": 12,
+    "y": 520.5,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "tourist activity",
+    "meaning": "旅游活动",
+    "page": 12,
+    "y": 538.9,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "cultural clashes and conflicts",
+    "meaning": "文化冲突和冲突",
+    "page": 12,
+    "y": 540.7,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "tourism industry",
+    "meaning": "旅游业",
+    "page": 12,
+    "y": 559.1,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "strain on infrastructure and public services",
+    "meaning": "基础设施和公共服务的压力",
+    "page": 12,
+    "y": 560.9,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "tourism revenue",
+    "meaning": "旅游收入",
+    "page": 12,
+    "y": 579.2,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "economic growth and development",
+    "meaning": "经济增长和发展",
+    "page": 12,
+    "y": 594.3,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "sustainable tourism",
+    "meaning": "可持续旅游",
+    "page": 12,
+    "y": 599.4,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "cultural exchange and understanding",
+    "meaning": "文化交流和理解",
+    "page": 12,
+    "y": 616.9,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "cultural tourism",
+    "meaning": "文化旅游",
+    "page": 12,
+    "y": 619.6,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "provide job opportunities",
+    "meaning": "创造就业机会",
+    "page": 12,
+    "y": 639.6,
+    "x": 290,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "ecotourism",
+    "meaning": "生态旅游",
+    "page": 12,
+    "y": 639.8,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "infrastructure development",
+    "meaning": "基础设施发展",
+    "page": 12,
+    "y": 659.9,
+    "x": 65,
+    "topic": "城市化和全球化",
+    "section": "国际旅游及国际贸易"
+  },
+  {
+    "word": "environmental issue",
+    "meaning": "环境议题",
+    "page": 13,
+    "y": 163.1,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "biodiversity (n.)",
+    "meaning": "生态多元化",
+    "page": 13,
+    "y": 163.1,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "environmental impact",
+    "meaning": "环境的影响",
+    "page": 13,
+    "y": 183.3,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "habitat (n.)",
+    "meaning": "栖息地",
+    "page": 13,
+    "y": 183.3,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "environmentally friendly",
+    "meaning": "环保的",
+    "page": 13,
+    "y": 203.5,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "natural selection",
+    "meaning": "自然选择",
+    "page": 13,
+    "y": 203.5,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "environmental benefit",
+    "meaning": "环境效益",
+    "page": 13,
+    "y": 223.6,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "carbon dioxide",
+    "meaning": "二氧化碳",
+    "page": 13,
+    "y": 223.6,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "live a sustainable life",
+    "meaning": "过环保的生活",
+    "page": 13,
+    "y": 243.8,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "greenhouse gas",
+    "meaning": "温室气体",
+    "page": 13,
+    "y": 243.8,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "conservation (n.)",
+    "meaning": "保护",
+    "page": 13,
+    "y": 264.0,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "environmental awareness",
+    "meaning": "环境意识",
+    "page": 13,
+    "y": 266.4,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "waste treatment",
+    "meaning": "垃圾处理",
+    "page": 13,
+    "y": 284.2,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "natural disaster",
+    "meaning": "自然灾害",
+    "page": 13,
+    "y": 286.6,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "sewage treatment",
+    "meaning": "污水处理",
+    "page": 13,
+    "y": 304.3,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "environment deterioration",
+    "meaning": "环境恶化",
+    "page": 13,
+    "y": 306.8,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "waste water",
+    "meaning": "废水",
+    "page": 13,
+    "y": 325.2,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "global warming",
+    "meaning": "全球变暖",
+    "page": 13,
+    "y": 327.7,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "recycle waste",
+    "meaning": "回收垃圾",
+    "page": 13,
+    "y": 345.4,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "climate change",
+    "meaning": "气候变化",
+    "page": 13,
+    "y": 347.9,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "household waste",
+    "meaning": "家庭垃圾",
+    "page": 13,
+    "y": 365.6,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "degradation (n.)",
+    "meaning": "退化",
+    "page": 13,
+    "y": 368.0,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "car exhaust",
+    "meaning": "汽车尾气",
+    "page": 13,
+    "y": 385.7,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "ecosystem (n.)",
+    "meaning": "生态系统",
+    "page": 13,
+    "y": 388.2,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "create exhaust fumes",
+    "meaning": "产生废气",
+    "page": 13,
+    "y": 405.9,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "ecological balance",
+    "meaning": "生态平衡",
+    "page": 13,
+    "y": 408.4,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "poisonous (adj.)",
+    "meaning": "有毒的",
+    "page": 13,
+    "y": 426.1,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "wild animals and plants",
+    "meaning": "野生动植物",
+    "page": 13,
+    "y": 428.6,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "chemical substance",
+    "meaning": "化学物质",
+    "page": 13,
+    "y": 446.3,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "flora and fauna",
+    "meaning": "动植物群",
+    "page": 13,
+    "y": 448.7,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "industrial pollutant",
+    "meaning": "工业污染物",
+    "page": 13,
+    "y": 466.4,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "natural resource",
+    "meaning": "自然资源",
+    "page": 13,
+    "y": 468.9,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "radiation (n.)",
+    "meaning": "辐射",
+    "page": 13,
+    "y": 486.6,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "deforestation (n.)",
+    "meaning": "森林退化",
+    "page": 13,
+    "y": 489.1,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "air pollution",
+    "meaning": "空气污染",
+    "page": 13,
+    "y": 506.8,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "reforestation (n.)",
+    "meaning": "再造森林",
+    "page": 13,
+    "y": 509.2,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "air quality",
+    "meaning": "空气质量",
+    "page": 13,
+    "y": 527.0,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "food chain",
+    "meaning": "食物链",
+    "page": 13,
+    "y": 529.4,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "face extinction",
+    "meaning": "面临灭绝",
+    "page": 13,
+    "y": 547.1,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "endangered species",
+    "meaning": "濒危物种",
+    "page": 13,
+    "y": 549.6,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "animal abuse",
+    "meaning": "虐待动物",
+    "page": 13,
+    "y": 567.3,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "die out",
+    "meaning": "灭绝",
+    "page": 13,
+    "y": 569.8,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "animal welfare groups",
+    "meaning": "动物权益团体",
+    "page": 13,
+    "y": 587.5,
+    "x": 290,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "extreme weather condition",
+    "meaning": "极端天气",
+    "page": 13,
+    "y": 589.9,
+    "x": 65,
+    "topic": "环境类",
+    "section": "污染及环保"
+  },
+  {
+    "word": "alternative energy source",
+    "meaning": "可替代能源",
+    "page": 13,
+    "y": 656.1,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "recycle",
+    "meaning": "循环",
+    "page": 13,
+    "y": 656.1,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "clean energy",
+    "meaning": "清洁能源",
+    "page": 13,
+    "y": 676.2,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "raw material",
+    "meaning": "原材料",
+    "page": 13,
+    "y": 676.2,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "renewable resources",
+    "meaning": "可再生资源",
+    "page": 13,
+    "y": 696.4,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "energy saving",
+    "meaning": "节能的",
+    "page": 13,
+    "y": 696.4,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "energy conservation",
+    "meaning": "节约能源",
+    "page": 13,
+    "y": 716.6,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "purify (v.)",
+    "meaning": "净化",
+    "page": 13,
+    "y": 716.6,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "energy consumption",
+    "meaning": "能源消耗",
+    "page": 13,
+    "y": 736.8,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "recycled water",
+    "meaning": "循环水",
+    "page": 13,
+    "y": 736.8,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "energy storage solution",
+    "meaning": "能源储存解决方案",
+    "page": 14,
+    "y": 72.9,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "desalination",
+    "meaning": "海水淡化",
+    "page": 14,
+    "y": 72.9,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "hydro energy",
+    "meaning": "水力",
+    "page": 14,
+    "y": 93.1,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "sustainable development goals",
+    "meaning": "可持续发展目标",
+    "page": 14,
+    "y": 95.5,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "solar energy",
+    "meaning": "太阳能",
+    "page": 14,
+    "y": 113.2,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "generate electricity",
+    "meaning": "发电",
+    "page": 14,
+    "y": 118.1,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "wind energy",
+    "meaning": "风能",
+    "page": 14,
+    "y": 133.4,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "sustainable material",
+    "meaning": "可持续材料",
+    "page": 14,
+    "y": 138.3,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "biomass energy",
+    "meaning": "生物质能源",
+    "page": 14,
+    "y": 153.6,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "electric car",
+    "meaning": "电动汽车",
+    "page": 14,
+    "y": 158.5,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "geothermal energy",
+    "meaning": "地热能",
+    "page": 14,
+    "y": 173.7,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "hybrid car",
+    "meaning": "混合能源汽车",
+    "page": 14,
+    "y": 178.7,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "tidal energy",
+    "meaning": "潮汐能",
+    "page": 14,
+    "y": 193.9,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "(traditional) fossil fuel",
+    "meaning": "传统化石燃料",
+    "page": 14,
+    "y": 201.3,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "energy efficiency",
+    "meaning": "能源效率",
+    "page": 14,
+    "y": 214.1,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "environmentally friendly materials",
+    "meaning": "环保材料",
+    "page": 14,
+    "y": 223.9,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "green buildings",
+    "meaning": "绿色建筑",
+    "page": 14,
+    "y": 235.0,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "energy-saving technology",
+    "meaning": "节能科技",
+    "page": 14,
+    "y": 247.8,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "sustainable transportation",
+    "meaning": "可持续交通",
+    "page": 14,
+    "y": 255.2,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "energy conservation",
+    "meaning": "节能",
+    "page": 14,
+    "y": 267.9,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "carbon footprint",
+    "meaning": "碳足迹",
+    "page": 14,
+    "y": 275.3,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "carbon emissions reduction",
+    "meaning": "减少碳排放",
+    "page": 14,
+    "y": 288.1,
+    "x": 65,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "green economy",
+    "meaning": "绿色经济",
+    "page": 14,
+    "y": 295.5,
+    "x": 290,
+    "topic": "环境类",
+    "section": "能源相关"
+  },
+  {
+    "word": "technological advance",
+    "meaning": "科技进步",
+    "page": 14,
+    "y": 441.0,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "produce videos",
+    "meaning": "制作视频",
+    "page": 14,
+    "y": 441.0,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "scientific institution",
+    "meaning": "科学机构",
+    "page": 14,
+    "y": 461.2,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "social networking websites",
+    "meaning": "社交媒体网站",
+    "page": 14,
+    "y": 461.2,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "technological innovation",
+    "meaning": "技术创新",
+    "page": 14,
+    "y": 481.4,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "social media",
+    "meaning": "社交媒体",
+    "page": 14,
+    "y": 481.4,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "technological breakthrough",
+    "meaning": "技术突破",
+    "page": 14,
+    "y": 501.5,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "video chat",
+    "meaning": "视频聊天",
+    "page": 14,
+    "y": 501.5,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "new technology",
+    "meaning": "新技术",
+    "page": 14,
+    "y": 521.7,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "virus invade",
+    "meaning": "病毒侵扰",
+    "page": 14,
+    "y": 521.7,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "cutting-edge technology",
+    "meaning": "高新技术",
+    "page": 14,
+    "y": 541.9,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "popularisation of PC",
+    "meaning": "电脑的普及",
+    "page": 14,
+    "y": 541.9,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "hi-tech industry",
+    "meaning": "高新技术产业",
+    "page": 14,
+    "y": 562.0,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "digital television",
+    "meaning": "数字电视",
+    "page": 14,
+    "y": 562.0,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "domestic robot",
+    "meaning": "家用机器人",
+    "page": 14,
+    "y": 582.2,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "robotic technology",
+    "meaning": "机器人科技",
+    "page": 14,
+    "y": 584.7,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "information overload",
+    "meaning": "信息超载",
+    "page": 14,
+    "y": 603.1,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "machine learning",
+    "meaning": "机器学习",
+    "page": 14,
+    "y": 605.6,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "updated information",
+    "meaning": "最新信息",
+    "page": 14,
+    "y": 623.3,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "autonomous learning",
+    "meaning": "自主学习",
+    "page": 14,
+    "y": 625.7,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "transfer data",
+    "meaning": "传递数据",
+    "page": 14,
+    "y": 643.5,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "artificial intelligence",
+    "meaning": "人工智能",
+    "page": 14,
+    "y": 645.9,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "self-driving automobile",
+    "meaning": "自动驾驶汽车",
+    "page": 14,
+    "y": 663.6,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "mobile device",
+    "meaning": "移动设备",
+    "page": 14,
+    "y": 666.1,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "database",
+    "meaning": "数据库",
+    "page": 14,
+    "y": 683.8,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "connect to the Internet",
+    "meaning": "联网",
+    "page": 14,
+    "y": 686.3,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "big data",
+    "meaning": "大数据",
+    "page": 14,
+    "y": 704.0,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "download software",
+    "meaning": "下载软件",
+    "page": 14,
+    "y": 706.4,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "algorithm",
+    "meaning": "算法",
+    "page": 14,
+    "y": 724.2,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "online communication",
+    "meaning": "在线交流",
+    "page": 14,
+    "y": 726.6,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "facial recognition",
+    "meaning": "面部识别",
+    "page": 14,
+    "y": 744.3,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "store information",
+    "meaning": "存储信息",
+    "page": 14,
+    "y": 746.8,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "process documents",
+    "meaning": "处理文件",
+    "page": 14,
+    "y": 767.0,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技发展及应用"
+  },
+  {
+    "word": "improve quality of life",
+    "meaning": "提高生活质量",
+    "page": 15,
+    "y": 113.5,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "expanded job opportunities",
+    "meaning": "扩大就业机会",
+    "page": 15,
+    "y": 113.5,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "enhance public safety",
+    "meaning": "提高公共安全性",
+    "page": 15,
+    "y": 133.7,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "increase convenience",
+    "meaning": "提高便利性",
+    "page": 15,
+    "y": 136.1,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "improve urban planning",
+    "meaning": "改善城市规划",
+    "page": 15,
+    "y": 153.9,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "enhance communication",
+    "meaning": "加强沟通",
+    "page": 15,
+    "y": 156.3,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "diversified entertainment options",
+    "meaning": "多样化的娱乐选择",
+    "page": 15,
+    "y": 174.0,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "increase efficiency",
+    "meaning": "提高效率",
+    "page": 15,
+    "y": 176.5,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "greater access to information",
+    "meaning": "更广泛的信息获取",
+    "page": 15,
+    "y": 196.7,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "advance research capabilities",
+    "meaning": "提高研究能力",
+    "page": 15,
+    "y": 197.9,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "increased lifespan",
+    "meaning": "延长寿命",
+    "page": 15,
+    "y": 218.0,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "enhance productivity",
+    "meaning": "提高生产力",
+    "page": 15,
+    "y": 219.3,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "accelerate energy consumption",
+    "meaning": "accelerate energy consumption",
+    "page": 15,
+    "y": 238.2,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "streamlined processes",
+    "meaning": "流程优化",
+    "page": 15,
+    "y": 239.5,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "advanced medical treatments",
+    "meaning": "先进的医疗治疗",
+    "page": 15,
+    "y": 259.6,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "increase job displacement",
+    "meaning": "增加工作岗位流失",
+    "page": 15,
+    "y": 262.0,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "improve transportation systems",
+    "meaning": "改善交通系统",
+    "page": 15,
+    "y": 282.3,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "cyberbullying and online harassment",
+    "meaning": "网络欺凌和在线骚扰",
+    "page": 15,
+    "y": 282.9,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "increase economic growth",
+    "meaning": "推动经济增长",
+    "page": 15,
+    "y": 306.1,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "privacy concern",
+    "meaning": "隐私问题",
+    "page": 15,
+    "y": 306.8,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "overdependence on technology",
+    "meaning": "对技术过度依赖",
+    "page": 15,
+    "y": 326.9,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "enhance creativity and innovation",
+    "meaning": "促进创造力和创新",
+    "page": 15,
+    "y": 328.8,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "environmental degradation",
+    "meaning": "环境恶化",
+    "page": 15,
+    "y": 350.8,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "isolation and social withdrawal",
+    "meaning": "孤立和社交退缩",
+    "page": 15,
+    "y": 352.6,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "loss of traditional skills",
+    "meaning": "传统技能的丧失",
+    "page": 15,
+    "y": 371.0,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "greater global connection",
+    "meaning": "加强全球连接",
+    "page": 15,
+    "y": 375.2,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "isolation and social withdrawal",
+    "meaning": "孤立和社交退缩",
+    "page": 15,
+    "y": 391.1,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "enhance disaster response",
+    "meaning": "加强灾害响应",
+    "page": 15,
+    "y": 397.9,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "prolonged screen time",
+    "meaning": "长的屏幕时间",
+    "page": 15,
+    "y": 411.3,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "enhance cultural exchange",
+    "meaning": "促进文化交流",
+    "page": 15,
+    "y": 420.5,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "security vulnerability",
+    "meaning": "安全漏洞",
+    "page": 15,
+    "y": 431.5,
+    "x": 290,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "facilitate remote work",
+    "meaning": "促进远程工作",
+    "page": 15,
+    "y": 443.1,
+    "x": 65,
+    "topic": "科技类",
+    "section": "科技影响"
+  },
+  {
+    "word": "advancements in rocket technology",
+    "meaning": "火箭技术的进步",
+    "page": 15,
+    "y": 541.1,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "environmental monitoring",
+    "meaning": "环境监测",
+    "page": 15,
+    "y": 541.1,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "potential for new resources",
+    "meaning": "潜在的新资源",
+    "page": 15,
+    "y": 561.3,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "exploration of mars",
+    "meaning": "火星探索",
+    "page": 15,
+    "y": 564.9,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "development of new materials",
+    "meaning": "开发新材料",
+    "page": 15,
+    "y": 581.4,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "international space station",
+    "meaning": "国际空间站",
+    "page": 15,
+    "y": 585.1,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "cultural enrichment through space exploration",
+    "meaning": "通过太空探索丰富文化",
+    "page": 15,
+    "y": 601.6,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "satellite communication systems",
+    "meaning": "卫星通信系统",
+    "page": 15,
+    "y": 605.3,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "human expansion into space",
+    "meaning": "人类对太空的扩展",
+    "page": 15,
+    "y": 625.4,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "space tourism",
+    "meaning": "太空旅游",
+    "page": 15,
+    "y": 629.1,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "high cost",
+    "meaning": "高昂的成本",
+    "page": 15,
+    "y": 645.6,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "asteroid mining",
+    "meaning": "小行星采矿",
+    "page": 15,
+    "y": 649.3,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "environmental impact",
+    "meaning": "环境影响",
+    "page": 15,
+    "y": 665.8,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "interplanetary trave",
+    "meaning": "行星间旅行",
+    "page": 15,
+    "y": 669.4,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "technological risk",
+    "meaning": "技术风险",
+    "page": 15,
+    "y": 686.0,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "space telescopes",
+    "meaning": "太空望远镜",
+    "page": 15,
+    "y": 689.6,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "ethical concern",
+    "meaning": "伦理问题",
+    "page": 15,
+    "y": 706.9,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "space colonies",
+    "meaning": "太空殖民地",
+    "page": 15,
+    "y": 710.5,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "resource exploitation",
+    "meaning": "资源开发",
+    "page": 15,
+    "y": 727.7,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "scientific discovery",
+    "meaning": "科学发现",
+    "page": 15,
+    "y": 730.7,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "technological innovations",
+    "meaning": "技术创新",
+    "page": 15,
+    "y": 750.9,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "global collaboration",
+    "meaning": "全球合作",
+    "page": 16,
+    "y": 56.8,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "militarization of space",
+    "meaning": "太空军事化",
+    "page": 16,
+    "y": 56.8,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "inspiration for future generations",
+    "meaning": "对未来一代的启发",
+    "page": 16,
+    "y": 77.0,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "competition and conflict",
+    "meaning": "竞争和冲突",
+    "page": 16,
+    "y": 77.0,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "safety hazard",
+    "meaning": "安全隐患",
+    "page": 16,
+    "y": 97.2,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "economic benefit",
+    "meaning": "经济利益",
+    "page": 16,
+    "y": 100.8,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "diversion of resources",
+    "meaning": "资源分散",
+    "page": 16,
+    "y": 117.3,
+    "x": 290,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "national pride and prestige",
+    "meaning": "国家自豪感和声望",
+    "page": 16,
+    "y": 121.0,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "space-based technology",
+    "meaning": "太空技术",
+    "page": 16,
+    "y": 143.6,
+    "x": 65,
+    "topic": "科技类",
+    "section": "太空探索相关"
+  },
+  {
+    "word": "media coverage",
+    "meaning": "媒体报道",
+    "page": 16,
+    "y": 298.0,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "go viral on the internet",
+    "meaning": "风靡网络",
+    "page": 16,
+    "y": 298.0,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "mass media",
+    "meaning": "大众媒体",
+    "page": 16,
+    "y": 318.1,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "live TV broadcast",
+    "meaning": "电视直播",
+    "page": 16,
+    "y": 318.1,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "the audience",
+    "meaning": "受众",
+    "page": 16,
+    "y": 338.3,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "live streaming",
+    "meaning": "直播",
+    "page": 16,
+    "y": 338.3,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "journalist/reporter",
+    "meaning": "记者",
+    "page": 16,
+    "y": 358.5,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "cable television channels",
+    "meaning": "有线电视频道",
+    "page": 16,
+    "y": 358.5,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "correspondent",
+    "meaning": "通讯员",
+    "page": 16,
+    "y": 378.6,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "propaganda (n.)",
+    "meaning": "政治宣传",
+    "page": 16,
+    "y": 378.9,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "copyright infringement",
+    "meaning": "侵犯版权",
+    "page": 16,
+    "y": 398.8,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "campaign for",
+    "meaning": "宣传",
+    "page": 16,
+    "y": 399.1,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "media insight",
+    "meaning": "媒体洞察",
+    "page": 16,
+    "y": 419.0,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "publicize (v.)",
+    "meaning": "公开",
+    "page": 16,
+    "y": 419.2,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "breaking news",
+    "meaning": "突发新闻",
+    "page": 16,
+    "y": 439.2,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "misleading information",
+    "meaning": "误导信息",
+    "page": 16,
+    "y": 439.4,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "deceptive (adj.)",
+    "meaning": "欺骗性的",
+    "page": 16,
+    "y": 459.6,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "exclusive report",
+    "meaning": "独家报道",
+    "page": 16,
+    "y": 460.1,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "violence and pornography",
+    "meaning": "暴力和色情",
+    "page": 16,
+    "y": 479.8,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "investigative journalism",
+    "meaning": "调查性新闻报道",
+    "page": 16,
+    "y": 480.2,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "trustworthy (adj.)",
+    "meaning": "可信的",
+    "page": 16,
+    "y": 499.9,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "front-page story",
+    "meaning": "头版新闻",
+    "page": 16,
+    "y": 502.9,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "in detail",
+    "meaning": "详尽的",
+    "page": 16,
+    "y": 520.1,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "live coverage",
+    "meaning": "现场报道",
+    "page": 16,
+    "y": 523.0,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "stereotype/bias",
+    "meaning": "偏见",
+    "page": 16,
+    "y": 540.3,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "news flash",
+    "meaning": "新闻快讯",
+    "page": 16,
+    "y": 543.2,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "objective report",
+    "meaning": "客观报道",
+    "page": 16,
+    "y": 560.5,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "press release",
+    "meaning": "新闻稿",
+    "page": 16,
+    "y": 563.4,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "subjective report",
+    "meaning": "主观报道",
+    "page": 16,
+    "y": 580.6,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "feature story",
+    "meaning": "特写报道",
+    "page": 16,
+    "y": 583.6,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "unbiased and impartial",
+    "meaning": "公正公平的",
+    "page": 16,
+    "y": 600.8,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "editorial piece",
+    "meaning": "社论",
+    "page": 16,
+    "y": 603.7,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "media hype",
+    "meaning": "炒作",
+    "page": 16,
+    "y": 621.0,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "opinion column",
+    "meaning": "评论专栏",
+    "page": 16,
+    "y": 623.9,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "code of ethics",
+    "meaning": "道德准则",
+    "page": 16,
+    "y": 641.1,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "informative (adj.)",
+    "meaning": "信息量大的",
+    "page": 16,
+    "y": 644.1,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及媒体报道"
+  },
+  {
+    "word": "internet censorship",
+    "meaning": "网络审查制度",
+    "page": 16,
+    "y": 708.2,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "prevent the spread of misinformation and fake news",
+    "meaning": "防止虚假信息和假新闻的传播",
+    "page": 16,
+    "y": 708.2,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "censorship (n.)",
+    "meaning": "审查制度",
+    "page": 16,
+    "y": 730.8,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "maintain social stability",
+    "meaning": "维护社会稳定",
+    "page": 16,
+    "y": 732.0,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "verification (n.)",
+    "meaning": "核实",
+    "page": 16,
+    "y": 751.0,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "promote cultural values and national identity",
+    "meaning": "促进文化价值观和民族认同",
+    "page": 16,
+    "y": 752.2,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "government supervision",
+    "meaning": "政府监督",
+    "page": 17,
+    "y": 72.9,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "control harmful content",
+    "meaning": "控制有害内容",
+    "page": 17,
+    "y": 72.9,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "censorship of the press",
+    "meaning": "新闻审查",
+    "page": 17,
+    "y": 93.1,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "prevent media monopoly",
+    "meaning": "防止媒体垄断",
+    "page": 17,
+    "y": 93.1,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "government control of media",
+    "meaning": "政府控制媒体",
+    "page": 17,
+    "y": 113.2,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "support government policies and initiatives",
+    "meaning": "支持政府政策和倡议",
+    "page": 17,
+    "y": 113.2,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "media manipulation",
+    "meaning": "媒体操纵",
+    "page": 17,
+    "y": 137.1,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "regulate media to serve public interest",
+    "meaning": "规范媒体以服务公众利益",
+    "page": 17,
+    "y": 137.1,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "propaganda machine",
+    "meaning": "宣传机器",
+    "page": 17,
+    "y": 157.2,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "suppress freedom of speech and expression",
+    "meaning": "压制言论和表达自由",
+    "page": 17,
+    "y": 160.9,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "state-run media",
+    "meaning": "官方媒体",
+    "page": 17,
+    "y": 177.4,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "lead to biased and one-sided reporting",
+    "meaning": "导致偏见和片面报道",
+    "page": 17,
+    "y": 184.7,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "media censorship laws",
+    "meaning": "媒体审查法",
+    "page": 17,
+    "y": 197.6,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "undermine public trust in media",
+    "meaning": "破坏公众对媒体的信任",
+    "page": 17,
+    "y": 208.6,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "control of information",
+    "meaning": "信息控制",
+    "page": 17,
+    "y": 217.8,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "limit media creativity",
+    "meaning": "限制媒体创新和创造力",
+    "page": 17,
+    "y": 232.4,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "media regulation",
+    "meaning": "媒体监管",
+    "page": 17,
+    "y": 237.9,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "create information silos",
+    "meaning": "创造信息茧房",
+    "page": 17,
+    "y": 252.6,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "restriction of media freedom",
+    "meaning": "限制媒体自由",
+    "page": 17,
+    "y": 258.1,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "ensure dissemination of accurate information",
+    "meaning": "确保传播准确信息",
+    "page": 17,
+    "y": 281.9,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "数媒管控"
+  },
+  {
+    "word": "shape public opinion",
+    "meaning": "影响公众舆论",
+    "page": 17,
+    "y": 373.1,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "direct public attention",
+    "meaning": "引导公众注意力",
+    "page": 17,
+    "y": 373.1,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "influence consumer behavior",
+    "meaning": "影响消费行为",
+    "page": 17,
+    "y": 393.2,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "drive social change",
+    "meaning": "推动社会变革",
+    "page": 17,
+    "y": 393.2,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "shape attitudes and beliefs",
+    "meaning": "塑造态度和信念",
+    "page": 17,
+    "y": 413.7,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "shape cultural norms",
+    "meaning": "塑造文化规范",
+    "page": 17,
+    "y": 417.1,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "spread misinformation",
+    "meaning": "传播错误信息",
+    "page": 17,
+    "y": 433.8,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "increase awareness",
+    "meaning": "增强意识",
+    "page": 17,
+    "y": 437.3,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "promote stereotypes",
+    "meaning": "促进刻板印象",
+    "page": 17,
+    "y": 454.0,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "foster debate",
+    "meaning": "促进辩论",
+    "page": 17,
+    "y": 457.4,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "sensationalized news",
+    "meaning": "煽动性报道新闻",
+    "page": 17,
+    "y": 474.2,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "generate public interest",
+    "meaning": "产生兴趣",
+    "page": 17,
+    "y": 477.6,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "create fear and panic",
+    "meaning": "制造恐惧和恐慌",
+    "page": 17,
+    "y": 494.4,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "influence political outcomes",
+    "meaning": "影响政治结果",
+    "page": 17,
+    "y": 497.8,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "promote materialism",
+    "meaning": "促进物质主义",
+    "page": 17,
+    "y": 514.5,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "shape public perception",
+    "meaning": "塑造公众看法",
+    "page": 17,
+    "y": 517.9,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "contribute to cultural erosion",
+    "meaning": "促成文化侵蚀",
+    "page": 17,
+    "y": 534.7,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "influence social trends",
+    "meaning": "影响社会趋势",
+    "page": 17,
+    "y": 538.8,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "foster political polarization",
+    "meaning": "促成政治两极分化",
+    "page": 17,
+    "y": 554.9,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "guide public behavior",
+    "meaning": "引导公众行为",
+    "page": 17,
+    "y": 559.0,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "invade privacy",
+    "meaning": "侵犯隐私",
+    "page": 17,
+    "y": 575.1,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "impact cultural values",
+    "meaning": "影响文化价值观",
+    "page": 17,
+    "y": 579.2,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "媒体及报道的作用"
+  },
+  {
+    "word": "advertisement agency",
+    "meaning": "广告公司",
+    "page": 17,
+    "y": 668.6,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "increase brand awareness",
+    "meaning": "提高品牌知名度",
+    "page": 17,
+    "y": 668.6,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "target audience",
+    "meaning": "目标受众",
+    "page": 17,
+    "y": 688.8,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "drive sales and revenue",
+    "meaning": "推动销售和收入增长",
+    "page": 17,
+    "y": 688.8,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "print advertisement",
+    "meaning": "印刷广告",
+    "page": 17,
+    "y": 709.0,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "educate consumers about products",
+    "meaning": "让消费者了解产品",
+    "page": 17,
+    "y": 709.0,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "television advertisement",
+    "meaning": "电视广告",
+    "page": 17,
+    "y": 729.2,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "support economic growth",
+    "meaning": "支持经济增长",
+    "page": 17,
+    "y": 732.8,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "online advertisement",
+    "meaning": "网络广告",
+    "page": 17,
+    "y": 749.3,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "social media advertisement",
+    "meaning": "社交媒体广告",
+    "page": 18,
+    "y": 57.5,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "provide information to consumers",
+    "meaning": "为消费者提供信息",
+    "page": 18,
+    "y": 57.5,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "outdoor advertisement",
+    "meaning": "户外广告",
+    "page": 18,
+    "y": 77.7,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "generate employment",
+    "meaning": "创造就业",
+    "page": 18,
+    "y": 77.7,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "mobile advertisement",
+    "meaning": "移动广告",
+    "page": 18,
+    "y": 97.9,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "introduce children to different perspectives",
+    "meaning": "让孩子接触不同的观点",
+    "page": 18,
+    "y": 97.9,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "direct mail advertisement",
+    "meaning": "直邮广告",
+    "page": 18,
+    "y": 118.0,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "teach valuable life skills and lessons",
+    "meaning": "教授宝贵的生活技能和经验",
+    "page": 18,
+    "y": 121.7,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "product placement",
+    "meaning": "植入广告",
+    "page": 18,
+    "y": 138.2,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "inspires curiosity",
+    "meaning": "激发好奇心",
+    "page": 18,
+    "y": 144.3,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "celebrity endorsement",
+    "meaning": "名人背书",
+    "page": 18,
+    "y": 158.4,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "develop decision-making skills",
+    "meaning": "帮助培养决策能力",
+    "page": 18,
+    "y": 164.5,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "product demonstration",
+    "meaning": "产品演示",
+    "page": 18,
+    "y": 178.6,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "lead to excessive consumption and waste",
+    "meaning": "导致过度消费和浪费",
+    "page": 18,
+    "y": 184.7,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "cross-promotion",
+    "meaning": "跨界推广",
+    "page": 18,
+    "y": 198.7,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "distract from educational",
+    "meaning": "影响教育",
+    "page": 18,
+    "y": 208.5,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "advertisement effectiveness",
+    "meaning": "广告效果",
+    "page": 18,
+    "y": 218.9,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "unrealistic expectation",
+    "meaning": "不切实际的期望",
+    "page": 18,
+    "y": 228.7,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "provide entertainment and enjoyment",
+    "meaning": "提供娱乐和乐趣",
+    "page": 18,
+    "y": 242.7,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "promotion of unhealthy product",
+    "meaning": "推广不健康产品",
+    "page": 18,
+    "y": 248.9,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "encourage materialism and consumerism",
+    "meaning": "激发物质主义和消费主义",
+    "page": 18,
+    "y": 266.6,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "conflicts between children and parents over purchases",
+    "meaning": "孩子和父母在购买方面发生冲突",
+    "page": 18,
+    "y": 268.0,
+    "x": 290,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "exploit children's vulnerability",
+    "meaning": "利用儿童的脆弱性",
+    "page": 18,
+    "y": 290.4,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "unhealthy or unattainable purchase",
+    "meaning": "不健康或不切实际的消费",
+    "page": 18,
+    "y": 314.3,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  },
+  {
+    "word": "create peer pressure",
+    "meaning": "创造同龄人的压力",
+    "page": 18,
+    "y": 338.1,
+    "x": 65,
+    "topic": "媒体类",
+    "section": "广告相关"
+  }
+]

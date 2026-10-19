@@ -1,4 +1,13 @@
-# Zhihan · 雅思听力练习室
+# Zhihan · 雅思学习网站
+
+本仓库分别发布两个独立网站：
+
+- [听力练习室](https://zhihan-iris.github.io/learning-websites/)：原有听力与同义替换练习。
+- [写作学习室](https://zhihan-iris.github.io/learning-websites/writing/)：高频词错后重写一次、场景搭配分步练习；详见 [写作站说明](writing/README.md)。
+
+两个网站的学习记录独立保存。以下为听力练习室说明。
+
+## Zhihan · 雅思听力练习室
 
 一个无需账号、无需构建的雅思听写网站。深色与金色界面，支持四份资料，共 **2,641 个练习单元**（其中同义替换为 840 组）。旧版场景词汇的 ID 与浏览器存储键保持不变，更新后仍可恢复原进度。
 
