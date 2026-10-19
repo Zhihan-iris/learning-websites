@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test listening/tests/*.test.js writing/tests/*.test.js",
+    "test": "node --test listening/tests/*.test.js writing/tests/*.test.js econometrics/tests/*.test.js",
     "start": "python3 -m http.server 4173"
   }
 }

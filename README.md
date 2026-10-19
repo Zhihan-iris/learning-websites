@@ -1,4 +1,4 @@
-# Zhihan · 雅思学习网站
+# Zhihan · 学习网站
 
 ## 音量与错题默写次数
 
@@ -11,12 +11,13 @@
 以下流程中的固定次数为默认设置示例。
 
 
-本仓库分别发布两个独立网站：
+本仓库分别发布三个独立网站：
 
+- [计量经济学学习室](https://zhihan-iris.github.io/learning-websites/econometrics/)：20 个单元、60 道自测、5 个交互实验、公式卡与学习笔记；详见 [计量站说明](econometrics/README.md)。
 - [听力练习室](https://zhihan-iris.github.io/learning-websites/listening/)：原有听力与同义替换练习。
 - [写作学习室](https://zhihan-iris.github.io/learning-websites/writing/)：高频词错后重写一次、场景搭配分步练习；详见 [写作站说明](writing/README.md)。
 
-两个网站的学习记录独立保存。以下为听力练习室说明。
+各网站的学习记录独立保存。以下为听力练习室说明。
 
 ## Zhihan · 雅思听力练习室
 
