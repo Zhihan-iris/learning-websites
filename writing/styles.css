@@ -57,3 +57,9 @@
 @media(max-width:620px){.course-groups,.group-preview .study-cards{grid-template-columns:1fr}.course-group h3{font-size:24px}.essay-paper{padding:24px 18px}.essay-prose{font-size:19px;line-height:1.95}.essay-prompt>p[lang=en]{font-size:19px}.essay-blank{padding:10px;margin:16px 0}.essay-blank input,.essay-blank textarea{font-size:16px}.study-card{padding:18px}.group-meta{font-size:11px}.essay-key h3{font-size:22px}}
 
 .side-bottom>a{display:block;margin:8px 0}
+
+/* Whole source ideas are learned as whole English sentences. */
+.sentence-card h3{font-size:23px;line-height:1.75}
+.sentence-reveal h2{font-size:28px;line-height:1.75}
+textarea#answer{min-height:170px;font-size:19px;line-height:1.8;resize:vertical}
+@media(max-width:620px){.sentence-card h3{font-size:21px}.sentence-reveal h2{font-size:23px}textarea#answer{font-size:17px;min-height:190px}}

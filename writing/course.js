@@ -10,3 +10,15 @@ export function retryEssay(state,essay,wrongOnly=true){const d=essayDraft(state,
 export function paragraphParts(essay,index){const text=essay.paragraphs[index].text;const gaps=essay.gaps.filter(g=>g.paragraph===index).map(g=>({...g,start:text.indexOf(g.answer)})).sort((a,b)=>a.start-b.start);let cursor=0,parts=[];for(const g of gaps){if(g.start<cursor)throw Error('Overlapping essay gaps');parts.push({text:text.slice(cursor,g.start)},{gap:g});cursor=g.start+g.answer.length;}parts.push({text:text.slice(cursor)});return parts;}
 export function nextGroupIds(group,state,size=0){const unseen=group.entryIds.filter(id=>!state.records[id]?.practised);const pool=unseen.length?unseen:group.entryIds;return pool.slice(0,size||pool.length);}
 export function groupProgress(group,state){return group.entryIds.filter(id=>state.records[id]?.practised>0).length;}
+
+// Retain past phrase scores; a newly composed sentence starts its own practice record.
+export function upgradeSentenceSession(state,replacements){
+ const s=state.session;
+ if(!s||s.kind!=='collocation'||s.phase==='complete')return false;
+ const remaining=s.ids.slice(s.index);
+ if(!remaining.some(id=>replacements[id]))return false;
+ if(s.draft?.trim())state.notes[s.ids[s.index]]=s.draft;
+ s.ids=[...new Set(remaining.map(id=>replacements[id]||id))];
+ Object.assign(s,{flow:'block',phase:'block-study',index:0,repeats:0,repairGoal:1,repairTarget:'correct',hadError:false,draft:'',lastAnswer:'',checks:[]});
+ return true;
+}

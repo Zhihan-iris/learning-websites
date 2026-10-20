@@ -7,7 +7,7 @@ const read=n=>JSON.parse(fs.readFileSync(new URL('../data/'+n,import.meta.url)))
 const course=read('course.json'),original=read('content.json'),source=read('source-collocations.json');
 const entries=[...original.vocabulary,...course.expressions],e=course.essays[0];
 test('all source expressions, vocabulary sections and collocation topics belong to complete groups',()=>{
- assert.equal(course.expressions.length,source.phrases.length);
+ assert.equal(course.meta.sourceRows,source.phrases.length);assert.ok(course.expressions.length<source.phrases.length);
  assert.deepEqual([...new Set(course.expressions.flatMap(x=>x.sources.map(s=>s.row)))].sort((a,b)=>a-b),source.phrases.map((_,i)=>i));
  const ids=new Set(entries.map(x=>x.id));assert.equal(ids.size,entries.length);
  const grouped=course.groups.flatMap(g=>g.entryIds);assert.equal(new Set(grouped).size,entries.length);assert.equal(grouped.length,entries.length);

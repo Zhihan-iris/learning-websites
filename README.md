@@ -15,7 +15,7 @@
 
 - [计量经济学学习室](https://zhihan-iris.github.io/learning-websites/econometrics/)：20 个单元、60 道自测、5 个交互实验、公式卡与学习笔记；详见 [计量站说明](econometrics/README.md)。
 - [听力练习室](https://zhihan-iris.github.io/learning-websites/listening/)：原有听力与同义替换练习。
-- [写作学习室](https://zhihan-iris.github.io/learning-websites/writing/)：28 个词汇板块、1,537 个场景表达、27 篇中文提示范文填空；详见 [写作站说明](writing/README.md)。
+- [写作学习室](https://zhihan-iris.github.io/learning-websites/writing/)：28 个词汇板块、覆盖 1,537 条来源表达的整句与短语学习、27 篇中文提示范文填空；详见 [写作站说明](writing/README.md)。
 
 各网站的学习记录独立保存。以下为听力练习室说明。
 
