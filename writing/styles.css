@@ -63,3 +63,17 @@
 .sentence-reveal h2{font-size:28px;line-height:1.75}
 textarea#answer{min-height:170px;font-size:19px;line-height:1.8;resize:vertical}
 @media(max-width:620px){.sentence-card h3{font-size:21px}.sentence-reveal h2{font-size:23px}textarea#answer{font-size:17px;min-height:190px}}
+
+/* Writing starts from meaning; pronunciation is an optional reference. */
+.translation-method{border-left:2px solid var(--gold);padding:14px 18px;background:#25231f;margin:20px 0}
+.translation-method strong{color:var(--gold);font-size:14px}.translation-method p{font-size:12px;color:var(--muted);margin:8px 0 0}
+.usage-guide{border-top:1px solid var(--line);margin:20px 0;padding:18px 0 0;overflow-wrap:anywhere}
+.usage-guide>h3{font:18px/1.5 var(--sans);color:var(--text);margin:0 0 15px}
+.usage-kind{font:11px var(--sans);color:var(--muted);margin:15px 0 10px}
+.usage-content .usage-pattern{font:17px/1.9 var(--sans);color:var(--gold);background:#111318;padding:14px 16px;border-left:2px solid #80663c;margin:12px 0 18px}
+.usage-content h4{font:500 13px/1.7 var(--sans);color:var(--text);margin:18px 0 8px}
+.usage-content ul{padding-left:20px;margin:8px 0 18px}.usage-content li{font:13px/1.9 var(--sans);color:var(--muted);margin:8px 0}
+.usage-example{padding:16px 18px;border:1px solid var(--line);background:#15171c;margin-top:20px}.usage-example p[lang=en]{font:20px/1.8 var(--serif);color:var(--text);margin:12px 0}.usage-example small{display:block;margin-top:10px}
+.usage-hint{margin:18px 0 25px}.usage-hint .usage-guide{margin-top:0;border-top:0;padding-top:5px}
+.sentence-components{margin-top:25px;border-top:1px solid var(--line);padding-top:6px}.sentence-components>details{margin:0}.sentence-components summary{font-size:14px;line-height:1.8}
+@media(max-width:620px){.usage-content .usage-pattern{font-size:15px;padding:12px}.usage-example{padding:14px}.usage-example p[lang=en]{font-size:18px}}
