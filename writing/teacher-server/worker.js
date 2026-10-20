@@ -9,7 +9,9 @@ export default {async fetch(request,env){
  const cors=response=>{const r=new Response(response.body,response);r.headers.set('Access-Control-Allow-Origin',origin);r.headers.set('Vary','Origin');r.headers.set('Access-Control-Allow-Headers','Authorization,Content-Type');r.headers.set('Access-Control-Allow-Methods','GET,POST,OPTIONS');return r;};
  if(request.method==='OPTIONS')return cors(new Response(null,{status:204}));
  try{
- if(!env.TEACHER_ACCESS_TOKEN||env.TEACHER_ACCESS_TOKEN.length<24||!env.TEACHER_GATE)return cors(json({error:'not_configured'},503));
+ if(!env.TEACHER_ACCESS_TOKEN)return cors(json({error:'access_token_missing'},503));
+ if(env.TEACHER_ACCESS_TOKEN.length<24)return cors(json({error:'access_token_too_short'},503));
+ if(!env.TEACHER_GATE)return cors(json({error:'storage_not_configured'},503));
  const auth=request.headers.get('Authorization')||'';if(auth.length>256||!await safeEqual(auth,'Bearer '+env.TEACHER_ACCESS_TOKEN))return cors(json({error:'unauthorized'},401));
  const path=new URL(request.url).pathname;
  if(path==='/models'&&request.method==='GET')return cors(json({providers:catalog(env),freeOnly:env.ALLOW_PAID_MODELS!=='true',limits:{concise:650,detailed:1100,dailyRequests:dailyLimit(env)}}));

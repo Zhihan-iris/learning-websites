@@ -24,6 +24,17 @@ test('CORS and access code are required before exposing models or calling the ba
  assert.equal((await worker.fetch(req('https://zhihan-iris.github.io','wrong'),ready)).status,401);
  const r=await worker.fetch(req('https://zhihan-iris.github.io',env.TEACHER_ACCESS_TOKEN),ready);assert.equal(r.status,200);assert.equal((await r.json()).providers.length,4);
 });
+test('configuration failures distinguish missing or short access codes from missing storage without exposing secrets',async()=>{
+ const req=()=>new Request('https://teacher.test/models',{headers:{Origin:'https://zhihan-iris.github.io'}});
+ for(const [config,error] of [
+  [{...env,TEACHER_ACCESS_TOKEN:'',TEACHER_GATE:{}},'access_token_missing'],
+  [{...env,TEACHER_ACCESS_TOKEN:'short-private-value',TEACHER_GATE:{}},'access_token_too_short'],
+  [{...env},'storage_not_configured']
+ ]){
+  const r=await worker.fetch(req(),config);assert.equal(r.status,503);assert.deepEqual(await r.json(),{error});
+ }
+ const r=await worker.fetch(req(),{...env,TEACHER_GATE:{}});assert.equal(r.status,401);
+});
 function storage(){const map=new Map();let tail=Promise.resolve();const db={get:async k=>structuredClone(map.get(k)),put:async(k,v)=>map.set(k,structuredClone(v)),transaction:fn=>{const call=tail.then(()=>fn(db));tail=call.catch(()=>{});return call;}};return db;}
 test('backend caches identical reviews, prevents concurrent duplicates and enforces daily quota',async()=>{
  const db=storage(),gate=new TeacherGate({storage:db},env),oldFetch=globalThis.fetch;let calls=0,release;
