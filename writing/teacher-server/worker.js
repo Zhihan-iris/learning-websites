@@ -12,7 +12,7 @@ export default {async fetch(request,env){
  if(!env.TEACHER_ACCESS_TOKEN||env.TEACHER_ACCESS_TOKEN.length<24||!env.TEACHER_GATE)return cors(json({error:'not_configured'},503));
  const auth=request.headers.get('Authorization')||'';if(auth.length>256||!await safeEqual(auth,'Bearer '+env.TEACHER_ACCESS_TOKEN))return cors(json({error:'unauthorized'},401));
  const path=new URL(request.url).pathname;
- if(path==='/models'&&request.method==='GET')return cors(json({providers:catalog(env),limits:{concise:650,detailed:1100,dailyRequests:dailyLimit(env)}}));
+ if(path==='/models'&&request.method==='GET')return cors(json({providers:catalog(env),freeOnly:env.ALLOW_PAID_MODELS!=='true',limits:{concise:650,detailed:1100,dailyRequests:dailyLimit(env)}}));
  if(path!=='/review'||request.method!=='POST')return cors(json({error:'not_found'},404));
  if(!request.headers.get('Content-Type')?.startsWith('application/json'))return cors(json({error:'invalid_input'},400));
  let raw,payload;try{raw=await boundedJSON(request);payload=compactPayload(raw);buildRequest(raw.provider,raw.model,payload,raw.detail,env);}catch{return cors(json({error:'invalid_input_or_model'},400));}
@@ -26,7 +26,7 @@ function dailyLimit(env){const n=Number(env.MAX_DAILY_REQUESTS);return Number.is
 export class TeacherGate{
  constructor(ctx,env){this.ctx=ctx;this.env=env;}
  async fetch(request){
- const raw=await request.json(),payload=compactPayload(raw),now=Date.now(),day=new Date(now).toISOString().slice(0,10),hash=await sha('teacher-v1|'+JSON.stringify(raw));
+ const raw=await request.json(),payload=compactPayload(raw),now=Date.now(),day=new Date(now).toISOString().slice(0,10),hash=await sha('teacher-free-v2|'+JSON.stringify(raw));
  const reservation=await this.ctx.storage.transaction(async tx=>{
  const s=await tx.get('budget')||{day,count:0,last:0,cache:{},pending:{}};if(s.day!==day){s.day=day;s.count=0;}
  for(const [k,v]of Object.entries(s.cache))if(now-v.at>86400000)delete s.cache[k];

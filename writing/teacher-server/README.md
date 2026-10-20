@@ -2,16 +2,25 @@
 
 此目录是可部署的 Cloudflare Worker。写作网站仍在 GitHub Pages；AI 密钥仅保存在 Worker Secrets 中。没有配置后台时，表达对照与本地订正仍可使用，页面不会伪造 AI 讲评。
 
-## 供应商选择
+## 当前配置：只用免费模型
+
+根据用户要求，`ALLOW_PAID_MODELS` 默认为 `false`。后台仅接受 OpenRouter 的 `openrouter/free` 或白名单内以 `:free` 结尾的具体模型；即使填了其他供应商密钥，也不能调用它们。每次请求另设置 `provider.max_price` 的输入、输出及单次请求价格上限均为 0，并关闭回退。免费模型下线、限流或额度耗尽时停止，不自动启用收费服务。
+
+目前的三个默认选项已于 2026-10-21 查询公开模型目录，输入和输出价格均为 0：`openrouter/free`、`minimax/minimax-m3.1-flash:free`、`google/gemma-4-31b-it:free`。免费路由实际选择的模型会显示在结果中；可用名单会变化，失效时应换另一个仍免费的模型，而不是去掉 `:free` 后缀。
+
+个人低频练习可以先使用免费额度，不需要充值启用付费模型。免费接口不承诺无限次数、固定速度或固定模型。不能把其他厂商的限时赠送额度当作持续免费接口。
+
+## 已实现的供应商适配（付费接口默认禁用）
 
 | 供应商 | Secret 名称 | 模型名单变量 | 接口 |
 | --- | --- | --- | --- |
+| OpenRouter 免费模型 | `OPENROUTER_API_KEY` | `OPENROUTER_MODELS` | Chat Completions，零价格上限 |
 | OpenAI | `OPENAI_API_KEY` | `OPENAI_MODELS` | Chat Completions |
 | DeepSeek | `DEEPSEEK_API_KEY` | `DEEPSEEK_MODELS` | Chat Completions，关闭可选思考 |
 | 通义千问 / 百炼 | `QWEN_API_KEY` | `QWEN_MODELS` | OpenAI 兼容接口，关闭可选思考 |
 | Claude / Anthropic | `ANTHROPIC_API_KEY` | `ANTHROPIC_MODELS` | Messages API，不开启扩展思考 |
 
-只需开通其中一家；其他留空。每家的模型名单用英文逗号隔开，填写该账号控制台中实际可用的模型 ID。网站会读取这份白名单，让你选择不同供应商及模型；前端不能绕过名单。优先把适合短文本讲评、不强制长推理的模型放在前面。模型权限、价格、地区可用性及 API 额度以各供应商为准，网页订阅不等于 API 额度。
+本次只需开通 OpenRouter，其他密钥留空。每家的模型名单用英文逗号隔开，填写该账号控制台中实际可用的模型 ID。网站会读取这份白名单，让你选择不同供应商及模型；前端不能绕过名单。优先把适合短文本讲评、不强制长推理的模型放在前面。模型权限、价格、地区可用性及 API 额度以各供应商为准，网页订阅不等于 API 额度。
 
 百炼的 `QWEN_REGION` 可选 `beijing`、`singapore`、`virginia`，必须与 API Key 所属地域一致。Claude 多工作区密钥可额外设置 `ANTHROPIC_WORKSPACE_ID`。端点在代码中固定，网页不会接收或转发任意上游地址。
 
@@ -20,19 +29,16 @@
 在本仓库根目录运行。先登录自己的 Cloudflare 账号：
 
 ```sh
-npx wrangler@4 login
+NODE_EXTRA_CA_CERTS=/etc/ssl/cert.pem npx wrangler@4 login --use-keyring --scopes account:read user:read workers:write workers_scripts:write
 ```
 
-1. 编辑 `writing/teacher-server/wrangler.jsonc` 的模型名单。文件只放模型 ID、允许来源、次数上限等非秘密配置。可先只配置一个供应商。
+1. 编辑 `writing/teacher-server/wrangler.jsonc` 的模型名单。文件只放模型 ID、允许来源、次数上限等非秘密配置。当前保留已配置的三个免费模型即可。
 2. 在终端隐藏输入对应供应商密钥，以及你自己设置的至少 24 字符随机学习室访问口令（它不是供应商 API Key）：
 
 ```sh
 npx wrangler@4 secret put TEACHER_ACCESS_TOKEN --config writing/teacher-server/wrangler.jsonc
-# 只执行你要使用的供应商；不要把真实密钥放入命令参数、Git 文件或聊天。
-npx wrangler@4 secret put OPENAI_API_KEY --config writing/teacher-server/wrangler.jsonc
-npx wrangler@4 secret put DEEPSEEK_API_KEY --config writing/teacher-server/wrangler.jsonc
-npx wrangler@4 secret put QWEN_API_KEY --config writing/teacher-server/wrangler.jsonc
-npx wrangler@4 secret put ANTHROPIC_API_KEY --config writing/teacher-server/wrangler.jsonc
+# 只配置免费模型供应商；不要把真实密钥放入命令参数、Git 文件或聊天。
+npx wrangler@4 secret put OPENROUTER_API_KEY --config writing/teacher-server/wrangler.jsonc
 ```
 
 首次添加 Secret 若提示创建 Worker，确认创建即可。也可先部署未配置密钥的 Worker；它会拒绝讲评请求。
@@ -68,6 +74,8 @@ npx wrangler@4 deploy --dry-run --config writing/teacher-server/wrangler.jsonc
 
 自动测试覆盖四供应商请求构造、token 上限、模型白名单、来源和口令验证、缓存去重、日限额、截断/异常响应，以及原写作学习流程。浏览器验证使用模拟模型返回，不代表真实密钥、账号额度或模型质量已验证。部署后应手动调用一次并查看实际用量。
 
-供应商原始错误不会直接返回页面，避免泄露密钥或内部请求信息；页面只显示可行动的错误类型。变更模型名单或提示后部署 Worker；改变讲评规则时升级 `teacher-v1` 缓存版本，同时更新前端缓存命名。
+供应商原始错误不会直接返回页面，避免泄露密钥或内部请求信息；页面只显示可行动的错误类型。变更模型名单或提示后部署 Worker；改变讲评规则时升级 `teacher-free-v2` 缓存版本，同时更新前端缓存命名。
 
 官方接口说明：[OpenAI](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create)、[DeepSeek](https://api-docs.deepseek.com/api/create-chat-completion/)、[百炼](https://help.aliyun.com/zh/model-studio/compatibility-of-openai-with-dashscope)、[Claude](https://platform.claude.com/docs/en/api/overview)、[Cloudflare Secrets](https://developers.cloudflare.com/workers/configuration/secrets/)。
+
+免费模式依据：[OpenRouter 免费路由](https://openrouter.ai/docs/guides/routing/routers/free-router)、[价格上限及路由](https://openrouter.ai/docs/guides/routing/provider-selection)、[免费额度及限流](https://openrouter.ai/docs/api_reference/limits)。

@@ -1,7 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import worker,{TeacherGate} from '../teacher-server/worker.js';
 import {catalog,buildRequest,compactPayload,parseReview} from '../teacher-server/providers.js';
-const env={TEACHER_ACCESS_TOKEN:'test-access-code-24-characters',OPENAI_API_KEY:'test-openai',OPENAI_MODELS:'test-small,test-large',DEEPSEEK_API_KEY:'test-deepseek',DEEPSEEK_MODELS:'test-chat',QWEN_API_KEY:'test-qwen',QWEN_MODELS:'test-qwen',ANTHROPIC_API_KEY:'test-anthropic',ANTHROPIC_MODELS:'test-claude',MAX_DAILY_REQUESTS:'2'};
+const env={ALLOW_PAID_MODELS:'true',TEACHER_ACCESS_TOKEN:'test-access-code-24-characters',OPENAI_API_KEY:'test-openai',OPENAI_MODELS:'test-small,test-large',DEEPSEEK_API_KEY:'test-deepseek',DEEPSEEK_MODELS:'test-chat',QWEN_API_KEY:'test-qwen',QWEN_MODELS:'test-qwen',ANTHROPIC_API_KEY:'test-anthropic',ANTHROPIC_MODELS:'test-claude',MAX_DAILY_REQUESTS:'2'};
 const payload={answer:'rely in parents',reference:'rely on parents',meaning:'依靠父母',context:'',usage:'rely on + 对象',contextCue:false};
 const review={verdict:'needs_revision',summary:'介词搭配需要调整。',issues:[{before:'in',after:'on',reason:'rely on 表示依靠。'}],revision:'rely on parents',tip:'记忆 rely on + 对象。'};
 const response={choices:[{finish_reason:'stop',message:{content:JSON.stringify(review)}}],usage:{prompt_tokens:200,completion_tokens:100}};
@@ -36,4 +36,16 @@ test('backend caches identical reviews, prevents concurrent duplicates and enfor
  assert.equal((await gate.fetch(req('rely for parents'))).status,429);
  const budget=await db.get('budget');budget.count=2;budget.last=0;await db.put('budget',budget);const limited=await gate.fetch(req('rely for parents'));assert.equal((await limited.json()).error,'daily_limit');assert.equal(calls,1);
  }finally{globalThis.fetch=oldFetch;}
+});
+
+
+test('free-only mode blocks paid providers and paid model IDs even when keys exist',()=>{
+ const free={...env,ALLOW_PAID_MODELS:'false',OPENROUTER_API_KEY:'test-router',OPENROUTER_MODELS:'openrouter/free,test/model:free,test/paid'};
+ const list=catalog(free);assert.equal(list.length,1);assert.deepEqual(list[0].models,['openrouter/free','test/model:free']);
+ assert.throws(()=>buildRequest('openai','test-small',payload,'concise',free));assert.throws(()=>buildRequest('openrouter','test/paid',payload,'concise',free));
+ const req=buildRequest('openrouter','test/model:free',payload,'concise',free);assert.deepEqual(req.body.provider.max_price,{prompt:0,completion:0,request:0});assert.equal(req.body.provider.allow_fallbacks,false);assert.equal(req.body.provider.require_parameters,true);assert.equal(req.body.max_tokens,650);
+ const unset={...free};delete unset.ALLOW_PAID_MODELS;assert.deepEqual(catalog(unset),list);
+});
+test('model identity in a free router response is preserved for the learner',()=>{
+ assert.equal(parseReview('openrouter',{...response,model:'test/actual:free'}).actualModel,'test/actual:free');
 });
