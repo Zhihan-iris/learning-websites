@@ -1,0 +1,17 @@
+{
+  "name": "zhihan-writing-teacher",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-20",
+  "workers_dev": true,
+  "vars": {
+    "ALLOWED_ORIGINS": "https://zhihan-iris.github.io",
+    "MAX_DAILY_REQUESTS": "40",
+    "OPENAI_MODELS": "",
+    "DEEPSEEK_MODELS": "",
+    "QWEN_MODELS": "",
+    "QWEN_REGION": "beijing",
+    "ANTHROPIC_MODELS": ""
+  },
+  "durable_objects": {"bindings": [{"name": "TEACHER_GATE", "class_name": "TeacherGate"}]},
+  "migrations": [{"tag": "v1", "new_sqlite_classes": ["TeacherGate"]}]
+}
