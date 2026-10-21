@@ -31,3 +31,17 @@ test('teacher requests contextual grammar and phrase corrections, not reference 
  const p=teacherPrompt({answer:'provide students for support',entry:{word:'provide students with support',meaning:'为学生提供支持'},context:'Education'});
  for(const text of ['provide students for support','正确的替代表达','Education','JSON','禁止逐词对齐','不计作错误','最小订正'])assert.ok(p.includes(text));
 });
+
+test('AI acceptance requires all four criteria and applies only to the current unchanged answer',async()=>{
+ const {acceptTeacherReview}=await import('../core.js');const answer='Students can interact with their peers.';
+ const checks={grammar:true,fluency:true,meaning:true,corePhrases:true};const valid={verdict:'valid',checks,issues:[],summary:'句意完整，搭配正确。'};
+ for(const key of Object.keys(checks))for(const value of [false,null,undefined]){
+  const s=ready();submitExpression(s,entry,answer);assert.equal(acceptTeacherReview(s,entry,answer,{...valid,checks:{...checks,[key]:value}}),'ignored');assert.equal(s.records[entry.id],undefined);
+ }
+ const s=ready();submitExpression(s,entry,answer);assert.equal(acceptTeacherReview(s,entry,'An older answer',valid),'ignored');assert.equal(acceptTeacherReview(s,{...entry,id:'c-other'},answer,valid),'ignored');assert.equal(acceptTeacherReview(s,entry,answer,{...valid,verdict:'uncertain'}),'ignored');
+ assert.equal(acceptTeacherReview(s,entry,answer,valid),'correct');assert.equal(s.records[entry.id].errors,0);assert.equal(s.session.lastAnswer,answer);assert.equal(s.session.aiSummary,valid.summary);assert.equal(loadState(JSON.stringify(s),[entry]).session.aiSummary,valid.summary);assert.equal(acceptTeacherReview(s,entry,answer,valid),'ignored');assert.equal(s.records[entry.id].correct,1);
+});
+test('core targets come from lesson components, never from matching the entire reference sentence',async()=>{
+ const {corePhrases}=await import('../corrections.js');assert.deepEqual(corePhrases({...entry,components:[{word:'interact with peers'},{word:'have opportunities to'}]}),['interact with peers','have opportunities to']);assert.deepEqual(corePhrases(entry),[]);assert.deepEqual(corePhrases({word:'rely on'}),['rely on']);
+ const p=teacherPrompt({entry:{...entry,components:[{word:'interact with peers'}]},answer:'Test'});assert.match(p,/重点短语/);assert.match(p,/学习目标未覆盖/);
+});

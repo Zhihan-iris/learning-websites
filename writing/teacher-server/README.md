@@ -79,3 +79,7 @@ npx wrangler@4 deploy --dry-run --config writing/teacher-server/wrangler.jsonc
 官方接口说明：[OpenAI](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create)、[DeepSeek](https://api-docs.deepseek.com/api/create-chat-completion/)、[百炼](https://help.aliyun.com/zh/model-studio/compatibility-of-openai-with-dashscope)、[Claude](https://platform.claude.com/docs/en/api/overview)、[Cloudflare Secrets](https://developers.cloudflare.com/workers/configuration/secrets/)。
 
 免费模式依据：[OpenRouter 免费路由](https://openrouter.ai/docs/guides/routing/routers/free-router)、[价格上限及路由](https://openrouter.ai/docs/guides/routing/provider-selection)、[免费额度及限流](https://openrouter.ai/docs/api_reference/limits)。
+
+## 整句判定
+
+请求只增加当前题的 corePhrases（最多 12 条、总长 1,200 字符），不发送全书。模型返回 grammar / fluency / meaning / corePhrases 四项检查结果；valid 必须四项为 true 且 issues 为空，矛盾或不完整的通过结论会被拒绝。重点短语允许合理词形与句法变体；遗漏学习目标与语法错误分别解释。新提示使用独立缓存版本，输出上限仍为 650 / 1,100 tokens。

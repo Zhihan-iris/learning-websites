@@ -60,3 +60,17 @@ test('free-only mode blocks paid providers and paid model IDs even when keys exi
 test('model identity in a free router response is preserved for the learner',()=>{
  assert.equal(parseReview('openrouter',{...response,model:'test/actual:free'}).actualModel,'test/actual:free');
 });
+
+test('rejects contradictory or incomplete AI passes and preserves the criteria for genuine passes',()=>{
+ const pass={...review,verdict:'valid',issues:[],checks:{grammar:true,fluency:true,meaning:true,corePhrases:true}};
+ const reply=r=>({...response,choices:[{finish_reason:'stop',message:{content:JSON.stringify(r)}}]});
+ assert.deepEqual(parseReview('openrouter',reply(pass)).review.checks,pass.checks);
+ for(const key of Object.keys(pass.checks))for(const value of [false,null,undefined])assert.throws(()=>parseReview('openrouter',reply({...pass,checks:{...pass.checks,[key]:value}})));
+ assert.throws(()=>parseReview('openrouter',reply({...pass,checks:undefined})));assert.throws(()=>parseReview('openrouter',reply({...pass,issues:review.issues})));
+});
+test('bounded core phrases travel separately from the reference and survive backend validation',async()=>{
+ const {readFile}=await import('node:fs/promises');const {corePhrases}=await import('../corrections.js');const course=JSON.parse(await readFile(new URL('../data/course.json',import.meta.url),'utf8'));
+ for(const e of course.expressions){const phrases=corePhrases(e);const clean=compactPayload({...payload,corePhrases:phrases});assert.deepEqual(clean.corePhrases,phrases);}
+ assert.throws(()=>compactPayload({...payload,corePhrases:'not an array'}));assert.throws(()=>compactPayload({...payload,corePhrases:['x'.repeat(201)]}));assert.throws(()=>compactPayload({...payload,corePhrases:Array(13).fill('phrase')}));
+ const request=buildRequest('openai','test-small',compactPayload({...payload,corePhrases:['rely on']}),'concise',env);assert.deepEqual(JSON.parse(request.body.messages[1].content).corePhrases,['rely on']);
+});

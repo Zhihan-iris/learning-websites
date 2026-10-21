@@ -28,7 +28,7 @@ function dailyLimit(env){const n=Number(env.MAX_DAILY_REQUESTS);return Number.is
 export class TeacherGate{
  constructor(ctx,env){this.ctx=ctx;this.env=env;}
  async fetch(request){
- const raw=await request.json(),payload=compactPayload(raw),now=Date.now(),day=new Date(now).toISOString().slice(0,10),hash=await sha('teacher-expression-v3|'+JSON.stringify(raw));
+ const raw=await request.json(),payload=compactPayload(raw),now=Date.now(),day=new Date(now).toISOString().slice(0,10),hash=await sha('teacher-targets-v4|'+JSON.stringify(raw));
  const reservation=await this.ctx.storage.transaction(async tx=>{
  const s=await tx.get('budget')||{day,count:0,last:0,cache:{},pending:{}};if(s.day!==day){s.day=day;s.count=0;}
  for(const [k,v]of Object.entries(s.cache))if(now-v.at>86400000)delete s.cache[k];
