@@ -89,3 +89,7 @@ npx wrangler@4 deploy --dry-run --config writing/teacher-server/wrangler.jsonc
 默认免费模型顺序以 Gemma 开始，并请求关闭推理；MiniMax 免费模型强制推理，按公开模型目录使用其支持的 low 档；免费路由也请求 low。精简最多 1,200 tokens、2 个问题；详细最多 2,000 tokens、4 个问题。这是上限，实际用量由回复决定，推理也可能计入其中。正确答案使用空 revision，由后台回填原答案，减少重复输出。截断仍拒绝判分与缓存，不自动重试；错误返回安全的模型名、停止原因及用量，不返回原始推理或供应商响应。
 
 依据：[OpenRouter 推理与输出预算](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)。
+
+## 免费额度和短时限流
+
+`/models` 在访问口令验证后读取 OpenRouter `/api/v1/key`，只返回免费日请求的已用、上限、剩余及 UTC 日重置时间；不返回账户名、密钥或付费信息。该查询不生成模型内容。不支持该统计或查询失败时显示未知，绝不显示为零。模型返回 429 时再查询一次：若日额度为零，等待至 UTC 次日；否则按 Retry-After 等待，未提供时建议等待 60 秒。Durable Object 保存等待状态，等待期重复点击不产生新模型请求或增加本地调用计数；已有讲评缓存仍可复用。全局免费日额度耗尽不会通过切换模型自动重试。

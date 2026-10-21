@@ -1,3 +1,4 @@
+import {readFreeQuota,rateLimitDetails} from './limits.js';
 import {catalog,compactPayload,buildRequest,parseReview,OUTPUT_LIMITS} from './providers.js';
 const json=(data,status=200)=>new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store'}});
 const sha=async text=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)))).map(x=>x.toString(16).padStart(2,'0')).join('');
@@ -14,7 +15,7 @@ export default {async fetch(request,env){
  if(!env.TEACHER_GATE)return cors(json({error:'storage_not_configured'},503));
  const auth=request.headers.get('Authorization')||'';if(auth.length>256||!await safeEqual(auth,'Bearer '+env.TEACHER_ACCESS_TOKEN))return cors(json({error:'unauthorized'},401));
  const path=new URL(request.url).pathname;
- if(path==='/models'&&request.method==='GET')return cors(json({providers:catalog(env),freeOnly:env.ALLOW_PAID_MODELS!=='true',limits:{...OUTPUT_LIMITS,dailyRequests:dailyLimit(env)}}));
+ if(path==='/models'&&request.method==='GET')return cors(json({providers:catalog(env),freeOnly:env.ALLOW_PAID_MODELS!=='true',freeQuota:await readFreeQuota(env),limits:{...OUTPUT_LIMITS,dailyRequests:dailyLimit(env)}}));
  if(path!=='/review'||request.method!=='POST')return cors(json({error:'not_found'},404));
  if(!request.headers.get('Content-Type')?.startsWith('application/json'))return cors(json({error:'invalid_input'},400));
  let raw,payload;try{raw=await boundedJSON(request);payload=compactPayload(raw);buildRequest(raw.provider,raw.model,payload,raw.detail,env);}catch{return cors(json({error:'invalid_input_or_model'},400));}
@@ -34,16 +35,17 @@ export class TeacherGate{
  for(const [k,v]of Object.entries(s.cache))if(now-v.at>86400000)delete s.cache[k];
  for(const [k,v]of Object.entries(s.pending))if(now-v>90000)delete s.pending[k];
  if(s.cache[hash])return {cached:{...s.cache[hash].result,cached:true}};
+ const cooldowns=s.cooldowns||{};for(const k of [raw.provider,raw.provider+'|'+raw.model]){const limit=cooldowns[k];if(limit?.retryAt>now)return {error:limit.error,status:429,limit};}
  if(s.pending[hash])return {error:'already_running',status:409};
  if(s.count>=dailyLimit(this.env))return {error:'daily_limit',status:429};
  if(now-s.last<10000)return {error:'rate_limit',status:429};
  s.count++;s.last=now;s.pending[hash]=now;await tx.put('budget',s);return {ok:true};
  });
- if(reservation.cached)return json(reservation.cached);if(reservation.error)return json({error:reservation.error},reservation.status);
- let result,error,diagnostics,status=502;const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),45000);
- try{const req=buildRequest(raw.provider,raw.model,payload,raw.detail,this.env);const response=await fetch(req.url,{method:'POST',headers:req.headers,body:JSON.stringify(req.body),signal:controller.signal});if(!response.ok){error=response.status===429?'provider_limit':'provider_error';}else{result={...parseReview(raw.provider,await response.json(),payload),provider:raw.provider,model:raw.model,cached:false,createdAt:Date.now()};}}
+ if(reservation.cached)return json(reservation.cached);if(reservation.error)return json({error:reservation.error,...(reservation.limit?{limit:reservation.limit}:{})},reservation.status);
+ let result,error,diagnostics,limit,status=502;const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),45000);
+ try{const req=buildRequest(raw.provider,raw.model,payload,raw.detail,this.env);const response=await fetch(req.url,{method:'POST',headers:req.headers,body:JSON.stringify(req.body),signal:controller.signal});if(!response.ok){if(response.status===429){limit=await rateLimitDetails(response,raw.provider,this.env);error=limit.error;status=429;}else error='provider_error';}else{result={...parseReview(raw.provider,await response.json(),payload),provider:raw.provider,model:raw.model,cached:false,createdAt:Date.now()};}}
  catch(e){diagnostics=e.diagnostics;error=e.name==='AbortError'?'timeout':['incomplete_response','invalid_response'].includes(e.message)?e.message:'provider_error';}finally{clearTimeout(timer);}
- await this.ctx.storage.transaction(async tx=>{const s=await tx.get('budget');delete s.pending[hash];if(result){s.cache[hash]={at:Date.now(),result};const keys=Object.keys(s.cache).sort((a,b)=>s.cache[a].at-s.cache[b].at);for(const k of keys.slice(0,Math.max(0,keys.length-80)))delete s.cache[k];}await tx.put('budget',s);});
- return result?json(result):json({error,...(diagnostics?{diagnostics}:{})},status);
+ await this.ctx.storage.transaction(async tx=>{const s=await tx.get('budget');delete s.pending[hash];if(limit){s.cooldowns||={};for(const [k,v] of Object.entries(s.cooldowns))if(v.retryAt<=Date.now())delete s.cooldowns[k];s.cooldowns[limit.scope==='provider'?raw.provider:raw.provider+'|'+raw.model]=limit;}if(result){s.cache[hash]={at:Date.now(),result};const keys=Object.keys(s.cache).sort((a,b)=>s.cache[a].at-s.cache[b].at);for(const k of keys.slice(0,Math.max(0,keys.length-80)))delete s.cache[k];}await tx.put('budget',s);});
+ return result?json(result):json({error,...(limit?{limit}:{}),...(diagnostics?{diagnostics}:{})},status);
  }
 }
