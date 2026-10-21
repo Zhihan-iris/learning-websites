@@ -57,7 +57,7 @@ npx wrangler@4 deploy --config writing/teacher-server/wrangler.jsonc
 
 - 自动对照无需模型。点击 AI 按钮才调用；不自动重试、不自动降级到其他模型。
 - 输入只包括当前答案（最多 2,000 字符）、中文提示（500）、参考（1,200）、有关段落（1,200）和少量搭配结构（600）。后台再次验证长度及模型名单，整体请求体上限 18 KB。不是发送全部词库或错题本。
-- 默认精简输出上限 650 tokens，详细档 1,100；OpenAI 使用 `max_completion_tokens`（包含推理输出），其他接口用 `max_tokens`。不请求搜索、工具、图片或扩展思考；若选用本身需要推理的 OpenAI 模型，可能在短输出预算下不足以生成完整 JSON，应选择适合短讲评的模型。
+- 默认精简输出上限 1,200 tokens，详细档 2,000；OpenAI 使用 `max_completion_tokens`（包含推理输出），其他接口用 `max_tokens`。不请求搜索、工具、图片或扩展思考；若选用本身需要推理的 OpenAI 模型，可能在短输出预算下不足以生成完整 JSON，应选择适合短讲评的模型。
 - 浏览器最多缓存 40 条，后台最多 80 条，24 小时过期；键包含完整题目、答案、供应商、模型、详略及后台提示版本。后台使用 Durable Object，跨设备复用与并发请求去重。
 - 默认每天最多 40 次新调用、每 10 秒一次，UTC 日期重置。失败也计数，因为供应商可能已经生成并计费；缓存命中不计次数。`MAX_DAILY_REQUESTS` 可调整为 1–200。
 - 用量来自供应商返回的实际统计；缓存命中显示“原讲评用量”，不是本次新增。未返回的统计显示“未提供”，不冒充 0。不要用 token 数直接推算金额；在供应商控制台设置适合自己的预算与额度。
@@ -82,4 +82,10 @@ npx wrangler@4 deploy --dry-run --config writing/teacher-server/wrangler.jsonc
 
 ## 整句判定
 
-请求只增加当前题的 corePhrases（最多 12 条、总长 1,200 字符），不发送全书。模型返回 grammar / fluency / meaning / corePhrases 四项检查结果；valid 必须四项为 true 且 issues 为空，矛盾或不完整的通过结论会被拒绝。重点短语允许合理词形与句法变体；遗漏学习目标与语法错误分别解释。新提示使用独立缓存版本，输出上限仍为 650 / 1,100 tokens。
+请求只增加当前题的 corePhrases（最多 12 条、总长 1,200 字符），不发送全书。模型返回 grammar / fluency / meaning / corePhrases 四项检查结果；valid 必须四项为 true 且 issues 为空，矛盾或不完整的通过结论会被拒绝。重点短语允许合理词形与句法变体；遗漏学习目标与语法错误分别解释。新提示使用独立缓存版本，输出上限仍为 1,200 / 2,000 tokens。
+
+## 避免讲评截断
+
+默认免费模型顺序以 Gemma 开始，并请求关闭推理；MiniMax 免费模型强制推理，按公开模型目录使用其支持的 low 档；免费路由也请求 low。精简最多 1,200 tokens、2 个问题；详细最多 2,000 tokens、4 个问题。这是上限，实际用量由回复决定，推理也可能计入其中。正确答案使用空 revision，由后台回填原答案，减少重复输出。截断仍拒绝判分与缓存，不自动重试；错误返回安全的模型名、停止原因及用量，不返回原始推理或供应商响应。
+
+依据：[OpenRouter 推理与输出预算](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens)。

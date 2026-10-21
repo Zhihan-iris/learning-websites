@@ -7,7 +7,7 @@
     "ALLOWED_ORIGINS": "https://zhihan-iris.github.io",
     "MAX_DAILY_REQUESTS": "40",
     "ALLOW_PAID_MODELS": "false",
-    "OPENROUTER_MODELS": "openrouter/free,minimax/minimax-m3.1-flash:free,google/gemma-4-31b-it:free",
+    "OPENROUTER_MODELS": "google/gemma-4-31b-it:free,openrouter/free,minimax/minimax-m3.1-flash:free",
     "OPENAI_MODELS": "",
     "DEEPSEEK_MODELS": "",
     "QWEN_MODELS": "",
