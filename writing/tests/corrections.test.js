@@ -45,3 +45,11 @@ test('core targets come from lesson components, never from matching the entire r
  const {corePhrases}=await import('../corrections.js');assert.deepEqual(corePhrases({...entry,components:[{word:'interact with peers'},{word:'have opportunities to'}]}),['interact with peers','have opportunities to']);assert.deepEqual(corePhrases(entry),[]);assert.deepEqual(corePhrases({word:'rely on'}),['rely on']);
  const p=teacherPrompt({entry:{...entry,components:[{word:'interact with peers'}]},answer:'Test'});assert.match(p,/重点短语/);assert.match(p,/学习目标未覆盖/);
 });
+
+test('vocabulary mistakes go directly to five repairs while sentence alternatives remain pending',()=>{
+ const word={id:'v-test',word:'commitment',meaning:'承诺'},s=emptyState();start(s,'vocab',[word.id]);
+ assert.equal(submitExpression(s,word,'committment'),'mistake');assert.equal(s.records[word.id].errors,1);assert.equal(s.session.repairGoal,5);next(s);
+ for(let i=1;i<=5;i++){assert.equal(submitExpression(s,word,word.word),i===5?'repaired':'repair-progress');assert.equal(s.session.repeats,i);}
+ assert.equal(s.records[word.id].resolved,true);assert.equal(emptyState().settings.repairGoal,1);
+ const old=loadState(JSON.stringify({version:1,settings:{repairGoal:1},records:{}}),[word]);assert.equal(old.settings.vocabRepairGoal,5);
+});

@@ -27,7 +27,7 @@ test('temporary rate limiting obeys Retry-After and does not block existing cach
  try{const a=await(await gate.fetch(req('test/a:free'))).json();assert.equal(a.error,'provider_rate_limit');assert.equal(a.limit.waitSource,'provider');assert.equal(a.limit.quota.remaining,48);assert.ok(a.limit.retryAt>Date.now()+110000);
  assert.equal((await(await gate.fetch(req('test/a:free'))).json()).error,'provider_rate_limit');assert.equal(calls,1);
  const s=await db.get('budget');s.last=0;await db.put('budget',s);await gate.fetch(req('test/b:free'));assert.equal(calls,2);
- const raw=await req('test/a:free').json(),hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode('teacher-compact-v5|'+JSON.stringify(raw))))).map(x=>x.toString(16).padStart(2,'0')).join('');
+ const raw=await req('test/a:free').json(),hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode('teacher-native-v6|'+JSON.stringify(raw))))).map(x=>x.toString(16).padStart(2,'0')).join('');
  const cachedState=await db.get('budget');cachedState.cache[hash]={at:Date.now(),result:{review:{summary:'Existing feedback'}}};await db.put('budget',cachedState);const cached=await(await gate.fetch(req('test/a:free'))).json();assert.equal(cached.cached,true);assert.equal(cached.review.summary,'Existing feedback');assert.equal(calls,2);
  }finally{globalThis.fetch=original;}
 });

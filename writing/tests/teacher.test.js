@@ -87,3 +87,18 @@ test('truncated output is never graded, cached or automatically retried and expo
  globalThis.fetch=async()=>{calls++;return Response.json({model:'test-reasoning-model',choices:[{finish_reason:'length',message:{content:'{"verdict":"valid"',reasoning:'DO NOT EXPOSE RAW TEXT'}}],usage:{prompt_tokens:250,completion_tokens:1200,completion_tokens_details:{reasoning_tokens:1150}}});};
  try{const req=new Request('https://internal/review',{method:'POST',body:JSON.stringify({...payload,provider:'openai',model:'test-small',detail:'concise'})});const r=await gate.fetch(req),data=await r.json();assert.equal(r.status,502);assert.equal(data.error,'incomplete_response');assert.equal(data.diagnostics.usage.output,1200);assert.equal(data.diagnostics.usage.reasoning,1150);assert.equal(data.diagnostics.finishReason,'length');assert.equal(data.review,undefined);assert.ok(!JSON.stringify(data).includes('DO NOT EXPOSE'));assert.equal(calls,1);}finally{globalThis.fetch=oldFetch;}
 });
+
+test('Cloudflare binding is allowlisted and returns complete native JSON without a fake finish reason',async()=>{
+ const model='@cf/meta/llama-3.3-70b-instruct-fp8-fast';let calls=0;
+ const native={response:JSON.stringify({...review,checks:{grammar:false,fluency:false,meaning:true,corePhrases:false}}),usage:{prompt_tokens:350,completion_tokens:120}};
+ const cf={CLOUDFLARE_FREE_PLAN_CONFIRMED:'true',CLOUDFLARE_MODELS:model+',@cf/paid/anything',AI:{run:async(m,b)=>{calls++;assert.equal(m,model);assert.equal(b.max_tokens,1200);return native;}}};
+ assert.deepEqual(catalog(cf)[0].models,[model]);assert.equal(catalog({...cf,CLOUDFLARE_FREE_PLAN_CONFIRMED:'false'}).length,0);assert.equal(catalog({...cf,AI:undefined}).length,0);
+ assert.equal(parseReview('cloudflare',native).usage.output,120);assert.throws(()=>parseReview('cloudflare',{response:'{"verdict":"valid"'}));
+ const gate=new TeacherGate({storage:storage()},cf);const req=()=>new Request('https://internal/review',{method:'POST',body:JSON.stringify({...payload,provider:'cloudflare',model})});
+ const out=await(await gate.fetch(req())).json();assert.equal(out.review.verdict,'needs_revision');assert.equal(calls,1);assert.equal((await(await gate.fetch(req())).json()).cached,true);assert.equal(calls,1);
+});
+test('Cloudflare daily allocation stops without retries or fallback',async()=>{
+ let calls=0;const model='@cf/meta/llama-3.3-70b-instruct-fp8-fast',cf={CLOUDFLARE_FREE_PLAN_CONFIRMED:'true',CLOUDFLARE_MODELS:model,AI:{run:async()=>{calls++;throw Error('daily free allocation exceeded');}}};
+ const gate=new TeacherGate({storage:storage()},cf),req=()=>new Request('https://internal/review',{method:'POST',body:JSON.stringify({...payload,provider:'cloudflare',model})});
+ assert.equal((await(await gate.fetch(req())).json()).error,'cloudflare_daily_limit');assert.equal((await(await gate.fetch(req())).json()).error,'cloudflare_daily_limit');assert.equal(calls,1);
+});

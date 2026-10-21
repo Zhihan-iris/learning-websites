@@ -12,8 +12,27 @@
     "DEEPSEEK_MODELS": "",
     "QWEN_MODELS": "",
     "QWEN_REGION": "beijing",
-    "ANTHROPIC_MODELS": ""
+    "ANTHROPIC_MODELS": "",
+    "CLOUDFLARE_MODELS": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+    "CLOUDFLARE_FREE_PLAN_CONFIRMED": "true"
   },
-  "durable_objects": {"bindings": [{"name": "TEACHER_GATE", "class_name": "TeacherGate"}]},
-  "migrations": [{"tag": "v1", "new_sqlite_classes": ["TeacherGate"]}]
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "TEACHER_GATE",
+        "class_name": "TeacherGate"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "TeacherGate"
+      ]
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  }
 }

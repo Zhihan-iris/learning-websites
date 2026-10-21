@@ -15,7 +15,7 @@ test('usage distinguishes count nouns, adjectives, verbs and common complement p
  assert.equal(usage[word('school bullying').id].meaning,'校园欺凌');
 });
 test('existing listening preference becomes translation without resetting current repair or settings',()=>{
- const state=emptyState(),e=base.vocabulary[0];state.settings.promptMode='listen';state.settings.volume=.42;state.settings.repairGoal=3;
+ const state=emptyState(),e=base.vocabulary[0];state.settings.promptMode='listen';state.settings.volume=.42;state.settings.vocabRepairGoal=3;
  start(state,'vocab',[e.id],{flow:'block'});next(state);submit(state,e,'wrong');next(state);submit(state,e,e.word);
  const reloaded=loadState(JSON.stringify(state),entries);assert.equal(reloaded.settings.promptMode,'meaning');assert.equal(reloaded.settings.volume,.42);assert.equal(reloaded.session.phase,'repair');assert.equal(reloaded.session.repeats,1);assert.equal(reloaded.session.repairGoal,3);assert.deepEqual(reloaded.records,state.records);
  assert.equal(emptyState().settings.promptMode,'meaning');

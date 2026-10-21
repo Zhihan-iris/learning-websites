@@ -4,7 +4,9 @@
 
 ## 当前配置：只用免费模型
 
-根据用户要求，`ALLOW_PAID_MODELS` 默认为 `false`。后台仅接受 OpenRouter 的 `openrouter/free` 或白名单内以 `:free` 结尾的具体模型；即使填了其他供应商密钥，也不能调用它们。每次请求另设置 `provider.max_price` 的输入、输出及单次请求价格上限均为 0，并关闭回退。免费模型下线、限流或额度耗尽时停止，不自动启用收费服务。
+根据用户要求，`ALLOW_PAID_MODELS` 默认为 `false`。默认通过 Cloudflare AI 绑定运行 `@cf/meta/llama-3.3-70b-instruct-fp8-fast`，无需 API Key。用户于 2026-10-21 确认账户为 Workers Free；该套餐每日 10,000 Neurons，用完硬停止，不能自动收费。`CLOUDFLARE_FREE_PLAN_CONFIRMED=true` 是人工确认记录，不是实时账单查询：若主动升级套餐，必须重新核对计费或禁用此绑定。Cloudflare 仅开放代码中固定的 Llama 模型，不经过 AI Gateway 计费。
+
+可选的 OpenRouter 适配仅接受 `openrouter/free` 或白名单内以 `:free` 结尾的具体模型；即使填了其他供应商密钥，也不能调用它们。每次请求另设置 `provider.max_price` 的输入、输出及单次请求价格上限均为 0，并关闭回退。免费模型下线、限流或额度耗尽时停止，不自动启用收费服务。
 
 目前的三个默认选项已于 2026-10-21 查询公开模型目录，输入和输出价格均为 0：`openrouter/free`、`minimax/minimax-m3.1-flash:free`、`google/gemma-4-31b-it:free`。免费路由实际选择的模型会显示在结果中；可用名单会变化，失效时应换另一个仍免费的模型，而不是去掉 `:free` 后缀。
 
@@ -14,13 +16,14 @@
 
 | 供应商 | Secret 名称 | 模型名单变量 | 接口 |
 | --- | --- | --- | --- |
+| Cloudflare Llama | 无；使用 `AI` 绑定 | `CLOUDFLARE_MODELS` | Workers AI 原生调用 |
 | OpenRouter 免费模型 | `OPENROUTER_API_KEY` | `OPENROUTER_MODELS` | Chat Completions，零价格上限 |
 | OpenAI | `OPENAI_API_KEY` | `OPENAI_MODELS` | Chat Completions |
 | DeepSeek | `DEEPSEEK_API_KEY` | `DEEPSEEK_MODELS` | Chat Completions，关闭可选思考 |
 | 通义千问 / 百炼 | `QWEN_API_KEY` | `QWEN_MODELS` | OpenAI 兼容接口，关闭可选思考 |
 | Claude / Anthropic | `ANTHROPIC_API_KEY` | `ANTHROPIC_MODELS` | Messages API，不开启扩展思考 |
 
-本次只需开通 OpenRouter，其他密钥留空。每家的模型名单用英文逗号隔开，填写该账号控制台中实际可用的模型 ID。网站会读取这份白名单，让你选择不同供应商及模型；前端不能绕过名单。优先把适合短文本讲评、不强制长推理的模型放在前面。模型权限、价格、地区可用性及 API 额度以各供应商为准，网页订阅不等于 API 额度。
+默认 Cloudflare 不需要供应商密钥；OpenRouter 为可选备用，由用户手动选择。每家的模型名单用英文逗号隔开，填写该账号控制台中实际可用的模型 ID。网站会读取这份白名单，让你选择不同供应商及模型；前端不能绕过名单。优先把适合短文本讲评、不强制长推理的模型放在前面。模型权限、价格、地区可用性及 API 额度以各供应商为准，网页订阅不等于 API 额度。
 
 百炼的 `QWEN_REGION` 可选 `beijing`、`singapore`、`virginia`，必须与 API Key 所属地域一致。Claude 多工作区密钥可额外设置 `ANTHROPIC_WORKSPACE_ID`。端点在代码中固定，网页不会接收或转发任意上游地址。
 
@@ -32,12 +35,12 @@
 NODE_EXTRA_CA_CERTS=/etc/ssl/cert.pem npx wrangler@4 login --use-keyring --scopes account:read user:read workers:write workers_scripts:write
 ```
 
-1. 编辑 `writing/teacher-server/wrangler.jsonc` 的模型名单。文件只放模型 ID、允许来源、次数上限等非秘密配置。当前保留已配置的三个免费模型即可。
+1. 编辑 `writing/teacher-server/wrangler.jsonc` 的模型名单。文件只放模型 ID、允许来源、次数上限等非秘密配置。配置 `ai.binding=AI` 并保持 Cloudflare 固定模型名单；仅在确认 Workers Free 套餐后设置 `CLOUDFLARE_FREE_PLAN_CONFIRMED=true`。
 2. 在终端隐藏输入对应供应商密钥，以及你自己设置的至少 24 字符随机学习室访问口令（它不是供应商 API Key）：
 
 ```sh
 npx wrangler@4 secret put TEACHER_ACCESS_TOKEN --config writing/teacher-server/wrangler.jsonc
-# 只配置免费模型供应商；不要把真实密钥放入命令参数、Git 文件或聊天。
+# 可选 OpenRouter；使用 Cloudflare 时无需此密钥。不要把密钥放入命令参数、Git 文件或聊天。
 npx wrangler@4 secret put OPENROUTER_API_KEY --config writing/teacher-server/wrangler.jsonc
 ```
 
@@ -93,3 +96,9 @@ npx wrangler@4 deploy --dry-run --config writing/teacher-server/wrangler.jsonc
 ## 免费额度和短时限流
 
 `/models` 在访问口令验证后读取 OpenRouter `/api/v1/key`，只返回免费日请求的已用、上限、剩余及 UTC 日重置时间；不返回账户名、密钥或付费信息。该查询不生成模型内容。不支持该统计或查询失败时显示未知，绝不显示为零。模型返回 429 时再查询一次：若日额度为零，等待至 UTC 次日；否则按 Retry-After 等待，未提供时建议等待 60 秒。Durable Object 保存等待状态，等待期重复点击不产生新模型请求或增加本地调用计数；已有讲评缓存仍可复用。全局免费日额度耗尽不会通过切换模型自动重试。
+
+## Cloudflare 原生返回与验收
+
+使用 JSON 输出并严格校验完整结构与四项通过条件；不虚构原生接口没有返回的 finish_reason。最多 1,200 / 2,000 输出 tokens，45 秒停止等待，不重试、不自动回退。输入只含当前表达与核心词组。复用 24 小时缓存，仍受每天 40 次和 10 秒间隔保护。测试应区分本地逻辑测试、远程 AI 绑定实测与正式部署状态；不能将模拟响应当作真实推理成功。
+
+官方说明：[免费额度](https://developers.cloudflare.com/workers-ai/platform/pricing/) · [Llama 模型与原生绑定](https://developers.cloudflare.com/workers-ai/models/llama-3.3-70b-instruct-fp8-fast/)

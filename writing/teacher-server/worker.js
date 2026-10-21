@@ -15,7 +15,7 @@ export default {async fetch(request,env){
  if(!env.TEACHER_GATE)return cors(json({error:'storage_not_configured'},503));
  const auth=request.headers.get('Authorization')||'';if(auth.length>256||!await safeEqual(auth,'Bearer '+env.TEACHER_ACCESS_TOKEN))return cors(json({error:'unauthorized'},401));
  const path=new URL(request.url).pathname;
- if(path==='/models'&&request.method==='GET')return cors(json({providers:catalog(env),freeOnly:env.ALLOW_PAID_MODELS!=='true',freeQuota:await readFreeQuota(env),limits:{...OUTPUT_LIMITS,dailyRequests:dailyLimit(env)}}));
+ if(path==='/models'&&request.method==='GET')return cors(json({providers:catalog(env),freeOnly:env.ALLOW_PAID_MODELS!=='true',freeQuota:catalog(env).some(p=>p.id==='openrouter')?await readFreeQuota(env):null,limits:{...OUTPUT_LIMITS,dailyRequests:dailyLimit(env)}}));
  if(path!=='/review'||request.method!=='POST')return cors(json({error:'not_found'},404));
  if(!request.headers.get('Content-Type')?.startsWith('application/json'))return cors(json({error:'invalid_input'},400));
  let raw,payload;try{raw=await boundedJSON(request);payload=compactPayload(raw);buildRequest(raw.provider,raw.model,payload,raw.detail,env);}catch{return cors(json({error:'invalid_input_or_model'},400));}
@@ -29,7 +29,7 @@ function dailyLimit(env){const n=Number(env.MAX_DAILY_REQUESTS);return Number.is
 export class TeacherGate{
  constructor(ctx,env){this.ctx=ctx;this.env=env;}
  async fetch(request){
- const raw=await request.json(),payload=compactPayload(raw),now=Date.now(),day=new Date(now).toISOString().slice(0,10),hash=await sha('teacher-compact-v5|'+JSON.stringify(raw));
+ const raw=await request.json(),payload=compactPayload(raw),now=Date.now(),day=new Date(now).toISOString().slice(0,10),hash=await sha('teacher-native-v6|'+JSON.stringify(raw));
  const reservation=await this.ctx.storage.transaction(async tx=>{
  const s=await tx.get('budget')||{day,count:0,last:0,cache:{},pending:{}};if(s.day!==day){s.day=day;s.count=0;}
  for(const [k,v]of Object.entries(s.cache))if(now-v.at>86400000)delete s.cache[k];
@@ -43,8 +43,8 @@ export class TeacherGate{
  });
  if(reservation.cached)return json(reservation.cached);if(reservation.error)return json({error:reservation.error,...(reservation.limit?{limit:reservation.limit}:{})},reservation.status);
  let result,error,diagnostics,limit,status=502;const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),45000);
- try{const req=buildRequest(raw.provider,raw.model,payload,raw.detail,this.env);const response=await fetch(req.url,{method:'POST',headers:req.headers,body:JSON.stringify(req.body),signal:controller.signal});if(!response.ok){if(response.status===429){limit=await rateLimitDetails(response,raw.provider,this.env);error=limit.error;status=429;}else error='provider_error';}else{result={...parseReview(raw.provider,await response.json(),payload),provider:raw.provider,model:raw.model,cached:false,createdAt:Date.now()};}}
- catch(e){diagnostics=e.diagnostics;error=e.name==='AbortError'?'timeout':['incomplete_response','invalid_response'].includes(e.message)?e.message:'provider_error';}finally{clearTimeout(timer);}
+ try{const req=buildRequest(raw.provider,raw.model,payload,raw.detail,this.env);if(req.binding){const data=await Promise.race([this.env.AI.run(raw.model,req.body),new Promise((_,reject)=>controller.signal.addEventListener('abort',()=>reject(new DOMException('Timeout','AbortError')),{once:true}))]);result={...parseReview(raw.provider,data,payload),provider:raw.provider,model:raw.model,cached:false,createdAt:Date.now()};}else{const response=await fetch(req.url,{method:'POST',headers:req.headers,body:JSON.stringify(req.body),signal:controller.signal});if(!response.ok){if(response.status===429){limit=await rateLimitDetails(response,raw.provider,this.env);error=limit.error;status=429;}else error='provider_error';}else{result={...parseReview(raw.provider,await response.json(),payload),provider:raw.provider,model:raw.model,cached:false,createdAt:Date.now()};}}}
+ catch(e){if(raw.provider==='cloudflare'&&/daily.*(?:limit|quota)|(?:limit|quota).*daily|free allocation/i.test(String(e.message))){error='cloudflare_daily_limit';status=429;limit={error,scope:'provider',retryAt:Date.parse(new Date().toISOString().slice(0,10))+86400000,waitSource:'provider'};}diagnostics=e.diagnostics;error=error|| (e.name==='AbortError'?'timeout':['incomplete_response','invalid_response'].includes(e.message)?e.message:'provider_error');}finally{clearTimeout(timer);}
  await this.ctx.storage.transaction(async tx=>{const s=await tx.get('budget');delete s.pending[hash];if(limit){s.cooldowns||={};for(const [k,v] of Object.entries(s.cooldowns))if(v.retryAt<=Date.now())delete s.cooldowns[k];s.cooldowns[limit.scope==='provider'?raw.provider:raw.provider+'|'+raw.model]=limit;}if(result){s.cache[hash]={at:Date.now(),result};const keys=Object.keys(s.cache).sort((a,b)=>s.cache[a].at-s.cache[b].at);for(const k of keys.slice(0,Math.max(0,keys.length-80)))delete s.cache[k];}await tx.put('budget',s);});
  return result?json(result):json({error,...(limit?{limit}:{}),...(diagnostics?{diagnostics}:{})},status);
  }

@@ -1,4 +1,6 @@
+export const CLOUDFLARE_MODEL='@cf/meta/llama-3.3-70b-instruct-fp8-fast';
 export const PROVIDERS={
+ cloudflare:{label:'Cloudflare · Llama 免费额度',models:'CLOUDFLARE_MODELS'},
  openrouter:{label:'OpenRouter · 免费模型',secret:'OPENROUTER_API_KEY',models:'OPENROUTER_MODELS',url:'https://openrouter.ai/api/v1/chat/completions'},
  openai:{label:'OpenAI',secret:'OPENAI_API_KEY',models:'OPENAI_MODELS',url:'https://api.openai.com/v1/chat/completions'},
  deepseek:{label:'DeepSeek',secret:'DEEPSEEK_API_KEY',models:'DEEPSEEK_MODELS',url:'https://api.deepseek.com/chat/completions'},
@@ -11,7 +13,7 @@ export const SYSTEM=`你是雅思写作老师，用简短中文反馈。用户 J
 checks 四项用 true/false/null，无法确定填 null 并用 uncertain。四项 true 才可 valid，且 issues=[]、revision=""，不重复用户原句。只列有依据的问题，引用短语或分句，给最小修改；风格润色不列为错误。没有需改写的内容时 revision=""；不重复参考句。summary 最多30字，tip 最多25字；必须闭合 JSON。`;
 export const OUTPUT_LIMITS={concise:1200,detailed:2000};
 export function responseDiagnostics(provider,data){const anthropic=provider==='anthropic',u=data?.usage||{},n=x=>Number.isFinite(x)&&x>=0?x:null;return {model:typeof data?.model==='string'?data.model.slice(0,160):null,finishReason:String(anthropic?data?.stop_reason:data?.choices?.[0]?.finish_reason||'unknown').slice(0,40),usage:{input:n(anthropic?u.input_tokens:u.prompt_tokens),output:n(anthropic?u.output_tokens:u.completion_tokens),reasoning:n(u.completion_tokens_details?.reasoning_tokens)}};}
-export function catalog(env){return Object.entries(PROVIDERS).map(([id,p])=>({id,label:p.label,models:String(env[p.models]||'').split(',').map(x=>x.trim()).filter(x=>/^[\w./:-]{1,120}$/.test(x))})).map(p=>({...p,models:p.models.filter(m=>env.ALLOW_PAID_MODELS==='true'||(p.id==='openrouter'&&(m==='openrouter/free'||m.endsWith(':free'))))})).filter(p=>env[PROVIDERS[p.id].secret]&&p.models.length);}
+export function catalog(env){return Object.entries(PROVIDERS).map(([id,p])=>({id,label:p.label,models:String(env[p.models]||'').split(',').map(x=>x.trim()).filter(x=>/^[\w@./:-]{1,120}$/.test(x))})).map(p=>({...p,models:p.models.filter(m=>p.id==='cloudflare'?env.CLOUDFLARE_FREE_PLAN_CONFIRMED==='true'&&m===CLOUDFLARE_MODEL:env.ALLOW_PAID_MODELS==='true'||(p.id==='openrouter'&&(m==='openrouter/free'||m.endsWith(':free'))))})).filter(p=>(p.id==='cloudflare'?typeof env.AI?.run==='function':env[PROVIDERS[p.id].secret])&&p.models.length);}
 export function compactPayload(raw){
  const text=(x,max)=>{if(typeof x!=='string'||x.length>max)throw Error('invalid_input');return x.trim();};
  const phrases=raw.corePhrases??[];if(!Array.isArray(phrases)||phrases.length>12)throw Error('invalid_input');
@@ -22,6 +24,7 @@ export function compactPayload(raw){
 export function buildRequest(provider,model,payload,detail,env){
  const p=PROVIDERS[provider];if(!p||!catalog(env).some(x=>x.id===provider&&x.models.includes(model)))throw Error('model_unavailable');
  const max=detail==='detailed'?OUTPUT_LIMITS.detailed:OUTPUT_LIMITS.concise,system=SYSTEM+(detail==='detailed'?'最多4项问题，每项原因最多45字。':'最多2项关键问题，每项原因最多25字。');
+ if(provider==='cloudflare')return {binding:true,body:{messages:[{role:'system',content:system},{role:'user',content:JSON.stringify(payload)}],max_tokens:max,temperature:0,response_format:{type:'json_object'}}};
  const user=JSON.stringify(payload),headers={'Content-Type':'application/json'};let body,url=p.url;
  if(provider==='anthropic'){headers['x-api-key']=env[p.secret];headers['anthropic-version']='2023-06-01';if(env.ANTHROPIC_WORKSPACE_ID)headers['anthropic-workspace-id']=env.ANTHROPIC_WORKSPACE_ID;body={model,max_tokens:max,system,messages:[{role:'user',content:user}]};}
  else {headers.Authorization='Bearer '+env[p.secret];body={model,messages:[{role:'system',content:system},{role:'user',content:user}],response_format:{type:'json_object'},stream:false};
@@ -34,10 +37,12 @@ export function buildRequest(provider,model,payload,detail,env){
  return {url,headers,body};
 }
 export function parseReview(provider,data,payload={}){
- const anthropic=provider==='anthropic';if(anthropic?data.stop_reason!=='end_turn':data.choices?.[0]?.finish_reason!=='stop'){const error=Error('incomplete_response');error.diagnostics=responseDiagnostics(provider,data);throw error;}
- const raw=anthropic?data.content?.filter(x=>x.type==='text').map(x=>x.text).join(''):data.choices?.[0]?.message?.content;
+ const native=provider==='cloudflare',anthropic=provider==='anthropic';if(!native&&(anthropic?data.stop_reason!=='end_turn':data.choices?.[0]?.finish_reason!=='stop')){const error=Error('incomplete_response');error.diagnostics=responseDiagnostics(provider,data);throw error;}
+ if(native&&data.tool_calls?.length)throw Error('invalid_response');
+ const raw=native?(typeof data.response==='object'?JSON.stringify(data.response):data.response):anthropic?data.content?.filter(x=>x.type==='text').map(x=>x.text).join(''):data.choices?.[0]?.message?.content;
  if(typeof raw!=='string'||raw.length>15000)throw Error('invalid_response');
  let r;try{r=JSON.parse(raw.trim().replace(/^```(?:json)?\s*/,'').replace(/\s*```$/,''));}catch{throw Error('invalid_response');}
+ if(!r||typeof r!=='object'||Array.isArray(r))throw Error('invalid_response');
  const valid=s=>typeof s==='string'&&s.length<=3000;
  if(!['valid','needs_revision','uncertain'].includes(r.verdict)||!valid(r.summary)||!valid(r.revision)||!valid(r.tip)||!Array.isArray(r.issues)||r.issues.length>6||r.issues.some(x=>!x||!valid(x.before)||!valid(x.after)||!valid(x.reason)))throw Error('invalid_response');
  const fields=['grammar','fluency','meaning','corePhrases'];const checks=r.checks??null;
