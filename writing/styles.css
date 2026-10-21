@@ -88,3 +88,7 @@ textarea#answer{min-height:170px;font-size:19px;line-height:1.8;resize:vertical}
 .teacher-settings-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0}.teacher-settings-grid label{min-width:0}.teacher-settings-grid input,.teacher-settings-grid select{display:block;width:100%;margin-top:8px}.ai-teacher{border-top:1px solid var(--line);margin-top:22px;padding-top:6px}.ai-review{border-left:2px solid var(--gold);padding:0 16px;margin-top:24px}.ai-review li{margin-bottom:18px}.ai-review p{font-size:14px}.ai-result{margin-top:16px;white-space:normal}.teacher-status{margin-top:18px;color:var(--gold)}
 @media(max-width:700px){.teacher-settings-grid{grid-template-columns:1fr}}
 .word-row:has(.past-correction){display:block}.word-row:has(.past-correction)>button{margin-top:12px}
+
+/* Keep topic selection compact; detailed explanations remain optional. */
+.compact-groups{margin:28px 0}.compact-group{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}.compact-group h2{font-size:22px;margin:0 0 8px}.compact-group p{margin:0}.compact-group .actions{margin:0;flex-shrink:0}.topic-outline{margin-top:28px}.topic-outline li{margin:12px 0}.practice-aside>details{margin:0 0 24px}.practice-aside>details>.audio-settings{margin-top:20px}
+@media(max-width:620px){.compact-group{align-items:flex-start;flex-direction:column;gap:14px}.compact-group h2{font-size:20px}.compact-group .primary{padding:12px 18px}}
