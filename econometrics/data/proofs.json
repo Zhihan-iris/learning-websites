@@ -1,0 +1,1201 @@
+{
+  "version": "2026-10-25-proofs-v1",
+  "title": "计量经济学 · 手推讲义",
+  "notation": "β 为总体参数；β̂ 为估计量；u 为误差；û 为残差；K 含截距；q 为独立限制条数。",
+  "units": [
+    {
+      "id": "notation",
+      "title": "先把符号、维度与求导读懂",
+      "group": "Ⅰ · 回归从哪里来",
+      "lead": "先弄清每个符号是什么，后面的矩阵式就不再像一团乱码。",
+      "assumptions": [
+        "本章是代数准备，不需要分布假设。",
+        "n 是观测数；K 是全部回归系数的个数，包含截距。"
+      ],
+      "steps": [
+        {
+          "title": "把一条观测写成内积",
+          "tex": "y_i=x_i^\\top\\beta+u_i,\\quad x_i,\\beta\\in\\mathbb R^K",
+          "why": "若有截距和一个解释变量 z，取 xᵢ=(1,zᵢ)ᵀ、β=(α,b)ᵀ。小写 xᵢ 是列向量；xᵢᵀβ 才是一个数。"
+        },
+        {
+          "title": "把 n 条观测叠起来",
+          "tex": "\\underbrace{y}_{n\\times1}=\\underbrace{X}_{n\\times K}\\underbrace{\\beta}_{K\\times1}+\\underbrace{u}_{n\\times1},\\qquad X=\\begin{pmatrix}x_1^\\top\\\\\\vdots\\\\x_n^\\top\\end{pmatrix}",
+          "why": "X 的每一行是一条观测，不是一个变量。先核对乘法内侧维度：n×K 乘 K×1 得到 n×1。"
+        },
+        {
+          "title": "区分真值、候选值和计算结果",
+          "tex": "\\beta\\ \\text{真参数},\\quad b\\ \\text{待优化变量},\\quad \\hat\\beta\\ \\text{最优解};\\qquad \\hat u=y-X\\hat\\beta",
+          "why": "推导时先对候选值 b 求导，求出最优解才加帽子。误差 u 使用未知真参数；残差 û 使用估计参数，两者不相同。"
+        },
+        {
+          "title": "线性项与二次型的导数",
+          "tex": "\\frac{\\partial(c^\\top b)}{\\partial b}=c,\\qquad \\frac{\\partial(b^\\top A b)}{\\partial b}=(A+A^\\top)b",
+          "why": "逐个分量看：bᵀAb=ΣⱼΣₖaⱼₖbⱼbₖ，对 bᵣ 求导会同时出现第 r 行与第 r 列。A 对称时合为 2Ab。"
+        },
+        {
+          "title": "转置决定乘法顺序",
+          "tex": "(AB)^\\top=B^\\top A^\\top,\\qquad (AB)^{-1}=B^{-1}A^{-1}",
+          "why": "第二条要求 A、B 都是可逆方阵。矩阵通常不能交换乘法顺序，不能把 XᵀX 随意改成 XXᵀ。"
+        }
+      ],
+      "trap": "XᵀX 是 K×K；XXᵀ 是 n×n。当 n>K 时，XXᵀ 通常不可逆。",
+      "exercise": {
+        "prompt": "若 n=100，有截距和 3 个解释变量，X、β、Xᵀy 的维度分别是什么？",
+        "tex": "X:100\\times4,\\quad\\beta:4\\times1,\\quad X^\\top y:4\\times1",
+        "explain": "K=4 而不是 3。所有自由度计算都要把截距算进去。"
+      },
+      "legacy": "ch05",
+      "refs": [
+        "greene"
+      ],
+      "number": "01",
+      "prerequisite": null
+    },
+    {
+      "id": "projection",
+      "title": "总体线性投影：β 究竟代表什么",
+      "group": "Ⅰ · 回归从哪里来",
+      "lead": "先定义要找的总体对象，再问样本如何估计它。",
+      "assumptions": [
+        "E[y²]<∞、E[‖x‖²]<∞；Q=E[xxᵀ] 正定。",
+        "本章定义的是总体最优线性预测，不自动具有因果含义。"
+      ],
+      "steps": [
+        {
+          "title": "从总体平方损失定义 β",
+          "tex": "\\beta=\\arg\\min_b E[(y-x^\\top b)^2]",
+          "why": "想象在总体中反复抽到不同的人，选择一组固定系数，使平均预测误差的平方最小。"
+        },
+        {
+          "title": "先展开再求导",
+          "tex": "E[y^2]-2b^\\top E[xy]+b^\\top Qb,\\qquad -2E[xy]+2Qb=0",
+          "why": "先把 b 视为非随机候选向量。有限二阶矩保证这些期望存在，展开后是一个普通二次函数。"
+        },
+        {
+          "title": "得到总体系数",
+          "tex": "Q\\beta=E[xy]\\quad\\Longrightarrow\\quad\\beta=Q^{-1}E[xy]",
+          "why": "Q 正定，所以逆矩阵存在；Hessian 为 2Q 正定，解是唯一全局最小值。"
+        },
+        {
+          "title": "定义误差，推出总体正交",
+          "tex": "u=y-x^\\top\\beta,\\qquad E[xu]=E[xy]-Q\\beta=0",
+          "why": "这里的正交是由总体投影定义推出的。若 x 包含常数项，同时有 E[u]=0。"
+        },
+        {
+          "title": "更强的假设不是同一件事",
+          "tex": "E[u\\mid x]=0\\ \\Longrightarrow\\ E[xu]=E\\{xE[u\\mid x]\\}=0",
+          "why": "这是迭代期望。反向不成立：最优线性预测的误差可以仍与 x 非线性相关。因果解释还需要研究设计与结构假设。"
+        }
+      ],
+      "trap": "不能把样本残差正交当成外生性的检验；也不能把总体投影系数自动解释为因果效应。",
+      "exercise": {
+        "prompt": "x 以相同概率取 −1、0、1，令 u=x²−2/3。验证 E[xu]=0，但 E[u|x]≠0。",
+        "tex": "E[xu]=E[x^3]-\\tfrac23E[x]=0,\\qquad E[u\\mid x]=x^2-\\tfrac23",
+        "explain": "这是正交弱于零条件均值的一个具体反例。若带截距，E[u] 也等于 0。"
+      },
+      "legacy": "ch01",
+      "refs": [
+        "greene"
+      ],
+      "number": "02",
+      "prerequisite": "notation"
+    },
+    {
+      "id": "scalar-ols",
+      "title": "手推一元 OLS：斜率和截距怎样算出来",
+      "group": "Ⅰ · 回归从哪里来",
+      "lead": "从残差平方和开始，一行一行消去截距，直到得到 β̂。",
+      "assumptions": [
+        "给定一组数据 (xᵢ,yᵢ)，包含截距。",
+        "Sxx=Σ(xᵢ−x̄)²>0，即 x 不全相同；求解本身不需要正态误差。"
+      ],
+      "steps": [
+        {
+          "title": "写下要最小化的东西",
+          "tex": "S(a,b)=\\sum_{i=1}^n(y_i-a-bx_i)^2",
+          "why": "a 是截距的候选值，b 是斜率的候选值。这里不是先假定公式，而是先指定“拟合得好”的标准。"
+        },
+        {
+          "title": "分别对 a、b 求偏导",
+          "tex": "\\frac{\\partial S}{\\partial a}=-2\\sum_i(y_i-a-bx_i),\\qquad\\frac{\\partial S}{\\partial b}=-2\\sum_ix_i(y_i-a-bx_i)",
+          "why": "链式法则：残差平方的导数是 2×残差×残差的导数。残差对 a 的导数是 −1，对 b 的导数是 −xᵢ。"
+        },
+        {
+          "title": "令第一条导数为零，先解截距",
+          "tex": "\\sum_i y_i-na-b\\sum_i x_i=0\\quad\\Longrightarrow\\quad a=\\bar y-b\\bar x",
+          "why": "两边除以 n。斜率一旦确定，截距必须让拟合直线通过样本均值点。"
+        },
+        {
+          "title": "把截距代入第二条条件",
+          "tex": "0=\\sum_i x_i[(y_i-\\bar y)-b(x_i-\\bar x)]",
+          "why": "用 yᵢ−(ȳ−bx̄)−bxᵢ=(yᵢ−ȳ)−b(xᵢ−x̄)，把原式改成离均差。"
+        },
+        {
+          "title": "为什么可以把 xᵢ 换成 xᵢ−x̄",
+          "tex": "\\sum_i(x_i-\\bar x)=\\sum_i(y_i-\\bar y)=0,\\qquad\\sum_i x_i(y_i-\\bar y)=\\sum_i(x_i-\\bar x)(y_i-\\bar y)",
+          "why": "换掉后多出来的是 x̄Σ(yᵢ−ȳ)，它恰好等于零。分母也同理：Σxᵢ(xᵢ−x̄)=Σ(xᵢ−x̄)²。"
+        },
+        {
+          "title": "移项，得到最终估计式",
+          "tex": "\\boxed{\\hat\\beta=\\frac{\\sum_i(x_i-\\bar x)(y_i-\\bar y)}{\\sum_i(x_i-\\bar x)^2}=\\frac{S_{xy}}{S_{xx}}},\\qquad \\boxed{\\hat\\alpha=\\bar y-\\hat\\beta\\bar x}",
+          "why": "Sxx>0 才能相除。平方损失严格凸，因此一阶条件找到的是唯一最小值，不是一个最大值。"
+        },
+        {
+          "title": "带入一组可以手算的数据",
+          "tex": "x=(1,2,3),\\quad y=(2,3,5),\\quad S_{xx}=2,\\quad S_{xy}=3;\\qquad\\hat\\beta=\\tfrac32,\\quad\\hat\\alpha=\\tfrac13",
+          "why": "ȳ=10/3。预测值为 (11/6,10/3,29/6)，残差为 (1/6,−1/3,1/6)，残差平方和为 1/6。"
+        }
+      ],
+      "trap": "公式只是在最小化样本平方损失。是否无偏、是否一致、如何做 t 检验，是后续需要额外假设的问题。",
+      "exercise": {
+        "prompt": "仍取 x=(1,2,3)，把 y 改成 (2,4,6)。不看答案，重算两个均值、Sxx、Sxy、截距和斜率。",
+        "tex": "\\bar x=2,\\quad\\bar y=4,\\quad S_{xx}=2,\\quad S_{xy}=4,\\quad \\hat\\beta=2,\\quad\\hat\\alpha=0",
+        "explain": "三点正好落在 y=2x 上，全部残差为零。可用下面的手算台核对。"
+      },
+      "legacy": "ch03",
+      "refs": [
+        "wooldridge",
+        "greene"
+      ],
+      "number": "03",
+      "prerequisite": "projection"
+    },
+    {
+      "id": "matrix-ols",
+      "title": "矩阵 OLS：从求导到 (XᵀX)⁻¹Xᵀy",
+      "group": "Ⅰ · 回归从哪里来",
+      "lead": "把一元回归的两条正规方程，写成适用于任意 K 个系数的一条矩阵方程。",
+      "assumptions": [
+        "给定 X、y；rank(X)=K，所以 n≥K。",
+        "若还要估计误差方差，后面需要 n>K。"
+      ],
+      "steps": [
+        {
+          "title": "把所有残差平方合在一起",
+          "tex": "S(b)=(y-Xb)^\\top(y-Xb)",
+          "why": "一个向量与自己做内积，得到各分量平方和。残差向量是 n×1，因此 S 是标量。"
+        },
+        {
+          "title": "展开四项，并合并两个交叉项",
+          "tex": "S(b)=y^\\top y-y^\\top Xb-b^\\top X^\\top y+b^\\top X^\\top Xb=y^\\top y-2b^\\top X^\\top y+b^\\top X^\\top Xb",
+          "why": "yᵀXb 是标量，它与自己的转置 bᵀXᵀy 相等。不是因为矩阵可以随意交换。"
+        },
+        {
+          "title": "使用对称二次型求导",
+          "tex": "\\nabla_b S=-2X^\\top y+2X^\\top Xb",
+          "why": "XᵀX 是对称矩阵。第一项 yᵀy 不含 b，导数为零。"
+        },
+        {
+          "title": "得到正规方程",
+          "tex": "X^\\top X\\hat\\beta=X^\\top y\\quad\\Longleftrightarrow\\quad X^\\top(y-X\\hat\\beta)=0",
+          "why": "最优残差与 X 的每一列正交。这是优化的一阶条件。"
+        },
+        {
+          "title": "用满列秩保证逆矩阵存在",
+          "tex": "v^\\top X^\\top Xv=\\|Xv\\|^2>0\\quad(v\\ne0),\\qquad \\nabla_b^2S=2X^\\top X\\succ0",
+          "why": "满列秩意味着没有非零 v 能使 Xv=0，所以 XᵀX 正定。该条件同时保证可逆和严格凸。"
+        },
+        {
+          "title": "左乘逆矩阵",
+          "tex": "\\boxed{\\hat\\beta=(X^\\top X)^{-1}X^\\top y}",
+          "why": "只能在左侧按顺序相乘。若完全共线，系数可能不唯一，但投影到 X 列空间的拟合向量仍唯一。"
+        },
+        {
+          "title": "给后面的统计推导留下一个入口",
+          "tex": "y=X\\beta+u\\quad\\Longrightarrow\\quad\\boxed{\\hat\\beta-\\beta=(X^\\top X)^{-1}X^\\top u}",
+          "why": "把总体模型代回估计式，使用 (XᵀX)⁻¹XᵀX=I。以后无偏性、方差、一致性和渐近正态性都从这个分解开始。"
+        }
+      ],
+      "trap": "满秩解决“能否唯一算出来”，不解决“估计得是否正确”。",
+      "exercise": {
+        "prompt": "若 X 的第二列是第一列的两倍，构造一个非零 v 使 Xv=0。",
+        "tex": "v=(2,-1)^\\top,\\qquad Xv=2X_1-X_2=0",
+        "explain": "此时 vᵀXᵀXv=0，XᵀX 不再正定，不能使用普通逆矩阵公式。"
+      },
+      "legacy": "ch05",
+      "refs": [
+        "greene"
+      ],
+      "number": "04",
+      "prerequisite": "scalar-ols"
+    },
+    {
+      "id": "fwl",
+      "title": "投影、残差化与 FWL 定理",
+      "group": "Ⅰ · 回归从哪里来",
+      "lead": "多元回归中的一个系数，是先剔除其他变量以后再比较的斜率。",
+      "assumptions": [
+        "X=[X₁,X₂] 满列秩；X₁ 自身也满列秩。",
+        "本章是样本代数恒等式，不需要外生性或正态性。"
+      ],
+      "steps": [
+        {
+          "title": "定义两个投影矩阵",
+          "tex": "P_1=X_1(X_1^\\top X_1)^{-1}X_1^\\top,\\qquad M_1=I-P_1",
+          "why": "P₁ 取出能被 X₁ 解释的部分，M₁ 取出剩下的部分。P₁ᵀ=P₁、P₁²=P₁；M₁ 也对称且幂等。"
+        },
+        {
+          "title": "把第一组正规方程单独写出",
+          "tex": "X_1^\\top(y-X_1\\hat\\beta_1-X_2\\hat\\beta_2)=0",
+          "why": "先暂时把 β̂₂ 当作已知，就能用这组条件解 β̂₁。"
+        },
+        {
+          "title": "消去第一组系数",
+          "tex": "\\hat\\beta_1=(X_1^\\top X_1)^{-1}X_1^\\top(y-X_2\\hat\\beta_2)",
+          "why": "将它代回原残差：y−X₁β̂₁−X₂β̂₂=M₁(y−X₂β̂₂)。"
+        },
+        {
+          "title": "代回第二组正规方程",
+          "tex": "X_2^\\top M_1(y-X_2\\hat\\beta_2)=0\\quad\\Longrightarrow\\quad\\hat\\beta_2=(X_2^\\top M_1X_2)^{-1}X_2^\\top M_1y",
+          "why": "因此只需要用“净化后的 X₂”解释“净化后的 y”。"
+        },
+        {
+          "title": "看见残差回归的同一个解",
+          "tex": "\\tilde X_2=M_1X_2,\\quad\\tilde y=M_1y,\\quad\\tilde X_2^\\top\\tilde X_2=X_2^\\top M_1X_2",
+          "why": "因为 M₁ᵀM₁=M₁。对残差做 OLS 的系数与原多元回归完全相同。完整回归和这次残差回归的残差向量也相同。"
+        }
+      ],
+      "trap": "残差回归系数相同，不意味着随便采用残差回归软件给出的自由度也相同。经典方差仍应扣除完整模型的 K 个系数。",
+      "exercise": {
+        "prompt": "如果 X₁ 只有一列常数，M₁y、M₁x 分别是什么？",
+        "tex": "M_1=I-\\frac1n\\mathbf1\\mathbf1^\\top,\\quad M_1y=y-\\bar y\\mathbf1,\\quad M_1x=x-\\bar x\\mathbf1",
+        "explain": "FWL 此时就是一元 OLS 推导中用到的“去均值”。"
+      },
+      "legacy": "ch07",
+      "refs": [
+        "greene"
+      ],
+      "number": "05",
+      "prerequisite": "matrix-ols"
+    },
+    {
+      "id": "unbiased",
+      "title": "无偏性：为什么 E[β̂|X]=β",
+      "group": "Ⅱ · 有限样本性质与精确推断",
+      "lead": "先固定你看到的 X，再对可能出现的误差求平均。",
+      "assumptions": [
+        "rank(X)=K；β 为固定真参数；有关条件期望存在。",
+        "E[u|X]=0 是给定整个设计矩阵的零条件均值。"
+      ],
+      "steps": [
+        {
+          "title": "从估计误差分解开始",
+          "tex": "\\hat\\beta-\\beta=A u,\\qquad A=(X^\\top X)^{-1}X^\\top",
+          "why": "一旦给定 X，A 就是已知矩阵。随机部分只剩 u。"
+        },
+        {
+          "title": "给定 X 后取期望",
+          "tex": "E[\\hat\\beta-\\beta\\mid X]=E[Au\\mid X]=A\\,E[u\\mid X]",
+          "why": "条件期望的“已知量可提出”性质，让矩阵 A 可以移到期望符号外。"
+        },
+        {
+          "title": "在这一步才用外生性",
+          "tex": "E[u\\mid X]=0\\quad\\Longrightarrow\\quad E[\\hat\\beta\\mid X]=\\beta",
+          "why": "正态性和同方差都没有出现在这个证明里。真正起作用的是零条件均值。"
+        },
+        {
+          "title": "由条件结论到无条件结论",
+          "tex": "E[\\hat\\beta]=E\\{E[\\hat\\beta\\mid X]\\}=\\beta",
+          "why": "这是迭代期望律；无条件期望也必须存在。随机 X 不妨碍这个推导。"
+        },
+        {
+          "title": "为什么零总体相关还不够",
+          "tex": "E[x_i u_i]=0\\quad\\not\\Rightarrow\\quad E[(X^\\top X)^{-1}X^\\top u]=0",
+          "why": "随机逆矩阵与 Xᵀu 可能相关，不能把乘积的期望随便拆开。总体正交更常用于大样本一致性。"
+        }
+      ],
+      "trap": "无偏说的是重复抽样的平均，不是这一份样本的估计值恰好等于真值。",
+      "exercise": {
+        "prompt": "若给定 X 后 E[u|X]=m≠0，条件偏差是多少？",
+        "tex": "E[\\hat\\beta\\mid X]-\\beta=(X^\\top X)^{-1}X^\\top m",
+        "explain": "偏差来自误差条件均值中被 X 投影到的部分；若 Xᵀm=0，系数仍可能条件无偏。"
+      },
+      "legacy": "ch03",
+      "refs": [
+        "greene"
+      ],
+      "number": "06",
+      "prerequisite": "fwl"
+    },
+    {
+      "id": "variance",
+      "title": "方差、自由度与 Gauss–Markov",
+      "group": "Ⅱ · 有限样本性质与精确推断",
+      "lead": "把“方差最小”拆成可检验的矩阵等式，也解释 n−K 从哪里来。",
+      "assumptions": [
+        "X 满列秩，n>K；E[u|X]=0。",
+        "Var(u|X)=σ²Iₙ，σ²>0：同方差且不同观测误差条件不相关。"
+      ],
+      "steps": [
+        {
+          "title": "先写一般方差公式",
+          "tex": "\\operatorname{Var}(\\hat\\beta\\mid X)=A\\operatorname{Var}(u\\mid X)A^\\top",
+          "why": "线性变换的协方差是 AΣAᵀ。若有异方差或相关性，应保留完整 Σ，不能先替换成 σ²I。"
+        },
+        {
+          "title": "代入球形协方差再消去中间项",
+          "tex": "\\sigma^2(X^\\top X)^{-1}X^\\top X(X^\\top X)^{-1}=\\boxed{\\sigma^2(X^\\top X)^{-1}}",
+          "why": "这是同方差 OLS 方差；正态性仍然没有被用到。"
+        },
+        {
+          "title": "残差只有 n−K 个独立方向",
+          "tex": "\\hat u=M_Xu,\\quad M_X=I-X(X^\\top X)^{-1}X^\\top,\\quad \\operatorname{tr}(M_X)=n-K",
+          "why": "X 的 K 个方向被拟合占去。幂等矩阵的秩等于迹，因此残差空间有 n−K 维。这里说的是线性维度，尚未声称残差分量统计独立。"
+        },
+        {
+          "title": "推导残差方差估计",
+          "tex": "E[\\hat u^\\top\\hat u\\mid X]=E[u^\\top M_Xu\\mid X]=\\operatorname{tr}(M_X\\sigma^2I)=\\sigma^2(n-K)",
+          "why": "使用零均值二次型的期望 E[uᵀBu]=tr(BΣ)。所以 s²=SSR/(n−K) 无偏，而 SSR/n 一般向下偏。"
+        },
+        {
+          "title": "考虑任何另一个线性无偏估计量",
+          "tex": "\\tilde\\beta=(A+C)y,\\qquad (A+C)X=I_K\\ \\Longrightarrow\\ CX=0",
+          "why": "“线性”指给定 X 后对 y 线性。无偏要求估计系数矩阵乘 X 等于单位矩阵。"
+        },
+        {
+          "title": "比较两个估计量的方差",
+          "tex": "\\operatorname{Var}(\\tilde\\beta\\mid X)-\\operatorname{Var}(\\hat\\beta\\mid X)=\\sigma^2CC^\\top\\succeq0",
+          "why": "交叉项 ACᵀ=(XᵀX)⁻¹XᵀCᵀ=0。任意方向 v 上，vᵀCCᵀv=‖Cᵀv‖²≥0，于是 OLS 是 BLUE。"
+        }
+      ],
+      "trap": "BLUE 的比较对象是线性无偏估计量，并不是所有可能估计量。正态性不是 Gauss–Markov 的必要假设。",
+      "exercise": {
+        "prompt": "n=30，模型含截距和 4 个解释变量，SSR=50。s² 是多少？",
+        "tex": "K=5,\\quad n-K=25,\\quad s^2=50/25=2",
+        "explain": "若错用 n−4 或 n 作为分母，会得到不同的标准误和检验统计量。"
+      },
+      "legacy": "ch07",
+      "refs": [
+        "greene"
+      ],
+      "number": "07",
+      "prerequisite": "unbiased"
+    },
+    {
+      "id": "exact-t",
+      "title": "从正态误差推到精确 t 分布",
+      "group": "Ⅱ · 有限样本性质与精确推断",
+      "lead": "分子为什么正态，分母为什么卡方，它们为什么独立？三步缺一不可。",
+      "assumptions": [
+        "条件于满列秩 X；n>K。",
+        "u|X∼N(0,σ²Iₙ)，不是要求 x 或 y 的边际分布正态。",
+        "检验 H₀：βⱼ=βⱼ,₀。"
+      ],
+      "steps": [
+        {
+          "title": "正态向量的线性变换仍正态",
+          "tex": "\\hat\\beta\\mid X\\sim N\\!\\left(\\beta,\\sigma^2(X^\\top X)^{-1}\\right)",
+          "why": "估计误差 Au 是正态向量 u 的线性变换，这一步明确使用了误差的联合正态性。"
+        },
+        {
+          "title": "若 σ 已知，可以直接标准化",
+          "tex": "c_{jj}=[(X^\\top X)^{-1}]_{jj},\\qquad Z=\\frac{\\hat\\beta_j-\\beta_{j,0}}{\\sigma\\sqrt{c_{jj}}}\\sim N(0,1)\\quad(H_0)",
+          "why": "这是一个精确条件分布；现在的问题是 σ 通常未知。"
+        },
+        {
+          "title": "把残差平方和写成正态二次型",
+          "tex": "V=\\frac{\\hat u^\\top\\hat u}{\\sigma^2}=\\left(\\frac u\\sigma\\right)^\\top M_X\\left(\\frac u\\sigma\\right)\\sim\\chi^2_{n-K}",
+          "why": "Mₓ 对称幂等，正交对角化后恰好有 n−K 个特征值为 1，其余为 0，因此 V 是 n−K 个独立标准正态平方之和。"
+        },
+        {
+          "title": "证明分子与残差独立",
+          "tex": "\\operatorname{Cov}(Au,M_Xu\\mid X)=\\sigma^2 A M_X=0",
+          "why": "AMₓ=0 来自 XᵀMₓ=0。由于两者联合正态，零协方差才可推出独立；一般非正态情形不能这样推。Z 于是也与残差平方和 V 独立。"
+        },
+        {
+          "title": "用估计的 σ 替换真 σ",
+          "tex": "s^2=\\frac{\\mathrm{SSR}}{n-K},\\qquad\\boxed{t=\\frac{\\hat\\beta_j-\\beta_{j,0}}{s\\sqrt{c_{jj}}}=\\frac Z{\\sqrt{V/(n-K)}}\\sim t_{n-K}}",
+          "why": "一个标准正态除以独立卡方除自由度后的平方根，这正是 t 分布的构造。"
+        },
+        {
+          "title": "由检验反解置信区间",
+          "tex": "\\hat\\beta_j\\pm t_{n-K,\\,1-\\alpha/2}\\,s\\sqrt{c_{jj}}",
+          "why": "在同一组假设下，重复抽样时这个随机区间覆盖固定真参数的概率是 1−α。不是说得到样本后真参数有 95% 的概率在区间中。"
+        }
+      ],
+      "trap": "“样本小”本身不会自动产生 t 分布。精确 t 来自上述正态、卡方和独立性结构；非正态小样本没有通用的精确 t 保证。",
+      "exercise": {
+        "prompt": "如果 n=12，模型含截距和两个解释变量，精确 t 检验的自由度是多少？如果改用 HC1 标准误，还能直接声称精确 t₉ 吗？",
+        "tex": "\\nu=12-3=9",
+        "explain": "经典同方差正态模型给出 t₉；换成 HC1 后分母结构改变，一般不能继续声称精确 t₉。"
+      },
+      "legacy": "ch04",
+      "refs": [
+        "greene"
+      ],
+      "number": "08",
+      "prerequisite": "variance"
+    },
+    {
+      "id": "exact-f",
+      "title": "联合限制：F 从两个平方和之比而来",
+      "group": "Ⅱ · 有限样本性质与精确推断",
+      "lead": "从一个系数扩展到 q 条限制，弄清什么时候 F=t²。",
+      "assumptions": [
+        "延续上一章的条件正态同方差模型，n>K。",
+        "H₀：Rβ=r；R 为 q×K、满行秩；1≤q≤K。"
+      ],
+      "steps": [
+        {
+          "title": "限制矩阵先作用在估计误差上",
+          "tex": "R\\hat\\beta-r\\mid X\\sim N\\!\\left(0,\\sigma^2R(X^\\top X)^{-1}R^\\top\\right)\\quad(H_0)",
+          "why": "例如联合检验两个斜率为零，R 就挑出这两个系数，r 是两个零组成的向量。"
+        },
+        {
+          "title": "把 q 维正态白化后平方相加",
+          "tex": "U=(R\\hat\\beta-r)^\\top[\\sigma^2R(X^\\top X)^{-1}R^\\top]^{-1}(R\\hat\\beta-r)\\sim\\chi^2_q",
+          "why": "“白化”就是把协方差缩放成单位矩阵，再取向量长度的平方。q 是独立限制条数。"
+        },
+        {
+          "title": "除以独立的残差方差",
+          "tex": "\\boxed{F=\\frac{(R\\hat\\beta-r)^\\top[R(X^\\top X)^{-1}R^\\top]^{-1}(R\\hat\\beta-r)/q}{s^2}\\sim F_{q,n-K}}",
+          "why": "分子为 U/q，分母为 V/(n−K)。估计系数和残差平方和的独立性来自上一章。"
+        },
+        {
+          "title": "同一个 F 可以用受限与非受限 SSR 写出",
+          "tex": "\\mathrm{SSR}_R-\\mathrm{SSR}_U=(R\\hat\\beta-r)^\\top[R(X^\\top X)^{-1}R^\\top]^{-1}(R\\hat\\beta-r)",
+          "why": "在相同样本、相同平方损失下施加线性限制，损失增加量恰好是这个二次型。受限模型的 SSR 不可能更小。"
+        },
+        {
+          "title": "得到常见的软件表达式",
+          "tex": "F=\\frac{(\\mathrm{SSR}_R-\\mathrm{SSR}_U)/q}{\\mathrm{SSR}_U/(n-K)}",
+          "why": "分母自由度使用非受限模型的 K。若两个模型用的观测行不同，不能套这个比较。"
+        },
+        {
+          "title": "只有一条限制时",
+          "tex": "q=1:\\quad F=t^2,\\qquad W=qF",
+          "why": "这里的 t、F、W 必须使用同一个限制和同一协方差估计。W=qF 是统计量代数关系；W 在这里等于 q 倍 F，并非有限样本精确 χ²q。"
+        }
+      ],
+      "trap": "数值关系 W=qF 并不意味着可以任意混用 χ² 和 F 的参考分布；p 值和临界值也会不同。",
+      "exercise": {
+        "prompt": "n=40，非受限模型 K=4，q=2；SSR_R=120，SSR_U=100。求 F 及自由度。",
+        "tex": "F=\\frac{(120-100)/2}{100/36}=3.6,\\quad F_{2,36}",
+        "explain": "不能把 3.6 直接作为 χ²₂ 统计量；W=2F=7.2，而这个小样本 W 的精确参考分布是 2F₂,₃₆。"
+      },
+      "legacy": "ch07",
+      "refs": [
+        "greene"
+      ],
+      "number": "09",
+      "prerequisite": "exact-t"
+    },
+    {
+      "id": "limits",
+      "title": "大样本工具：LLN、CLT 与 Slutsky",
+      "group": "Ⅲ · 一致性与渐近正态性",
+      "lead": "“趋近一个数”和“趋近一个分布”是两件事；先把工具分清。",
+      "assumptions": [
+        "本章首先使用 iid 随机变量；LLN 要求适当有限矩，经典 CLT 要求有限方差。",
+        "这些是足够条件的一种常用版本，不是所有可能版本。"
+      ],
+      "steps": [
+        {
+          "title": "依概率收敛描述误差变小",
+          "tex": "Z_n\\xrightarrow{p}c\\ \\Longleftrightarrow\\ \\forall\\epsilon>0,\\ P(|Z_n-c|>\\epsilon)\\to0",
+          "why": "收敛的是偏离固定值的概率，不是说从某个样本量以后每次抽样都会精确等于 c。"
+        },
+        {
+          "title": "大数定律把平均变成期望",
+          "tex": "\\bar z_n=\\frac1n\\sum_i z_i\\xrightarrow{p}\\mu=E[z_i]",
+          "why": "对 iid 且 E|zᵢ|<∞ 的变量成立。矩阵平均可以按有限个元素分别使用 LLN。"
+        },
+        {
+          "title": "中心极限定理关注缩放后的波动",
+          "tex": "\\sqrt n(\\bar z_n-\\mu)=\\frac1{\\sqrt n}\\sum_i(z_i-\\mu)\\xrightarrow{d}N(0,\\sigma^2)",
+          "why": "要求有限方差 σ²。平均误差通常以 1/√n 缩小，乘回 √n 才能看到不退化的随机极限。原始 zᵢ 无须正态。"
+        },
+        {
+          "title": "连续映射处理平方、逆与其他函数",
+          "tex": "Z_n\\xrightarrow{p}c\\quad\\Longrightarrow\\quad g(Z_n)\\xrightarrow{p}g(c)",
+          "why": "g 必须在极限处连续。矩阵求逆在非奇异矩阵附近连续，所以要先证明极限矩阵可逆，不能略过。"
+        },
+        {
+          "title": "Slutsky 把两种收敛拼起来",
+          "tex": "A_n\\xrightarrow{p}A,\\quad B_n\\xrightarrow{d}B\\quad\\Longrightarrow\\quad A_nB_n\\xrightarrow{d}AB",
+          "why": "A 必须是固定常数或固定矩阵。这里不要求 Aₙ 与 Bₙ 独立，因为 Aₙ 的随机波动在极限中消失。"
+        }
+      ],
+      "trap": "样本量变大，不会让每个误差项 uᵢ 自动变成正态。CLT 约束的是经过中心化、缩放的和。重尾到没有有限方差时，经典 √n CLT 可能失效。",
+      "exercise": {
+        "prompt": "zᵢ 的均值为 0、方差为 4。比较 z̄、√n z̄ 和 √n z̄/2 的极限。",
+        "tex": "\\bar z\\xrightarrow{p}0,\\qquad\\sqrt n\\bar z\\xrightarrow{d}N(0,4),\\qquad\\frac{\\sqrt n\\bar z}{2}\\xrightarrow{d}N(0,1)",
+        "explain": "三个式子分别是退化到常数、非退化正态，以及标准正态。"
+      },
+      "legacy": "ch08",
+      "refs": [
+        "greene",
+        "hansen",
+        "mit"
+      ],
+      "number": "10",
+      "prerequisite": "exact-f"
+    },
+    {
+      "id": "consistency",
+      "title": "OLS 一致性：把两个样本平均拆开",
+      "group": "Ⅲ · 一致性与渐近正态性",
+      "lead": "不用先假定正态分布，先证明估计值能靠近真值。",
+      "assumptions": [
+        "(xᵢ,uᵢ) iid，K 固定；E[‖xᵢ‖²]<∞，E[‖xᵢuᵢ‖]<∞。",
+        "E[xᵢuᵢ]=0；Q=E[xᵢxᵢᵀ] 正定，样本矩阵以趋于 1 的概率可逆。"
+      ],
+      "steps": [
+        {
+          "title": "回到估计误差分解",
+          "tex": "\\hat\\beta-\\beta=(X^\\top X)^{-1}X^\\top u",
+          "why": "这条有限样本代数恒等式不需要正态性，因此可以作为渐近分析起点。"
+        },
+        {
+          "title": "分子分母各提出 n",
+          "tex": "\\hat\\beta-\\beta=\\left(\\frac1n\\sum_i x_ix_i^\\top\\right)^{-1}\\left(\\frac1n\\sum_i x_i u_i\\right)=Q_n^{-1}\\bar g_n",
+          "why": "因为 (XᵀX/n)⁻¹=n(XᵀX)⁻¹，与后一项的 1/n 正好抵消。这一步必须写出来，才能看到 LLN 能用在哪里。"
+        },
+        {
+          "title": "对第一个平均使用 LLN",
+          "tex": "Q_n\\xrightarrow{p}Q=E[x_ix_i^\\top]\\succ0",
+          "why": "每个元素是 xᵢⱼxᵢₖ 的样本平均；有限二阶矩使相应一阶绝对矩存在。"
+        },
+        {
+          "title": "对第二个平均使用 LLN",
+          "tex": "\\bar g_n=\\frac1n\\sum_i x_i u_i\\xrightarrow{p}E[x_iu_i]=0",
+          "why": "这一步用到了总体正交。若该期望非零，即使样本无限大也不会把它消除。"
+        },
+        {
+          "title": "连续映射后相乘",
+          "tex": "Q_n^{-1}\\xrightarrow{p}Q^{-1},\\qquad\\hat\\beta-\\beta\\xrightarrow{p}Q^{-1}0=0",
+          "why": "所以 β̂→pβ。正态误差、同方差都不是这份证明的要求。"
+        }
+      ],
+      "trap": "一致性不能靠“大样本”四个字保证。内生性、不可识别、强依赖或矩不存在都可能使某一步失败。",
+      "exercise": {
+        "prompt": "若 E[xu]=a≠0，而其他条件保持，β̂ 的概率极限是什么？",
+        "tex": "\\operatorname{plim}\\hat\\beta=\\beta+Q^{-1}a",
+        "explain": "增大 n 会让估计更稳定地靠近一个错误位置，不能修复内生性。"
+      },
+      "legacy": "ch08",
+      "refs": [
+        "greene",
+        "hansen",
+        "mit"
+      ],
+      "number": "11",
+      "prerequisite": "limits"
+    },
+    {
+      "id": "asymptotic-normality",
+      "title": "OLS 渐近正态性：逐行展开的完整证明",
+      "group": "Ⅲ · 一致性与渐近正态性",
+      "lead": "先中心化，再乘 √n；一个部分用 LLN，另一个部分用 CLT，最后用 Slutsky。",
+      "assumptions": [
+        "(xᵢ,uᵢ) iid，K 固定；E[xᵢuᵢ]=0。",
+        "Q=E[xᵢxᵢᵀ] 正定且有限；E[‖xᵢuᵢ‖²]<∞。",
+        "Ω=E[uᵢ²xᵢxᵢᵀ] 为有限协方差；要对某方向推断，该方向的极限方差应为正。"
+      ],
+      "steps": [
+        {
+          "title": "第一段：先写估计量减去真值",
+          "tex": "\\hat\\beta-\\beta=\\left(\\frac1n\\sum_i x_ix_i^\\top\\right)^{-1}\\frac1n\\sum_i x_i u_i",
+          "why": "不中心化，β̂ 的极限只是常数 β，看不到估计误差的分布形状。"
+        },
+        {
+          "title": "第二段：乘上 √n，检查每个 n 的位置",
+          "tex": "\\sqrt n(\\hat\\beta-\\beta)=\\underbrace{\\left(\\frac1n\\sum_i x_ix_i^\\top\\right)^{-1}}_{A_n}\\underbrace{\\left(\\frac1{\\sqrt n}\\sum_i x_i u_i\\right)}_{B_n}",
+          "why": "√n×1/n=1/√n。Aₙ 是会稳定下来的随机矩阵；Bₙ 是中心化向量和的 CLT 缩放。"
+        },
+        {
+          "title": "第三段：LLN 加连续映射处理 Aₙ",
+          "tex": "\\frac1n\\sum_i x_ix_i^\\top\\xrightarrow{p}Q\\quad\\Longrightarrow\\quad A_n\\xrightarrow{p}Q^{-1}",
+          "why": "使用 Q 非奇异。这里得到的是依概率收敛到固定矩阵，不是在说 Aₙ 正态。"
+        },
+        {
+          "title": "第四段：多元 CLT 处理 Bₙ",
+          "tex": "g_i=x_i u_i,\\quad E[g_i]=0,\\quad\\operatorname{Var}(g_i)=E[u_i^2x_ix_i^\\top]=\\Omega,\\qquad B_n\\xrightarrow{d}N(0,\\Omega)",
+          "why": "这是 iid、有限二阶矩的 K 维 CLT。也可对每个固定向量 a 使用一维 CLT，再用 Cramér–Wold 得到向量结论。要求的是 xᵢuᵢ 的矩，不只是 uᵢ 的方差。"
+        },
+        {
+          "title": "第五段：Slutsky 与线性变换协方差",
+          "tex": "\\boxed{\\sqrt n(\\hat\\beta-\\beta)\\xrightarrow{d}N(0,Q^{-1}\\Omega Q^{-1})}",
+          "why": "若 Z∼N(0,Ω)，则 Q⁻¹Z 的协方差为 Q⁻¹Ω(Q⁻¹)ᵀ。Q 对称，故最后一个转置可以省略。Aₙ、Bₙ 来自同一份数据，也可以使用 Slutsky。"
+        },
+        {
+          "title": "分清极限方差和估计量本身的近似方差",
+          "tex": "V=Q^{-1}\\Omega Q^{-1},\\qquad\\hat\\beta\\ \\overset{a}{\\sim}\\ N\\!\\left(\\beta,\\frac Vn\\right)",
+          "why": "V 对应 √n(β̂−β)，而 β̂ 的渐近协方差是 V/n。遗漏 1/n 会把标准误放大 √n 倍。上式是大样本近似记号，不是有限样本精确分布。"
+        },
+        {
+          "title": "同方差只是一个简化分支",
+          "tex": "E[u_i^2\\mid x_i]=\\sigma^2\\quad\\Longrightarrow\\quad\\Omega=E[x_ix_i^\\top E[u_i^2\\mid x_i]]=\\sigma^2Q,\\quad V=\\sigma^2Q^{-1}",
+          "why": "一般情形是三明治方差；有条件同方差时才约成 σ²Q⁻¹。整个 CLT 推导无须假设误差本身正态。"
+        }
+      ],
+      "trap": "渐近正态性不等于“小样本也可以直接用 1.96”。近似好坏与尾部、杠杆、依赖结构和识别强弱有关，没有一个通用的 n 门槛。",
+      "exercise": {
+        "prompt": "一维情形 Q=2、Ω=8、n=100。V、β̂ 的渐近方差和标准误分别是多少？",
+        "tex": "V=2^{-1}\\cdot8\\cdot2^{-1}=2,\\quad\\operatorname{Avar}(\\hat\\beta)=2/100=0.02,\\quad\\operatorname{se}\\approx\\sqrt{0.02}=0.1414",
+        "explain": "先算缩放估计误差的极限方差，再除以 n。若忘记最后一步，会误报标准误约为 1.414。"
+      },
+      "legacy": "ch08",
+      "refs": [
+        "greene",
+        "hansen",
+        "mit"
+      ],
+      "number": "12",
+      "prerequisite": "consistency"
+    },
+    {
+      "id": "robust",
+      "title": "稳健标准误与 Delta 方法",
+      "group": "Ⅲ · 一致性与渐近正态性",
+      "lead": "把未知的 Q、Ω 换成可计算的样本量，再把结论传给非线性函数。",
+      "assumptions": [
+        "延续 iid、固定 K、满秩与外生矩条件；例如 E‖x‖⁴ 和 E[u⁴] 有限可作为残差矩一致性的充分矩条件。",
+        "Delta 方法要求目标函数在真参数处可微；非退化一阶近似要求相应导数和方差不退化。"
+      ],
+      "steps": [
+        {
+          "title": "用残差估计未知误差矩",
+          "tex": "\\hat\\Omega=\\frac1n\\sum_i x_ix_i^\\top\\hat u_i^2,\\qquad\\hat u_i=u_i-x_i^\\top(\\hat\\beta-\\beta)",
+          "why": "残差能替代误差不是纯代数恒等。需要 β̂ 一致和足够的矩条件，使替代误差在样本平均中消失。"
+        },
+        {
+          "title": "看清替代项为何趋于零",
+          "tex": "\\hat u_i^2-u_i^2=-2u_ix_i^\\top\\delta_n+(x_i^\\top\\delta_n)^2,\\qquad\\delta_n=\\hat\\beta-\\beta=o_p(1)",
+          "why": "乘 xᵢxᵢᵀ后求平均，第一项由样本三阶交叉矩乘 δₙ 控制，第二项由样本四阶矩乘 ‖δₙ‖² 控制。上述有限四阶矩条件保证这些样本矩有界。"
+        },
+        {
+          "title": "形成 HC0 协方差估计",
+          "tex": "\\boxed{\\widehat{\\operatorname{Var}}_{HC0}(\\hat\\beta)=\\frac1nQ_n^{-1}\\hat\\Omega Q_n^{-1}=(X^\\top X)^{-1}\\Big(\\sum_i x_ix_i^\\top\\hat u_i^2\\Big)(X^\\top X)^{-1}}",
+          "why": "三明治两边控制解释变量的信息量，中间允许各观测误差平方不同。对角元素开根号就是标准误。"
+        },
+        {
+          "title": "学生化后得到大样本标准正态",
+          "tex": "\\frac{\\hat\\beta_j-\\beta_{j,0}}{\\sqrt{\\widehat{\\operatorname{Var}}_{HC0}(\\hat\\beta)_{jj}}}\\xrightarrow{d}N(0,1)\\quad(H_0)",
+          "why": "分子按 √n 缩放后渐近正态，估计的缩放方差依概率收敛到真 Vⱼⱼ，用 Slutsky 相除。"
+        },
+        {
+          "title": "有限样本修正与精确分布分开看",
+          "tex": "\\widehat{\\operatorname{Var}}_{HC1}=\\frac n{n-K}\\widehat{\\operatorname{Var}}_{HC0}",
+          "why": "HC1 乘一个自由度因子。它与 HC0 渐近相同，但不保证任意小样本下都精确 t 分布；HC2、HC3 还会调整杠杆。"
+        },
+        {
+          "title": "Taylor 展开给出 Delta 方法",
+          "tex": "\\sqrt n\\{h(\\hat\\beta)-h(\\beta)\\}=\\nabla h(\\beta)^\\top\\sqrt n(\\hat\\beta-\\beta)+o_p(1)\\xrightarrow{d}N(0,\\nabla h^\\top V\\nabla h)",
+          "why": "对非线性函数在真值附近作一阶线性化，协方差按线性变换规则传递。如果一阶导数为零，不能照搬这个非退化正态近似，需要高阶分析。"
+        }
+      ],
+      "trap": "稳健标准误只修正不确定性的估计，不会修复内生性导致的系数偏误。比较 Stata 与 Python 时要同时对齐 HC 类型、自由度和参考分布。",
+      "exercise": {
+        "prompt": "n=20、K=4。HC0 标准误为 0.20，HC1 标准误是多少？",
+        "tex": "\\mathrm{se}_{HC1}=\\sqrt{20/16}\\times0.20\\approx0.2236",
+        "explain": "修正因子乘在方差上，标准误要乘因子的平方根。"
+      },
+      "legacy": "ch10",
+      "refs": [
+        "greene"
+      ],
+      "number": "13",
+      "prerequisite": "asymptotic-normality"
+    },
+    {
+      "id": "wald-lr-lm",
+      "title": "Wald、LR、LM 与模型比较",
+      "group": "Ⅳ · 从线性回归走向一般估计",
+      "lead": "三个检验看的是同一个限制，但采用不同的局部信息；有限样本数值可以不同。",
+      "assumptions": [
+        "q 条独立限制，q 固定；常规可识别、内点、可微条件。",
+        "一般 Wald 可基于一致协方差；标准 LR/LM 的 χ² 结论要求正确设定的常规似然模型。",
+        "比较三者一阶等价性时，Wald 使用同一似然模型的非受限 MLE 及其一致协方差。"
+      ],
+      "steps": [
+        {
+          "title": "Wald 从非受限估计值到限制的距离出发",
+          "tex": "W=(R\\hat\\beta-r)^\\top[R\\widehat{\\operatorname{Var}}(\\hat\\beta)R^\\top]^{-1}(R\\hat\\beta-r)\\xrightarrow{d}\\chi^2_q",
+          "why": "将 √n(β̂−β) 的正态极限投影到 q 维限制方向，再用一致协方差白化。单限制时 W=z²；若系数使用稳健协方差，W 也必须使用同一套协方差。"
+        },
+        {
+          "title": "LR 比较两个最大化后的对数似然",
+          "tex": "LR=2\\{\\ell_n(\\hat\\theta)-\\ell_n(\\tilde\\theta)\\}",
+          "why": "θ̂ 是非受限 MLE，θ̃ 是满足原假设的受限 MLE。受限最优值不能超过非受限最优值，因此 LR≥0。两个模型必须嵌套，且基于同一份样本和同一似然定义。"
+        },
+        {
+          "title": "LM 看受限点的斜率还剩多少",
+          "tex": "S_n(\\theta)=\\frac{\\partial\\ell_n(\\theta)}{\\partial\\theta},\\qquad LM=S_n(\\tilde\\theta)^\\top I_n(\\tilde\\theta)^{-1}S_n(\\tilde\\theta)",
+          "why": "Iₙ 是全样本信息矩阵；受限估计已经优化了未受限的干扰参数，使用完整信息矩阵的逆来计入它们的影响。一般只需拟合受限模型。"
+        },
+        {
+          "title": "局部二次近似把三者联系起来",
+          "tex": "\\ell_n(\\theta_0+h/\\sqrt n)-\\ell_n(\\theta_0)=h^\\top\\Delta_n-\\tfrac12h^\\top I h+o_p(1),\\qquad\\Delta_n\\xrightarrow{d}N(0,I)",
+          "why": "在正确设定的常规模型中，限制局部等价于 q 维线性约束。白化后，受限与非受限最优点的距离、似然损失和受限梯度都归结为同一组 q 维标准正态的平方和。"
+        },
+        {
+          "title": "得到共同的一阶极限，不是有限样本恒等",
+          "tex": "W,LR,LM\\xrightarrow{d}\\chi^2_q,\\qquad W-LR=o_p(1),\\quad LM-LR=o_p(1)\\quad(H_0)",
+          "why": "样本小时三者可以给出不同数值。边界参数、弱识别、不正确的似然或模型选择后的重复检验，需要重新分析分布。"
+        },
+        {
+          "title": "把检验与信息准则分开",
+          "tex": "\\mathrm{AIC}=-2\\hat\\ell+2p,\\qquad\\mathrm{BIC}=-2\\hat\\ell+p\\log n",
+          "why": "p 计算全部估计参数，包括需要估计的方差参数。信息准则比较拟合与复杂度，不是一个系数的显著性检验。不同因变量或不同样本上的数值不能随意直接比较。"
+        }
+      ],
+      "trap": "软件输出 F、Wald χ² 或 z/t，可能同时改变了缩放、协方差和参考分布。先对齐定义，再判断实现是否有错。",
+      "exercise": {
+        "prompt": "同一限制 q=3，同一协方差下软件甲报 W=12，软件乙报 F=W/q。F 是多少？这是否自动证明它精确服从有限样本 F？",
+        "tex": "F=12/3=4",
+        "explain": "只是缩放等价。稳健大样本下通常是 W→χ²₃，故 F→χ²₃/3；有限分母自由度的 F 参考需要另行解释。"
+      },
+      "legacy": "ch09",
+      "refs": [
+        "greene"
+      ],
+      "number": "14",
+      "prerequisite": "robust"
+    },
+    {
+      "id": "iv",
+      "title": "内生性与工具变量：从矩条件到 2SLS",
+      "group": "Ⅳ · 从线性回归走向一般估计",
+      "lead": "OLS 的正交条件失效时，换一组可信的正交条件来识别 β。",
+      "assumptions": [
+        "工具向量 z 维度 L≥K；E[zu]=0，rank(E[zxᵀ])=K。",
+        "样本 Z 满列秩，XᵀPzX 可逆；一致性还需相应 LLN 与矩条件。"
+      ],
+      "steps": [
+        {
+          "title": "先看清 OLS 偏向哪里",
+          "tex": "\\operatorname{plim}\\hat\\beta_{OLS}=\\beta+Q^{-1}E[xu]",
+          "why": "如果解释变量与结构误差相关，误差分解中的第二个平均不会趋于零。"
+        },
+        {
+          "title": "换用工具变量矩条件",
+          "tex": "E[z(y-x^\\top\\beta)]=0",
+          "why": "工具变量要与误差正交，同时与解释变量有足够相关性。相关性不能替代外生性。"
+        },
+        {
+          "title": "恰好识别时直接解样本矩方程",
+          "tex": "L=K:\\quad Z^\\top(y-Xb)=0\\quad\\Longrightarrow\\quad\\hat\\beta_{IV}=(Z^\\top X)^{-1}Z^\\top y",
+          "why": "此时有 K 条方程解 K 个未知量。满秩保障能够识别。"
+        },
+        {
+          "title": "工具比参数多时，投影出可解释部分",
+          "tex": "P_Z=Z(Z^\\top Z)^{-1}Z^\\top,\\qquad\\hat X=P_ZX",
+          "why": "第一阶段把 X 的每一列投影到 Z 的列空间。模型中已有的外生回归变量也应放进工具集合。"
+        },
+        {
+          "title": "第二阶段代数化简",
+          "tex": "\\boxed{\\hat\\beta_{2SLS}=(\\hat X^\\top\\hat X)^{-1}\\hat X^\\top y=(X^\\top P_ZX)^{-1}X^\\top P_Zy}",
+          "why": "利用 Pz 对称幂等。解释变量在第一阶段被净化，不代表误差也改成 y−X̂β。"
+        },
+        {
+          "title": "用结构残差估计不确定性",
+          "tex": "\\hat u=y-X\\hat\\beta_{2SLS}",
+          "why": "第二阶段若作为普通 OLS 直接运行，默认残差和标准误可能不对。应使用 IV/2SLS 专用协方差公式，并考虑异方差、聚类和弱工具问题。"
+        }
+      ],
+      "trap": "第一阶段显著不证明工具外生；弱工具下常规渐近正态和 t/Wald 近似可能很差。",
+      "exercise": {
+        "prompt": "无截距的一元恰好识别情形，Σzᵢyᵢ=12，Σzᵢxᵢ=4。IV 系数是多少？分母接近 0 意味着什么？",
+        "tex": "\\hat\\beta_{IV}=12/4=3",
+        "explain": "分母接近零意味着样本工具相关性弱，估计会对微小样本变化异常敏感；外生性仍需独立论证。"
+      },
+      "legacy": "ch11",
+      "refs": [
+        "greene",
+        "mit"
+      ],
+      "number": "15",
+      "prerequisite": "wald-lr-lm"
+    },
+    {
+      "id": "gls",
+      "title": "GLS 与 WLS：把误差先变白",
+      "group": "Ⅳ · 从线性回归走向一般估计",
+      "lead": "异方差时可以改标准误，也可以在协方差结构可信时改变估计准则。",
+      "assumptions": [
+        "E[u|X]=0，Var(u|X)=σ²H，H 已知对称正定；X 满列秩。",
+        "若 H 用数据估计，FGLS 的性质需要另外的估计一致性和正则条件。"
+      ],
+      "steps": [
+        {
+          "title": "对噪声较大的方向少信一点",
+          "tex": "S_H(b)=(y-Xb)^\\top H^{-1}(y-Xb)",
+          "why": "普通 OLS 对所有方向一视同仁。GLS 通过协方差的逆来衡量残差大小。"
+        },
+        {
+          "title": "对加权平方损失求导",
+          "tex": "\\nabla_b S_H=-2X^\\top H^{-1}(y-Xb)",
+          "why": "H⁻¹ 对称，仍然使用对称二次型求导。"
+        },
+        {
+          "title": "解加权正规方程",
+          "tex": "\\boxed{\\hat\\beta_{GLS}=(X^\\top H^{-1}X)^{-1}X^\\top H^{-1}y}",
+          "why": "逆矩阵存在，因为 H 正定且 X 满列秩。"
+        },
+        {
+          "title": "等价地先变换数据",
+          "tex": "y^*=H^{-1/2}y,\\quad X^*=H^{-1/2}X,\\quad u^*=H^{-1/2}u,\\quad\\operatorname{Var}(u^*\\mid X)=\\sigma^2I",
+          "why": "“变白”意味着把误差协方差变成单位阵的倍数。对变换后的数据做 OLS，正好得到 GLS。"
+        },
+        {
+          "title": "WLS 是对角协方差的特例",
+          "tex": "H=\\operatorname{diag}(h_i),\\quad y_i^*=y_i/\\sqrt{h_i},\\quad x_i^*=x_i/\\sqrt{h_i}",
+          "why": "损失中的权重是 1/hᵢ，数据变换除的是 √hᵢ。若原模型有截距，常数列也必须一起变换。"
+        }
+      ],
+      "trap": "如果权重模型设错，教科书 GLS 方差不再自动有效。稳健 OLS 与 WLS 是不同选择，不应只看哪个更显著。",
+      "exercise": {
+        "prompt": "两条观测的条件方差分别为 1 和 4，WLS 损失权重和数据缩放分别是什么？",
+        "tex": "w_1=1,\\ w_2=1/4;\\qquad (y_1,x_1)\\text{不变},\\quad(y_2,x_2)\\text{除以 }2",
+        "explain": "不要把第二条观测直接除以 4；那会把平方损失权重变成 1/16。"
+      },
+      "legacy": "ch10",
+      "refs": [
+        "greene"
+      ],
+      "number": "16",
+      "prerequisite": "iv"
+    },
+    {
+      "id": "panel",
+      "title": "固定效应：为什么去均值能消掉 αᵢ",
+      "group": "Ⅳ · 从线性回归走向一般估计",
+      "lead": "把面板中的个体不变差异当成需要剔除的方向。",
+      "assumptions": [
+        "yᵢₜ=αᵢ+xᵢₜᵀβ+uᵢₜ；组内变化有足够秩。",
+        "常规静态模型使用严格外生性 E[uᵢₜ|xᵢ₁,…,xᵢT,αᵢ]=0；推断还需适当跨个体独立与大样本条件。"
+      ],
+      "steps": [
+        {
+          "title": "对同一个体在时间上求平均",
+          "tex": "\\bar y_i=\\alpha_i+\\bar x_i^\\top\\beta+\\bar u_i",
+          "why": "αᵢ 不随时间变，因此平均以后仍是 αᵢ。"
+        },
+        {
+          "title": "原式减掉个体均值",
+          "tex": "\\tilde y_{it}=y_{it}-\\bar y_i=(x_{it}-\\bar x_i)^\\top\\beta+(u_{it}-\\bar u_i)",
+          "why": "αᵢ−αᵢ=0，个体固定效应被消去。"
+        },
+        {
+          "title": "对去均值后的数据做 OLS",
+          "tex": "\\hat\\beta_{FE}=\\left(\\sum_{i,t}\\tilde x_{it}\\tilde x_{it}^\\top\\right)^{-1}\\sum_{i,t}\\tilde x_{it}\\tilde y_{it}",
+          "why": "这也是把个体虚拟变量作为 X₁ 使用 FWL。识别来自同一个体内部的变化。"
+        },
+        {
+          "title": "为什么要求整个时间路径的外生性",
+          "tex": "\\tilde u_{it}=u_{it}-\\frac1T\\sum_su_{is}",
+          "why": "去均值后的误差包含所有期的误差，所以只有“当期 x 与当期 u 不相关”通常不够。滞后因变量会引出动态面板偏误。"
+        },
+        {
+          "title": "个体内相关性影响标准误",
+          "tex": "\\hat S=\\sum_i\\left(\\sum_t\\tilde x_{it}\\hat u_{it}\\right)\\left(\\sum_t\\tilde x_{it}\\hat u_{it}\\right)^\\top",
+          "why": "以个体为聚类单位时，保留同一个体不同期之间的交叉项。聚类推断依赖独立簇数量等条件，不能只看总观测数。"
+        }
+      ],
+      "trap": "时间不变变量去均值后全为零，不能再从个体固定效应回归中单独识别其系数。",
+      "exercise": {
+        "prompt": "一个人的 x=(4,6,8)，y=(10,13,16)。求去均值序列及仅用该个体组内变化得到的斜率。",
+        "tex": "\\tilde x=(-2,0,2),\\quad\\tilde y=(-3,0,3),\\quad\\hat\\beta=12/8=1.5",
+        "explain": "这是代数练习，不代表一个个体就足以支持可靠的聚类推断。"
+      },
+      "legacy": "ch20",
+      "refs": [
+        "greene",
+        "mit"
+      ],
+      "number": "17",
+      "prerequisite": "gls"
+    },
+    {
+      "id": "gmm",
+      "title": "GMM：把矩条件变成一个最小化问题",
+      "group": "Ⅴ · 一般估计与拓展",
+      "lead": "OLS 和 IV 都是矩条件估计的成员；GMM 给出统一的权重与方差推导。",
+      "assumptions": [
+        "gᵢ(θ)∈Rᴸ，θ∈Rᴾ，L≥P；真值满足 E[gᵢ(θ₀)]=0。",
+        "iid、适当矩和光滑性、识别、估计一致性；D=E[∂g/∂θᵀ] 满列秩，S=Var(gᵢ) 正定。",
+        "采用固定或两步权重 Wₙ→pW≻0；不在此直接套用持续更新权重的求导式。"
+      ],
+      "steps": [
+        {
+          "title": "定义样本矩和二次损失",
+          "tex": "\\bar g_n(\\theta)=\\frac1n\\sum_i g_i(\\theta),\\quad\\hat\\theta=\\arg\\min_\\theta\\bar g_n(\\theta)^\\top W_n\\bar g_n(\\theta)",
+          "why": "多于参数个数的矩条件一般不能在有限样本中同时恰好为零，于是最小化加权距离。"
+        },
+        {
+          "title": "写出一阶条件",
+          "tex": "\\hat D^\\top W_n\\bar g_n(\\hat\\theta)=0",
+          "why": "对矩条件向量使用链式法则。二次型导数的因子 2 可以约去。"
+        },
+        {
+          "title": "围绕真值线性化",
+          "tex": "\\sqrt n\\bar g_n(\\hat\\theta)=\\sqrt n\\bar g_n(\\theta_0)+D\\sqrt n(\\hat\\theta-\\theta_0)+o_p(1)",
+          "why": "光滑性、局部一致收敛和一致性允许用总体导数 D 替代中间导数；相应正则条件确保余项足够小。"
+        },
+        {
+          "title": "代入一阶条件并解估计误差",
+          "tex": "\\sqrt n(\\hat\\theta-\\theta_0)=-(D^\\top WD)^{-1}D^\\top W\\sqrt n\\bar g_n(\\theta_0)+o_p(1)",
+          "why": "现在又变成“稳定矩阵 × 中心化样本和”的形式。"
+        },
+        {
+          "title": "用 CLT 得到三明治方差",
+          "tex": "V=(D^\\top WD)^{-1}D^\\top WSWD(D^\\top WD)^{-1}",
+          "why": "矩条件的 CLT 协方差是 S。别把估计误差的 V 与 θ̂ 本身的渐近协方差 V/n 混淆。"
+        },
+        {
+          "title": "最优权重与过度识别检验",
+          "tex": "W=S^{-1}\\quad\\Longrightarrow\\quad V=(D^\\top S^{-1}D)^{-1},\\qquad J=n\\bar g_n(\\hat\\theta)^\\top\\hat S^{-1}\\bar g_n(\\hat\\theta)\\xrightarrow{d}\\chi^2_{L-P}",
+          "why": "在有效的常规过度识别模型下，用 L 条矩估了 P 个参数，剩下 L−P 个可检验方向。L=P 时没有过度识别自由度。"
+        }
+      ],
+      "trap": "J 检验不拒绝不是工具变量外生性的证明；它也不检验每一条矩各自的真实性。",
+      "exercise": {
+        "prompt": "有 5 条有效独立矩条件、3 个参数，最优 GMM 的 J 检验自由度是多少？只有 3 条矩时呢？",
+        "tex": "L-P=5-3=2;\\qquad L=P=3\\Rightarrow L-P=0",
+        "explain": "恰好识别时不能借助过度识别检验验证工具的外生性。"
+      },
+      "legacy": "ch11",
+      "refs": [
+        "greene",
+        "mit"
+      ],
+      "number": "18",
+      "prerequisite": "panel"
+    },
+    {
+      "id": "mle",
+      "title": "MLE 渐近正态性：从得分的 Taylor 展开推出来",
+      "group": "Ⅴ · 一般估计与拓展",
+      "lead": "OLS 的证明骨架会再次出现：CLT 处理得分，LLN 处理 Hessian。",
+      "assumptions": [
+        "iid、参数内点、可识别、估计一致性及局部光滑和一致收敛条件。",
+        "得分有有限协方差；A=−E[Hᵢ(θ₀)] 正定。信息等式还要求模型正确设定及允许微分与积分交换等正则条件。"
+      ],
+      "steps": [
+        {
+          "title": "写下对数似然与得分",
+          "tex": "\\ell_n(\\theta)=\\sum_i\\log f(y_i\\mid x_i;\\theta),\\quad s_i(\\theta)=\\nabla_\\theta\\log f_i(\\theta),\\quad\\frac1n\\sum_i s_i(\\hat\\theta)=0",
+          "why": "在内部最优解，一阶导数为零。边界解或完全分离等情形不能直接从这一条出发。"
+        },
+        {
+          "title": "用积分形式写精确展开",
+          "tex": "0=\\bar s_n(\\theta_0)+\\bar H_n(\\hat\\theta-\\theta_0),\\quad\\bar H_n=\\int_0^1 H_n(\\theta_0+t(\\hat\\theta-\\theta_0))\\,dt",
+          "why": "Hₙ 是平均得分的 Jacobian，即平均 Hessian。多维时采用沿线积分形式，避免假定所有分量共用一个不存在的中间点。"
+        },
+        {
+          "title": "移项并乘 √n",
+          "tex": "\\sqrt n(\\hat\\theta-\\theta_0)=-\\bar H_n^{-1}\\frac1{\\sqrt n}\\sum_i s_i(\\theta_0)",
+          "why": "这与 OLS 的矩阵乘样本和完全同构。"
+        },
+        {
+          "title": "分别使用 LLN 与 CLT",
+          "tex": "\\bar H_n\\xrightarrow{p}-A,\\quad\\frac1{\\sqrt n}\\sum_i s_i(\\theta_0)\\xrightarrow{d}N(0,B),\\quad B=\\operatorname{Var}(s_i(\\theta_0))",
+          "why": "一致性和局部一致收敛把路径上的 Hessian 拉回真值附近。得分均值为零时可以应用 CLT。"
+        },
+        {
+          "title": "拼出一般三明治极限",
+          "tex": "\\sqrt n(\\hat\\theta-\\theta_0)\\xrightarrow{d}N(0,A^{-1}BA^{-1})",
+          "why": "即使做似然估计，也不能不加条件就把协方差写成信息矩阵逆。"
+        },
+        {
+          "title": "正确设定时才使用信息等式",
+          "tex": "\\int f(y;\\theta)dy=1\\Rightarrow E[s_i]=0,\\qquad E[H_i+s_is_i^\\top]=0\\Rightarrow A=B=I",
+          "why": "对归一化条件分别求一次和两次导数，得到得分均值为零和信息等式。因此常规正确设定 MLE 的极限方差是 I⁻¹。错设时通常围绕伪真值，并保留三明治。"
+        }
+      ],
+      "trap": "渐近正态性不是用一阶条件就自动证明的。一致性、识别和余项控制是展开能成立的前提。",
+      "exercise": {
+        "prompt": "一维得分方差 B=8、负期望 Hessian A=2，样本量 n=100。θ̂ 的渐近方差是多少？",
+        "tex": "\\operatorname{Avar}(\\hat\\theta)=\\frac1n A^{-2}B=\\frac8{100\\times4}=0.02",
+        "explain": "只有 A=B 的正确设定常规模型，才能进一步简化成 1/(nA)。"
+      },
+      "legacy": "ch17",
+      "refs": [
+        "greene",
+        "mit"
+      ],
+      "number": "19",
+      "prerequisite": "gmm"
+    },
+    {
+      "id": "logit",
+      "title": "Logit：从 Bernoulli 似然到得分方程",
+      "group": "Ⅴ · 一般估计与拓展",
+      "lead": "具体推一次非线性模型，就能看出 MLE 并非一个黑箱。",
+      "assumptions": [
+        "yᵢ∈{0,1}，pᵢ=Λ(xᵢᵀβ)；条件 Bernoulli 模型。",
+        "常规推断需要信息矩阵非奇异、有限矩等；有限 MLE 的存在还需排除完全或准完全分离等问题。"
+      ],
+      "steps": [
+        {
+          "title": "写每条观测的概率",
+          "tex": "f_i=p_i^{y_i}(1-p_i)^{1-y_i},\\quad p_i=\\frac{e^{x_i^\\top\\beta}}{1+e^{x_i^\\top\\beta}}",
+          "why": "y=1 时只剩 p，y=0 时只剩 1−p；把两种情况合成一个表达式。"
+        },
+        {
+          "title": "取对数并整理",
+          "tex": "\\ell_n(\\beta)=\\sum_i\\{y_i x_i^\\top\\beta-\\log(1+e^{x_i^\\top\\beta})\\}",
+          "why": "使用 log p=η−log(1+e^η)，log(1−p)=−log(1+e^η)，其中 η=xᵀβ。"
+        },
+        {
+          "title": "求得分",
+          "tex": "\\nabla_\\beta\\ell_n=\\sum_i x_i(y_i-p_i)",
+          "why": "log(1+e^η) 对 η 的导数就是 Λ(η)=p；再乘 η 对 β 的导数 x。"
+        },
+        {
+          "title": "再求一次导数",
+          "tex": "\\nabla_\\beta^2\\ell_n=-\\sum_i p_i(1-p_i)x_ix_i^\\top",
+          "why": "Λ′(η)=p(1−p)。Hessian 为负半定，说明目标凹；但凹并不保证最优解在有限参数处存在。"
+        },
+        {
+          "title": "写出 Newton 更新",
+          "tex": "\\beta^{new}=\\beta^{old}+\\left(\\sum_i p_i(1-p_i)x_ix_i^\\top\\right)^{-1}\\sum_i x_i(y_i-p_i)",
+          "why": "不像线性 OLS 那样有一步闭式解，p 本身依赖 β，需要迭代；数值实现还需要稳定计算和适当步长控制。"
+        },
+        {
+          "title": "把系数转换为概率边际效应",
+          "tex": "\\frac{\\partial P(y=1\\mid x)}{\\partial x_j}=\\beta_jp(1-p)",
+          "why": "这是连续变量、线性指数中无相关交互变换时的偏导，其他变量保持不变。二值变量应比较两种取值的概率差；β 本身不是百分点变化。"
+        }
+      ],
+      "trap": "完全分离时，系数可能无限增大而似然仍持续改善；“没收敛”不一定只是软件迭代次数不够。",
+      "exercise": {
+        "prompt": "βⱼ=0.8，当前 p=0.5，连续变量的局部边际效应是多少？p=0.9 时呢？",
+        "tex": "0.8\\times0.5\\times0.5=0.20,\\qquad0.8\\times0.9\\times0.1=0.072",
+        "explain": "同一个系数，在不同位置对应不同的概率变化率。"
+      },
+      "legacy": "ch18",
+      "refs": [
+        "greene"
+      ],
+      "number": "20",
+      "prerequisite": "mle"
+    },
+    {
+      "id": "dependence",
+      "title": "序列相关、HAC 与聚类：CLT 的方差如何改写",
+      "group": "Ⅴ · 一般估计与拓展",
+      "lead": "当不同观测的误差一起移动，样本和的方差中会多出交叉项。",
+      "assumptions": [
+        "序列模型需要适当平稳、弱依赖、矩条件和相应 CLT；不是任意相关都允许。",
+        "聚类思路通常要求簇间独立或合适弱依赖、独立簇数量增加，以及控制簇大小与矩。"
+      ],
+      "steps": [
+        {
+          "title": "从样本和的完整方差出发",
+          "tex": "\\operatorname{Var}\\left(\\frac1{\\sqrt n}\\sum_tg_t\\right)=\\frac1n\\sum_t\\sum_s\\operatorname{Cov}(g_t,g_s),\\quad g_t=x_tu_t",
+          "why": "iid 时交叉项为零；时间序列里不能删掉 t≠s 的项。"
+        },
+        {
+          "title": "在平稳弱依赖下收集各滞后",
+          "tex": "\\Gamma_\\ell=E[g_tg_{t-\\ell}^\\top],\\qquad\\Omega_{LR}=\\Gamma_0+\\sum_{\\ell=1}^{\\infty}(\\Gamma_\\ell+\\Gamma_\\ell^\\top)",
+          "why": "在零均值和适当可求和条件下，这就是长期协方差。它替换 iid 证明里的 Ω，但估计误差分解不变。"
+        },
+        {
+          "title": "得到时间序列 OLS 的极限方差",
+          "tex": "\\sqrt n(\\hat\\beta-\\beta)\\xrightarrow{d}N(0,Q^{-1}\\Omega_{LR}Q^{-1})",
+          "why": "必须有适用的依赖数据 CLT 与 Qₙ→pQ。单靠同方差不能删除序列协方差。"
+        },
+        {
+          "title": "HAC 用截断加权估计长期协方差",
+          "tex": "\\hat\\Omega_{HAC}=\\hat\\Gamma_0+\\sum_{\\ell=1}^{L}w_\\ell(\\hat\\Gamma_\\ell+\\hat\\Gamma_\\ell^\\top),\\quad w_\\ell=1-\\ell/(L+1)",
+          "why": "这是 Bartlett 权重的一种常见形式。带宽 L 的增长需要配合弱依赖和矩条件；常见要求包括 L→∞、L/n→0，但仅这两个条件不能包办所有定理。"
+        },
+        {
+          "title": "聚类则先在簇内求和",
+          "tex": "\\hat G_c=\\sum_{i\\in c}x_i\\hat u_i,\\qquad\\widehat{\\operatorname{Var}}_{cluster}=(X^\\top X)^{-1}\\left(\\sum_c\\hat G_c\\hat G_c^\\top\\right)(X^\\top X)^{-1}",
+          "why": "簇内交叉项自动被保留。常见软件还会乘有限簇修正因子，并选用不同的参考自由度；少量簇尤其需要谨慎。"
+        }
+      ],
+      "trap": "总样本有十万条，不代表有十万个独立信息单位。只有很少几个独立簇时，大样本近似仍可能很差。",
+      "exercise": {
+        "prompt": "同一簇中两条观测的 xᵢûᵢ 都等于 1。忽略相关的“肉”与按簇求和的“肉”分别是多少？",
+        "tex": "1^2+1^2=2,\\qquad(1+1)^2=4",
+        "explain": "差异来自遗漏的两个交叉项。这里仅是代数展示，不用于单簇推断。"
+      },
+      "legacy": "ch13",
+      "refs": [
+        "greene"
+      ],
+      "number": "21",
+      "prerequisite": "logit"
+    },
+    {
+      "id": "unit-root",
+      "title": "单位根：为什么不能继续套普通 t 分布",
+      "group": "Ⅴ · 一般估计与拓展",
+      "lead": "用一个反例收尾：当解释变量的尺度变了，√n 的老套路也会变。",
+      "assumptions": [
+        "教学模型 yₜ=yₜ₋₁+εₜ，y₀=0；εₜ iid、均值 0、方差 σ²>0，满足函数型 CLT 条件。",
+        "此处 DF 回归不含截距和趋势。加入它们会改变极限分布和临界值。"
+      ],
+      "steps": [
+        {
+          "title": "写成检验回归",
+          "tex": "\\Delta y_t=\\gamma y_{t-1}+\\varepsilon_t,\\qquad H_0:\\gamma=0",
+          "why": "γ=ρ−1。原假设下 y 是随机游走，而不是平稳回归变量。"
+        },
+        {
+          "title": "OLS 仍有代数解",
+          "tex": "\\hat\\gamma=\\frac{\\sum_t y_{t-1}\\Delta y_t}{\\sum_t y_{t-1}^2}=\\frac{\\sum_t y_{t-1}\\varepsilon_t}{\\sum_t y_{t-1}^2}\\quad(H_0)",
+          "why": "能够算出系数，不意味着它具备普通平稳回归的渐近正态分布。"
+        },
+        {
+          "title": "观察随机游走的尺度",
+          "tex": "\\frac{y_{\\lfloor nr\\rfloor}}{\\sigma\\sqrt n}\\Rightarrow W(r),\\qquad\\frac1{\\sigma^2n^2}\\sum_ty_{t-1}^2\\Rightarrow\\int_0^1W(r)^2dr",
+          "why": "W 是标准布朗运动。平方和是 n² 量级，除以 n 不会收敛到固定有限 Q，普通 OLS 渐近证明的关键一步失效。"
+        },
+        {
+          "title": "把分子写成更容易理解的恒等式",
+          "tex": "2\\sum_ty_{t-1}\\varepsilon_t=y_n^2-\\sum_t\\varepsilon_t^2,\\qquad\\frac1{\\sigma^2n}\\sum_ty_{t-1}\\varepsilon_t\\Rightarrow\\frac{W(1)^2-1}{2}",
+          "why": "由 yₜ²−yₜ₋₁²=2yₜ₋₁εₜ+εₜ² 求和；终点平方与误差平方和分别使用函数型 CLT 和 LLN。"
+        },
+        {
+          "title": "得到非标准系数与 t 极限",
+          "tex": "n\\hat\\gamma\\Rightarrow\\frac{[W(1)^2-1]/2}{\\int_0^1W(r)^2dr},\\qquad t_{DF}\\Rightarrow\\frac{[W(1)^2-1]/2}{\\sqrt{\\int_0^1W(r)^2dr}}",
+          "why": "极限是布朗运动函数，不是标准正态或通常的 Student t。DF/ADF 的参考临界值还取决于确定性项、增广项和相应条件。"
+        }
+      ],
+      "trap": "大样本不等于所有统计量都趋向正态。非平稳性、弱识别和边界参数都是需要重新推导的情况。",
+      "exercise": {
+        "prompt": "普通 OLS 渐近正态证明里，哪一步在随机游走解释变量下直接失效？",
+        "tex": "Q_n=\\frac1n\\sum_ty_{t-1}^2\\not\\xrightarrow{p}Q\\in(0,\\infty)",
+        "explain": "不能再把 Qₙ⁻¹ 当成收敛到固定正常数的矩阵来使用原来的 Slutsky 论证。"
+      },
+      "legacy": "ch14",
+      "refs": [
+        "greene"
+      ],
+      "number": "22",
+      "prerequisite": "dependence"
+    }
+  ],
+  "references": [
+    {
+      "id": "greene",
+      "title": "Greene · Econometric Analysis，第 8 版作者目录",
+      "url": "https://pages.stern.nyu.edu/~wgreene/Text/tableofcontents.htm",
+      "note": "主线对照：线性回归、最小二乘、估计量性质、检验，继而 IV、GLS、面板、GMM、MLE 和时间序列。数学准备前置，渐近理论拆成独立步骤。"
+    },
+    {
+      "id": "wooldridge",
+      "title": "Wooldridge · Introductory Econometrics，出版社目录",
+      "url": "https://www.cengageasia.com/title/default/detail?isbn=9789814866088",
+      "note": "一元回归到多元回归、推断与 OLS 渐近性质的入门组织。"
+    },
+    {
+      "id": "hansen",
+      "title": "Hansen · Econometrics，作者教材主页",
+      "url": "https://users.ssc.wisc.edu/~behansen/econometrics/",
+      "note": "作为概率、矩阵和研究生计量理论的进一步阅读。"
+    },
+    {
+      "id": "mit",
+      "title": "MIT 14.382 · Econometrics，官方课程讲义",
+      "url": "https://ocw.mit.edu/courses/14-382-econometrics-spring-2017/pages/lecture-notes/",
+      "note": "对照最小二乘、IV、GMM、M 估计与面板的研究生主题。"
+    }
+  ]
+}
