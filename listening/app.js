@@ -1,5 +1,6 @@
-import { STORAGE_KEY, emptyProgress, loadProgress, startSession, submitAnswer, advance, checkSynonymAnswers } from './core.js?v=settings-1';
-import { buildSynonymGroups, migrateSynonymProgress } from './synonyms.js?v=settings-1';
+import {roundCandidates, createRound, nextRoundIds} from './rounds.js?v=rounds-1';
+import { STORAGE_KEY, emptyProgress, loadProgress, startSession, submitAnswer, advance, checkSynonymAnswers } from './core.js?v=rounds-1';
+import { buildSynonymGroups, migrateSynonymProgress } from './synonyms.js?v=rounds-1';
 
 const $ = selector => document.querySelector(selector);
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -13,6 +14,8 @@ const currentWord = () => byId.get(progress.session?.ids[progress.session.index]
 const active = () => progress.session && progress.session.phase !== 'complete';
 const pendingIds = () => Object.keys(progress.mistakes).filter(id => !progress.mistakes[id].resolved);
 const sceneName = id => data.scenes.find(s => s.id === id)?.name || '全部分类';
+const currentRound = () => progress.rounds?.[progress.settings.book];
+const modeLabel = mode => ({all:'全部词',mistakes:'错词（含已巩固）',pending:'待巩固错词'}[mode]);
 const currentBook = () => data.books.find(b => b.id === progress.settings.book);
 const bookName = id => data.books.find(b => b.id === id)?.name || '场景词汇';
 const bookWords = () => data.words.filter(w => w.book === progress.settings.book);
@@ -29,7 +32,7 @@ function renderBooks() {
 function selectBook(book) {
   if (book === progress.settings.book) return;
   if (active() && !confirm('切换资料库会结束当前这一组。已保存的答题和错题记录会保留，是否继续？')) return;
-  stopSpeech(); progress.session = null; progress.settings.book = book; progress.settings.scene = 'all'; pageLimit = 60; $('#search').value = '';
+  stopSpeech(); $('#round-form').hidden = true; progress.session = null; progress.settings.book = book; progress.settings.scene = 'all'; pageLimit = 60; $('#search').value = '';
   refresh(); setView(view);
 }
 function warning(message) { $('#storage-warning').textContent = message; $('#storage-warning').hidden = false; }
@@ -89,17 +92,53 @@ function renderStats() {
 function renderScenes() {
   $('#scenes').innerHTML = [{ id: 'all', name: '全部分类', icon: '◫' }, ...bookScenes()].map(s => `<button class="scene-button ${progress.settings.scene === s.id ? 'selected' : ''}" data-scene="${s.id}" ${active() ? 'disabled' : ''} ${progress.settings.scene === s.id ? 'aria-current="true"' : ''}><span class="scene-symbol">${s.icon}</span>${s.name}<small>${s.id === 'all' ? bookWords().length : data.words.filter(w => w.scene === s.id).length}</small></button>`).join('');
   $('#scene-total').textContent = bookScenes().length;
-  $('#session-scene').innerHTML = `<option value="all">全部分类 · ${bookWords().length} 题</option>${bookScenes().map(s => `<option value="${s.id}">${s.name}</option>`).join('')}`;
-  $('#session-scene').value = progress.settings.scene;
   $('#session-size').value = progress.settings.size;
-  $('#shuffle').checked = progress.settings.shuffle;
+  $('#shuffle').checked = currentRound()?.shuffle ?? progress.settings.shuffle;
   $('#accent').value = progress.settings.accent;
   $('#rate').value = progress.settings.rate;
   $('#volume').value = Math.round(progress.settings.volume * 100);
   $('#volume-value').textContent = `${Math.round(progress.settings.volume * 100)}%`;
   $('#repairGoal').value = progress.settings.repairGoal;
-  for (const selector of ['#session-scene', '#session-size', '#shuffle']) $(selector).disabled = !!active();
-  $('#settings-note').textContent = active() ? '本组进度已保存。完成或结束本组后，可调整练习范围。' : '完成一组，再向前一步。';
+  for (const selector of ['#session-size', '#shuffle']) $(selector).disabled = !!active();
+  $('#shuffle').disabled = !!currentRound();
+  $('#settings-note').textContent = active() ? '本组进度已保存。完成或结束本组后，可调整练习范围。' : '下一组会接着本轮进度。改变题序或范围，请打开重刷设置。';
+}
+function renderRound() {
+  const r = currentRound();
+  $('#round-title').textContent = r ? `${currentBook().name} · 第 ${r.number} 轮${r.cursor === r.ids.length ? '已完成' : ''}` : `${currentBook().name} · 开启新一轮`;
+  $('#round-status').textContent = r ? `${r.scenes.length ? r.scenes.map(sceneName).join('、') : '整本书'} · ${modeLabel(r.mode)} · 已完成 ${r.cursor} / ${r.ids.length} 题 · ${r.shuffle ? '随机题序' : '资料顺序'}` : '选择整本书、几个板块，或只刷错词；分组练习会接着走，不反复回到开头。';
+}
+function roundOptions() {
+  return {book:progress.settings.book, scenes:$('#round-scope').value === 'all' ? [] : [...document.querySelectorAll('[name="round-scene"]:checked')].map(el=>el.value), mode:$('#round-mode').value, shuffle:$('#round-shuffle').checked};
+}
+function updateRoundPreview() {
+  const options = roundOptions(), missing = $('#round-scope').value === 'custom' && !options.scenes.length;
+  $('#round-scene-field').hidden = $('#round-scope').value !== 'custom';
+  const count = missing ? 0 : roundCandidates(data.words,progress,options).length;
+  $('#round-start').disabled = !count;
+  $('#round-preview').textContent = missing ? '请至少选一个板块。' : count ? `本轮共 ${count} 题 · 每组 ${Number($('#round-size').value) || count} 题；完成一组后继续下一组，直到刷完。` : options.mode === 'pending' ? '所选范围没有待巩固错词。可改选“只刷错词 · 包含已巩固”。' : options.mode === 'mistakes' ? '所选范围还没有错题记录，可以先刷全部词。' : '所选范围暂无词条。';
+}
+function openRoundSettings(scene) {
+  const r = currentRound();
+  $('#round-form').hidden = false;
+  const selected = scene ? (scene === 'all' ? [] : [scene]) : (r?.scenes || (progress.settings.scene === 'all' ? [] : [progress.settings.scene]));
+  $('#round-scope').value = selected.length ? 'custom' : 'all';
+  $('#round-mode').value = r?.mode || 'all';
+  $('#round-size').value = progress.settings.size;
+  $('#round-shuffle').checked = r?.shuffle ?? progress.settings.shuffle;
+  $('#round-scene-list').innerHTML = bookScenes().map(sc=>`<label><input type="checkbox" name="round-scene" value="${sc.id}" ${selected.includes(sc.id)?'checked':''}><span>${escape(sc.name)}</span><small>${bookWords().filter(w=>w.scene===sc.id).length} 题</small></label>`).join('');
+  updateRoundPreview();
+  $('#round-form').scrollIntoView({block:'start',behavior:'smooth'}); $('#round-scope').focus({preventScroll:true});
+}
+function startConfiguredRound() {
+  const options = roundOptions();
+  if ($('#round-scope').value === 'custom' && !options.scenes.length || !roundCandidates(data.words,progress,options).length) return;
+  if (active() && !confirm('开始新一轮会替换当前这一组，累计答题和错题记录都会保留。开始新一轮？')) return;
+  stopSpeech();
+  if (!createRound(progress,data.words,options)) return;
+  progress.settings.size = Number($('#round-size').value); progress.settings.shuffle = options.shuffle;
+  progress.settings.scene = options.scenes.length === 1 ? options.scenes[0] : 'all';
+  $('#round-form').hidden = true; begin();
 }
 function focusAnswer() { if (view === 'practice') $('#answer')?.focus({ preventScroll: true }); }
 function answerForm(repair = false) {
@@ -126,10 +165,12 @@ function renderExercise() {
   const s = progress.session;
   const area = $('#exercise');
   if (!s) {
-    const count = Math.min(filteredWords().length, progress.settings.size || Infinity);
+    const r = currentRound(), remaining = r ? r.ids.length-r.cursor : 0;
+    const count = Math.min(remaining, progress.settings.size || Infinity);
+    const ready = r && remaining > 0;
     $('#current-scene').textContent = `${currentBook().name} · ${sceneName(progress.settings.scene)}`;
     $('#question-count').textContent = '准备开始'; $('#progress-fill').style.width = '0%';
-    area.innerHTML = `<div class="group-note">把注意力，交给耳朵</div>${waveform('开始练习并播放第一个单词')}<h2>${progress.settings.book === 'synonyms' ? '先学一组，再回想它们。' : '听见，然后写下来。'}</h2><p class="prompt">${escape(currentBook().description)}<br>${progress.settings.book === 'synonyms' ? '隐藏对应表达后逐项默写，整组写对才通过。' : `答对再听一遍，答错默写 ${progress.settings.repairGoal} 遍；每写对一遍都会朗读。`}</p><div class="idle-meta"><span>◷ ${count} 道练习</span><span>◈ ${sceneName(progress.settings.scene)}</span></div><button class="primary wide" data-action="start">开始今日练习 <kbd>Enter ↵</kbd></button><p class="keyboard-note">戴好耳机，给记忆一点专注的时间。</p>`;
+    area.innerHTML = `<div class="group-note">把注意力，交给耳朵</div>${waveform('开始练习并播放第一个单词')}<h2>${progress.settings.book === 'synonyms' ? '先学一组，再回想它们。' : '听见，然后写下来。'}</h2><p class="prompt">${escape(currentBook().description)}<br>${progress.settings.book === 'synonyms' ? '隐藏对应表达后逐项默写，整组写对才通过。' : `答对再听一遍，答错默写 ${progress.settings.repairGoal} 遍；每写对一遍都会朗读。`}</p><div class="idle-meta"><span>◷ ${ready ? `下一组 ${count} 题` : r ? '本轮已刷完' : '先选择本轮范围'}</span><span>◈ ${ready ? `本轮还剩 ${remaining} 题` : currentBook().name}</span></div><button class="primary wide" data-action="start">${ready ? '继续本轮练习' : '设置新一轮'} <kbd>Enter ↵</kbd></button><p class="keyboard-note">戴好耳机，给记忆一点专注的时间。</p>`;
     return;
   }
   const w = currentWord();
@@ -142,7 +183,8 @@ function renderExercise() {
     area.innerHTML = renderSynonymExercise(w, s, source, exit); return;
   }
   if (s.phase === 'complete') {
-    area.innerHTML = `<div class="complete-icon">✧</div><h2>又前进了一小步。</h2><p class="prompt">本组 ${s.ids.length} 道练习已完成。每一次练习，都算数。</p><div class="session-summary"><div><strong>${s.correct}</strong><span>首次拼写正确</span></div><div><strong>${s.wrong}</strong><span>已完成错题巩固</span></div></div><button class="primary wide" data-action="new">再练一组 <kbd>Enter ↵</kbd></button><div style="margin-top:15px"><button class="text-button" data-action="mistakes">看看我的错题本 →</button><button class="text-button" data-action="choose">重新选择场景</button></div>`;
+    const r = currentRound(), linked = s.roundBook === progress.settings.book && r?.number === s.roundNumber, done = linked && r.cursor === r.ids.length;
+    area.innerHTML = `<div class="complete-icon">✧</div><h2>${done ? '这一轮，完整刷完了。' : '又前进了一小步。'}</h2><p class="prompt">本组 ${s.ids.length} 道练习已完成。${linked ? `本轮已完成 ${r.cursor} / ${r.ids.length} 题。` : '可以开始自己的下一轮复习。'}</p><div class="session-summary"><div><strong>${s.correct}</strong><span>首次拼写正确</span></div><div><strong>${s.wrong}</strong><span>已完成错题巩固</span></div></div><button class="primary wide" data-action="new">${done ? '设置新一轮' : linked ? '继续下一组' : r && r.cursor < r.ids.length ? '继续本书轮次' : '设置重刷范围'} <kbd>Enter ↵</kbd></button><div style="margin-top:15px"><button class="text-button" data-action="mistakes">看看我的错题本 →</button><button class="text-button" data-action="round-settings">选择板块 / 只刷错词</button></div>`;
   } else if (s.phase === 'question') {
     area.innerHTML = `<div class="group-note">${escape(w.group)} · LISTEN & SPELL</div>${waveform('重播当前单词')}<h2>${w.book === 'numbers' ? '这条信息，你听清了吗？' : '这个表达，你听出来了吗？'}</h2><p class="prompt">${w.book === 'numbers' ? '电话保留前导 0；邮编不区分大小写；时间支持 24 小时制。' : w.book === 'synonyms' ? '听写原文表达，答后查看题目中的对应表达。' : '点击声波重播，输入答案后按回车。'}</p>${answerForm()}<div class="keyboard-note"><kbd>Alt</kbd> + <kbd>P</kbd> 重播发音 · 忽略大小写与首尾空格</div>${exit}`;
   } else if (s.phase === 'repairing') {
@@ -167,8 +209,9 @@ function setView(next) {
   if (view === 'vocabulary') renderVocabulary();
 }
 function renderMistakes() {
+  $('#subtitle').textContent = `${currentBook().name} · ${sceneName(progress.settings.scene)}。已巩固错词仍在「全部记录」，也可在重刷设置中重新选择。`;
   $('#pending-tab').classList.toggle('selected', !showAllMistakes); $('#all-tab').classList.toggle('selected', showAllMistakes);
-  const ids = Object.keys(progress.mistakes).filter(id => showAllMistakes || !progress.mistakes[id].resolved).sort((a, b) => progress.mistakes[b].count - progress.mistakes[a].count);
+  const ids = Object.keys(progress.mistakes).filter(id => byId.get(id)?.book === progress.settings.book && (progress.settings.scene === 'all' || byId.get(id)?.scene === progress.settings.scene) && (showAllMistakes || !progress.mistakes[id].resolved)).sort((a, b) => progress.mistakes[b].count - progress.mistakes[a].count);
   $('#review-all').disabled = !ids.length;
   $('#mistake-list').innerHTML = ids.length ? `<div class="table-container"><table class="word-table"><thead><tr><th>单词 / 信息</th><th>释义与资料对照</th><th class="optional-col">记录</th><th>复习</th></tr></thead><tbody>${ids.map(id => { const w = byId.get(id), m = progress.mistakes[id]; return `<tr><td><span class="word" lang="en">${escape(w.word)}</span><div class="word-meta">${bookName(w.book)} · ${sceneName(w.scene)} · 曾写成 ${escape(m.lastAnswer)}</div></td><td>${escape(w.meaning)}<br><span class="tag ${m.resolved ? 'done' : ''}">${m.resolved ? '已巩固' : '待巩固'}</span></td><td class="optional-col">错 ${m.count} 次</td><td><button class="row-audio" data-speak="${id}" aria-label="朗读 ${escape(w.word)}">♪</button><button class="row-action" data-review="${id}">重练</button></td></tr>`; }).join('')}</tbody></table></div>` : `<div class="empty-state"><span class="complete-icon">✧</span><h2>${showAllMistakes ? '还没有错词，开始探索吧。' : '暂时没有需要巩固的词。'}</h2><p>${showAllMistakes ? '拼写错误的词会自动收录在这里。' : '已巩固的词仍保存在「全部记录」中，可以随时复习。'}</p><button class="secondary" data-action="practice">返回听音默写</button></div>`;
 }
@@ -178,26 +221,30 @@ function renderVocabulary() {
   $('#vocabulary-count').textContent = `${sceneName(progress.settings.scene)} · ${words.length} 题`;
   $('#vocabulary-list').innerHTML = words.length ? `<div class="table-container"><table class="word-table"><thead><tr><th>单词 / 信息</th><th>释义与资料对照</th><th class="optional-col">场景</th><th>发音</th></tr></thead><tbody>${words.slice(0, pageLimit).map(w => `<tr><td><span class="word" lang="en">${escape(w.word)}</span><div class="word-meta">${escape(sourceLabel(w))}</div></td><td>${escape(w.meaning)}${answerDetails(w)}</td><td class="optional-col">${sceneName(w.scene)}</td><td><button class="row-audio" data-speak="${w.id}" aria-label="朗读 ${escape(w.word)}">♪</button></td></tr>`).join('')}</tbody></table></div>${words.length > pageLimit ? '<div class="pagination"><button class="secondary" data-action="more">加载更多词汇 ↓</button></div>' : ''}` : '<div class="empty-state"><h2>没有找到这个词</h2><p>试试更短的关键词，或选择其他场景。</p></div>';
 }
-function refresh() { renderStats(); renderBooks(); renderScenes(); renderExercise(); save(); }
+function refresh() { renderStats(); renderBooks(); renderScenes(); renderRound(); renderExercise(); save(); }
 function begin(ids, review = false) {
-  if (active() && !confirm('结束当前这一组并开始新练习？已完成的答题和错题记录会保留，当前这一组的练习进度会结束。')) return;
-  stopSpeech();
+  if (active() && !confirm('结束当前这一组并开始新练习？已完成的答题和错题记录会保留。')) return;
+  let round = null;
   if (!ids) {
-    let words = filteredWords();
-    // Start with words not yet answered correctly; keep the source order within each group.
-    words = [...words.filter(w => !progress.mastered.includes(w.id)), ...words.filter(w => progress.mastered.includes(w.id))];
-    if (progress.settings.shuffle) for (let i = words.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [words[i], words[j]] = [words[j], words[i]]; }
-    ids = words.slice(0, progress.settings.size || words.length).map(w => w.id);
+    round = currentRound();
+    if (!round || round.cursor >= round.ids.length) { openRoundSettings(); return; }
+    ids = nextRoundIds(round, progress.settings.size);
+    review = round.mode !== 'all';
   }
-  startSession(progress, ids, review, byId.get(ids[0])); refresh(); setView('practice'); speak(); focusAnswer();
+  if (!ids.length) return;
+  stopSpeech(); startSession(progress, ids, review, byId.get(ids[0]));
+  if (round) { progress.session.roundBook = progress.settings.book; progress.session.roundNumber = round.number; }
+  refresh(); setView('practice'); speak(); focusAnswer();
 }
 function next() { if (!advance(progress, byId.get(progress.session?.ids[progress.session.index+1]))) return; stopSpeech(); refresh(); if (['study', 'question', 'repairing'].includes(progress.session.phase)) speak(); focusAnswer(); }
 function action(name) {
   if (name === 'start' || name === 'new') begin();
-  if (name === 'play') progress.session ? speak() : begin();
+  if (name === 'play') progress.session && progress.session.phase !== 'complete' ? speak() : begin();
   if (name === 'advance') next();
   if (name === 'mistakes' || name === 'practice') setView(name);
-  if (name === 'choose') { progress.session = null; refresh(); $('#session-scene').focus(); }
+  if (name === 'choose' || name === 'round-settings') openRoundSettings();
+  if (name === 'round-close') $('#round-form').hidden = true;
+  if (name === 'round-select-all' || name === 'round-select-none') { document.querySelectorAll('[name="round-scene"]').forEach(el=>el.checked = name === 'round-select-all'); updateRoundPreview(); }
   if (name === 'end' && confirm('结束本组练习？已经保存的答题和错题记录会保留；当前词的重写进度会结束。')) { stopSpeech(); progress.session = null; refresh(); }
   if (name === 'more') { pageLimit += 60; renderVocabulary(); }
 }
@@ -221,14 +268,14 @@ async function init() {
     save();
   }
   catch { progress = emptyProgress(); warning('未能读取原来的学习记录。已开始新的练习；如果浏览器禁止存储，记录将无法持久保存。'); }
-  renderStats(); renderBooks(); renderScenes(); renderExercise(); focusAnswer();
+  renderStats(); renderBooks(); renderScenes(); renderRound(); renderExercise(); focusAnswer();
   if (!('speechSynthesis' in window)) $('#audio-status').textContent = '当前浏览器不支持发音，请使用支持语音的 Chrome、Edge 或 Safari。';
   document.addEventListener('click', event => {
     const b = event.target.closest('button'); if (!b || b.disabled) return;
     if (b.dataset.book) selectBook(b.dataset.book);
     if (b.dataset.view) setView(b.dataset.view);
     if (b.dataset.action) action(b.dataset.action);
-    if (b.dataset.scene) { progress.settings.scene = b.dataset.scene; save(); renderScenes(); if (view === 'vocabulary') renderVocabulary(); else { setView('practice'); renderExercise(); } }
+    if (b.dataset.scene) { progress.settings.scene = b.dataset.scene; save(); renderScenes(); if (view === 'vocabulary') renderVocabulary(); else if (view === 'mistakes') renderMistakes(); else openRoundSettings(b.dataset.scene); }
     if (b.dataset.speak) speak(byId.get(b.dataset.speak));
     if (b.dataset.pronounce) speak(b.dataset.pronounce);
     if (b.dataset.review) begin([b.dataset.review], true);
@@ -246,7 +293,7 @@ async function init() {
     focusAnswer();
   });
   document.addEventListener('keydown', event => {
-    if (event.isComposing || event.repeat) return;
+    if (event.isComposing || event.repeat || !$('#round-form').hidden) return;
     if (event.altKey && event.code === 'KeyP') { event.preventDefault(); if (view === 'practice') speak(); return; }
     if (event.key !== 'Enter' || view !== 'practice') return;
     if (event.target.matches('input,select,textarea,button,a')) return;
@@ -255,7 +302,7 @@ async function init() {
   });
   // Prevent IME confirmation and held Enter from accidentally submitting/advancing.
   $('#exercise').addEventListener('keydown', event => { if (event.key === 'Enter' && (event.isComposing || event.repeat)) event.preventDefault(); });
-  for (const [selector, key, convert] of [['#session-scene', 'scene', String], ['#session-size', 'size', Number], ['#accent', 'accent', String], ['#rate', 'rate', Number]]) {
+  for (const [selector, key, convert] of [['#session-size', 'size', Number], ['#accent', 'accent', String], ['#rate', 'rate', Number]]) {
     $(selector).addEventListener('change', event => { progress.settings[key] = convert(event.target.value); save(); renderScenes(); if (['scene', 'size'].includes(key)) renderExercise(); });
   }
   $('#volume').addEventListener('input', event => { progress.settings.volume = Number(event.target.value) / 100; $('#volume-value').textContent = `${event.target.value}%`; save(); });
@@ -263,7 +310,9 @@ async function init() {
   $('#shuffle').addEventListener('change', event => { progress.settings.shuffle = event.target.checked; save(); });
   $('#pending-tab').onclick = () => { showAllMistakes = false; renderMistakes(); };
   $('#all-tab').onclick = () => { showAllMistakes = true; renderMistakes(); };
-  $('#review-all').onclick = () => begin(showAllMistakes ? Object.keys(progress.mistakes) : pendingIds(), true);
+  $('#review-all').onclick = () => { setView('practice'); openRoundSettings(progress.settings.scene); $('#round-mode').value = showAllMistakes ? 'mistakes' : 'pending'; updateRoundPreview(); };
+  $('#round-form').addEventListener('submit',e=>{e.preventDefault();startConfiguredRound();});
+  $('#round-form').addEventListener('change',updateRoundPreview);
   $('#search').addEventListener('input', () => { pageLimit = 60; renderVocabulary(); });
   window.addEventListener('pagehide', () => { stopSpeech(); save(); });
 }

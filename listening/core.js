@@ -1,3 +1,4 @@
+import {restoreRounds, completeRoundEntry} from './rounds.js?v=rounds-1';
 export const STORAGE_KEY = 'scene-listening-v1';
 
 export function normalize(text) {
@@ -65,7 +66,7 @@ export function isCorrect(answer, entry) {
   });
 }
 export function emptyProgress() {
-  return { version: 1, attempts: 0, correct: 0, mastered: [], mistakes: {}, session: null, settings: { book: 'scenes', scene: 'all', size: 20, accent: 'en-GB', rate: 0.85, volume: 1, repairGoal: 5, shuffle: false } };
+  return { version: 1, attempts: 0, correct: 0, mastered: [], mistakes: {}, rounds: {}, session: null, settings: { book: 'scenes', scene: 'all', size: 20, accent: 'en-GB', rate: 0.85, volume: 1, repairGoal: 5, shuffle: false } };
 }
 export function loadProgress(raw, words) {
   const fresh = emptyProgress();
@@ -94,6 +95,7 @@ export function loadProgress(raw, words) {
     if (Number.isInteger(s.repairGoal) && s.repairGoal >= 1 && s.repairGoal <= 10) fresh.settings.repairGoal = s.repairGoal;
     fresh.settings.shuffle = s.shuffle === true;
   }
+  fresh.rounds = restoreRounds(data.rounds, words);
   const session = data.session;
   if (session && Array.isArray(session.ids) && session.ids.length && session.ids.every(id => ids.has(id)) &&
       number(session.index) && session.index < session.ids.length && number(session.repeats) && session.repeats <= 10 &&
@@ -102,6 +104,14 @@ export function loadProgress(raw, words) {
     fresh.session = { ids: session.ids, index: session.index, repeats: session.repeats, phase: session.phase,
       repairGoal: Number.isInteger(session.repairGoal) && session.repairGoal >= 1 && session.repairGoal <= 10 ? session.repairGoal : 5,
       correct: session.correct, wrong: session.wrong, review: session.review === true, lastAnswer: typeof session.lastAnswer === 'string' ? session.lastAnswer.slice(0,2000) : '' };
+  }
+  if (fresh.session && session.roundBook) {
+    const r = fresh.rounds[session.roundBook];
+    const s = fresh.session;
+    const start = r ? r.cursor - (s.phase === 'complete' ? s.ids.length : s.index) : -1;
+    if (r && r.number === session.roundNumber && start >= 0 && s.ids.every((id,i) => r.ids[start+i] === id)) {
+      s.roundBook = session.roundBook; s.roundNumber = session.roundNumber;
+    } else fresh.session = null;
   }
   return fresh;
 }
@@ -141,6 +151,7 @@ export function advance(progress, nextEntry = null) {
   if (s.phase === 'study') { s.phase = 'question'; return true; }
   if (['mistake', 'repair-error'].includes(s.phase)) { s.phase = 'repairing'; return true; }
   if (!['correct', 'repaired'].includes(s.phase)) return false;
+  completeRoundEntry(progress, s);
   if (s.index + 1 === s.ids.length) s.phase = 'complete';
   else { s.index++; s.repeats = 0; delete s.repairGoal; s.phase = nextEntry?.kind === 'synonym-group' ? 'study' : 'question'; }
   return true;

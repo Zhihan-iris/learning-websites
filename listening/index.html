@@ -8,8 +8,8 @@
   <meta name="description" content="雅思听力练习室：场景词汇、剑10–剑20同义替换、数字与信息听写、填空考点词。听音默写，答对复读，错题按自选次数重练；同义替换先学后测。">
   <link rel="canonical" href="https://zhihan-iris.github.io/learning-websites/listening/">
   <title>Zhihan · 雅思听力练习室</title>
-  <link rel="icon" href="./favicon.svg?v=settings-1" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css?v=settings-1">
+  <link rel="icon" href="./favicon.svg?v=rounds-1" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css?v=rounds-1">
 </head>
 <body>
   <a class="skip" href="#main">跳转到练习</a>
@@ -37,6 +37,15 @@
         <div><span class="stat-icon amber">↺</span><div><span class="stat-label">待巩固错词</span><strong id="pending">0<small> 个</small></strong></div></div>
       </section>
       <section id="practice-view">
+        <section class="round-banner" aria-label="本书轮次进度"><div><span class="eyebrow">再读一遍，也有新的收获</span><h2 id="round-title">给这本书开启新一轮</h2><p id="round-status"></p></div><button class="secondary" data-action="round-settings">重刷设置 ↻</button></section>
+        <form id="round-form" class="round-settings" hidden>
+          <div class="round-form-heading"><div><h2>这一轮，想怎么刷？</h2><p>从所选范围重新开始本书这一轮；累计答题、掌握记录和错题历史都会保留。</p></div><button type="button" class="text-button" data-action="round-close">收起设置</button></div>
+          <div class="round-options"><div><label for="round-scope">练习范围</label><select id="round-scope"><option value="all">整本书</option><option value="custom">自选板块 · 可多选</option></select></div><div><label for="round-mode">练哪些词</label><select id="round-mode"><option value="all">全部词 · 从头重刷</option><option value="mistakes">只刷错词 · 包含已巩固</option><option value="pending">只刷待巩固错词</option></select></div><div><label for="round-size">每组题数</label><select id="round-size"><option value="10">10 题</option><option value="20">20 题</option><option value="50">50 题</option><option value="0">本轮全部</option></select></div></div>
+          <fieldset id="round-scene-field" hidden><legend>选择想复习的板块</legend><div class="round-select-actions"><button type="button" class="text-button" data-action="round-select-all">全选</button><button type="button" class="text-button" data-action="round-select-none">清空选择</button></div><div id="round-scene-list" class="round-scene-list"></div></fieldset>
+          <label class="check-label"><input type="checkbox" id="round-shuffle">随机题序（整轮只打乱一次，之后接着刷）</label>
+          <p id="round-preview" class="round-preview" role="status"></p><p class="small-note">“包含已巩固”会收录所有曾经答错的词；本轮范围在开始时确定，新产生的错词会保留到错题本。</p>
+          <button type="submit" id="round-start" class="primary">开始新一轮 →</button>
+        </form>
         <div class="practice-layout">
           <article class="practice-card">
             <div class="card-top"><span class="scene-chip" id="current-scene">全部场景</span><span id="question-count">准备开始</span></div>
@@ -45,7 +54,7 @@
           </article>
           <aside class="practice-settings">
             <section class="settings-card"><div class="section-title">本次练习 <span>SESSION</span></div>
-              <label for="session-scene">练习分类</label><select id="session-scene"></select>
+              <p class="small-note">整本书、自选板块和错词范围，可在上方「重刷设置」选择。</p>
               <label for="session-size">每组题数</label><select id="session-size"><option value="10">10 题 · 轻量热身</option><option value="20" selected>20 题 · 日常积累</option><option value="50">50 题 · 集中练习</option><option value="0">全部内容</option></select>
               <label for="repairGoal">错题默写次数</label><select id="repairGoal"><option value="1">1 遍</option><option value="2">2 遍</option><option value="3">3 遍</option><option value="4">4 遍</option><option value="5" selected>5 遍</option><option value="6">6 遍</option><option value="7">7 遍</option><option value="8">8 遍</option><option value="9">9 遍</option><option value="10">10 遍</option></select><p class="small-note">从下一次新错题开始生效，当前错题的目标次数保持不变。</p>
               <label class="check-label"><input id="shuffle" type="checkbox">随机排列题序</label>
@@ -67,6 +76,6 @@
     </main>
   </div>
   <noscript>请启用 JavaScript 以使用听音默写和错题本。</noscript>
-  <script type="module" src="./app.js?v=settings-1"></script>
+  <script type="module" src="./app.js?v=rounds-1"></script>
 </body>
 </html>
