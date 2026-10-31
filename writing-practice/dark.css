@@ -1,0 +1,33 @@
+/* The listening room's midnight and warm-gold palette. */
+:root{color-scheme:dark;--ink:#ede6d8;--muted:#aaa69b;--green:#d5b475;--gold:#d5b475;--line:#303138;--paper:#1b1d24;--bg:#111217}
+body{background:radial-gradient(ellipse at 90% 0%,#b28b3d0b,transparent 45%),#111217}
+.top{background:linear-gradient(180deg,#19191e,#14151a);color:#ede6d8;border-bottom-color:#655336}
+.brand{color:#d5b475}.brand>span{color:#ede6d8}.brand small,.top nav{color:#b4aa98}.top nav a:hover{color:#edcf97}
+.quiet-badge{border-color:#655336;color:#d5b475;background:#29261f}
+h1{color:#f3ebdb}h1 em{color:#d5b475}.intro-seal{border-color:#655336;color:#c3a166}
+.rail .eyebrow{color:#aaa69b}.rail li>span{color:#c3a166}.rail small{color:#aaa69b}
+.topic-card{background:linear-gradient(125deg,#332b20,#222126);border-color:#655336}
+.section-label,.paper-heading{color:#b5a789}.topic-card>label{color:#e3d5b8}.topic-card textarea{color:#eee3cc}
+.topic-card textarea::placeholder,.topic-bottom>span{color:#b2a894}
+.secondary{background:#302b22;border-color:#655336;color:#e1c18a}.secondary:hover{background:#3b3224}
+.paper{background:#1b1d24;border-color:#303138;border-top-color:#b89558;box-shadow:0 8px 35px #00000022}
+.paper-heading{border-bottom-color:#303138}.paper-heading b{color:#e7c791}.divider{color:#8f8066}
+#essay{background:#181a20;color:#eee3cc;caret-color:#edcf97}#essay:focus{background:#181a20;box-shadow:inset 3px 0 #b89558}
+#essay::placeholder{color:#aaa69b}#essay:disabled{background:#18191e;color:#b4ab9b}
+.paper-footer{border-top-color:#303138;color:#aaa69b}
+.check-options>label{color:#bbb09b}.check-options select{background:#14161b;border-color:#37373e;color:#dfd7c7}
+.online-choice label{color:#dfd7c7}.online-choice input{accent-color:#d5b475}.online-choice p,.submit-bottom p{color:#aaa69b}
+.primary{background:linear-gradient(120deg,#e0c18a,#c7a167);color:#17181c;font-weight:600;box-shadow:0 5px 16px #0002}
+.primary:hover:not(:disabled){background:#edcf97}.link-button{color:#d5b475}#status{color:#dec28e}
+.report{border-color:#4a4235}.report h2{color:#f3ebdb}.report-status{background:#2b2922;color:#e2cca3;border:1px solid #514531}
+.report-stats{color:#b5aa96}.report-stats b{color:#e7c791}
+.annotated-block{background:#1b1d24;border-color:#3b3935}.annotated-block summary{color:#d5b475}#annotated{color:#eee3cc}
+mark.spelling{background:#4b3029;border-bottom-color:#e7a185;color:#ffddc8}mark.collocation{background:#353044;border-bottom-color:#b7a4d5;color:#e7dafa}
+.dot.spelling{background:#eea38e}.dot.collocation{background:#b7a4d5}
+.issue-card{background:#1b1d24;border-color:#303138}.issue-number{color:#ba9e6c}.issue-tag{color:#eea38e}
+.issue-card.collocation .issue-tag{color:#c2addc}.issue-phrase del{color:#edb39b}.suggestion{color:#c4d5a7}
+.issue-reason,.report-note{color:#aaa69b}.empty{background:#252c23;color:#c7d6b1}
+#ignored-settings{color:#bbb09b}.ignored-chip{background:#302b22;border-color:#655336;color:#e1c18a}
+.notice{background:#382d1f;border:1px solid #765a2c;color:#efcd8a}
+footer{border-color:#303138;color:#aaa69b}.skip{background:#d5b475;color:#17181c}
+::selection{background:#665334;color:#fff1d3}
