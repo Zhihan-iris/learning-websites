@@ -1,0 +1,7 @@
+import nspell from './vendor/nspell.js';
+import {tokens,phraseIssues} from './checks.js?v=1';
+let dictionaries;
+async function load(){if(!dictionaries)dictionaries=Promise.all(['en-GB','en-US'].map(async lang=>{const res=await Promise.all(['aff','dic'].map(ext=>fetch(new URL(`./vendor/${lang}.${ext}`,import.meta.url))));if(res.some(r=>!r.ok))throw Error('词典未能加载，请刷新后重试。');const [aff,dic]=await Promise.all(res.map(r=>r.text()));return nspell(aff,dic);})).catch(e=>{dictionaries=null;throw e;});return dictionaries;}
+self.onmessage=async({data})=>{try{const ds=await load(),primary=ds[data.dialect==='en-US'?1:0],ignored=new Set(data.ignored.map(w=>w.toLowerCase())),cache=new Map(),issues=phraseIssues(data.text);let spellingCount=0;
+for(const t of tokens(data.text)){const w=t.word.replaceAll('’',"'"),lower=w.toLowerCase();if(ignored.has(lower)||w.length<2||ds.some(d=>[w,lower,lower[0].toUpperCase()+lower.slice(1),w.toUpperCase()].some(s=>d.correct(s))))continue;if(spellingCount++>=120)continue;if(!cache.has(lower))cache.set(lower,cache.size<40&&w.length<=35?primary.suggest(w).filter(s=>s.toLowerCase()!==lower).slice(0,4):[]);issues.push({type:'spelling',...t,before:t.word,suggestions:cache.get(lower),reason:'词典未识别这个拼写。请核对建议；人名、地名和专业词也可能被标记。',source:'本地英美拼写词典'});}
+self.postMessage({id:data.id,issues:issues.sort((a,b)=>a.offset-b.offset),truncated:spellingCount>120});}catch(e){self.postMessage({id:data.id,error:e.message||'本地检查失败。'});}};
